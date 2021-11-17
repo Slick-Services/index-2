@@ -423,6 +423,7 @@
     }
     #customers-testimonials.owl-carousel {
         top: 12%;
+        margin-bottom: 40px;
     }
     .blog .member .member-info {
         bottom: -69%;
