@@ -66,7 +66,7 @@
     }
     .testimonials {
         padding: 30px 0 27px;
-        height: 35vh;
+        /*height: 35vh;*/
         margin-bottom: 30%;
     }
     .testimonials .icon-box {
@@ -107,9 +107,9 @@
     section {
         padding: 20px 0;
     }
-    section.team {
+    /*section.team {
         margin: 2rem 0 1rem;
-    }
+    }*/
     #footer .footer-top {
         padding: 30px 0 0px 0;
     }
@@ -238,7 +238,7 @@
         width: 100%;
     }
     .testimonials {
-        margin-bottom: 20%;
+        /*margin-bottom: 20%;*/
     }
     .contact .calls {
         margin: 0;
@@ -290,7 +290,7 @@
         word-break: break-word;
     }
     .testimonials {
-        margin-bottom: 15%;
+        /*margin-bottom: 15%;*/
     }
 }
 
@@ -311,7 +311,7 @@
         right: -90px;
     }
     .testimonials {
-        height: 30vh;
+        /*height: 30vh;*/
     }
     .section-title h3 {
         font-size: 1.9rem;
@@ -337,7 +337,7 @@
         right: auto;
     }
     .testimonials {
-        height: 35vh;
+        /*height: 35vh;*/
         margin-bottom: 10%;
     }
     section {
@@ -374,9 +374,9 @@
     .features .content+.content {
         margin: 50px 0 0 0;
     }
-    section.team {
+    /*section.team {
         margin: 5rem 0 1.5rem;
-    }
+    }*/
     .testimonials-new .testi .item {
         margin-right: 1rem;
     }
@@ -412,7 +412,7 @@
         top: 8%;
     }
     .testimonials {
-        height: 40vh;
+        /*height: 40vh;*/
     }
     .testimonials .card-title a {
         font-size: 1.5rem;
@@ -511,9 +511,9 @@
         color: #fff;
         margin: 1rem 0;
     }
-    section.team {
+    /*section.team {
         margin: 8rem 0 3rem;
-    }
+    }*/
     .about {
         padding: 60px 0;
     }
@@ -597,9 +597,9 @@
     .testimonials .card-title a {
         font-size: 2.3rem;
     }
-    section.team {
+    /*section.team {
         margin: 5rem 0 3rem;
-    }
+    }*/
 }
 
 @media (min-width: 1500px) {}
