@@ -331,7 +331,8 @@
         right: auto;
     }
     .testimonials {
-        height: 47vh;
+        height: 35vh;
+        margin-bottom: 10%;
     }
     section {
         padding: 45px 0;
@@ -375,9 +376,6 @@
     }
     .testimonials-new .testi .item .layer {
         width: calc(100% - 16px);
-    }
-    .testimonials {
-        margin-bottom: 10%;
     }
     #customers-testimonials.owl-carousel button {
         width: 45px;
