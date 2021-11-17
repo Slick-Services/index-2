@@ -1734,6 +1734,7 @@ section {
 #customers-testimonials.owl-carousel {
     position: relative;
     top: 15%;
+    margin-bottom: 60px;
 }
 
 #customers-testimonials.owl-carousel button {
