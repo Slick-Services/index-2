@@ -101,6 +101,9 @@
     .owl-carousel .owl-nav.disabled {
         right: 45px;
     }
+    .section-title h3 {
+        font-size: 1.4rem;
+    }
     section {
         padding: 20px 0;
     }
@@ -309,6 +312,9 @@
     }
     .testimonials {
         height: 30vh;
+    }
+    .section-title h3 {
+        font-size: 1.9rem;
     }
 }
 
