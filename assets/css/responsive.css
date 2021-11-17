@@ -10,7 +10,7 @@
 		height: 100%;
 	}*/
     #hero .carousel-container {
-        top: 35%;
+        top: 10%;
     }
     #hero .carousel-content {
         margin: 0;
@@ -30,7 +30,7 @@
         position: relative;
     }
     .slderleftman {
-        margin: 2rem 0 1rem;
+        margin: 0rem 0 0rem;
     }
     /*#hero .btn-get-started  {
 		left: 35%;
