@@ -733,13 +733,13 @@
                         var c = content.substr(0, showChar);
                         var h = content;
                         var html =
-                            '<div class="truncate-text" style="display:block">' +
+                            '<p class="truncate-text" style="display:block">' +
                             c +
                             '<span class="moreellipses">' +
                             ellipsestext +
                             '&nbsp;&nbsp;<a href="" class="moreless more">more</a></span></span></div><div class="truncate-text" style="display:none">' +
                             h +
-                            '<a href="" class="moreless less">Less</a></span></div>';
+                            '<a href="" class="moreless less">Less</a></span></p>';
 
                         $(this).html(html);
                     }
