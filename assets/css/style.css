@@ -2170,7 +2170,7 @@ section.team {
 }
 
 .contact .info-box:hover {
-    background: #ce616e;
+    background: linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     color: #fff;
     transition: all 0.3s ease-in-out;
 }
