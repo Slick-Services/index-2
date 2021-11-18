@@ -186,7 +186,7 @@ img.img-hover-zoom--point-zoom:hover {
     display: block;
     position: relative;
     color: /*#2f4d5a*/
-    #fff;
+    #000;
     padding: 15px 35px;
     transition: 0.3s;
     font-size: 15px;
