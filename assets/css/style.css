@@ -153,6 +153,8 @@ img.img-hover-zoom--point-zoom:hover {
 #header .bghead.container {
     background: #fff;
     border-radius: 8px;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
 }
 
 @media (max-width: 768px) {
