@@ -149,6 +149,11 @@ img.img-hover-zoom--point-zoom:hover {
     width: 55%;
 }
 
+#header .bghead.container {
+    background: #fff;
+    border-radius: 8px;
+}
+
 @media (max-width: 768px) {
     #header.header-scrolled {
         padding: 15px 0;
@@ -174,8 +179,6 @@ img.img-hover-zoom--point-zoom:hover {
     position: relative;
     white-space: nowrap;
     float: left;
-    background: /*rgba(255, 255, 255, 0.2)*/
-    rgb(8 66 99 / 80%);
 }
 
 .nav-menu a {
@@ -199,8 +202,9 @@ nav.nav-menu ul {
 .nav-menu a:hover,
 .nav-menu .active>a,
 .nav-menu li:hover>a {
-    background: rgb(207 96 109);
+    /*background: rgb(207 96 109);*/
     text-decoration: none;
+    color: rgb(207 96 109);
 }
 
 .header-scrolled .nav-menu>ul>li {
