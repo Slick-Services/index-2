@@ -262,7 +262,7 @@ nav.nav-menu ul {
 .nav-menu .drop-down ul a:hover,
 .nav-menu .drop-down ul .active>a,
 .nav-menu .drop-down ul li:hover>a {
-    color: #FFF;
+    color: #cf606d;
 }
 
 .nav-menu .drop-down>a:after {
