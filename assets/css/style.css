@@ -197,7 +197,7 @@ img.img-hover-zoom--point-zoom:hover {
 
 nav.nav-menu ul {
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 
 .nav-menu a:hover,
