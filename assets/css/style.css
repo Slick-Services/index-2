@@ -28,6 +28,29 @@ h6 {
 }
 
 
+input:focus-visible {
+    box-shadow: none;
+    outline: none;
+}
+.truncate {
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        background: #000
+    }
+    90% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1;
+        background: #fff
+    }
+}
+
+
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -1517,7 +1540,7 @@ section {
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
-    height: 40vh;
+    /*height: 40vh;*/
 }
 
 
@@ -1766,9 +1789,9 @@ section {
 # Team
 --------------------------------------------------------------*/
 
-section.team {
+/*section.team {
     margin: 8rem 0 3rem;
-}
+}*/
 
 .team .member {
     text-align: center;
