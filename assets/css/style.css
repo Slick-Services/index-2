@@ -219,8 +219,8 @@ nav.nav-menu ul {
 .header-scrolled .nav-menu a:hover,
 .header-scrolled .nav-menu .active>a,
 .header-scrolled .nav-menu li:hover>a {
-    background: rgb(207, 96, 109, 0.9)/*rgba(255, 255, 255, 0.2)*/
-    ;
+    /*background: rgb(207, 96, 109, 0.9)/*rgba(255, 255, 255, 0.2)*/
+    color: rgb(207, 96, 109, 1.0);
 }
 
 .nav-menu .drop-down ul {
