@@ -273,6 +273,9 @@
     #hero-carousel-indicators .carousel-indicators {
         display: flex;
     }
+    .suscribe-text {
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 360px) {}
@@ -295,7 +298,7 @@
     }
 }
 
-@media (min-width: 48px) {
+@media (min-width: 480px) {
     .slderleftman {
         margin: 1.5rem 0 0rem;
     }
@@ -406,6 +409,9 @@
 @media (max-width: 575.98px) {}
 
 @media (min-width: 768px) {
+    .suscribe-text {
+        flex-direction: row;
+    }
     .mobile-nav-toggle {
         right: 60px;
     }

@@ -1350,6 +1350,50 @@ section {
 }
 
 
+/* .suscribe-area {
+    background: #3EC1D5 none repeat scroll 0 0;
+    padding: 15px 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} */
+
+.suscribe-area {
+    padding: 15px 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(205, 48, 70, 0.6) 0px 5px 13px 2px;
+    border-radius: 20px;
+    /* background: linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%) !important; */
+    color: #084263;
+    /* background: #275773ed; */
+    box-shadow: rgb(207 96 109 / 31%) 0px 5px 13px 2px;
+}
+
+.team .suscribe-area .teammembermain {
+    margin: 20px 0px 15px;
+}
+
+.suscribe-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sus-btn {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #fff;
+    color: #cf606d;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: solid 1px #174762;
+    max-width: 185px;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
@@ -2065,7 +2109,7 @@ section {
 }
 
 .blog .member .pic {
-    border-radius: 0px;
+    border-radius: 20px 20px 0 0;
     overflow: hidden;
 }
 
@@ -2076,6 +2120,7 @@ section {
     -moz-background-size: cover;
     -o-background-size: cover;
     width: 100%;
+    border-radius: 20px 20px 0 0;
 }
 
 .blog .member:hover img {
@@ -2088,7 +2133,7 @@ section {
     right: 0px;
     background: rgba(255, 255, 255, 0.9);
     padding: 15px 0;
-    border-radius: 0 0 4px 4px;
+    border-radius: 0 0 20px 20px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     text-align: left;
     padding: 25px 15px;
@@ -2788,7 +2833,7 @@ section {
     background: #fff;
     color: #000;
     padding: 30px 35px 20px;
-    border-radius: 0px;
+    border-radius: 20px;
     margin-right: 1.5rem;
     cursor: pointer;
     clear: both;
@@ -2896,6 +2941,7 @@ section {
     background: linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     z-index: 0;
     transition: 0.5s;
+    border-radius: 20px;
 }
 
 .testimonials-new.owl-carousel .owl-nav button.owl-next,
