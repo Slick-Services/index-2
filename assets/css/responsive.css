@@ -92,7 +92,7 @@
         margin-top: 1.0rem;
     }
     .testimonials .icon-box i {
-        left: 14%;
+        left: 18%;
     }
     #customers-testimonials .item-details {
         min-height: 260px;
@@ -122,8 +122,7 @@
     .testimonials-new .testi .item .starmain .stars {
         padding: 0 0 0 10px;
     }
-    .owl-carousel .owl-nav.disabled {}
-    #customers-testimonials.owl-carousel button {
+    /* #customers-testimonials.owl-carousel button {
         width: 37px;
         height: 37px;
         font-size: 31px;
@@ -133,7 +132,7 @@
     }
     .owl-carousel .owl-nav.disabled {
         right: 45px;
-    }
+    } */
     .section-title h3 {
         font-size: 1.4rem;
     }
@@ -296,11 +295,17 @@
     .contact .calls {
         margin: 0;
     }
+    .testimonials .icon-box i {
+        left: 13%;
+    }
 }
 
 @media (min-width: 480px) {
     .slderleftman {
         margin: 1.5rem 0 0rem;
+    }
+    .testimonials .icon-box i {
+        left: 11%;
     }
 }
 
@@ -476,16 +481,16 @@
     .testimonials-new .testi .item .layer {
         width: calc(100% - 16px);
     }
-    #customers-testimonials.owl-carousel button {
+    /* #customers-testimonials.owl-carousel button {
         width: 45px;
         height: 45px;
         font-size: 40px;
-    }
-    .testimonials .icon-box i {
-        left: 17%;
-    }
+    }    
     #customers-testimonials.owl-carousel button.owl-next {
         right: -60px;
+    } */
+    .testimonials .icon-box i {
+        left: 17%;
     }
     .contact .calls {
         margin: auto;
@@ -522,10 +527,6 @@
     }
     .testimonials .card-title a {
         font-size: 1.5rem;
-    }
-    .owl-carousel .owl-nav.disabled {
-        right: 7%;
-        top: -65%;
     }
     #customers-testimonials.owl-carousel {
         top: 12%;

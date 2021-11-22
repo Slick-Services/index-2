@@ -95,8 +95,12 @@ input:focus-visible {
 
 .back-to-top:hover {
     color: #fff;
-    background: /*rgb(207 96 109)*/
-    -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background: /*rgb(207 96 109)
+    -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);*/
+    background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     transition: background 0.2s ease-in-out;
 }
 
@@ -218,7 +222,10 @@ nav.nav-menu ul {
 .nav-menu .active>a,
 .nav-menu li:hover>a {
     /*background: rgb(207 96 109);*/
-    background: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     text-decoration: none;
 }
 
@@ -234,7 +241,10 @@ nav.nav-menu ul {
 .header-scrolled .nav-menu .active>a,
 .header-scrolled .nav-menu li:hover>a {
     /*background: rgb(207, 96, 109, 0.9) rgba(255, 255, 255, 0.2);*/
-    background: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: gradient(333deg, #3c97d8 0%, #d42b3f 100%);
 }
 
 .nav-menu .drop-down ul {
@@ -902,6 +912,7 @@ div.shape:hover {
     background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: gradient(333deg, #3c97d8 0%, #d42b3f 100%);
 }
 
 #hero .btn-menu:hover,
@@ -1697,9 +1708,10 @@ section {
 .owl-carousel .owl-nav.disabled {
     display: block;
     position: absolute;
-    top: -70%;
-    bottom: 0;
+    top: -4.5rem;
+    bottom: auto;
     right: 0;
+    left: auto;
 }
 
 #customers-testimonials .owl-carousel .owl-nav button.owl-next,
@@ -1837,7 +1849,8 @@ section {
     top: 15%;
 }
 
-#customers-testimonials.owl-carousel button {
+
+/* #customers-testimonials.owl-carousel button {
     width: 45px;
     height: 45px;
     line-height: 1;
@@ -1846,35 +1859,78 @@ section {
     top: 30%;
     font-size: 40px;
     color: #cf606d;
-    /* text-align: center; */
     background: #fff;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     align-items: center;
-    /* justify-content: center; */
     font-weight: 600;
+} */
+
+#customers-testimonials.owl-carousel button {
+    width: 60px;
+    height: 60px;
+    line-height: 1.4;
+    position: relative;
+    top: 30%;
+    font-size: 40px;
+    background: #fff;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+    border-radius: 14px;
+}
+
+#customers-testimonials.owl-carousel button.owl-prev {
+    margin: 0 10px;
+}
+
+#customers-testimonials.owl-carousel button.owl-next {
+    margin-right: 10px;
+}
+
+#customers-testimonials.owl-carousel button i.fa.fa-angle-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+    padding: 1px 0px 0 0px;
+    margin-left: -5px;
+}
+
+#customers-testimonials.owl-carousel button i {
+    margin-left: 0.2rem;
 }
 
 #customers-testimonials.owl-carousel button:hover,
 #customers-testimonials.owl-carousel button:active,
 #customers-testimonials.owl-carousel button:focus,
 #customers-testimonials.owl-carousel button.active {
-    background: #cf606d;
+    /* background: #cf606d; */
+    background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     color: #fff;
     border: none;
     outline: none;
     box-shadow: none;
 }
 
-#customers-testimonials.owl-carousel button.owl-next {
+
+/* #customers-testimonials.owl-carousel button.owl-next {
     right: -60px;
 }
 
 #customers-testimonials.owl-carousel button.owl-prev {
     right: 0;
-}
+} */
 
 #customers-testimonials .owl-dots {
     display: none;
@@ -1905,7 +1961,7 @@ section {
 .team .member .member-img {}
 
 .team .member:hover .member-img img {
-    border: solid 2px linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    border: solid 2px gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     border-radius: 12px;
 }
 
@@ -1942,7 +1998,10 @@ section {
 }
 
 .team .member:hover .member-info {
-    background: linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     color: #fff;
 }
 
@@ -2140,7 +2199,10 @@ section {
 }
 
 .blog .member:hover .member-info {
-    background: linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     color: #fff;
 }
 
@@ -2273,7 +2335,10 @@ section {
 }
 
 .contact .info-box:hover {
-    background: linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     color: #fff;
     transition: all 0.3s ease-in-out;
 }
@@ -2462,7 +2527,10 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-    background: linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     color: #fff;
     text-decoration: none;
 }
@@ -2938,7 +3006,10 @@ section {
     width: calc(100% - 24px);
     /*height: 100%;*/
     left: 0;
-    background: linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     z-index: 0;
     transition: 0.5s;
     border-radius: 20px;
