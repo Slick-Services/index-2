@@ -690,7 +690,7 @@ div.shape:hover {
     background-repeat: no-repeat;
 }
 
-#hero .carousel-item::before {
+#hero::before {
     content: '';
     background-color: rgba(12, 11, 10, 0.4);
     position: absolute;
@@ -715,10 +715,10 @@ div.shape:hover {
     text-align: left;
 }
 
-#hero .carousel-content {
+/* #hero .carousel-content {
     text-align: center;
     margin: 4rem 0 0 0;
-}
+} */
 
 #hero .carousel-content.container .row {
     align-items: center;
@@ -865,7 +865,7 @@ div.shape:hover {
     color: #fff;
 }
 
-#hero .btn-get-started {
+/*#hero .btn-get-started {
     font-size: 36px;
     display: inline-block;
     padding: 4px 0;
@@ -887,7 +887,7 @@ div.shape:hover {
 #hero .btn-get-started:hover {
     padding-top: 8px;
     background: rgba(255, 255, 255, 0.15);
-}
+}*/
 
 @media (max-width: 768px) {
     #hero h2 {
@@ -1221,10 +1221,11 @@ section {
 --------------------------------------------------------------*/
 
 .about {
-    background: url("../img/about-bg.jpg") center center no-repeat;
+    /*background: url("../img/about-bg.jpg") center center no-repeat;*/
     background-size: cover;
     padding: 90px 0;
     position: relative;
+    background: #fff;
 }
 
 .about::before {
@@ -1672,6 +1673,7 @@ section {
     background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     padding: 12px;
     color: #fff;
     border-radius: 50px;
@@ -1689,10 +1691,17 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    min-height: 240px;
+    min-height: 250px;
     flex-direction: column;
+    cursor: pointer;
 }
-
+#customers-testimonials .item-details:hover {
+    background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    color: #fff;
+}
 #customers-testimonials .item-details h5 {
     margin: 15px 0 10px;
     font-size: 17px;
@@ -1981,7 +1990,9 @@ section {
     margin: 30px 10px;
   }
 }*/
-
+.owl-carousel .owl-stage {
+    margin-bottom: 4rem;
+}
 
 /*--------------------------------------------------------------
 # blog
@@ -2430,6 +2441,13 @@ section {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
+}
+#footer .footer-top .footer-newsletter form:focus-visible,
+#footer .footer-top .footer-newsletter form:hover,
+#footer .footer-top .footer-newsletter form:focus,
+#footer .footer-top .footer-newsletter form:active  {
+    border: none;
+    outline: none;
 }
 
 #footer .footer-top .footer-newsletter form input[type="email"] {
