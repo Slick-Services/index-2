@@ -707,6 +707,12 @@ div.shape:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #hero::before {
@@ -719,6 +725,14 @@ div.shape:hover {
     bottom: 0;
 }
 
+#hero .carousel-content {
+    /* margin: 0 auto; */
+    /*height: 100vh;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #hero .carousel-container {
     display: flex;
     justify-content: center;
@@ -728,6 +742,17 @@ div.shape:hover {
     top: 0;
     left: 0;
     right: 0;
+}
+
+#hero .carousel-content.container .row {
+    align-items: center;
+    /* margin: 21rem auto; */
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .slderleftman {
@@ -2046,6 +2071,11 @@ section {
 
 .blog .member img {
     transition: all ease-in-out 0.4s;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
 }
 
 .blog .member:hover img {
@@ -2054,7 +2084,6 @@ section {
 
 .blog .member .member-info {
     position: absolute;
-    bottom: -57.9%;
     left: 0px;
     right: 0px;
     background: rgba(255, 255, 255, 0.9);
