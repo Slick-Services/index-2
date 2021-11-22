@@ -55,6 +55,13 @@
         padding-right: 20px;
         padding-top: 10px;
     }
+    #hero-inner.heroinner {
+        height: 35vh;
+    }
+    .breadcrumbs {
+        min-height: 35vh;
+        height: 100%;
+    }
     .skills-content p {
         margin: .5rem 0 1.5rem;
     }
@@ -125,6 +132,9 @@
     #footer .footer-top .footer-links h3 {
         margin: 0 0 20px 0;
     }
+    #hero-inner.heroinner.serviceanalistic .breadcrumbs .mtbreadcrub {
+        margin-top: 1.5rem;
+    }
     .breadcrumbs ol {
         font-size: 14px;
     }
@@ -188,13 +198,13 @@
     }
     .blog.ourservices .mainservice .service-content h3 {
         line-height: 1.0;
-        margin: 0.7rem 0;
+        margin: 1.7rem 0 .8rem;
         font-size: 1rem;
     }
     .blog.ourservices .mainservice .service-content p {
         font-size: 15px;
-        margin-bottom: 1.2rem;
-        margin-top: 1.2rem;
+        margin-bottom: 1.9rem;
+        margin-top: 1rem;
         text-align: justify;
         line-height: 1.4;
         word-break: break-all;
@@ -280,7 +290,7 @@
         padding: 14px;
     }
     .blog.ourservices .mainservice .service-content h3 {
-        margin: 1rem 0;
+        margin: 1.7rem 0 .9rem;
         font-size: 1.3rem;
     }
     .blog.ourservices .manservicemain.reverceservices .service-content p {
@@ -288,8 +298,6 @@
     }
     .blog.ourservices .mainservice .service-content p {
         font-size: 16px;
-        margin-bottom: 1.5rem;
-        margin-top: 1.5rem;
         text-align: right;
         line-height: 1.5;
         word-break: break-word;
@@ -428,6 +436,9 @@
     #customers-testimonials .item-details p {
         min-height: 120px;
     }
+    .blog.ourservices .mainservice img {
+        height: 65vh;
+    }
 }
 
 @media (min-width: 991px) {}
@@ -456,16 +467,16 @@
         top: 12%;
         /*margin-bottom: 40px;*/
     }
+    #hero .btn-menu,
+    #hero .btn-book {
+        font-size: 16px;
+        padding: 20px 30px;
+    }
     .blog .member .member-info {
         bottom: -69%;
     }
     .blog .member h4 {
         font-size: 15px;
-    }
-    #hero .btn-menu,
-    #hero .btn-book {
-        font-size: 16px;
-        padding: 20px 30px;
     }
     .blog .sidebar {
         padding: 20px 20px;
@@ -501,7 +512,7 @@
         height: 100%;
     }
     .blog.ourservices .manservicemain.reverceservices .mainservice img {
-        padding: 0rem 3rem 3rem 0rem;
+        padding: 0rem 3rem 0rem 0rem;
     }
     .blog.ourservices .mainservice .service-content i {
         width: 70px;
@@ -526,7 +537,7 @@
     .blog.ourservices .mainservice .service-content h3 {
         font-weight: 600;
         line-height: 1.4;
-        margin: 1.5rem 0;
+        margin: 1.7rem 0 .9rem;
     }
     .blog.ourservices .mainservice .service-content button.btn {
         border: solid 1px #fff;
@@ -575,7 +586,17 @@
     }
 }
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    #hero-inner.heroinner {
+        height: 50vh;
+    }
+    .breadcrumbs {
+        min-height: 50vh;
+    }
+    #hero-inner.heroinner.serviceanalistic .breadcrumbs .mtbreadcrub {
+        margin-top: 0rem;
+    }
+}
 
 @media (min-width: 1200px) {
     .blog .member .member-info {
@@ -592,7 +613,7 @@
         padding: 20.5rem 0;
     }
     .blog.ourservices .manservicemain.reverceservices .mainservice img {
-        padding: 0rem 5rem 3rem 0rem;
+        padding: 0rem 5rem 0rem 0rem;
     }
     .blog.ourservices .mainservice img {
         padding: 0rem 0rem 0rem 5rem;

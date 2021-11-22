@@ -146,7 +146,7 @@ img.img-hover-zoom--point-zoom:hover {
 #header .logo img {
     padding: 0;
     margin: 0;
-    width: 55%;
+    width: auto;
 }
 
 @media (max-width: 768px) {
@@ -4030,6 +4030,13 @@ section {
     align-content: space-around;
     float: right;
     height: 100%;
+}
+
+.blog.ourservices .manservicemain.reverceservices .service-content {
+    align-items: flex-start;
+    float: left;
+    left: 0;
+    right: auto;
 }
 
 .blog.ourservices .mainservice .service-content i {
