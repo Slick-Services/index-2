@@ -171,15 +171,15 @@
         background-size: cover;
     }
     .blog.ourservices .mainservice .service-content {
-        max-width: 100%;
+        /* max-width: 100%;
         top: -24px;
-        right: auto;
+        right: auto;*/
         padding: 34px;
     }
     .blog.ourservices .mainservice .service-content i {
         width: 40px;
         height: 40px;
-        margin: .8rem 0 0.5rem;
+        /*margin: .8rem 0 0.5rem;*/
         padding: 12px;
         font-size: 20px;
     }
@@ -193,7 +193,8 @@
     }
     .blog.ourservices .mainservice .service-content p {
         font-size: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 1.2rem;
+        margin-top: 1.2rem;
         text-align: justify;
         line-height: 1.4;
         word-break: break-all;
@@ -265,7 +266,7 @@
         top: -50px;
     }
     .blog.ourservices .mainservice .service-content {
-        max-width: 100%;
+        /*max-width: 100%;*/
         /*top: -20px;*/
         padding: 34px;
     }
@@ -287,7 +288,8 @@
     }
     .blog.ourservices .mainservice .service-content p {
         font-size: 16px;
-        margin-bottom: 28px;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
         text-align: right;
         line-height: 1.5;
         word-break: break-word;
@@ -324,7 +326,8 @@
 @media (min-width: 641px) {}
 
 @media (min-width: 767px) {}
-@media (max-width:768px)  {
+
+@media (max-width:768px) {
     #hero .carousel-content.container .row {
         align-items: center;
         /* margin: 21rem auto; */
@@ -353,6 +356,7 @@
         justify-content: center;
     }
 }
+
 @media (min-width: 768px) {
     .mobile-nav-toggle {
         right: 60px;
@@ -387,10 +391,6 @@
     .blog .sidebar {
         padding: 20px 20px;
         margin: 0 0 30px 0px;
-    }
-    .blog.ourservices .mainservice .service-content {
-        top: 0;
-        right: 0;
     }
     .about {
         padding: 45px 0 30px;
@@ -473,16 +473,12 @@
     }
     /*.blog .entries {order: 1;}
 	.blog .sdbar {order: 2;}*/
-    .blog.ourservices .mainservice .service-content {
-        top: -8px;
-        max-width: 60%;
-    }
     .blog.ourservices .mainservice {
         height: 100%;
     }
     .blog.ourservices .manservicemain {
-        margin-top: 3.5rem;
-        margin-bottom: 3.5rem;
+        margin-top: 5.5rem;
+        margin-bottom: 5.5rem;
     }
     .blog.ourservices .mainservice:before {
         width: 230px;
@@ -501,20 +497,16 @@
         right: auto;
     }
     .blog.ourservices .mainservice img {
-        padding: 0rem 0rem 3rem 3rem;
+        padding: 0rem 0rem 0rem 3rem;
         height: 100%;
     }
     .blog.ourservices .manservicemain.reverceservices .mainservice img {
         padding: 0rem 3rem 3rem 0rem;
     }
-    .blog.ourservices .mainservice .service-content {
-        top: 4px;
-        right: 10px;
-    }
     .blog.ourservices .mainservice .service-content i {
         width: 70px;
         height: 70px;
-        margin: 2rem 0 0.5rem;
+        /*margin: 2rem 0 0.5rem;*/
         padding: 21px;
         font-size: 30px;
     }
@@ -603,12 +595,12 @@
         padding: 0rem 5rem 3rem 0rem;
     }
     .blog.ourservices .mainservice img {
-        padding: 0rem 0rem 3rem 5rem;
+        padding: 0rem 0rem 0rem 5rem;
     }
     .blog.ourservices .mainservice .service-content i {
         width: 80px;
         height: 80px;
-        margin: 2rem 0 0.5rem;
+        /*margin: 2rem 0 0.5rem;*/
         padding: 21px;
         font-size: 40px;
     }
@@ -616,9 +608,6 @@
         line-height: 1.4;
         margin: .4rem 0 1rem;
         font-size: 2rem;
-    }
-    .blog.ourservices .mainservice .service-content {
-        top: 25px;
     }
     #customers-testimonials .item-details p {
         min-height: 100px;

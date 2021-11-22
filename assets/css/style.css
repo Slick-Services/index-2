@@ -3970,6 +3970,9 @@ section {
 .blog.ourservices .manservicemain {
     margin-top: 5rem;
     margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .blog.ourservices .mainservice:before {
@@ -4017,10 +4020,16 @@ section {
     margin: auto;
     vertical-align: middle;
     position: absolute;
-    top: 15%;
+    top: 0;
     color: #fff;
-    right: 18%;
+    right: 0;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    align-content: space-around;
+    float: right;
+    height: 100%;
 }
 
 .blog.ourservices .mainservice .service-content i {
