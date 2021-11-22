@@ -4036,7 +4036,7 @@ section {
     background: #CC6571;
     width: 80px;
     height: 80px;
-    margin: 2rem 0 0.5rem;
+    /*margin: 2rem 0 0.5rem;*/
     padding: 21px;
     /* display: flex; */
     justify-content: center;
