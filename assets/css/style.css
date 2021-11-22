@@ -27,6 +27,20 @@ h6 {
     font-family: 'Jost', sans-serif;
 }
 
+::-webkit-input-placeholder {
+    /* Edge */
+    color: rgb(255, 255, 255);
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(255, 255, 255);
+}
+
+ ::placeholder {
+    color: rgb(255, 255, 255);
+}
+
 input:focus-visible {
     box-shadow: none;
     outline: none;
