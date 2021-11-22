@@ -27,14 +27,15 @@ h6 {
     font-family: 'Jost', sans-serif;
 }
 
-
 input:focus-visible {
     box-shadow: none;
     outline: none;
 }
+
 .truncate {
     animation: fadeIn 1s;
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -48,7 +49,6 @@ input:focus-visible {
         background: #fff
     }
 }
-
 
 
 /*--------------------------------------------------------------
@@ -214,8 +214,9 @@ nav.nav-menu ul {
 .header-scrolled .nav-menu a:hover,
 .header-scrolled .nav-menu .active>a,
 .header-scrolled .nav-menu li:hover>a {
-    background: rgb(207, 96, 109, 0.9)/*rgba(255, 255, 255, 0.2)*/
+    /*background: rgb(207, 96, 109, 0.9) rgba(255, 255, 255, 0.2)*/
     ;
+    background: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
 }
 
 .nav-menu .drop-down ul {
@@ -715,6 +716,7 @@ div.shape:hover {
     text-align: left;
 }
 
+
 /* #hero .carousel-content {
     text-align: center;
     margin: 4rem 0 0 0;
@@ -864,6 +866,7 @@ div.shape:hover {
     background: rgb(207 96 109);
     color: #fff;
 }
+
 
 /*#hero .btn-get-started {
     font-size: 36px;
@@ -1695,6 +1698,7 @@ section {
     flex-direction: column;
     cursor: pointer;
 }
+
 #customers-testimonials .item-details:hover {
     background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
@@ -1702,6 +1706,7 @@ section {
     background-image: gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     color: #fff;
 }
+
 #customers-testimonials .item-details h5 {
     margin: 15px 0 10px;
     font-size: 17px;
@@ -1797,6 +1802,7 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+
 
 /*section.team {
     margin: 8rem 0 3rem;
@@ -1990,9 +1996,11 @@ section {
     margin: 30px 10px;
   }
 }*/
+
 .owl-carousel .owl-stage {
     margin-bottom: 4rem;
 }
+
 
 /*--------------------------------------------------------------
 # blog
@@ -2442,10 +2450,11 @@ section {
     justify-content: space-between;
     margin-bottom: 15px;
 }
+
 #footer .footer-top .footer-newsletter form:focus-visible,
 #footer .footer-top .footer-newsletter form:hover,
 #footer .footer-top .footer-newsletter form:focus,
-#footer .footer-top .footer-newsletter form:active  {
+#footer .footer-top .footer-newsletter form:active {
     border: none;
     outline: none;
 }
