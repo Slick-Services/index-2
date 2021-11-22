@@ -71,6 +71,15 @@
     .blog .member .member-info {
         bottom: -70%;
     }
+    #customers-testimonials .item {
+        margin-top: 1.0rem;
+    }
+    .testimonials .icon-box i {
+        left: 14%;
+    }
+    #customers-testimonials .item-details {
+        min-height: 260px;
+    }
     .testimonials {
         padding: 30px 0 27px;
         /*height: 35vh;*/
@@ -113,6 +122,9 @@
     }
     section {
         padding: 20px 0;
+    }
+    .testimonials-new .testi .item .starmain {
+        width: 98%;
     }
     /*section.team {
         margin: 2rem 0 1rem;
@@ -268,6 +280,9 @@
     section {
         padding: 35px 0;
     }
+    #customers-testimonials .item-details {
+        min-height: 250px;
+    }
     .blog .member .member-info {
         bottom: -53.9%;
     }
@@ -328,6 +343,9 @@
     }
     .section-title h3 {
         font-size: 1.9rem;
+    }
+    #customers-testimonials .item-details {
+        min-height: 220px;
     }
 }
 
@@ -427,6 +445,9 @@
         height: 45px;
         font-size: 40px;
     }
+    .testimonials .icon-box i {
+        left: 17%;
+    }
     #customers-testimonials.owl-carousel button.owl-next {
         right: -60px;
     }
@@ -456,6 +477,9 @@
     .testimonials {
         /*height: 40vh;*/
     }
+    #customers-testimonials .item-details {
+        min-height: 250px;
+    }
     .testimonials .card-title a {
         font-size: 1.5rem;
     }
@@ -471,6 +495,12 @@
     #hero .btn-book {
         font-size: 16px;
         padding: 20px 30px;
+    }
+    #customers-testimonials .item {
+        margin-top: 2rem;
+    }
+    .testimonials .icon-box i {
+        left: 16%;
     }
     .blog .member .member-info {
         bottom: -69%;
@@ -584,6 +614,9 @@
     #customers-testimonials .item-details p {
         min-height: 140px;
     }
+    .testimonials-new .testi .item .starmain {
+        width: 89%;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -632,6 +665,9 @@
     }
     #customers-testimonials .item-details p {
         min-height: 100px;
+    }
+    .testimonials-new .testi .item .starmain {
+        width: 92%;
     }
 }
 

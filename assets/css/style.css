@@ -30,15 +30,18 @@ h6 {
 ::-webkit-input-placeholder {
     /* Edge */
     color: rgb(255, 255, 255);
+    background: none;
 }
 
  :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: rgb(255, 255, 255);
+    background: none;
 }
 
  ::placeholder {
     color: rgb(255, 255, 255);
+    background: none;
 }
 
 input:focus-visible {
@@ -92,7 +95,8 @@ input:focus-visible {
 
 .back-to-top:hover {
     color: #fff;
-    background: rgb(207 96 109);
+    background: /*rgb(207 96 109)*/
+    -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     transition: background 0.2s ease-in-out;
 }
 
@@ -1684,7 +1688,7 @@ section {
 .testimonials .icon-box i {
     position: absolute;
     top: -12px;
-    left: 17%;
+    left: 19%;
     transform: translateX(-50%);
     font-size: 24px;
     background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
@@ -1707,7 +1711,7 @@ section {
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.16);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     min-height: 250px;
     flex-direction: column;
     cursor: pointer;
@@ -1748,7 +1752,7 @@ section {
     text-align: center;
     margin-bottom: 10px;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 2rem;
 }
 
 #customers-testimonials.owl-carousel .owl-nav [class*=owl-] {
@@ -2758,6 +2762,8 @@ section {
     border-radius: 0px;
     margin-right: 1.5rem;
     cursor: pointer;
+    clear: both;
+    height: 435px;
 }
 
 .testimonials-new .testi .item .profile {
@@ -2807,18 +2813,23 @@ section {
     display: block;
     z-index: 2;
     margin: 35px 0 40px;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
     position: relative;
     z-index: 2;
-    min-height: 240px;
+    /*min-height: 240px;*/
 }
 
 .testimonials-new .testi .item .starmain {
     align-items: center;
     color: rgb(206, 97, 110);
     font-size: 25px;
-    position: relative;
+    position: fixed;
     z-index: 2;
+    bottom: 3px;
+    top: auto;
+    display: flex;
+    flex-direction: row;
+    width: 98%;
 }
 
 .testimonials-new .testi .item .icon {
@@ -2849,9 +2860,9 @@ section {
 .testimonials-new .testi .item .layer {
     position: absolute;
     top: calc(100% - 0px);
-    bottom: 27px;
+    bottom: 0px;
     width: calc(100% - 24px);
-    height: 100%;
+    /*height: 100%;*/
     left: 0;
     background: linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     z-index: 0;
