@@ -199,7 +199,8 @@ nav.nav-menu ul {
 .nav-menu a:hover,
 .nav-menu .active>a,
 .nav-menu li:hover>a {
-    background: rgb(207 96 109);
+    /*background: rgb(207 96 109);*/
+    background: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     text-decoration: none;
 }
 
