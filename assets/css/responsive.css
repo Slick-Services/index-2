@@ -620,9 +620,6 @@
     /*section.team {
         margin: 8rem 0 3rem;
     }*/
-    .contact .info-box {
-        padding: 20px 20px 30px 20px;
-    }
     .about {
         padding: 60px 0;
     }
@@ -719,6 +716,9 @@
     /*section.team {
         margin: 5rem 0 3rem;
     }*/
+    .contact .info-box {
+        padding: 20px 20px 30px 20px;
+    }
 }
 
 @media (min-width: 1500px) {}
