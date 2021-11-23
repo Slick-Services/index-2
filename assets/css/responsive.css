@@ -2,6 +2,10 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px)*/
 
 @media (min-width: 1px) and (max-width: 320.98px) {
+    html {
+        width: 100%;
+        height: 100%;
+    }
     body {
         overflow-x: hidden !important;
         overflow-y: auto !important;
@@ -283,7 +287,12 @@
     }
 }
 
-@media (min-width: 360px) {}
+@media (min-width: 360px) {
+    html {
+        width: 100%;
+        height: 100%;
+    }
+}
 
 @media (min-width: 400px) {
     .breadcrumbs ol li+li {
