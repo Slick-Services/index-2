@@ -58,7 +58,10 @@
         height: 85vh;
     }*/
     .slderleftman {
-        margin: 2rem 0 0rem;
+        margin: 0rem 0 0rem;
+    }
+    #hero h3 {
+        margin: 15px auto 12px auto;
     }
     /*#hero .btn-get-started  {
 		left: 35%;

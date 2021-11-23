@@ -892,6 +892,7 @@ div.shape:hover {
 
 #hero .btnman {
     display: flex;
+    align-items: center;
 }
 
 #hero .btn-menu,
