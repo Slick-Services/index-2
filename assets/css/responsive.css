@@ -287,10 +287,23 @@
     }
 }
 
+@media (min-width: 320px) {
+    html {
+        width: 100%;
+        height: 100%;
+    }
+    .contact .info-box p {
+        padding: 0 0 0 100px;
+    }
+}
+
 @media (min-width: 360px) {
     html {
         width: 100%;
         height: 100%;
+    }
+    .contact .info-box p {
+        padding: 0 0 0 100px;
     }
 }
 
@@ -312,6 +325,9 @@
     }
     .testimonials .icon-box i {
         left: 13%;
+    }
+    .contact .info-box p {
+        padding: 0 0 0 78px;
     }
 }
 
