@@ -509,6 +509,9 @@
     .testimonials-new .testi .item .layer {
         width: calc(100% - 16px);
     }
+    .blog.ourservices .mainservice .service-content h3 {
+        font-size: 2.0rem;
+    }
     /* #customers-testimonials.owl-carousel button {
         width: 45px;
         height: 45px;
