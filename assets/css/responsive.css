@@ -546,6 +546,10 @@
 @media (min-width: 991px) {}
 
 @media (min-width: 992px) {
+    #hero .carousel-item {
+        width: 100%;
+        height: 98vh;
+    }
     #hero .carousel-content.container .row {
         margin-top: 4rem;
         margin-bottom: auto;
