@@ -516,9 +516,6 @@
     .blog.ourservices .mainservice img {
         height: 65vh;
     }
-}
-
-@media (min-width: 991px) {
     .contact .info-box {
         padding: 20px 5px 20px 5px;
     }
@@ -526,6 +523,8 @@
         padding: 0 0 0 100px;
     }
 }
+
+@media (min-width: 991px) {}
 
 @media (min-width: 992px) {
     #hero .carousel-content.container .row {
