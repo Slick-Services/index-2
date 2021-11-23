@@ -25,7 +25,6 @@
     } */
     #hero {
         height: 100vh;
-        min-height: 100%;
     }
     #hero .carousel-item {
         height: 100vh;
