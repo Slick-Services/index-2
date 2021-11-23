@@ -1844,6 +1844,8 @@ section {
 #customers-testimonials .item-details a {
     color: rgb(207 96 109);
     font-weight: 500;
+    position: absolute;
+    bottom: 30px;
 }
 
 #customers-testimonials .item {
