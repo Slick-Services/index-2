@@ -1,5 +1,6 @@
 /*@media (min-width: 320px)
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px)*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+@media (min-width: 1px) and (max-width: 320.98px)*/
 
 @media (min-width: 320px) {
     html {
