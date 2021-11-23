@@ -275,6 +275,9 @@
     .suscribe-text {
         flex-direction: column;
     }
+    .contact .info-box {
+        padding: 20px 5px 30px 5px;
+    }
 }
 
 @media (min-width: 360px) {}
@@ -617,6 +620,9 @@
     /*section.team {
         margin: 8rem 0 3rem;
     }*/
+    .contact .info-box {
+        padding: 20px 20px 30px 20px;
+    }
     .about {
         padding: 60px 0;
     }
