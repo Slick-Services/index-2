@@ -4255,9 +4255,22 @@ section {
     justify-content: center;
 }
 
-.blog.ourservices .mainservice .service-content button.btn:hover {
+
+/* .blog.ourservices .mainservice .service-content button.btn:hover {
     box-shadow: none;
     background: #fff;
+    color: #000;
+    transition: .5s ease-out;
+} */
+
+.blog.ourservices .mainservice .service-content button.btn:hover,
+.blog.ourservices .mainservice .service-content button.btn:active,
+.blog.ourservices .mainservice .service-content button.btn:focus {
+    box-shadow: none;
+    background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
+    background-image: gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     color: #000;
     transition: .5s ease-out;
 }

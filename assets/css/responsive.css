@@ -640,12 +640,6 @@
         display: flex;
         justify-content: center;
     }
-    .blog.ourservices .mainservice .service-content button.btn:hover {
-        box-shadow: none;
-        background: #fff;
-        color: #000;
-        transition: .5s ease-out;
-    }
     .blog.ourservices .mainservice .service-content h3 {
         font-weight: 600;
         line-height: 1.4;
