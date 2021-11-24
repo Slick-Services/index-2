@@ -1915,16 +1915,16 @@ section {
 }
 
 #customers-testimonials.owl-carousel button i.fa.fa-angle-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.4;
-    padding: 1px 0px 0 0px;
     margin-left: -5px;
 }
 
 #customers-testimonials.owl-carousel button i {
     margin-left: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+    padding: 1px 0px 0 0px;
 }
 
 #customers-testimonials.owl-carousel button:hover,
