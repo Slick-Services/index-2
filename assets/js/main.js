@@ -194,29 +194,7 @@
         }
     });
 
-    // Testimonials carousel (uses the Owl Carousel library)
-    $('.owl-carousel.newtsk').owlCarousel({
-        items: 2,
-        margin: 10,
-        lazyLoad: true,
-        dots: false,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: true,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        responsive: {
-            0: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            },
-            992: {
-                items: 2,
-            }
-        }
-    });
+
 
 
     // Toggle .header-scrolled class to #header when page is scrolled
@@ -274,23 +252,7 @@
     //   $('.venobox').venobox();
     // });
 
-    // Testimonials carousel (uses the Owl Carousel library)
-    $(".testimonials-carousel").owlCarousel({
-        autoplay: true,
-        dots: true,
-        loop: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            900: {
-                items: 2
-            }
-        }
-    });
+
 
     // Portfolio details carousel
     /* $(".portfolio-details-carousel").owlCarousel({
