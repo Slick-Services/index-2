@@ -133,6 +133,10 @@
     .testimonials-new .testi .item .starmain .stars {
         padding: 0 0 0 10px;
     }
+    #customers-testimonials.owl-carousel button {
+        width: 40px;
+        height: 40px;
+    }
     /* #customers-testimonials.owl-carousel button {
         width: 37px;
         height: 37px;
@@ -509,6 +513,10 @@
     .testimonials-new .testi .item .layer {
         width: calc(100% - 16px);
     }
+    #customers-testimonials.owl-carousel button {
+        width: 50px;
+        height: 50px;
+    }
     .blog.ourservices .mainservice .service-content h3 {
         font-size: 2.2rem;
     }
@@ -587,6 +595,10 @@
     }
     #customers-testimonials .item {
         margin-top: 2rem;
+    }
+    #customers-testimonials.owl-carousel button {
+        width: 60px;
+        height: 60px;
     }
     .testimonials .icon-box i {
         left: 16%;
