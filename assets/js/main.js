@@ -142,7 +142,52 @@
         });
     });
 
+    // Testimonials carousel (uses the Owl Carousel library)
+    $('.testi.owl-carousel').owlCarousel({
+        items: 4,
+        margin: 10,
+        lazyLoad: true,
+        dots: false,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true,
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 2,
+            },
+            992: {
+                items: 4,
+            }
+        }
+    });
 
+    // Testimonials carousel (uses the Owl Carousel library)
+    $('#testimonialsmain').owlCarousel({
+        items: 2,
+        margin: 10,
+        lazyLoad: true,
+        dots: false,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 2,
+            },
+            992: {
+                items: 2,
+            }
+        }
+    });
 
 
 
@@ -203,75 +248,75 @@
     // });
 
     // Testimonials carousel (uses the Owl Carousel library)
-    $(".testimonials-carousel").owlCarousel({
-        autoplay: true,
-        dots: true,
-        loop: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            900: {
-                items: 2
-            }
-        }
-    });
+    // $(".testimonials-carousel").owlCarousel({
+    //     autoplay: true,
+    //     dots: true,
+    //     loop: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1
+    //         },
+    //         768: {
+    //             items: 2
+    //         },
+    //         900: {
+    //             items: 2
+    //         }
+    //     }
+    // });
     // Testimonials carousel (uses the Owl Carousel library)
-    $('.newtsk.owl-carousel').owlCarousel({
-        items: 2,
-        margin: 10,
-        lazyLoad: true,
-        dots: false,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: true,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        responsive: {
-            0: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            },
-            992: {
-                items: 2,
-            }
-        }
-    });
+    // $('.newtsk.owl-carousel').owlCarousel({
+    //     items: 2,
+    //     margin: 10,
+    //     lazyLoad: true,
+    //     dots: false,
+    //     loop: true,
+    //     autoplay: true,
+    //     autoplayTimeout: 1000,
+    //     autoplayHoverPause: true,
+    //     navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         768: {
+    //             items: 2,
+    //         },
+    //         992: {
+    //             items: 2,
+    //         }
+    //     }
+    // });
 
-    jQuery(document).ready(function($) {
-        "use strict";
-        $('#testimonials-new').owlCarousel({
-            loop: true,
-            center: true,
-            items: 2,
-            margin: 30,
-            autoplay: true,
-            dots: true,
-            nav: true,
-            autoplayTimeout: 8500,
-            smartSpeed: 450,
-            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-            responsive: {
-                0: {
-                    items: 1
-                },
-                576: {
-                    items: 2
-                },
-                768: {
-                    items: 3
-                },
-                1170: {
-                    items: 2
-                }
-            }
-        });
-    });
+    // jQuery(document).ready(function($) {
+    //     "use strict";
+    //     $('#testimonials-new').owlCarousel({
+    //         loop: true,
+    //         center: true,
+    //         items: 2,
+    //         margin: 30,
+    //         autoplay: true,
+    //         dots: true,
+    //         nav: true,
+    //         autoplayTimeout: 8500,
+    //         smartSpeed: 450,
+    //         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    //         responsive: {
+    //             0: {
+    //                 items: 1
+    //             },
+    //             576: {
+    //                 items: 2
+    //             },
+    //             768: {
+    //                 items: 3
+    //             },
+    //             1170: {
+    //                 items: 2
+    //             }
+    //         }
+    //     });
+    // });
 
     // Portfolio details carousel
     /* $(".portfolio-details-carousel").owlCarousel({
