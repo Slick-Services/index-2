@@ -4,7 +4,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    color: #444444;
+    color: rgb(8 66 99);
     overflow-x: hidden !important;
     overflow-y: auto !important;
 }
@@ -1167,7 +1167,7 @@ section {
   margin-bottom: 20px;
 }
 
-.about .card-title a {
+.about .card-title p {
   color: #213b52;
   transition: 0.3s;
 }
@@ -1308,17 +1308,17 @@ section {
     padding-bottom: 20px;
 }
 
-.about .card-title a {
+.about .card-title p {
     font-size: 2.3rem;
     line-height: 1.5;
-    color: rgb(0, 0, 0);
+    color: rgb(8 66 99);
     font-weight: 600;
     -moz-transform: matrix( 0.5, 0, 0, 0.5, 0, 0);
     -webkit-transform: matrix( 0.5, 0, 0, 0.5, 0, 0);
     -ms-transform: matrix( 0.5, 0, 0, 0.5, 0, 0);
 }
 
-.about .content h3 {
+.about .content h3 a {
     font-weight: 600;
     font-size: 26px;
 }
@@ -1699,14 +1699,14 @@ section {
     border-radius: 0px;
 }*/
 
-.testimonials .card-title a {
+.testimonials .card-title {
     font-size: 2.3rem;
     line-height: 1.2;
     color: rgb(255, 255, 255);
     font-weight: 600;
 }
 
-.testimonials .card-title a p {
+.testimonials .card-title p {
     margin-bottom: .7rem;
 }
 
@@ -2303,7 +2303,7 @@ section {
 }*/
 
 .contact .info-box {
-    color: #444444;
+    /* color: #444444; */
     /* text-align: center; */
     box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
     padding: 20px 0 30px 0;
@@ -2317,7 +2317,7 @@ section {
     transition: all 0.3s ease-in-out;
     margin-bottom: 30px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .contact .info-box i {
@@ -2336,10 +2336,11 @@ section {
 
 .contact .info-box h3 {
     font-size: 20px;
-    color: #777777;
+    /* color: #777777; */
     font-weight: 500;
     margin: 10px 0 6px;
     padding: 9px 0 0 60px;
+    transition: all 0.1s ease-in-out;
 }
 
 .contact .info-box p {
@@ -2363,12 +2364,12 @@ section {
     background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     background-image: gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     color: #fff;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .contact .info-box:hover h3 {
     color: #fff;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .contact .info-box:hover i {
@@ -3666,7 +3667,7 @@ section {
 
 .blog.ourservices h3 {
     font-weight: 600;
-    color: #000;
+    /*color: #000;*/
     line-height: 1.4;
     margin: 0.5rem 0 1rem;
 }
@@ -3821,10 +3822,10 @@ section {
 .contact .php-email-form button[type="submit"] {
     background: #084263;
     border: 0;
-    padding: 10px 24px;
+    padding: 11px 32px;
     color: #fff;
     transition: 0.4s;
-    border-radius: 4px;
+    border-radius: 10px;
     transition: all 0.3s ease-in-out;
 }
 
