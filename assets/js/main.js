@@ -270,7 +270,7 @@
         $('#testimonials-new').owlCarousel({
             loop: true,
             center: true,
-            items: 3,
+            items: 2,
             margin: 30,
             autoplay: true,
             dots: true,
