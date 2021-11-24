@@ -4600,6 +4600,19 @@ ul {
     padding-bottom: 0px;
 }
 
+.modal-header .close {
+    background: #c55b68;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin: 10px;
+    top: -5px;
+    position: relative;
+    right: auto;
+    color: #084263;
+    opacity: 1;
+    transition: all .02s ease-in-out;
+}
+
 .modal-title {
     font-size: 34px;
 }
