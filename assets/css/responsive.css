@@ -173,7 +173,14 @@
         margin-bottom: 15px;
     }
     #footer .footer-top .footer-links h3 {
-        margin: 0 0 20px 0;
+        margin: 0 0 40px 0;
+    }
+    #footer .footer-top .social-links a {
+        font-size: 18px;
+        padding: 10px 0;
+        margin-right: 18px;
+        width: 40px;
+        height: 40px;
     }
     #hero-inner.heroinner.serviceanalistic .breadcrumbs .mtbreadcrub {
         margin-top: 1.5rem;
@@ -344,6 +351,13 @@
     }
     .testimonials .icon-box i {
         left: 11%;
+    }
+    #footer .footer-top .social-links a {
+        font-size: 20px;
+        padding: 13px 0;
+        margin-right: 22px;
+        width: 45px;
+        height: 45px;
     }
 }
 
@@ -575,7 +589,7 @@
         /*height: 40vh;*/
     }
     #customers-testimonials .item-details {
-        min-height: 275px;
+        min-height: 250px;
     }
     .testimonials .card-title p {
         font-size: 1.5rem;
@@ -642,7 +656,7 @@
         font-size: 30px;
     }
     .blog.ourservices .mainservice .service-content i.nodashboard {
-        padding: 17px;
+        padding: 20px;
     }
     .blog.ourservices .mainservice .service-content i:before {
         display: flex;
@@ -736,8 +750,8 @@
         width: 80px;
         height: 80px;
         /*margin: 2rem 0 0.5rem;*/
-        padding: 21px;
-        font-size: 40px;
+        padding: 24px;
+        font-size: 35px;
     }
     .blog.ourservices h3 {
         line-height: 1.4;
@@ -770,6 +784,9 @@
     }
     .testimonials .icon-box i {
         left: 15%;
+    }
+    .contact .info-box p {
+        padding: 0 0 0 100px;
     }
 }
 
