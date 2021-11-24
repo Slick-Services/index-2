@@ -1923,8 +1923,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 1.4;
-    padding: 1px 0px 0 0px;
+    line-height: 1.0;
+    padding: 0px 0px 0 0px;
 }
 
 #customers-testimonials.owl-carousel button:hover,
