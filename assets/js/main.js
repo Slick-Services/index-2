@@ -195,7 +195,7 @@
     });
 
     // Testimonials carousel (uses the Owl Carousel library)
-    $('.testi.owl-carousel.newtsk').owlCarousel({
+    $('.owl-carousel.newtsk').owlCarousel({
         items: 2,
         margin: 10,
         lazyLoad: true,
