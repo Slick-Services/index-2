@@ -768,6 +768,9 @@
     .contact .info-box {
         padding: 20px 20px 20px 20px;
     }
+    .testimonials .icon-box i {
+        left: 18%;
+    }
 }
 
 @media (min-width: 1500px) {}

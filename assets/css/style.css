@@ -1815,7 +1815,10 @@ section {
     cursor: pointer;
 }
 
-#customers-testimonials .item-details:hover {
+#customers-testimonials .item-details:hover,
+#customers-testimonials .item-details:active,
+#customers-testimonials .item-details.active,
+#customers-testimonials .item-details:focus {
     background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
@@ -1923,7 +1926,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 1.0;
+    line-height: 1.4;
     padding: 0px 0px 0 0px;
 }
 
@@ -2809,8 +2812,6 @@ section {
     min-height: calc(100vh - 81px) !important;
 }
 
-.banner .subtitle {}
-
 .banner .subtitle span {
     font-size: 24px;
     display: inline-block;
@@ -2920,7 +2921,8 @@ section {
     color: #5A3733;
 }
 
-.testimonials-new .testi .item {
+.testimonials-new .testi .item,
+{
     background: #fff;
     color: #000;
     padding: 30px 35px 20px;

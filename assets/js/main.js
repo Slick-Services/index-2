@@ -161,13 +161,13 @@
                 items: 2,
             },
             992: {
-                items: 4,
+                items: 3,
             }
         }
     });
 
     // Testimonials carousel (uses the Owl Carousel library)
-    $('.testi-new.owl-carousel').owlCarousel({
+    $('.testi.testi-new.owl-carousel').owlCarousel({
         items: 2,
         margin: 10,
         lazyLoad: true,
@@ -185,6 +185,40 @@
             },
             992: {
                 items: 2,
+            }
+        }
+    });
+
+    // Testimonials carousel (uses the Owl Carousel library)
+    $('#carousel').owlCarousel({
+        autoplay: true,
+        lazyLoad: true,
+        loop: true,
+        margin: 20,
+        /*
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        */
+        responsiveClass: true,
+        autoHeight: true,
+        autoplayTimeout: 7000,
+        smartSpeed: 800,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+
+            600: {
+                items: 3
+            },
+
+            1024: {
+                items: 2
+            },
+
+            1366: {
+                items: 2
             }
         }
     });
