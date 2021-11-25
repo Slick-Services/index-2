@@ -108,8 +108,8 @@ button:visited {
 
 .back-to-top:hover {
     color: #fff;
-    background: /*rgb(207 96 109)
-    -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);*/
+    /* background: rgb(207 96 109); */
+    /* -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%); */
     background-image: -moz-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     background-image: -webkit-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
     background-image: -ms-linear-gradient(333deg, #3c97d8 0%, #d42b3f 100%);
@@ -2965,8 +2965,7 @@ section {
     color: #5A3733;
 }
 
-.testimonials-new .testi .item,
-{
+.testimonials-new .testi .item {
     background: #fff;
     color: #000;
     padding: 30px 35px 20px;
@@ -4532,6 +4531,7 @@ a[data-toggle="modal"] {
 .modal {
     text-align: left;
     z-index: 999999;
+    overflow: hidden;
 }
 
 .modal-fullscreen {
