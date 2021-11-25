@@ -7,10 +7,10 @@
         width: 100%;
         height: 100%;
     }
-    body {
+    /* body {
         overflow-x: hidden !important;
         overflow-y: auto !important;
-    }
+    } */
     .mobile-nav-toggle {
         right: 20px;
     }

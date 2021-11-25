@@ -5,8 +5,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: rgb(8 66 99);
-    overflow-x: hidden !important;
-    overflow-y: auto !important;
+    /* overflow-x: hidden !important;
+    overflow-y: auto !important; */
 }
 
 a {
