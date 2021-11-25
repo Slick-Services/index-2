@@ -18,6 +18,34 @@ a:hover {
     text-decoration: none;
 }
 
+
+/* ===== Scrollbar CSS ===== */
+
+
+/* Firefox */
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: rgb(8 66 99) #ffffff;
+}
+
+
+/* Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(8 66 99);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
 h1,
 h2,
 h3,
@@ -2341,7 +2369,7 @@ section {
     box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
     padding: 20px 0 30px 0;
     min-height: /*170px*/
-    135px;
+    220px;
     border-radius: 15px;
     margin: auto;
     position: relative;
@@ -2351,6 +2379,11 @@ section {
     margin-bottom: 30px;
     cursor: pointer;
     transition: all 0.1s ease-in-out;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .contact .info-box i {
@@ -2371,13 +2404,13 @@ section {
     font-size: 20px;
     /* color: #777777; */
     font-weight: 500;
-    margin: 10px 0 6px;
-    padding: 9px 0 0 60px;
+    margin: 15px 0 6px;
+    padding: 9px 0 0 0px;
     transition: all 0.1s ease-in-out;
 }
 
 .contact .info-box p {
-    padding: 0 0 0 78px;
+    padding: 0 0 0 0px;
     line-height: 24px;
     font-size: 14px;
     margin-bottom: 0;
@@ -2528,7 +2561,7 @@ section {
     height: 100%;
     width: 100%;
     float: left;
-    ;
+    margin: 0;
 }
 
 
@@ -4532,6 +4565,7 @@ a[data-toggle="modal"] {
 .modal {
     text-align: left;
     z-index: 999999;
+    overflow: hidden;
 }
 
 .modal-fullscreen {
@@ -4544,10 +4578,85 @@ a[data-toggle="modal"] {
     margin: auto;
 }
 
-button.btn.btn-danger {
+
+/* button.btn.btn-danger {
     background: #cc6571;
     border-radius: 8px;
     border: #cc6571;
+    padding: .6rem 1.5rem;
+    transition: background 0.2s ease-in-out;
+} */
+
+.modal-header {
+    border-bottom: 0;
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 8px;
+    position: fixed;
+    width: 95.85%;
+    align-items: center;
+    background: rgb(237 244 251);
+    z-index: 1;
+    box-shadow: 0px 5px 10px rgb(184 209 235 / 52%);
+}
+
+
+/* .modal-header .close {
+    background: #c55b68;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin: 10px;
+    top: -5px;
+    position: relative;
+    right: auto;
+    color: #084263;
+    opacity: 1;
+    transition: all .02s ease-in-out;
+} */
+
+.modal-header .close {
+    background: rgb(207 96 109);
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin: 5px 2px 5px 5px;
+    /* top: -5px; */
+    position: relative;
+    right: auto;
+    color: #084263;
+    opacity: 1;
+    transition: all .02s ease-in-out;
+    max-width: 50px;
+    height: 50px;
+}
+
+.close:not(:disabled):not(.disabled):focus,
+.close:not(:disabled):not(.disabled):hover {
+    opacity: 1.0;
+}
+
+.modal-title {
+    font-size: 34px;
+    line-height: 0;
+}
+
+.modal-body {
+    border-bottom: 0;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    position: relative;
+    top: 10%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+button.btn.btn-danger {
+    background: rgb(207 96 109);
+    border-radius: 8px;
+    border: rgb(207 96 109);
     padding: .6rem 1.5rem;
     transition: background 0.2s ease-in-out;
 }
@@ -4584,6 +4693,8 @@ button.show>.btn-danger.dropdown-toggle {
     border: none;
     border-radius: 12px;
     box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+    height: 91vh;
+    overflow: auto;
 }
 
 dl,
@@ -4592,46 +4703,16 @@ ul {
     list-style: none;
 }
 
-.modal-header {
-    border-bottom: 0;
-    padding-top: 15px;
-    padding-right: 26px;
-    padding-left: 26px;
-    padding-bottom: 0px;
-}
-
-.modal-header .close {
-    background: #c55b68;
-    border-radius: 10px;
-    padding: 12px 15px;
-    margin: 10px;
-    top: -5px;
-    position: relative;
-    right: auto;
-    color: #084263;
-    opacity: 1;
-    transition: all .02s ease-in-out;
-}
-
-.modal-title {
-    font-size: 34px;
-}
-
-.modal-body {
-    border-bottom: 0;
-    padding-top: 5px;
-    padding-right: 26px;
-    padding-left: 26px;
-    padding-bottom: 10px;
-    font-size: 15px;
-}
-
 .modal-footer {
     border-top: 0;
-    padding-top: 0px;
-    padding-right: 26px;
-    padding-bottom: 26px;
-    padding-left: 26px;
+    padding-top: 22px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    top: 7%;
 }
 
 .btn-default,

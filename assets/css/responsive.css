@@ -284,9 +284,6 @@
     .features .content+.content {
         margin: 25px 0 0 0;
     }
-    .contact .info-box p {
-        padding-left: 100px;
-    }
     #hero .carousel-control-prev,
     #hero .carousel-control-next {
         display: none;
@@ -300,18 +297,12 @@
     .contact .info-box {
         padding: 20px 5px 30px 5px;
     }
-    .contact .info-box p {
-        padding: 0 0 0 100px;
-    }
 }
 
 @media (min-width: 360px) {
     html {
         width: 100%;
         height: 100%;
-    }
-    .contact .info-box p {
-        padding: 0 0 0 100px;
     }
     #hero {
         height: 98vh;
@@ -339,9 +330,6 @@
     }
     .testimonials .icon-box i {
         left: 13%;
-    }
-    .contact .info-box p {
-        padding: 0 0 0 78px;
     }
 }
 
@@ -552,9 +540,6 @@
     }
     .contact .info-box {
         padding: 20px 5px 20px 5px;
-    }
-    .contact .info-box p {
-        padding: 0 0 0 100px;
     }
 }
 
@@ -767,9 +752,6 @@
     .contact .info-box {
         padding: 20px 20px 20px 20px;
     }
-    .contact .info-box p {
-        padding: 0 0 0 78px;
-    }
 }
 
 @media (min-width: 1366px) {
@@ -784,9 +766,6 @@
     }
     .testimonials .icon-box i {
         left: 15%;
-    }
-    .contact .info-box p {
-        padding: 0 0 0 100px;
     }
 }
 
