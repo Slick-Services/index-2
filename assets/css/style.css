@@ -4530,7 +4530,8 @@ a[data-toggle="modal"] {
 
 .modal {
     text-align: left;
-    z-index: 999999;
+    z-index: 9999999;
+    overflow: hidden;
 }
 
 .modal-fullscreen {

@@ -300,8 +300,11 @@
     .contact .info-box {
         padding: 20px 5px 30px 5px;
     }
-    .contact .info-box p {
-        padding: 0 0 0 100px;
+    .modal-title {
+        font-size: 24px;
+    }
+    .modal-fullscreen {
+        top: 2%;
     }
 }
 
@@ -446,6 +449,9 @@
     .blog .member {
         margin-bottom: 6.5rem;
     }
+    .modal-title {
+        font-size: 30px;
+    }
 }
 
 @media (min-width: 641px) {}
@@ -553,8 +559,11 @@
     .contact .info-box {
         padding: 20px 5px 20px 5px;
     }
-    .contact .info-box p {
-        padding: 0 0 0 100px;
+    .modal-title {
+        font-size: 34px;
+    }
+    .modal-fullscreen {
+        top: 4%;
     }
 }
 
