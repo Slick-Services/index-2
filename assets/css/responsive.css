@@ -297,12 +297,6 @@
     .contact .info-box {
         padding: 20px 5px 30px 5px;
     }
-    .modal-title {
-        font-size: 24px;
-    }
-    .modal-fullscreen {
-        top: 2%;
-    }
 }
 
 @media (min-width: 360px) {
@@ -440,9 +434,6 @@
     .blog .member {
         margin-bottom: 6.5rem;
     }
-    .modal-title {
-        font-size: 30px;
-    }
 }
 
 @media (min-width: 641px) {}
@@ -549,12 +540,6 @@
     }
     .contact .info-box {
         padding: 20px 5px 20px 5px;
-    }
-    .modal-title {
-        font-size: 34px;
-    }
-    .modal-fullscreen {
-        top: 4%;
     }
 }
 
