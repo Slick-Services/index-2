@@ -2692,6 +2692,10 @@ section {
     line-height: 1.5;
 }
 
+#footer .footer-top .footer-newsletter {
+    text-align: left;
+}
+
 #footer .footer-top .footer-links ul a:hover {
     color: #f58fa2;
 }
