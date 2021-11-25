@@ -3,15 +3,6 @@
 @media (min-width: 1px) and (max-width: 320.98px)*/
 
 @media (min-width: 320px) {
-    .blog.ourservices .manservicemain .service-content.float-right.d-lg-flex {
-        right: auto;
-        left: 0;
-    }
-    .blog.ourservices .manservicemain.reverceservices .service-content.float-right.d-lg-flex {
-        right: 0;
-        left: auto;
-        /* transform: rotate(-45deg); */
-    }
     html {
         width: 100%;
         height: 100%;
@@ -736,6 +727,12 @@
     .modal-header {
         width: 95.5%;
     }
+    .blog.ourservices .manservicemain .service-content.float-right.d-lg-flex {
+        display: none !important;
+    }
+    .blog.ourservices .manservicemain.reverceservices .service-content.float-right.d-lg-flex {
+        display: none !important;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -747,6 +744,17 @@
     }
     #hero-inner.heroinner.serviceanalistic .breadcrumbs .mtbreadcrub {
         margin-top: 0rem;
+    }
+    .blog.ourservices .manservicemain .service-content.float-right.d-lg-flex {
+        right: auto;
+        left: 0;
+        display: flex !important;
+    }
+    .blog.ourservices .manservicemain.reverceservices .service-content.float-right.d-lg-flex {
+        right: 0;
+        left: auto;
+        display: flex !important;
+        /* transform: rotate(-45deg); */
     }
 }
 
