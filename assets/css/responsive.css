@@ -303,6 +303,9 @@
     .modal-fullscreen {
         top: 2%;
     }
+    .modal-header {
+        width: 92.0%;
+    }
 }
 
 @media (min-width: 360px) {
@@ -336,6 +339,9 @@
     }
     .testimonials .icon-box i {
         left: 13%;
+    }
+    .modal-header {
+        width: 94.0%;
     }
 }
 
@@ -400,6 +406,9 @@
     }
     .testimonials {
         /*margin-bottom: 15%;*/
+    }
+    .modal-header {
+        width: 95.0%;
     }
 }
 
@@ -554,7 +563,7 @@
         font-size: 34px;
     }
     .modal-fullscreen {
-        top: 4%;
+        top: 3%;
     }
 }
 
@@ -715,6 +724,9 @@
     .testimonials-new .testi .item .starmain {
         width: 89%;
     }
+    .modal-header {
+        width: 95.5%;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -766,6 +778,9 @@
     }
     .contact .info-box {
         padding: 20px 20px 20px 20px;
+    }
+    .modal-header {
+        width: 95.88%;
     }
 }
 
