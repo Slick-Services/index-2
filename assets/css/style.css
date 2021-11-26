@@ -9,6 +9,11 @@ body {
     overflow-y: auto !important; */
 }
 
+body#mainscrollnone {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+
 a {
     color: #67b0d1;
 }
