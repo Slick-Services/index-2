@@ -947,7 +947,7 @@ div.shape:hover {
     border-radius: 50px;
     transition: 0.5s;
     line-height: 1;
-    margin: 0 10px;
+    margin: 0 0px;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
     color: #fff;
