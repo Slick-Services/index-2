@@ -94,6 +94,10 @@
         min-height: 35vh;
         height: 100%;
     }
+    img.img-hover-zoom--point-zoom {
+        transform-origin: 0% 0%;
+        transition: transform 1s, filter .3s ease-out;
+    }
     .skills-content p {
         margin: .5rem 0 1.5rem;
     }
@@ -513,6 +517,10 @@
     #hero .btn-menu,
     #hero .btn-book {
         font-size: 15px;
+    }
+    img.img-hover-zoom--point-zoom {
+        transform-origin: 65% 75%;
+        transition: transform 1s, filter .3s ease-out;
     }
     .blog .member {
         margin-bottom: 7rem;
