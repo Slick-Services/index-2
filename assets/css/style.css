@@ -1004,6 +1004,10 @@ div.shape:hover {
     #hero h2 {
         font-size: 30px;
     }
+    #hero .carousel-control-prev,
+    #hero .carousel-control-next {
+        width: 3%;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -1012,7 +1016,7 @@ div.shape:hover {
     }
     #hero .carousel-control-prev,
     #hero .carousel-control-next {
-        width: 5%;
+        width: 3%;
     }
 }
 
