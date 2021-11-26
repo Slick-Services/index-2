@@ -737,10 +737,10 @@
 
 @media (min-width: 1024px) {
     #hero-inner.heroinner {
-        height: 50vh;
+        height: 49vh;
     }
     .breadcrumbs {
-        min-height: 50vh;
+        min-height: 49vh;
     }
     #hero-inner.heroinner.serviceanalistic .breadcrumbs .mtbreadcrub {
         margin-top: 0rem;
