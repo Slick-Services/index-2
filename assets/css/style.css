@@ -4257,7 +4257,7 @@ section {
 }
 
 .blog.ourservices .mainservice img {
-    /* width: 100%; */
+    width: 100%;
     margin-left: 3rem;
     padding-right: 6rem;
     padding: 3rem 6rem 3rem 0;
