@@ -452,6 +452,9 @@
     .modal-title {
         font-size: 30px;
     }
+    .modal-header {
+        width: 98.50%;
+    }
 }
 
 @media (min-width: 641px) {}
