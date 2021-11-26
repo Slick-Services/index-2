@@ -756,6 +756,9 @@
         display: flex !important;
         /* transform: rotate(-45deg); */
     }
+    .modal-header {
+        width: 98.5%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -797,7 +800,7 @@
         padding: 20px 20px 20px 20px;
     }
     .modal-header {
-        width: 95.88%;
+        width: 98.88%;
     }
 }
 
