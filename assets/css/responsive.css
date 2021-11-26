@@ -814,6 +814,9 @@
     .testimonials .icon-box i {
         left: 15%;
     }
+    .modal-header {
+        width: 98.78%;
+    }
 }
 
 @media (min-width: 1500px) {}
