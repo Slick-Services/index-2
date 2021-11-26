@@ -518,10 +518,10 @@
     #hero .btn-book {
         font-size: 15px;
     }
-    img.img-hover-zoom--point-zoom {
+    /* img.img-hover-zoom--point-zoom {
         transform-origin: 65% 75%;
         transition: transform 1s, filter .3s ease-out;
-    }
+    } */
     .blog .member {
         margin-bottom: 7rem;
     }
