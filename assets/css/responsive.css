@@ -258,7 +258,6 @@
         margin-top: 1rem;
         text-align: justify;
         line-height: 1.4;
-        word-break: break-all;
     }
     .blog.ourservices .mainservice .service-content button.btn {
         padding: 11px 20px 13px;
