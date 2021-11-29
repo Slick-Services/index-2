@@ -306,6 +306,11 @@
     .modal-header {
         width: 92.0%;
     }
+    .featurecontentmain,
+    .featureimgmain {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media (min-width: 360px) {
@@ -577,6 +582,11 @@
     }
     .modal-fullscreen {
         top: 3%;
+    }
+    .featurecontentmain,
+    .featureimgmain {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
