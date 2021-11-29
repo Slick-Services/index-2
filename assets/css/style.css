@@ -4815,5 +4815,19 @@ footer h4 {
 section#privacypolicy {
     /* float: left; */
     /* display: flex; */
-    margin: 2rem auto 2rem;
+    margin: 4rem auto 2rem;
+}
+
+section#privacypolicy .section-title h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 30px;
+    color: /*#2f4d5a*/
+    rgb(205, 99, 111);
+    z-index: 2;
+    font-family: 'Jost', sans-serif;
+    -moz-transform: matrix( 0.5, 0, 0, 0.5, 0, 0);
+    -webkit-transform: matrix( 0.5, 0, 0, 0.5, 0, 0);
+    -ms-transform: matrix( 0.5, 0, 0, 0.5, 0, 0);
 }
