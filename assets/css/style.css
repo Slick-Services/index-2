@@ -4609,13 +4609,13 @@ a[data-toggle="modal"] {
 } */
 
 .modal-header {
-    border-bottom: 0;
+    /* border-bottom: 0;
     padding-top: 8px;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 8px;
     position: fixed;
-    width: 95.85%;
+    width: 95.85%; */
     align-items: center;
     background: rgb(237 244 251);
     z-index: 1;
@@ -4669,7 +4669,7 @@ a[data-toggle="modal"] {
     padding-bottom: 10px;
     font-size: 15px;
     position: relative;
-    top: 10%;
+    /* top: 10%; */
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
