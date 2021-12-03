@@ -1436,9 +1436,49 @@ section {
     max-width: 100%;
     font-size: 17px;
 }
-
+.contact .php-email-form .mainnuber {
+	display: flex;
+	position: relative;
+}
+.contact .php-email-form #countycode {
+    width: 120px;
+    border: none;
+    position: relative;
+    top: 20%;
+    border-radius: 30px 0px 0px 0px;
+    padding-left: 7px;
+	padding-right: 7px;
+	height: calc(1.5em + 1.05rem + 15px);
+}
+:focus-visible {
+    outline: none;
+}
+.contact .php-email-form input#phone {
+	border-radius: 0 0 30px 0px;
+	padding-left: 8px;
+}
+	
 .contact .php-email-form button[type="submit"]:hover {
     background: #ff7e54;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+}
+.contact .php-email-form input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgba(255, 255, 255, 1.0)) !important;
+    color: -internal-light-dark(black, white) !important;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1465,7 +1505,7 @@ section {
 --------------------------------------------------------------*/
 
 #footer {
-    color: #fff;
+    color: rgb(1 22 30);
     font-size: 16px;
     background: url("../img/footer_bg.jpg") no-repeat;
     width: 100%;
@@ -1497,7 +1537,7 @@ footer#footer:before {
     position: absolute;
     width: 1px;
     height: 49.5%;
-    border-right: 1px solid #ffffff;
+    border-right: 1px solid rgb(0 87 119);
     right: 40.0%;
     left: auto;
     top: auto;
@@ -1522,7 +1562,7 @@ footer#footer .ftrightline {
     position: absolute;
     width: 1px;
     height: 94%;
-    border-left: 1px solid #FFF;
+    border-left: 1px solid rgb(0 87 119);
     right: 20.3%;
     left: auto;
     top: 0;
@@ -1553,13 +1593,13 @@ footer#footer .lastrow {
     line-height: 27px;
     margin-bottom: 0;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
+    color: rgb(0 87 119);
 }
 
 #footer .footer-top h4 {
     font-size: 25px;
     font-weight: 500;
-    color: #fff;
+    color: rgb(246 130 31);
     position: relative;
     padding-bottom: 1.3rem;
     padding-top: 0.0rem;
@@ -1591,7 +1631,7 @@ footer#footer .lastrow {
 }
 
 #footer .footer-top .footer-links ul a {
-    color: #fff;
+    color: rgb(0 87 119);
     transition: 0.3s;
     display: inline-block;
     line-height: 1;
