@@ -8,11 +8,11 @@
     #hero-inner {
         background: url("../img/Hero_bg1.png")no-repeat;
         height: auto;
-		background-position: -4rem -4rem;
+        /*background-position: -4rem -4rem;*/
     }
-	#hero-inner .faqinner {
-		background: url("../img/bg_ptc.jpg")no-repeat;
-	}
+    #hero-inner .faqinner {
+        background: url("../img/bg_ptc.jpg")no-repeat;
+    }
     #hero-inner h1 {
         font-size: 1.0rem;
         line-height: 0px;
@@ -360,7 +360,7 @@
     #hero-inner {
         height: 350px;
     }
-	#hero-inner h1 {
+    #hero-inner h1 {
         font-size: 2.5rem;
     }
     #hero {
@@ -382,7 +382,6 @@
         margin-top: -2rem;
         margin-bottom: 2rem;
     }
-    
     section.progess {
         padding: 1rem 0 1rem;
         margin-top: -4rem;
@@ -534,8 +533,8 @@
         height: 85vh;
     }
     #hero-inner {
-		height: 400px;		
-	}
+        height: 400px;
+    }
     .progress.pink .progress-bar p {
         font-size: 30px;
     }
@@ -629,7 +628,7 @@
 }
 
 @media (min-width: 1400px) {
-	#hero {
+    #hero {
         height: 100vh;
         padding: 100px 0;
     }
@@ -657,14 +656,14 @@
         moz-background-size: cover;
     }
     footer#footer:before {
-		right: 36.6%;
-	}
-	footer#footer .ftrightline {
-		right: 9.9%;
-	}
+        right: 36.6%;
+    }
+    footer#footer .ftrightline {
+        right: 9.9%;
+    }
 }
 
-@media (min-width: 1500px) {    
+@media (min-width: 1500px) {
     footer#footer:before {
         right: 37.4%;
     }
