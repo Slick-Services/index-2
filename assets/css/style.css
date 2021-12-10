@@ -1800,3 +1800,7 @@ strong,
     color: rgb(214 25 105);
     font-weight: 600;
 }
+
+section#pivecy p {
+    width: 100%;
+}
