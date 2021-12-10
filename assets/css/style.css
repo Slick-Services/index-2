@@ -1750,7 +1750,7 @@ section {
 #footer .social-links a {
     font-size: 18px;
     display: inline-flex;
-    background: #fc9446;
+    /*background: #fc9446;*/
     color: #fff;
     line-height: 1;
     /* padding: 9px 0; 
@@ -1765,12 +1765,14 @@ section {
     justify-content: center;
     align-items: center;
     padding: 1.5rem;
+    border: solid 1px #fff;
 }
 
 #footer .social-links a:hover {
-    background: #d0742f;
+    background: #fc9446;
     color: #fff;
     text-decoration: none;
+    border-color: #fc9446;
 }
 
 #footer .copyrightmain {
