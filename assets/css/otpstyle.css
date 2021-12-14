@@ -406,7 +406,8 @@ input[type=text]:placeholder {
     color: white;
     font-weight: 300;
     text-transform: uppercase;
-    /*overflow: hidden;*/
+    overflow: hidden;
+    height: 65px;
 }
 
 .button:before {
