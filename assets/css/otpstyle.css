@@ -476,6 +476,12 @@ input[type=text]:placeholder {
 
 @media (min-width: 1366px) {}
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+    #formContent {
+        max-width: 650px;
+        padding: 1.5rem;
+        line-height: 1.8;
+    }
+}
 
 @media (min-width: 1920px) {}
