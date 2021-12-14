@@ -338,6 +338,8 @@ input[type=text]:placeholder {
 #formContent form {
     display: flex;
     flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 
 #otp_verify {
@@ -440,7 +442,7 @@ input[type=text]:placeholder {
 
 @media (min-width: 992px) {
     #formContent {
-        max-width: 500px;
+        max-width: 550px;
         padding: 1.5rem;
         line-height: 1.8;
     }
