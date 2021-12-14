@@ -463,7 +463,11 @@ input[type=text]:placeholder {
     }
 }
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    #formContent input {
+        width: 30%;
+    }
+}
 
 @media (min-width: 1200px) {}
 
