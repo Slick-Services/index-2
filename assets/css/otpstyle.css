@@ -328,7 +328,7 @@ input[type=text]:placeholder {
     margin: auto auto 1rem auto;
 }
 
-.button.btn.validate {
+.button {
     border-radius: .65rem;
     padding: 1.82rem 1.8rem;
     background: rgb(209 24 103);
@@ -336,11 +336,11 @@ input[type=text]:placeholder {
     border: none;
 }
 
-.button.btn.validate.btn.focus,
-.button.btn.validate.btn:focus,
-.button.btn.validate.btn:hover,
-.button.btn.validate.btn.active,
-.button.btn.validate.btn:active {
+.button,
+.button:focus,
+.button:hover,
+.button.active,
+.button:active {
     outline: 0;
     box-shadow: none;
     background: rgb(252 148 71);
@@ -547,7 +547,7 @@ input[type=text]:placeholder {
         padding: 1.85rem 1rem;
         width: 80%;
     }
-    .button.btn.validate {
+    .button {
         border-radius: .85rem;
         padding: 1.40rem 3.8rem;
         font-size: 3rem;
@@ -593,7 +593,7 @@ input[type=text]:placeholder {
     #formContent .acode {
         font-size: 1.4rem;
     }
-    .button.btn.validate {
+    .button {
         border-radius: .65rem;
         padding: 1.72rem 1.7rem;
         font-size: 1.2rem;
@@ -624,7 +624,7 @@ input[type=text]:placeholder {
         padding: 1.5rem;
         line-height: 1.8;
     }
-    .button.btn.validate {
+    .button {
         border-radius: .65rem;
         padding: 1.82rem 1.8rem;
         background: rgb(209 24 103);
