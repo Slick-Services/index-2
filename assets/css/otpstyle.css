@@ -330,7 +330,7 @@ input[type=text]:placeholder {
 
 button.btn.validate {
     border-radius: .65rem;
-    padding: .82rem 1.8rem;
+    padding: 1.82rem 1.8rem;
     background: rgb(209 24 103);
     color: #fff;
     border: none;
@@ -623,6 +623,14 @@ button.btn.validate.btn:active {
         max-width: 650px;
         padding: 1.5rem;
         line-height: 1.8;
+    }
+    button.btn.validate {
+        border-radius: .65rem;
+        padding: 1.82rem 1.8rem;
+        background: rgb(209 24 103);
+        color: #fff;
+        border: none;
+        width: 100%;
     }
 }
 
