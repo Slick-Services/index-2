@@ -401,6 +401,7 @@ input[type=text]:placeholder {
     #formContent input[type=text] {
         font-size: 3rem;
         padding: 1.85rem 1rem;
+        width: 100%;
     }
     #formContent button.btn.validate {
         border-radius: .85rem;
