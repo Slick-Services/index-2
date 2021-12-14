@@ -482,18 +482,14 @@ input[type=text]:placeholder {
 }
 
 @media (min-width: 1024px) {
-    #formContent input {
-        width: 30%;
+    #formContent input[type=text] {
+        width: 65%;
     }
 }
 
 @media (min-width: 1200px) {}
 
-@media (min-width: 1366px) {
-    #formContent input[type=text] {
-        width: 80%;
-    }
-}
+@media (min-width: 1366px) {}
 
 @media (min-width: 1400px) {
     #formContent {
