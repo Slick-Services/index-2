@@ -396,7 +396,7 @@ button.btn.validate.btn:active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 12.5rem;
+    width: 100%;
     magrin: 0;
     padding: 1.5rem 3.125rem;
     background-color: #3498db;
@@ -545,7 +545,7 @@ button.btn.validate.btn:active {
     #formContent input[type=text] {
         font-size: 3rem;
         padding: 1.85rem 1rem;
-        width: 100%;
+        width: 80%;
     }
     button.btn.validate {
         border-radius: .85rem;
@@ -597,6 +597,7 @@ button.btn.validate.btn:active {
         border-radius: .65rem;
         padding: 1.72rem 1.7rem;
         font-size: 1.2rem;
+        width: 100%;
     }
     #formContent input[type=text] {
         font-size: 2rem;
