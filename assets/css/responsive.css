@@ -689,6 +689,7 @@
     }
     #dashboard #header .manbtnlogout {
         justify-content: end;
+        margin: auto;
     }
     #dashboard #header .manbtnlogout .welcometxt br {
         display: flex;
@@ -744,7 +745,7 @@
 		height: 74vh;		
 	}*/
     #hero {
-        /*height: auto;*/
+        height: auto;
         background-size: cover;
         -o-background-size: cover;
         -webkit-background-size: cover;
