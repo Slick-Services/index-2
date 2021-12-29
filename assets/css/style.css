@@ -136,6 +136,7 @@ h6 {
     position: relative;
     white-space: nowrap;
     float: left;
+    top: 2px;
 }
 
 .nav-menu a {
@@ -1576,19 +1577,6 @@ footer#footer:before {
     bottom: auto;
     /* box-shadow: 2px 1px 1px rgb(150 217 235 / 40%); */
 }
-
-
-/*footer#footer:after {
-    content: "";
-    position: relative;
-    width: 1px;
-    height: 49.5%;
-    border-right: 1px solid #ffffff;
-    right: 40.0%;
-    left: auto;
-    top: auto;
-    bottom: auto;    
-}*/
 
 footer#footer .ftrightline {
     position: absolute;
