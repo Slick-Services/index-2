@@ -913,6 +913,15 @@
     }
 }
 
+@media (min-width: 1280px) {
+    .progress {
+        height: 125px;
+    }
+    .progress.pink .mainprogress {
+        margin-top: -5.5rem;
+    }
+}
+
 @media (min-width: 1366px) {
     #hero {
         /*height: 100vh;*/
