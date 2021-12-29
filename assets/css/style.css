@@ -1481,6 +1481,11 @@ section {
     background: #ff7e54;
 }
 
+.contact .php-email-form button[type="submit"]:hover {
+    background: #005777;
+    color: #fff;
+}
+
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #000;
