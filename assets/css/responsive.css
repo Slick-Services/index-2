@@ -1011,6 +1011,7 @@
 
 @media (min-width: 1400px) {
     #hero {
+        height: 1080px;
         /*height: 100vh;*/
         padding: 100px 0;
     }
