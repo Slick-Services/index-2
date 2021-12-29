@@ -107,6 +107,10 @@ body.loginbg {
     color: #000;
 }
 
+.forgotpass {
+    font-weight: 500;
+}
+
 .img {
     background-size: cover;
     background-repeat: no-repeat;
@@ -367,17 +371,20 @@ svg.svg-icon {
     right: 0;
     margin: 0 auto;
 } */
+
 .login-wrap .card.otp {
     border: none;
 }
 
-.login-wrap .card.otp form.mainform .otninput  {
+.login-wrap .card.otp form.mainform .otninput {
     border-radius: .5rem;
     padding: 1rem;
 }
+
 .login-wrap .card.otp .form-control {
     height: auto;
 }
+
 .login-wrap .card.otp form.mainform button.btn.btn.validbtn {
     padding: .8rem 3.5rem;
     background: #005777;
@@ -385,19 +392,24 @@ svg.svg-icon {
     margin-bottom: .9rem;
     font-size: 1.1rem;
 }
-.login-wrap .card.otp h5  {
+
+.login-wrap .card.otp h5 {
     font-size: 1.6rem;
 }
+
 .login-wrap .card.otp h5 a {
     font-size: 1.3rem;
 }
+
 .login-wrap .card.otp span.or {
     font-size: 1.6rem;
     padding: .6rem;
 }
+
 .login-wrap.verifywrap {
-    padding:1.5rem 1.5rem;
+    padding: 1.5rem 1.5rem;
 }
+
 .form-group .submit {
     /* position: absolute; */
     /* top: 20px; */
@@ -426,4 +438,3 @@ svg.svg-icon {
         padding-left: 25px;
     }
 }
-
