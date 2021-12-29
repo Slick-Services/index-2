@@ -920,6 +920,12 @@
     .progress.pink .mainprogress {
         margin-top: -3.9rem;
     }
+    footer#footer:before {
+        right: 35.1%;
+    }
+    footer#footer .ftrightline {
+        right: 5.5%;
+    }
 }
 
 @media (min-width: 1366px) {
