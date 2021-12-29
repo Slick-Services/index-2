@@ -354,6 +354,9 @@
         font-size: 28px;
         margin-bottom: 20px;
     }
+    .d-flex.align-items-stretch.aos-init.aos-animate {
+        padding-right: 0rem;
+    }
     #footer .mainsocial {
         padding-bottom: 0rem;
         padding-top: 0rem;
@@ -528,6 +531,9 @@
         line-height: 1.4;
         margin-bottom: 2rem;
     }
+    .d-flex.align-items-stretch.aos-init.aos-animate {
+        padding-right: 1rem;
+    }
     #footer .social-links a {
         font-size: 1.5rem;
         padding: .7rem 1.0rem;
@@ -631,6 +637,9 @@
     .clients {
         margin: 2rem 0;
         padding: 4rem 0;
+    }
+    .d-flex.align-items-stretch.aos-init.aos-animate {
+        padding-right: 0rem;
     }
     .progress {
         height: 100px;
