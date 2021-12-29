@@ -1059,21 +1059,21 @@
         height: 170px;
     }
     footer#footer:before {
-        right: 37.4%;
+        right: 35.3%;
     }
     footer#footer .ftrightline {
-        right: 12.0%;
+        right: 6.0%;
     }
 }
 
 @media (min-width: 1920px) {
     footer#footer:before {
-        right: 38.4%;
+        right: 38.5%;
         height: 100%;
     }
     footer#footer .ftrightline {
         height: 100%;
-        right: 15.3%;
+        right: 15.6%;
     }
     .progress {
         height: 175px;

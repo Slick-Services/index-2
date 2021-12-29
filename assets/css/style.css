@@ -2467,6 +2467,7 @@ body#dashboard {
     padding: .9rem .8rem;
     border-radius: .6rem;
     margin-bottom: .39rem;
+    height: 55px;
 }
 
 #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 button.btn.btn-primary {
