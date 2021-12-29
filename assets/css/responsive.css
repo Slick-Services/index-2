@@ -693,6 +693,10 @@
     #dashboard .navbar li {
         justify-content: center;
     }
+    #dashboard .navbar a,
+    #dashboard .navbar a:focus {
+        padding: 10px 0 10px 20px;
+    }
     #dashboard #header .manbtnlogout {
         justify-content: end;
         margin: auto;
