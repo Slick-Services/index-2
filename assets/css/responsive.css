@@ -1112,12 +1112,6 @@
     .progress {
         height: 175px;
     }
-    .about {
-        background-size: cover;
-        o-background-size: cover;
-        webkit-background-size: cover;
-        moz-background-size: cover;
-    }
 }
 
 @media (min-width: 2100px) {
@@ -1126,6 +1120,12 @@
     }
     footer#footer .ftrightline {
         right: 26.3%;
+    }
+    .about {
+        background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
     }
 }
 
