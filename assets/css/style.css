@@ -870,6 +870,14 @@ section {
     background: rgb(246 130 31 / 88%);
 }
 
+.aboutbtn.get-started-btn.btn.loardmore:hover,
+.aboutbtn.get-started-btn.btn.loardmore:active,
+.aboutbtn.get-started-btn.btn.loardmore.active,
+.aboutbtn.get-started-btn.btn.loardmore:focus {
+    background: #005777;
+    color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 # Featured Services

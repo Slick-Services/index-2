@@ -118,7 +118,7 @@
         padding: 25px 40px 24px 45px;
         border-radius: 3rem 0;
         font-size: 20px;
-        right: -30px;
+        right: -13px;
         top: -1rem;
     }
     .contact .php-email-form {
@@ -257,6 +257,9 @@
     #dashboard .mainclient {
         display: none;
     }
+    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints .earnpointtxt {
+        align-items: center;
+    }
 }
 
 @media (min-width: 360px) {
@@ -271,11 +274,23 @@
         justify-content: space-evenly;
         padding: 2.5rem 0;
     }
+    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints .earnpointtxt {
+        align-items: flex-start;
+    }
 }
 
-@media (min-width: 480px) {}
+@media (min-width: 480px) {
+    #dashboard .navbar {
+        justify-content: flex-start;
+    }
+}
 
-@media (min-width: 500px) {}
+@media (min-width: 500px) {
+    #dashboard .navbar a,
+    #dashboard .navbar a:focus {
+        padding: 10px 0 10px 10px;
+    }
+}
 
 @media (min-width: 575px) {
     .progress {
@@ -300,8 +315,8 @@
     /*==== Dashboard css=====*/
     #dashboard .navbar {
         padding: 0;
-        justify-content: end;
-        align-items: end;
+        justify-content: flex-start;
+        align-items: center;
         order: 2 !important;
     }
     #dashboard .mobile-nav-toggle {
@@ -364,6 +379,9 @@
     #dashboard #header .logo img {
         max-height: 70px;
     }
+    #dashboard .navbar {
+        justify-content: center;
+    }
     #dashboard .about-us .icon-box .btn.btn-dark {
         border-radius: 7px;
         font-size: 1.0rem;
@@ -397,8 +415,8 @@
         font-size: 1.1rem;
     }
     #dashboard .about-us .cardleftmaincontentpart.mainimgpart {
-        padding: 0rem 1.3rem 0;
-        display: flex;
+        padding: 0;
+        display: block;
         justify-content: center;
     }
     #dashboard .about-us .cardleftmaincontentpart {
@@ -406,7 +424,7 @@
     }
     #dashboard .about-us .cardleftmaincontentpart .pointsbg {
         padding: 3rem 1rem;
-        margin: 0rem 2rem 0rem;
+        margin: 0;
     }
     #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h2 {
         font-size: 1.4rem;
@@ -538,32 +556,8 @@
         padding: 15px 15px;
         border-radius: 10px;
     }
-    #dashboard .mainclient {
-        display: flex;
-    }
-    #dashboard .about-us .cardleftmaincontentpart.mainimgpart {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0 .7rem;
-        border-width: 0.25px;
-        border-color: rgb(196, 195, 195);
-        border-style: solid;
-        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.16);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .d-flex.align-items-stretch.aos-init.aos-animate {
-        display: flex !important;
-    }
     #dashboard .about-us .icon-box .btn.btn-dark {
         padding: 14px 18px;
-    }
-    #dashboard .about-us .cardleftmaincontentpart.mainimgpart {
-        padding: 1rem 1.3rem 0;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg {
-        margin: 1rem 2rem 2rem;
     }
 }
 
@@ -740,6 +734,30 @@
         font-size: 2.5rem;
         margin-bottom: .5rem;
         margin-top: .3rem;
+    }
+    #dashboard .mainclient {
+        display: flex;
+    }
+    #dashboard .about-us .cardleftmaincontentpart.mainimgpart {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0 .7rem;
+        border-width: 0.25px;
+        border-color: rgb(196, 195, 195);
+        border-style: solid;
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.16);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .d-flex.align-items-stretch.aos-init.aos-animate {
+        display: flex !important;
+    }
+    #dashboard .about-us .cardleftmaincontentpart.mainimgpart {
+        padding: 1rem 1.3rem 0;
+    }
+    #dashboard .about-us .cardleftmaincontentpart .pointsbg {
+        margin: 1rem 2rem 2rem;
     }
 }
 
@@ -982,10 +1000,10 @@
     footer#footer:before {
         /*right: 36.1%;
 		height: 49.5%;*/
-        right: 36.1%;
+        right: 35.9%;
     }
     footer#footer .ftrightline {
-        right: 8.2%;
+        right: 7.7%;
     }
     #dashboard .about-us .cardleftmaincontentpart .pointsbg {
         margin: 1rem 2rem 2rem;
