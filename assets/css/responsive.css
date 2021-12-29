@@ -307,9 +307,11 @@
     #dashboard .mobile-nav-toggle {
         position: relative;
         top: auto;
+        display: none;
     }
     #dashboard #header .manbtnlogout .welcometxt {
         font-size: 1rem;
+        font-weight: 600;
     }
 }
 
@@ -819,6 +821,7 @@
 @media (min-width: 1200px) {
     #hero {
         /*height: 47vh;*/
+        height: 720px;
     }
     /* #hero {
         height: 80vh;

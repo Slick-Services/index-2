@@ -2060,12 +2060,37 @@ body#dashboard {
     color: #fff;
 }
 
-@media (max-width: 991px) {
+
+/*@media (max-width: 480px) {
     #dashboard .mobile-nav-toggle {
-        display: block;
+        display: flex;
     }
     #dashboard .navbar ul {
         display: none;
+    }
+}*/
+
+@media (min-width: 1px) and (max-width: 480px) {
+    #dashboard .mobile-nav-toggle {
+        display: flex;
+    }
+    #dashboard .navbar ul {
+        display: none;
+    }
+    #dashboard #header .manbtnlogout {
+        width: 100%;
+    }
+    #dashboard #header .manbtnlogout .welcometxt {
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    #dashboard .navbar li {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    #dashboard .navbar-mobile ul {
+        height: 200px;
+        border-radius: 8px;
     }
 }
 

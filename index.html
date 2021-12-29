@@ -42,7 +42,7 @@
                 </a>
             </div>
             <div class="minnavbar col-12 col-sm-8">
-                <nav class="nav-menu d-none d-lg-block">
+                <nav id="navbar" class="nav-menu d-none d-lg-block">
 
                     <ul>
                         <li id='home_active' class="active"><a href="registerapp:login">Home</a></li>
@@ -52,6 +52,7 @@
                         <a id='sign_up' href="/#contact" class="get-started-btn">Sign Up</a>
                         <a href="registerapp:user_login" class="get-started-btn">Sign In</a>
                     </ul>
+                    <!-- <i class="las la-bars mobile-nav-toggle"></i> -->
                 </nav>
                 <!-- .nav-menu -->
 
@@ -243,11 +244,8 @@
                         </div>
                         <form action="" method="POST" role="form" class="php-email-form">
                             <div class="form-group">
-                                {% csrf_token %} {% for message in messages %}
                                 <div class="alert {{message.tags}} fade show text-left" role="alert">
-                                    {{message}}
                                 </div>
-                                {% endfor %}
                                 <input type="text" name="first_name" class="form-control" id="name" placeholder="First name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
                                 <div class="validate"></div>
                             </div>
