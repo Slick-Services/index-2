@@ -915,10 +915,10 @@
 
 @media (min-width: 1280px) {
     .progress {
-        height: 125px;
+        height: 110px;
     }
     .progress.pink .mainprogress {
-        margin-top: -5.5rem;
+        margin-top: -3.9rem;
     }
 }
 
