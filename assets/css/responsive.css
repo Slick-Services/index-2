@@ -1093,12 +1093,12 @@
 
 @media (min-width: 1920px) {
     footer#footer:before {
-        right: 38.5%;
+        right: 38.4%;
         height: 100%;
     }
     footer#footer .ftrightline {
         height: 100%;
-        right: 15.6%;
+        right: 15.3%;
     }
     .progress {
         height: 175px;
