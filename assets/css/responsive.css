@@ -1029,7 +1029,7 @@
 
 @media (min-width: 1400px) {
     #hero {
-        height: 1080px;
+        height: 850px;
         /*height: 100vh;*/
         padding: 100px 0;
     }
@@ -1080,6 +1080,9 @@
 }
 
 @media (min-width: 1500px) {
+    #hero {
+        height: 900px;
+    }
     .progress {
         height: 170px;
     }
@@ -1092,6 +1095,9 @@
 }
 
 @media (min-width: 1920px) {
+    #hero {
+        height: 1080px;
+    }
     footer#footer:before {
         right: 38.4%;
         height: 100%;
