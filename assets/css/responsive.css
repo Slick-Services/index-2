@@ -252,7 +252,7 @@
     #dashboard .mobile-nav-toggle {
         position: fixed;
         right: 15px;
-        top: 20px;
+        top: 15px;
     }
     #dashboard .mainclient {
         display: none;
