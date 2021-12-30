@@ -49,21 +49,14 @@
                             <div class="position-relative maincardposition ">
                                 <div class="card otp text-center">
                                     <form class="mainform" action="" method="POST">
-                                        {% csrf_token %}
                                         <h6>Please enter the one time password <br> to verify your account</h6>
                                         <div class="acode" style="color: #005777;">
                                             <span>A OTP has been sent to</span>
-                                            <small>{{email_id}}</small>
+                                            <small></small>
                                         </div>
-                                        <!-- <div class="alert {{message.tags}} fade show text-left" role="alert">
-                                </div> -->
-                                        {% for message in messages %}
                                         <div class="alert {{message.tags}} fade show text-left" role="alert">
-                                            {{message}}
                                         </div>
-                                        {% endfor %}
                                         <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2">
-                                            <!-- <input class="m-2 text-center form-control rounded"  type="number" name="otp_value" id="first" maxlength="6"> -->
                                             <input type="text" id="login" class="m-2 text-center form-control otninput" name="otp_value" pattern="[0-9]+" placeholder="OTP" maxlength="6" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
                                         </div>
                                         <div class="mt-4 text-light">
@@ -72,7 +65,7 @@
                                     </form>
                                     <div class="acode">
                                         <form id="resend_otp" action="{% url 'registerapp:resend_otp_url' token %}" method="post">
-                                            {% csrf_token %} Didn't receive the code?<br />
+                                            Didn't receive the code?<br />
                                             <button class="changepassword btn btn-link" type="submit" style="color:#005777; font-size: large; text-decoration:none;">Send OTP Again</button>
 
                                             <br />

@@ -731,12 +731,12 @@
     #dashboard .about-us .icon-box p {
         line-height: 22px;
     }
-    #dashboard .about-us .cardleftmaincontentpart.mainimgpart {
+    /* #dashboard .about-us .cardleftmaincontentpart.mainimgpart {
         padding: .5rem;
-    }
+    } */
     #dashboard .about-us .cardleftmaincontentpart .pointsbg {
         padding: 3rem 1rem;
-        margin: 0rem 0rem 1rem;
+        margin: 0rem 0rem 2rem;
     }
     #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h2 {
         font-size: 1.3rem;
@@ -754,7 +754,7 @@
     #dashboard .about-us .cardleftmaincontentpart.mainimgpart {
         margin-top: 0;
         margin-bottom: 0;
-        padding: 0 .7rem;
+        padding: 1rem 1.3rem 0;
         border-width: 0.25px;
         border-color: rgb(196, 195, 195);
         border-style: solid;
@@ -765,12 +765,6 @@
     }
     .d-flex.align-items-stretch.aos-init.aos-animate {
         display: flex !important;
-    }
-    #dashboard .about-us .cardleftmaincontentpart.mainimgpart {
-        padding: 1rem 1.3rem 0;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg {
-        margin: 1rem 2rem 2rem;
     }
 }
 
