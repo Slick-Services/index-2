@@ -2510,24 +2510,18 @@ body#dashboard {
     color: #6c757d;
 }
 
-input[type="date"] {
+
+/* input[type="date"] {
     position: relative;
     padding: 10px;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-    color: transparent;
-    background: none;
-    z-index: 1;
-}
-
-input[type="date"]:before {
+#dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 input[type="date"]::before {
     color: transparent;
     background: none;
     display: block;
     font-family: 'Line Awesome Free';
     content: "\f133";
-    /* This is the calendar icon in FontAwesome */
     width: 20px;
     height: 20px;
     position: absolute;
@@ -2535,6 +2529,49 @@ input[type="date"]:before {
     right: 16px;
     font-size: 29px;
     color: #999;
+
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+}
+input[type="date"]:before {
+    color: transparent;
+    background: none;
+    display: block;
+    font-family: 'Line Awesome Free';
+    content: "\f133";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    right: 16px;
+    font-size: 29px;
+    color: #999;
+}*/
+
+#dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    background: none;
+}
+
+.input-group-btn.calenderlbl {
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    right: 0;
+    z-index: 99999;
+}
+
+.btn.btn-default.iconcalender {
+    top: -65px;
+    position: relative;
+    right: 10px;
+    font-size: 2.1rem;
 }
 
 #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 button.btn.btn-primary {
