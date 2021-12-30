@@ -166,6 +166,7 @@
     }
     #dashboard #header .manbtnlogout .welcometxt {
         font-size: .9rem;
+        font-weight: 600;
     }
     #dashboard .navbar li {
         justify-content: flex-start;
@@ -177,8 +178,10 @@
     #dashboard .about-us .cardleftmaincontentpart {
         margin-top: 2rem;
         margin-bottom: 1rem;
-        padding: 1rem ​1.0rem 0;
-        padding: 1rem;
+        padding: .5rem;
+    }
+    #dashboard .about-us .cardleftmaincontentpart .card .card-body {
+        padding: 1rem 0.5rem;
     }
     #dashboard .about-us .icon-box .lorenmaincontent {
         margin-top: 1rem;
@@ -326,7 +329,6 @@
     }
     #dashboard #header .manbtnlogout .welcometxt {
         font-size: 1rem;
-        font-weight: 600;
     }
 }
 
@@ -416,6 +418,12 @@
     }
     #dashboard .about-us .iconbox-blue i span {
         font-size: 1.1rem;
+    }
+    #dashboard .about-us .cardleftmaincontentpart {
+        padding: 1rem;
+    }
+    #dashboard .about-us .cardleftmaincontentpart .card .card-body {
+        padding: 1rem 1rem;
     }
     #dashboard .about-us .cardleftmaincontentpart.mainimgpart {
         padding: 0;
@@ -699,10 +707,7 @@
     }
     #dashboard #header .manbtnlogout {
         justify-content: end;
-        margin: auto;
-    }
-    #dashboard #header .manbtnlogout .welcometxt br {
-        display: flex;
+        margin: 0;
     }
     #dashboard .about-us .cardleftmaincontentpart {
         margin-top: 0rem;
@@ -819,7 +824,7 @@
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-12,
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-12 {
-        margin-top: .43rem;
+        margin-top: .5rem;
     }
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 button.btn {
         margin-bottom: 0;
@@ -1021,7 +1026,7 @@
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-12,
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-12 {
-        margin-top: 1.33rem;
+        margin-top: 1.20rem;
     }
     #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h1 {
         font-size: 2.5rem;
@@ -1065,9 +1070,9 @@
     footer#footer .ftrightline {
         right: 9.9%;
     }
-    #dashboard #header .manbtnlogout .welcometxt br {
+    /*#dashboard #header .manbtnlogout .welcometxt br {
         display: none;
-    }
+    }*/
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-12,
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
