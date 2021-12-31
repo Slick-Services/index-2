@@ -113,6 +113,10 @@
         $("#myModal").modal('show');
     });
 
+    $(document).ready(function() {
+        $("#myModal").modal('show');
+    });
+
     var myModal = document.getElementById('myModal')
     myModal.addEventListener('show.bs.modal', function(event) {
         // Button that triggered the modal

@@ -414,8 +414,9 @@ svg.svg-icon {
 }
 
 .login-wrap .card.otp span.or {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     padding: .6rem;
+    font-weight: 600;
 }
 
 .login-wrap.verifywrap {
@@ -464,5 +465,72 @@ svg.svg-icon {
     .mainchcklogin {
         display: flex;
         flex-direction: column;
+    }
+}
+
+.icon-container {
+    margin-top: 1.3rem;
+    width: 100%;
+    margin-bottom: 0rem;
+}
+
+.icon-container .icon {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: .3rem;
+}
+
+.icon-container .icon::before,
+.icon-container .icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease;
+    border-radius: 30px;
+}
+
+.icon-container .icon i {
+    position: relative;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-top: 15px;
+    transition: all 0.25s ease;
+}
+
+.icon-container .icon-fill::before {
+    transition-duration: 0.5s;
+    box-shadow: inset 0 0 0 1px #16A085;
+}
+
+.icon-container .icon-fill:hover::before {
+    box-shadow: inset 0 0 0 60px #16A085;
+}
+
+.icon-container .icon-expand::after {
+    box-shadow: inset 0 0 0 1px #005777;
+}
+
+.icon-container .icon-expand::before {
+    background: #005777;
+    box-shadow: inset 0 0 0 60px #F6821F;
+}
+
+.icon-container .icon-expand:hover::before {
+    box-shadow: inset 0 0 0 1px #F6821F;
+}
+
+@media (max-width: 575px) {
+    .login-wrap .card.otp span.or {
+        width: 100%;
     }
 }

@@ -43,6 +43,7 @@ h6 {
     color: #fff;
     transition: display 0.5s ease-in-out;
     z-index: 99999;
+    border: solid 2px #005777;
 }
 
 .back-to-top i {
@@ -2668,11 +2669,17 @@ input[type="date"]:before {
     font-size: 2rem;
 }
 
-#dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 button.btn.btn-primary {
+#dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-12.mainbtnchange {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 button.btn.btn-primary {
     background: #000;
     border-color: #000;
     margin-right: .5rem;
-}
+} */
 
 #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 button.btn {
     border-radius: .6rem;
@@ -2680,6 +2687,10 @@ input[type="date"]:before {
     transition: all .1s;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    background: #005777;
+    border-color: #005777;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .form-control:focus,
@@ -2718,27 +2729,46 @@ input[type="date"]:before {
     color: #f6821f;
 }
 
-@media (max-width:500px) {
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 button.btn.btn-primary {
-        margin-right: 0;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 button.btn {
-        width: 100%;
-        margin-top: 0;
-        margin-bottom: 0;
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: initial;
-        margin: .5rem 0;
-    }
-    .col-12.text-sm-end.text-center.mainbtnchange {
-        display: flex;
-        /* justify-content: space-around; */
-        align-items: center;
-        flex-direction: column;
-        align-content: center;
-        margin: 1rem 0 0;
-    }
+.maincomodal .modal-title {
+    color: #005777;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.maincomodal .modal-footer button {
+    margin: auto;
+    padding: .6rem 1.5rem;
+    border-radius: .5rem;
+    background-color: rgb(0 87 119);
+    outline: none;
+}
+
+.maincomodal .modal-footer button:focus {
+    box-shadow: none;
+}
+
+
+/* .modal-backdrop {
+    background: url(../img/loginbg.jpg) no-repeat center top;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.modal-backdrop.show {
+    opacity: .8;
+} */
+
+.maincomodal .modal-content {
+    border-radius: .7rem;
+    -webkit-box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+    -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 62%);
 }

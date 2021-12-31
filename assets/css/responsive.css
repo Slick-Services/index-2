@@ -853,9 +853,7 @@
         padding: 0.5rem .7rem 0rem;
     }
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-12,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-12 {
+    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-12 {
         margin-top: .5rem;
     }
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 button.btn {
@@ -973,9 +971,7 @@
         margin-bottom: 1rem;
     }
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-12,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-12 {
+    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-12 {
         margin-top: var(--bs-gutter-y);
     }
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 button.btn {
@@ -1063,9 +1059,7 @@
         left: 0%;
     }
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-12,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-12 {
+    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-12 {
         margin-top: 1.20rem;
     }
     #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h1 {
@@ -1114,9 +1108,7 @@
         display: none;
     }*/
     #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-12,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-12 {
+    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-12 {
         margin-top: 1.43rem;
     }
 }
