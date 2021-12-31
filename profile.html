@@ -99,12 +99,24 @@
                                                 </select>
                                             </div>
                                             <div class="col-md-6">
-                                                <input class="form-control date-input" readonly="readonly" name="DOB" id="dob" type="date" value="D.O.B." placeholder="D.O.B.">
+                                                <!-- <input class="form-control date-input" name="DOB" id="dob" type="date" value="D.O.B." placeholder="D.O.B.">
                                                 <label class="input-group-btn calenderlbl" for="txtDate">
-                                                    <span class="btn btn-default iconcalender">
+                                                    <span class="tek-btn-date">
+                                                    <button class="btn btn-default iconcalender" type="button">
                                                         <i class="lar la-calendar"></i>
+                                                    </button>
+                                                </span>
+                                                </label> -->
+                                                <div class="tek-date-container tek-flow-modal-date-picker">
+                                                    <input class="tek-input tek-date-input-box form-control" type="date" placeholder="Date" name="startDate" id="tek_start_date" value="" />
+                                                    <span class="tek-btn-date">
+                                                      <div class="tek-cal-icon">	
+                                                          <button type="button">
+                                                          <i class="lar la-calendar iconcalender"></i>
+                                                          </button>
+                                                        </div>
                                                     </span>
-                                                </label>
+                                                </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <input type="text" class="form-control" placeholder="Email Id" id="validationEmail" required>
