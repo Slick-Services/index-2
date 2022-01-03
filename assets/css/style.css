@@ -1304,7 +1304,7 @@ section {
     position: absolute;
     right: 0;
     top: 0;
-    background: rgb(214 25 105);
+    background: rgb(252 148 70);
     padding: 0.45rem;
     border-radius: 50%;
     color: #fff;
@@ -1325,12 +1325,27 @@ section {
 }
 
 .why-us .accordion-list a.collapsed i {
+    background: rgb(249 157 87);
+}
+
+.why-us .accordion-list a.collapsed i {
     color: rgb(249 243 239);
 }
 
-.why-us .accordion-list a.collapsed:hover,
-.why-us .accordion-list a.collapsed:hover i {
+.why-us .accordion-list a.collapsed:hover {
     color: rgb(214 25 105);
+}
+
+.why-us .accordion-list a.collapsed:hover i {
+    color: #fff;
+}
+
+.why-us .accordion-list a.collapsed:hover i {
+    background: rgb(214 25 105);
+}
+
+.why-us .accordion-list a i {
+    background: rgb(214 25 105);
 }
 
 .why-us .accordion-list a.collapsed .icon-show {
