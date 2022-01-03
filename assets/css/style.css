@@ -46,7 +46,7 @@ h6 {
     border-radius: 3px;
     right: 15px;
     bottom: 15px;
-    background: #ff5821;
+    background: rgb(252 148 70);
     color: #fff;
     transition: display 0.5s ease-in-out;
     z-index: 99999;
@@ -62,7 +62,7 @@ h6 {
 
 .back-to-top:hover {
     color: #fff;
-    background: #ff774a;
+    background: rgb(221 121 47);
     transition: background 0.2s ease-in-out;
 }
 
@@ -235,14 +235,14 @@ nav.nav-menu ul {
     transition: 0.3s;
     font-size: 16px;
     display: inline-block;
-    border: 2px solid #fc9446;
+    border: 2px solid #6e0c36;
     margin: 2px 0;
     /* background: #fc9446; */
     margin: auto;
 }
 
 .nav-menu a.get-started-btn:hover {
-    background: #fc9446;
+    background: rgb(214 25 105);
     color: #fff;
 }
 
@@ -1304,9 +1304,10 @@ section {
     position: absolute;
     right: 0;
     top: 0;
-    background: rgb(252 148 70);
+    background: rgb(214 25 105);
     padding: 0.45rem;
     border-radius: 50%;
+    color: #fff;
 }
 
 .why-us .accordion-list p {
