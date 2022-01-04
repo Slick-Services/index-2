@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -10,7 +9,7 @@ body {
 
 a {
     color: #ff7e54;
-	text-decoration: none;
+    text-decoration: none;
 }
 
 a:hover {
@@ -185,19 +184,26 @@ h6 {
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 100%;
-    display: flex;
     float: left;
-    /*justify-content: space-between;*/
-}
-
-nav.nav-menu {
-    justify-content: space-between;
+    display: inline-flex;
+    align-items: center;
 }
 
 nav.nav-menu ul {
-    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+
+/* nav.nav-menu {
+    justify-content: space-between;
+} */
+
+
+/* nav.nav-menu ul {
+    justify-content: center;
+} */
 
 
 /*.nav-menu .mainlogin  {
@@ -221,18 +227,25 @@ nav.nav-menu ul {
 	display: none;
 }*/
 
+#header .mainnavbar {
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
 .nav-menu a.get-started-btn {
     color: #f8864a;
-    border-radius: 4px;
-    padding: 12px 25px 12px 25px;
+    border-radius: .5rem;
+    padding: 11px 18px;
     white-space: nowrap;
     transition: 0.3s;
     font-size: 16px;
     display: inline-block;
     border: 2px solid #6e0c36;
-    margin: 2px 0;
     /* background: #fc9446; */
-    margin: auto;
+    margin: 0;
+    width: auto;
+    height: 50px;
+    padding: 13px 30px 14px;
 }
 
 .nav-menu a.get-started-btn:hover {
@@ -252,7 +265,7 @@ nav.nav-menu ul {
     display: block;
     position: relative;
     color: #48172c;
-    padding: 12px 40px 12px 0;
+    padding: 12px 0px 12px 0;
     transition: 0.3s;
     font-size: 16px;
     font-family: "Poppins", sans-serif;
@@ -260,7 +273,7 @@ nav.nav-menu ul {
     text-align: center;
     font-weight: 500;
     /*flex-wrap: wrap;
-  justify-content: space-evenly;*/
+    justify-content: space-evenly;*/
 }
 
 .nav-menu a:hover,
@@ -392,6 +405,71 @@ nav.nav-menu ul {
     color: #fff;
 }
 
+#header .social-container {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+}
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 0em;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0em;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 29px;
+    left: 19px;
+    transition: all 265ms ease-out;
+}
+
+.social-icons a {
+    display: inline-flex;
+    font-size: 1.6rem;
+}
+
+.social-icons a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: block;
+    background: /*linear-gradient(45deg, #00B5F5, #002A8F)*/
+    linear-gradient(45deg, #b95b14, #fc9446);
+    transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+    transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    color: /*#00B5F5;*/
+    #d82f76;
+    background: /*-webkit-linear-gradient(45deg, #00B5F5, #002A8F)*/
+    -webkit-linear-gradient(45deg, #fc9446, #9b174f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+}
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -521,7 +599,7 @@ nav.nav-menu ul {
     position: relative;
     z-index: 4;
     border: solid 1px #d82f76;
-	text-decoration: none;
+    text-decoration: none;
 }
 
 #hero .btn-get-started:hover {
@@ -652,9 +730,9 @@ nav.nav-menu ul {
 
 #hero .php-email-form input {
     /*padding: 20px 15px;*/
-	padding: 13px 13px;
-	margin-bottom: 1rem;
-	transition: all .3s ;
+    padding: 13px 13px;
+    margin-bottom: 1rem;
+    transition: all .3s;
 }
 
 #hero .php-email-form textarea {
