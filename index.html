@@ -52,41 +52,45 @@
 <body>
 
     <!-- ======= Header ======= -->
-    <header id="header" class="d-flex align-items-center">
-        <div class="container d-flex align-items-center justify-content-between">
-
-            <div class="col-12 col-sm-3">
-                <div class="logo">
-                    <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+    <header id="header" class="fixed-top">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-sm-3">
+                    <div class="logo mr-auto">
+                        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-12 col-sm-9">
-                <nav id="navbar" class="navbar">
-                    <ul>
-                        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                        <li><a class="nav-link scrollto" href="#about">About</a></li>
-                        <li><a class="nav-link scrollto" href="#services">How it Works</a></li>
-                        <li><a class="nav-link scrollto " href="#portfolio">FAQ</a></li>
-                    </ul>
-                    <a href="#about" class="get-started-btn scrollto col-sm-2 col-12 mainlogin">Login</a>
-                    <i class="bi bi-list mobile-nav-toggle"></i>
-                </nav>
+                <div class="col-12 col-sm-9">
+                    <nav class="nav-menu d-none d-lg-flex float-right">
+                        <ul class="col-sm-8 col-12">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">How it Works</a></li>
+                            <li><a href="#why-us">FAQ</a></li>
+                        </ul>
+                        <a href="#about" class="get-started-btn scrollto col-sm-2 col-12 mainlogin">Login</a>
+                        <!--<ul class="col-sm-3 col-12 mainlogin">
+			  <li><a href="#help">Help</a></li>
+			  <li><a href="login.html">Login</a></li>
+			  </ul>-->
+                    </nav>
+                    <!-- .nav-menu -->
+                </div>
+
             </div>
-            <!-- .navbar -->
 
         </div>
     </header>
     <!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
     <section id="hero">
 
         <div class="container">
             <div class="row">
                 <div class="contentheromain">
                     <div class="col-12 col-sm-6 col-md-8 herotexmain">
-                        <div data-aos="zoom-out" class="aos-init aos-animate col-12 col-md-8">
+                        <div data-aos="zoom-out" class="aos-init aos-animate col-12 col-md-11">
                             <h1 class="animate__animated animate__fadeInDown">Make Money<br> <span>Out Of Giving A Survey</span></h1>
                             <p class="animate__animated animate__fadeInUp">
                                 With Get Paid Rewards, you can earn good money by just giving surveys. You can give surveys from any location and make money from anywhere, anytime.</p>
@@ -345,6 +349,8 @@
         </div>
     </footer>
     <!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up fa fa-chevron-up"></i></a>
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
