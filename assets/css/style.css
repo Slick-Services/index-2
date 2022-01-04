@@ -1,10 +1,3 @@
-/**
-* Template Name: Flexor - v2.4.1
-* Template URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 
 /*--------------------------------------------------------------
 # General
@@ -17,6 +10,7 @@ body {
 
 a {
     color: #ff7e54;
+	text-decoration: none;
 }
 
 a:hover {
@@ -527,6 +521,7 @@ nav.nav-menu ul {
     position: relative;
     z-index: 4;
     border: solid 1px #d82f76;
+	text-decoration: none;
 }
 
 #hero .btn-get-started:hover {
@@ -645,18 +640,21 @@ nav.nav-menu ul {
 
 #hero .php-email-form input,
 #hero .php-email-form textarea {
-    border-radius: 5px;
+    border-radius: .5rem;
     box-shadow: none;
     font-size: 14px;
 }
 
 #hero .php-email-form input:focus,
 #hero .php-email-form textarea:focus {
-    border-color: #8ea5ca;
+    border-color: rgb(222 69 134);
 }
 
 #hero .php-email-form input {
-    padding: 20px 15px;
+    /*padding: 20px 15px;*/
+	padding: 13px 13px;
+	margin-bottom: 1rem;
+	transition: all .3s ;
 }
 
 #hero .php-email-form textarea {
