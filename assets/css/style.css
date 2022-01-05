@@ -62,60 +62,6 @@ h6 {
 
 
 /*--------------------------------------------------------------
-# Top Bar
---------------------------------------------------------------*/
-
-
-/*#topbar {
-  background: #39312f;
-  font-size: 14px;
-  padding: 0;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-#topbar .contact-info ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#topbar .contact-info li {
-  display: inline-block;
-  padding: 8px 0;
-}
-
-#topbar .contact-info li + li {
-  margin-left: 18px;
-}
-
-#topbar .contact-info a {
-  color: rgba(255, 255, 255, 0.8);
-  transition: 0.3s;
-}
-
-#topbar .contact-info a:hover {
-  color: #fff;
-}
-
-#topbar .contact-info i {
-  color: #ff5821;
-  padding-right: 4px;
-}
-
-#topbar .cta a {
-  color: #fff;
-  background: #ff5821;
-  padding: 8px 20px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-#topbar .cta a:hover {
-  background: #ff6b3b;
-}*/
-
-
-/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 
@@ -130,7 +76,7 @@ h6 {
 }
 
 #header.header-scrolled {
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); */
     background: #fff;
 }
 
@@ -152,7 +98,7 @@ h6 {
 #header .logo img {
     padding: 4px 0;
     margin: 0;
-    max-height: 65px;
+    max-height: 72px;
 }
 
 #main {
@@ -185,26 +131,19 @@ h6 {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
     float: left;
-    display: inline-flex;
     align-items: center;
+    /*justify-content: space-between;*/
+}
+
+nav.nav-menu {
+    justify-content: space-between;
 }
 
 nav.nav-menu ul {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
-
-
-/* nav.nav-menu {
-    justify-content: space-between;
-} */
-
-
-/* nav.nav-menu ul {
-    justify-content: center;
-} */
 
 
 /*.nav-menu .mainlogin  {
@@ -228,29 +167,22 @@ nav.nav-menu ul {
 	display: none;
 }*/
 
-#header .mainnavbar {
-    display: inline-flex;
-    justify-content: flex-start;
-}
-
 .nav-menu a.get-started-btn {
     color: #f8864a;
-    border-radius: .5rem;
-    padding: 11px 18px;
+    border-radius: 4px;
+    padding: 12px 25px 12px 25px;
     white-space: nowrap;
     transition: 0.3s;
     font-size: 16px;
     display: inline-block;
-    border: 2px solid #6e0c36;
+    border: 2px solid #fc9446;
+    margin: 2px 0;
     /* background: #fc9446; */
-    margin: 0;
-    width: auto;
-    height: 50px;
-    padding: 13px 30px 14px;
+    margin: auto;
 }
 
 .nav-menu a.get-started-btn:hover {
-    background: rgb(214 25 105);
+    background: #fc9446;
     color: #fff;
 }
 
@@ -266,7 +198,7 @@ nav.nav-menu ul {
     display: block;
     position: relative;
     color: #48172c;
-    padding: 12px 0px 12px 0;
+    padding: 12px 40px 12px 0;
     transition: 0.3s;
     font-size: 16px;
     font-family: "Poppins", sans-serif;
@@ -274,7 +206,7 @@ nav.nav-menu ul {
     text-align: center;
     font-weight: 500;
     /*flex-wrap: wrap;
-    justify-content: space-evenly;*/
+  justify-content: space-evenly;*/
 }
 
 .nav-menu a:hover,
@@ -404,71 +336,6 @@ nav.nav-menu ul {
 
 .mobile-nav-active .mobile-nav-toggle i {
     color: #fff;
-}
-
-#header .social-container {
-    margin: 0;
-    text-align: center;
-    display: flex;
-    justify-content: end;
-}
-
-.social-icons {
-    padding: 0;
-    list-style: none;
-    margin: 0em;
-}
-
-.social-icons li {
-    display: inline-block;
-    margin: 0em;
-    position: relative;
-    font-size: 1.2em;
-}
-
-.social-icons i {
-    color: #fff;
-    position: absolute;
-    top: 29px;
-    left: 19px;
-    transition: all 265ms ease-out;
-}
-
-.social-icons a {
-    display: inline-flex;
-    font-size: 1.6rem;
-}
-
-.social-icons a:before {
-    transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    content: " ";
-    width: 45px;
-    height: 45px;
-    border-radius: 100%;
-    display: block;
-    background: /*linear-gradient(45deg, #00B5F5, #002A8F)*/
-    linear-gradient(45deg, #b95b14, #fc9446);
-    transition: all 265ms ease-out;
-}
-
-.social-icons a:hover:before {
-    transform: scale(0);
-    transition: all 265ms ease-in;
-}
-
-.social-icons a:hover i {
-    transform: scale(2.2);
-    -ms-transform: scale(2.2);
-    -webkit-transform: scale(2.2);
-    color: /*#00B5F5;*/
-    #d82f76;
-    background: /*-webkit-linear-gradient(45deg, #00B5F5, #002A8F)*/
-    -webkit-linear-gradient(45deg, #fc9446, #9b174f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 265ms ease-in;
 }
 
 

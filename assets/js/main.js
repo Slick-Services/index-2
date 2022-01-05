@@ -94,7 +94,7 @@
         let headerOffset = selectHeader.offsetTop
         let nextElement = selectHeader.nextElementSibling
         const headerFixed = () => {
-            if ((headerOffset - window.scrollY) <= 50) {
+            if ((headerOffset - window.scrollY) <= 200) {
                 selectHeader.classList.add('fixed-top')
                 nextElement.classList.add('scrolled-offset')
             } else {
@@ -106,6 +106,18 @@
         onscroll(document, headerFixed)
     }
 
+    // Toggle .header-scrolled class to #header when page is scrolled
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
+            $('#header').addClass('header-scrolled');
+        } else {
+            $('#header').removeClass('header-scrolled');
+        }
+    });
+
+    if ($(window).scrollTop() > 0) {
+        $('#header').addClass('header-scrolled');
+    }
     /**
      * Back to top button
      */
@@ -152,8 +164,8 @@
             if (navbar.classList.contains('navbar-mobile')) {
                 navbar.classList.remove('navbar-mobile')
                 let navbarToggle = select('.mobile-nav-toggle')
-                navbarToggle.classList.toggle('bi-list')
-                navbarToggle.classList.toggle('bi-x')
+                navbarToggle.classList.toggle('la-bars')
+                navbarToggle.classList.toggle('la-times')
             }
             scrollto(this.hash)
         }
