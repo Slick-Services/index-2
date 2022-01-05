@@ -1,4 +1,10 @@
 @media (min-width: 320px) {
+    .navbar .getstarted {
+        padding: 10px 45px;
+    }
+    .navbar {
+        justify-content: end;
+    }
     #hero .formsmainphpmain {
         top: 0;
     }
@@ -185,6 +191,9 @@
 @media (max-width: 575.98px) {}
 
 @media (min-width: 576px) {
+    .navbar .getstarted {
+        padding: 12px 25px;
+    }
     #hero:before {
         background: url("../img/hero_curve_small.png") no-repeat;
         background-position: right;
@@ -312,13 +321,8 @@
 @media (min-width: 991px) {}
 
 @media (min-width: 992px) {
-    #hero h1 {
-        font-size: 40px;
-        line-height: 50px;
-        margin: 20px 0 0 0;
-    }
-    #hero .btn-get-started {
-        padding: 16px 25px 16px 25px;
+    .navbar {
+        justify-content: space-between;
     }
     .mobile-nav .mainlogin {
         float: right;
@@ -328,6 +332,14 @@
     }
     .nav-menu a.get-started-btn {
         margin: auto;
+    }
+    #hero h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin: 20px 0 0 0;
+    }
+    #hero .btn-get-started {
+        padding: 16px 25px 16px 25px;
     }
     .section-title {
         padding-bottom: 45px;
