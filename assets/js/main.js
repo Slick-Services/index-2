@@ -106,18 +106,6 @@
         onscroll(document, headerFixed)
     }
 
-    // Toggle .header-scrolled class to #header when page is scrolled
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 0) {
-            $('#header').addClass('header-scrolled');
-        } else {
-            $('#header').removeClass('header-scrolled');
-        }
-    });
-
-    if ($(window).scrollTop() > 0) {
-        $('#header').addClass('header-scrolled');
-    }
     /**
      * Back to top button
      */
@@ -226,24 +214,6 @@
     });
 
     /**
-     * Testimonials slider
-     */
-    new Swiper('.testimonials-slider', {
-        speed: 600,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
-        slidesPerView: 'auto',
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        }
-    });
-
-    /**
      * Porfolio isotope and filter
      */
     window.addEventListener('load', () => {
@@ -297,7 +267,6 @@
             clickable: true
         }
     });
-
 
 
 })()

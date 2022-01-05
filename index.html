@@ -30,7 +30,7 @@
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="/static/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -54,14 +54,15 @@
                 <div class="col-6 col-sm-9 mainnavbar">
                     <!-- <nav id="navbar" class="nav-menu float-right col-12"> -->
                     <nav id="navbar" class="navbar nav-menu">
-                        <ul class="col-sm-8 col-lg-8 col-12">
+                        <ul>
                             <li class="active"><a href="index.html">Home</a></li>
                             <li class=""><a href="#about">About</a></li>
                             <li><a href="#services">How it Works</a></li>
                             <li><a href="#why-us">FAQ</a></li>
+                            <li><a href="#about" class="getstarted scrollto col-2 d-lg-none mainlogin">Login</a></li>
                         </ul>
                         <i class="las la-bars mobile-nav-toggle"></i>
-                        <a href="#about" class="getstarted scrollto col-sm-3 col-lg-2 col-3 mainlogin">Login</a>
+                        <a href="#about" class="getstarted scrollto d-lg-flex d-none col-sm-3 col-lg-2 col-3 mainlogin">Login</a>
                         <!-- <div class="social-container col-sm-5 col-10">
                             <ul class="social-icons">
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
@@ -234,7 +235,7 @@
         <!-- End Clients Section -->
 
         <!-- ======= Why Us Section ======= -->
-        <section id="why-us" class="why-us">
+        <section id="faq" class="faq">
             <div class="container aos-init aos-animate" data-aos="fade-up">
                 <!--<div class="section-title">
                     <h2 data-aos="fade-up">Frequently Asked Question ?</h2>
@@ -244,36 +245,39 @@
                 </div>
                 <div class="row pt-sm-5 mt-2">
                     <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1 pt-4 pt-lg-0">
-                        <div class="accordion-list">
+                        <div class="faq-list">
                             <ul>
-                                <li data-aos="fade-up" class="aos-init aos-animate">
-                                    <a data-toggle="collapse" class="collapse" href="#accordion-list-1">01
-					 What is Get Paid Reward?<i class="la la-angle-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                                    <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
+                                <li data-aos="fade-up">
+                                    <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">01
+                                        What is Get Paid Reward? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                                         <p>
                                             Get Paid Reward conducts surveys and polls on the Internet about varying topics like, politics, public affairs, products, brands and other topics of general interest.
                                         </p>
                                     </div>
                                 </li>
+
                                 <li data-aos="fade-up" data-aos-delay="100">
-                                    <a data-toggle="collapse" href="#accordion-list-2" class="collapsed">02
-					  How long is a typical Get Paid Reward survey? <i class="la la-angle-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                                    <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+                                    <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">02
+                                        How long is a typical Get Paid Reward survey? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                                         <p>
                                             Most Get Paid Reward surveys are very short and should only take you about five to ten minutes to complete. A typical survey is only about 20 to 30 fairly short questions in total. Occasionally, there will be longer surveys or surveys with more complex
                                             questions.
                                         </p>
                                     </div>
                                 </li>
+
                                 <li data-aos="fade-up" data-aos-delay="200">
-                                    <a data-toggle="collapse" href="#accordion-list-3" class="collapsed">03
-					  What types of data are collected? <i class="la la-angle-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                                    <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                                    <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">03
+                                        What types of data are collected? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                                         <p>
                                             Get Paid Reward is a community to help understand how people use the internet. What websites they visit, and which apps they use. We collect generic data and never any personal data is shared with the client without your prior consent.
                                         </p>
                                     </div>
                                 </li>
+
                             </ul>
                         </div>
                     </div>
@@ -351,15 +355,16 @@
     </footer>
     <!-- End Footer -->
 
-    <a href="#" class="back-to-top"><i class="icofont-simple-up fa fa-chevron-up"></i></a>
+    <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up fa fa-chevron-up"></i></a> -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="las la-arrow-up"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

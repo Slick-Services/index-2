@@ -34,10 +34,10 @@ h6 {
 
 .back-to-top {
     position: fixed;
-    display: none;
+    visibility: hidden;
     width: 40px;
     height: 40px;
-    border-radius: 3px;
+    border-radius: .4rem;
     right: 15px;
     bottom: 15px;
     background: rgb(252 148 70);
@@ -48,16 +48,22 @@ h6 {
 }
 
 .back-to-top i {
-    font-size: 24px;
+    font-size: 30px;
     position: absolute;
-    top: 10px;
-    left: 11px;
+    top: 8px;
+    left: 9px;
+    font-weight: 900;
 }
 
 .back-to-top:hover {
     color: #fff;
     background: rgb(221 121 47);
     transition: background 0.2s ease-in-out;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
 }
 
 
@@ -206,24 +212,39 @@ h6 {
   */
 
 .mobile-nav-toggle {
-    color: #473d3a;
-    font-size: 28px;
+    color: #fff;
+    font-size: 1.8rem;
+    padding-top: .15rem;
     cursor: pointer;
     display: none;
     line-height: 0;
     transition: 0.5s;
+    background: #fc9547;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
 }
 
 .mobile-nav-toggle.bi-x {
     color: #fff;
 }
 
+.mobile-nav-toggle {
+    display: none;
+}
+
 @media (max-width: 991px) {
     .mobile-nav-toggle {
-        display: block;
+        display: flex;
     }
     .navbar ul {
         display: none;
+    }
+    .mobile-nav-toggle {
+        display: flex;
     }
 }
 
@@ -257,6 +278,7 @@ h6 {
     background-color: #fff;
     overflow-y: auto;
     transition: 0.3s;
+    height: 100%;
 }
 
 .navbar-mobile a,
@@ -275,6 +297,7 @@ h6 {
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
     margin: 15px;
+    position: relative;
 }
 
 
@@ -1107,12 +1130,18 @@ section {
     background-color: #ff5821 !important;
 }
 
+.clients-slider.swiper .swiper-slide {
+    width: 200px !important;
+    margin-right: 20px!important;
+}
+
 
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
 
-.why-us {
+
+/* .why-us {
     padding: 3rem 0 5rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
@@ -1253,6 +1282,191 @@ section {
     padding: 1rem 2.5rem;
     color: rgb(214 25 105);
     transition: all .2s;
+} */
+
+
+/* @font-face {
+    font-family: 'Line Awesome Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url(../fonts/la-brands-400.eot);
+    src: url(../fonts/la-brands-400.eot?#iefix) format("embedded-opentype"), url(../fonts/la-brands-400.woff2) format("woff2"), url(../fonts/la-brands-400.woff) format("woff"), url(../fonts/la-brands-400.ttf) format("truetype"), url(../fonts/la-brands-400.svg#lineawesome) format("svg")
+}
+
+.bxs {
+    font-family: 'Line Awesome Brands'
+}
+
+@font-face {
+    font-family: 'Line Awesome Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url(../fonts/la-regular-400.eot);
+    src: url(../fonts/la-regular-400.eot?#iefix) format("embedded-opentype"), url(../fonts/la-regular-400.woff2) format("woff2"), url(../fonts/la-regular-400.woff) format("woff"), url(../fonts/la-regular-400.ttf) format("truetype"), url(../fonts/la-regular-400.svg#lineawesome) format("svg")
+}
+
+.bxr {
+    font-family: 'Line Awesome Free';
+    font-weight: 400
+}
+
+@font-face {
+    font-family: 'Line Awesome Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url(../fonts/la-solid-900.eot);
+    src: url(../fonts/la-solid-900.eot?#iefix) format("embedded-opentype"), url(../fonts/la-solid-900.woff2) format("woff2"), url(../fonts/la-solid-900.woff) format("woff"), url(../fonts/la-solid-900.ttf) format("truetype"), url(../fonts/la-solid-900.svg#lineawesome) format("svg")
+} */
+
+@media (max-width: 1024px) {
+    .why-us .content,
+    .why-us .accordion-list {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .why-us .img {
+        min-height: 400px;
+    }
+    .why-us .content {
+        padding-top: 30px;
+    }
+    .why-us .accordion-list {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .why-us .img {
+        min-height: 200px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# F.A.Q
+--------------------------------------------------------------*/
+
+.faq .faq-list {
+    padding: 0 10px 0 0;
+}
+
+.faq .faq-list ul {
+    padding: 0;
+    list-style: none;
+}
+
+.faq .faq-list li+li {
+    margin-top: 15px;
+}
+
+.faq .faq-list li {
+    padding: 20px;
+    background: #fff;
+    border-radius: .7rem;
+    position: relative;
+    box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 16%);
+}
+
+.faq .faq-list a {
+    display: block;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 0 30px 0 0;
+    outline: none;
+    cursor: pointer;
+    color: rgb(214 25 105);
+}
+
+.faq .faq-list .icon-help {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    left: 20px;
+    color: #ffb8a1;
+}
+
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.faq .faq-list p {
+    margin-bottom: 0;
+    padding: 10px 0 0 0;
+}
+
+.faq .faq-list .icon-show {
+    display: none;
+}
+
+.faq .faq-list a.collapsed {
+    color: #343a40;
+}
+
+.faq .faq-list a.collapsed:hover {
+    color: rgb(214 25 105);
+}
+
+.faq .faq-list a.collapsed .icon-show {
+    display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+    display: none;
+}
+
+.bx-chevron-up:before {
+    content: "\f106";
+}
+
+.bx {
+    font-family: 'Line Awesome Brands';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bx,
+.bxs {
+    font-family: 'Line Awesome Free';
+    font-weight: 900
+}
+
+.la-angle-down:before,
+.bx-chevron-down::before {
+    content: "\f107"
+}
+
+@media (max-width: 1200px) {
+    .faq .faq-list {
+        padding: 0;
+    }
+}
+
+.faq .btn.aboutbtn.get-started-btn {
+    border: solid 1px rgb(214 25 105);
+    border-radius: 2rem;
+    padding: 1rem 2.5rem;
+    color: rgb(214 25 105);
+    transition: all .2s;
 }
 
 .btn:link,
@@ -1284,7 +1498,7 @@ section {
 .btn::after {
     content: "";
     display: inline-block;
-    height: 100%;
+    height: auto;
     width: 100%;
     border-radius: 100px;
     position: absolute;
@@ -1332,172 +1546,28 @@ section {
     }
 }
 
-
-/*.bubbly-button {
-  font-family: "Helvetica", "Arial", sans-serif;
-  display: inline-block;
-  font-size: 1em;
-  padding: 1em 2em;
-  margin-top: 100px;
-  margin-bottom: 60px;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #ff0081;
-  color: #fff;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
-}
-.bubbly-button:focus {
-  outline: 0;
-}
-.bubbly-button:before, .bubbly-button:after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 140%;
-  height: 100%;
-  left: -20%;
-  z-index: -1000;
-  transition: all ease-in-out 0.5s;
-  background-repeat: no-repeat;
-}
-.bubbly-button:before {
-  display: none;
-  top: -75%;
-  background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
-  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
-}
-.bubbly-button:after {
-  display: none;
-  bottom: -75%;
-  background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
-  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
-}
-.bubbly-button:active {
-  transform: scale(0.9);
-  background-color: #e60074;
-  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
-}
-.bubbly-button.animate:before {
-  display: block;
-  animation: topBubbles ease-in-out 0.75s forwards;
-}
-.bubbly-button.animate:after {
-  display: block;
-  animation: bottomBubbles ease-in-out 0.75s forwards;
-}
-
-@keyframes topBubbles {
-  0% {
-    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
-  }
-  50% {
-    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
-  }
-  100% {
-    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
-    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
-  }
-}
-@keyframes bottomBubbles {
-  0% {
-    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
-  }
-  50% {
-    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
-  }
-  100% {
-    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
-    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
-  }
-}*/
-
-.bx-chevron-up:before {
-    content: "\f106";
-    /*	transform: scaleX(-1) rotate(90deg);*/
-}
-
-.bx {
-    font-family: 'Line Awesome Brands';
-    font-weight: normal;
-    font-style: normal;
-    font-variant: normal;
-    line-height: 1;
-    display: inline-block;
-    text-transform: none;
-    speak: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-@font-face {
-    font-family: 'Line Awesome Brands';
-    font-style: normal;
-    font-weight: 400;
-    font-display: auto;
-    src: url(../fonts/la-brands-400.eot);
-    src: url(../fonts/la-brands-400.eot?#iefix) format("embedded-opentype"), url(../fonts/la-brands-400.woff2) format("woff2"), url(../fonts/la-brands-400.woff) format("woff"), url(../fonts/la-brands-400.ttf) format("truetype"), url(../fonts/la-brands-400.svg#lineawesome) format("svg")
-}
-
-.bxs {
-    font-family: 'Line Awesome Brands'
-}
-
-@font-face {
-    font-family: 'Line Awesome Free';
-    font-style: normal;
-    font-weight: 400;
-    font-display: auto;
-    src: url(../fonts/la-regular-400.eot);
-    src: url(../fonts/la-regular-400.eot?#iefix) format("embedded-opentype"), url(../fonts/la-regular-400.woff2) format("woff2"), url(../fonts/la-regular-400.woff) format("woff"), url(../fonts/la-regular-400.ttf) format("truetype"), url(../fonts/la-regular-400.svg#lineawesome) format("svg")
-}
-
-.bxr {
-    font-family: 'Line Awesome Free';
-    font-weight: 400
-}
-
-@font-face {
-    font-family: 'Line Awesome Free';
-    font-style: normal;
-    font-weight: 900;
-    font-display: auto;
-    src: url(../fonts/la-solid-900.eot);
-    src: url(../fonts/la-solid-900.eot?#iefix) format("embedded-opentype"), url(../fonts/la-solid-900.woff2) format("woff2"), url(../fonts/la-solid-900.woff) format("woff"), url(../fonts/la-solid-900.ttf) format("truetype"), url(../fonts/la-solid-900.svg#lineawesome) format("svg")
-}
-
-.bx,
-.bxs {
-    font-family: 'Line Awesome Free';
-    font-weight: 900
-}
-
 @media (max-width: 1024px) {
-    .why-us .content,
-    .why-us .accordion-list {
+    .faq .content,
+    .faq .accordion-list {
         padding-left: 0;
         padding-right: 0;
     }
 }
 
 @media (max-width: 992px) {
-    .why-us .img {
+    .faq .img {
         min-height: 400px;
     }
-    .why-us .content {
+    .faq .content {
         padding-top: 30px;
     }
-    .why-us .accordion-list {
+    .faq .accordion-list {
         padding-bottom: 30px;
     }
 }
 
 @media (max-width: 575px) {
-    .why-us .img {
+    .faq .img {
         min-height: 200px;
     }
 }
