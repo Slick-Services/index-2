@@ -61,7 +61,7 @@
         navbarlinks.forEach(navbarlink => {
             if (!navbarlink.hash) return
             let section = select(navbarlink.hash)
-            if (!section) return
+                // if (!section) return
             if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
                 navbarlink.classList.add('active')
             } else {
@@ -86,25 +86,49 @@
         })
     }
 
+
     /**
      * Header fixed top on scroll
      */
-    let selectHeader = select('#header')
-    if (selectHeader) {
-        let headerOffset = selectHeader.offsetTop
-        let nextElement = selectHeader.nextElementSibling
-        const headerFixed = () => {
-            if ((headerOffset - window.scrollY) <= 200) {
-                selectHeader.classList.add('fixed-top')
-                nextElement.classList.add('scrolled-offset')
+    // let selectHeader = select('#header')
+    // if (selectHeader) {
+    //     let headerOffset = selectHeader.offsetTop
+    //     let nextElement = selectHeader.nextElementSibling
+    //     const headerFixed = () => {
+    //         if ((headerOffset - window.scrollY) <= 200) {
+    //             selectHeader.classList.add('fixed-top')
+    //             nextElement.classList.add('scrolled-offset')
+    //         } else {
+    //             selectHeader.classList.remove('fixed-top')
+    //             nextElement.classList.remove('scrolled-offset')
+    //         }
+    //     }
+    //     window.addEventListener('load', headerFixed)
+    //     onscroll(document, headerFixed)
+    // }
+
+    /**
+     * Header fixed top on scroll
+     */
+    document.addEventListener("DOMContentLoaded", function() {
+
+        window.addEventListener('scroll', function() {
+
+            if (window.scrollY > 50) {
+                document.getElementById('header').classList.add('header-scrolled');
+                // add padding top to show content behind navbar
+                // navbar_height = document.querySelector('.header').offsetHeight;
+                // document.body.style.paddingTop = navbar_height + 'px';
             } else {
-                selectHeader.classList.remove('fixed-top')
-                nextElement.classList.remove('scrolled-offset')
+                document.getElementById('header').classList.remove('header-scrolled');
+                // remove padding top from body
+                document.body.style.paddingTop = '0';
             }
-        }
-        window.addEventListener('load', headerFixed)
-        onscroll(document, headerFixed)
-    }
+            // window.addEventListener('load', headerFixed)
+            //     onscroll(document, headerFixed)
+        });
+    });
+    // DOMContentLoaded  end
 
     /**
      * Back to top button
@@ -173,9 +197,9 @@
     /**
      * Initiate glightbox 
      */
-    const glightbox = GLightbox({
-        selector: '.glightbox'
-    });
+    // const glightbox = GLightbox({
+    //     selector: '.glightbox'
+    // });
 
     /**
      * Clients Slider
@@ -195,78 +219,92 @@
         },
         breakpoints: {
             320: {
-                slidesPerView: 2,
-                spaceBetween: 40
+                slidesPerView: 1,
+                spaceBetween: 0
             },
             480: {
-                slidesPerView: 3,
-                spaceBetween: 60
+                slidesPerView: 1,
+                spaceBetween: 0
             },
             640: {
-                slidesPerView: 4,
+                slidesPerView: 1,
+                spaceBetween: 0
+            },
+            768: {
+                slidesPerView: 2,
                 spaceBetween: 80
             },
             992: {
-                slidesPerView: 6,
-                spaceBetween: 120
+                slidesPerView: 3,
+                spaceBetween: 7
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 90
+            },
+            1400: {
+                slidesPerView: 4,
+                spaceBetween: 0
             }
         }
     });
 
+
     /**
      * Porfolio isotope and filter
      */
-    window.addEventListener('load', () => {
-        let portfolioContainer = select('.portfolio-container');
-        if (portfolioContainer) {
-            let portfolioIsotope = new Isotope(portfolioContainer, {
-                itemSelector: '.portfolio-item',
-                layoutMode: 'fitRows'
-            });
+    // window.addEventListener('load', () => {
+    //     let portfolioContainer = select('.portfolio-container');
+    //     if (portfolioContainer) {
+    //         let portfolioIsotope = new Isotope(portfolioContainer, {
+    //             itemSelector: '.portfolio-item',
+    //             layoutMode: 'fitRows'
+    //         });
 
-            let portfolioFilters = select('#portfolio-flters li', true);
+    //         let portfolioFilters = select('#portfolio-flters li', true);
 
-            on('click', '#portfolio-flters li', function(e) {
-                e.preventDefault();
-                portfolioFilters.forEach(function(el) {
-                    el.classList.remove('filter-active');
-                });
-                this.classList.add('filter-active');
+    //         on('click', '#portfolio-flters li', function(e) {
+    //             e.preventDefault();
+    //             portfolioFilters.forEach(function(el) {
+    //                 el.classList.remove('filter-active');
+    //             });
+    //             this.classList.add('filter-active');
 
-                portfolioIsotope.arrange({
-                    filter: this.getAttribute('data-filter')
-                });
-                portfolioIsotope.on('arrangeComplete', function() {
-                    AOS.refresh()
-                });
-            }, true);
-        }
+    //             portfolioIsotope.arrange({
+    //                 filter: this.getAttribute('data-filter')
+    //             });
+    //             portfolioIsotope.on('arrangeComplete', function() {
+    //                 AOS.refresh()
+    //             });
+    //         }, true);
+    //     }
 
-    });
+    // });
 
     /**
      * Initiate portfolio lightbox 
      */
-    const portfolioLightbox = GLightbox({
-        selector: '.portfolio-lightbox'
-    });
+    // const portfolioLightbox = GLightbox({
+    //     selector: '.portfolio-lightbox'
+    // });
 
     /**
      * Portfolio details slider
      */
-    new Swiper('.portfolio-details-slider', {
-        speed: 400,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        }
-    });
+    // new Swiper('.portfolio-details-slider', {
+    //     speed: 400,
+    //     loop: true,
+    //     autoplay: {
+    //         delay: 5000,
+    //         disableOnInteraction: false
+    //     },
+    //     pagination: {
+    //         el: '.swiper-pagination',
+    //         type: 'bullets',
+    //         clickable: true
+    //     }
+    // });
+
 
 
 })()

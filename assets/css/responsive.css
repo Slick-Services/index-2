@@ -1,4 +1,7 @@
 @media (min-width: 320px) {
+    #header {
+        background: #fff;
+    }
     .navbar .getstarted {
         padding: 10px 45px;
     }
@@ -26,6 +29,12 @@
     #hero .btn-get-started {
         padding: 14px 20px 14px 20px;
     }
+    #hero p {
+        margin-bottom: 0;
+    }
+    #hero .reedmoremain {
+        margin-bottom: 1rem;
+    }
     .about .aboutmaintak {
         display: flex;
         justify-content: center;
@@ -49,13 +58,19 @@
         padding-bottom: 10px;
         width: 140px;
     }
+    .services .mainservicesrow {
+        padding-top: 0rem;
+    }
     .clients {
         margin: 10px 0 10px;
-        padding: 40px 0;
+        padding: 40px 0 0;
     }
     .clients .owl-item {
         padding: 10px 20px 0;
         margin-top: 8px;
+    }
+    .faq {
+        padding-bottom: 45px;
     }
     .services.section-bg {
         height: auto;
@@ -147,12 +162,12 @@
         width: 100%;
     }
     .section-title h2 {
-        font-size: 25px;
+        font-size: 18px;
     }
     .section-title h2:after,
     .section-title h2:before {
-        top: 7px;
-        width: 50px;
+        top: 3px;
+        width: 70px;
     }
     #footer .footer-top .footer-links {
         flex-direction: row;
@@ -185,13 +200,8 @@
 }
 
 @media (min-width: 575.98px) {
-    .section-title h2:after,
-    .section-title h2:before {
-        top: 8px;
-        width: 70px;
-    }
     .section-title h2 {
-        font-size: 32px;
+        font-size: 30px;
         margin-bottom: 30px;
         padding-bottom: 30px;
     }
@@ -200,6 +210,9 @@
 @media (max-width: 575.98px) {}
 
 @media (min-width: 576px) {
+    #header {
+        background: transparent;
+    }
     .navbar .getstarted {
         padding: 12px 25px;
     }
@@ -230,6 +243,9 @@
     #hero .btn-get-started {
         padding: 13px 15px 13px 15px;
     }
+    #hero .reedmoremain {
+        margin-bottom: 0;
+    }
     .services.section-bg {
         padding: 90px 0;
     }
@@ -247,6 +263,12 @@
 @media (min-width: 600px) {
     .navbar-mobile ul {
         height: 30%;
+    }
+    .section-title h2 {
+        font-size: 32px;
+    }
+    .services .mainservicesrow {
+        padding-top: 2.0rem;
     }
 }
 
@@ -297,12 +319,18 @@
         margin-bottom: 20px;
         padding-bottom: 20px;
     }
+    .services .mainservicesrow {
+        padding-top: 3.0rem;
+    }
     .clients {
-        padding: 40px 0;
+        padding: 40px 0 0;
     }
     .clients .owl-item {
         padding: 20px 20px 0;
         margin-top: 15px;
+    }
+    .faq {
+        padding-bottom: 55px;
     }
     .services.section-bg {
         /* height: 55vh;*/
@@ -386,11 +414,14 @@
     }
     .clients {
         margin: 15px 0 10px;
-        padding: 60px 0;
+        padding: 60px 0 15px;
     }
     .clients .owl-item {
         padding: 20px 20px 0;
         margin-top: 35px;
+    }
+    .faq {
+        padding-bottom: 60px;
     }
     .services .mainicon .icon-boxmain {
         margin-bottom: 0px;
@@ -433,7 +464,6 @@
 
 @media (min-width: 1024px) {
     .services.section-bg {
-        /* height: 75vh;*/
         padding: 45px 0;
     }
     #hero .container .contentheromain {
@@ -446,6 +476,9 @@
 }
 
 @media (min-width: 1200px) {
+    .navbar {
+        justify-content: space-around;
+    }
     .blog .member .member-info {
         bottom: -57.9%;
     }
@@ -470,15 +503,19 @@
     #hero .formsmainphpmain {
         top: 0;
     }
+    .services .mainservicesrow {
+        padding-top: 4.0rem;
+    }
+    .clients {
+        margin: 15px 0 10px;
+        padding: 60px 0 30px;
+    }
 }
 
 @media (min-width: 1366px) {
-    /*#hero {
-    	height: 100vh;
-	}*/
-    /*#hero .container .contentheromain {
-    	margin: 20% 0;
-    }*/
+    .navbar {
+        justify-content: space-between;
+    }
     #hero h1 {
         font-size: 59px;
         line-height: 78px;
@@ -501,7 +538,6 @@
         padding-bottom: 10px;
     }
     .services.section-bg {
-        /*height: 100vh;*/
         padding: 60px 0;
     }
 }
@@ -514,7 +550,6 @@
         background-position: right;
     }
     .services.section-bg {
-        /*height: 65vh;*/
         padding: 60px 0;
     }
 }
