@@ -16,7 +16,7 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(112 4 50);
+    color: rgb(214 25 105);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -138,7 +138,7 @@ body.loginbg {
 .login-wrap {
     position: relative;
     background: #fff;
-    border-radius: 10px;
+    border-radius: .9rem;
     -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
     -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
     box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
@@ -165,7 +165,7 @@ body.loginbg {
 }
 
 .form-control {
-    height: 48px;
+    /* height: 48px; */
     background: rgba(0, 0, 0, 0.05);
     color: #000;
     font-size: 16px;
@@ -177,6 +177,8 @@ body.loginbg {
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    padding: .7rem 0.8rem;
+    border-radius: .5rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -431,7 +433,7 @@ svg.svg-icon {
     /* right: 0; */
     margin: 0 auto;
     width: 100%;
-    border-radius: .5rem !important;
+    border-radius: .8rem !important;
     /*webkit-box-shadow: 0 10px 30px 0 rgb(95 186 233 / 40%) !important; 
     box-shadow: 0 10px 30px 0 rgb(95 186 233 / 40%) !important;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -441,7 +443,8 @@ svg.svg-icon {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
+    padding: .6rem .6rem;
 }
 
 @media (max-width: 767.98px) {
@@ -581,7 +584,8 @@ form.mainform h6 {
 .backlogin a {
     position: relative;
     display: inline-block;
-    padding: 10px 20px;
+    /*padding: 10px 20px;*/
+    padding: 1rem 1.5rem;
     color: rgb(214 25 105);
     font-size: 16px;
     text-decoration: none;
@@ -595,7 +599,7 @@ form.mainform h6 {
 .backlogin a:hover {
     background: rgb(214 25 105);
     color: #fff;
-    border-radius: 5px;
+    border-radius: .6rem;
     box-shadow: 0 0 5px #ef7bac, 0 0 25px #d54f88, 0 0 50px #f9c8dd, 0 0 100px rgb(214 25 105)
 }
 
