@@ -743,9 +743,9 @@ section {
     height: 70vh;
     background: url("../img/service_bg.jpg") no-repeat;
     background-size: cover;
-    o-background-size: cover;
-    webkit-background-size: cover;
-    moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
@@ -1096,7 +1096,7 @@ section {
     line-height: 1;
     display: inline-block;
     text-transform: none;
-    speak: none;
+    /* speak: none; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
