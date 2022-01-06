@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Get Paid REWARD</title>
+    <meta content="We at Panel viewpoint ensures quality inputs for your research through our online panel across the globe. We have an experienced team of project and panel management who can help you manage your end to end project while you are focusing on outcome of your research objective."
+        name="description">
+    <meta content="Online Data Collection, Survey Panel, Survey Programming, data processing, Tabulations" name="keywords">
+
+    <title>Flexor Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicn/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicn/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicn/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicn/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicn/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicn/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicn/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicn/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicn/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicn/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicn/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicn/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicn/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicn/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicn/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/stylelogin.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body class="loginbg">
+
+    <main class="form-signin">
+        <section class="ftco-section fadeInDown">
+            <div class="container h-100 mainmobileverification">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                        <div class="login-wrap p-3 p-sm-4 p-md-4 p-lg-5">
+                            <div class="position-relative maincardposition ">
+                                <div class="card otp text-center">
+                                    <form class="mainform" action="" method="POST">
+                                        <h6>Please enter the one time password <br> to verify your account</h6>
+                                        <div class="acode otpatxt">
+                                            <span>A OTP has been sent to</span>
+                                            <small></small>
+                                        </div>
+                                        <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2">
+                                            <input type="text" id="login" class="m-2 text-center form-control otninput" name="otp_value" pattern="[0-9]+" placeholder="OTP" maxlength="6" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                                        </div>
+                                        <div class="mt-4 text-light">
+                                            <button class="btn btn validbtn" type="submit">Validate</button>
+                                        </div>
+                                    </form>
+                                    <div class="acode">
+                                        <form id="resend_otp" action="{% url 'registerapp:resend_otp_url' token %}" method="post">
+                                            Didn't receive the code?<br />
+                                            <button class="changepassword btn btn-link" type="submit">Send OTP Again</button>
+
+                                            <br />
+                                            <a href="{%url 'registerapp:login'%}" class="changepassword">Change Email Address</a>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            function OTPInput() {
+                const inputs = document.querySelectorAll('#otp > *[id]');
+                for (let i = 0; i < inputs.length; i++) {
+                    inputs[i].addEventListener('keydown', function(event) {
+                        if (event.key === "Backspace") {
+                            inputs[i].value = '';
+                            if (i !== 0) inputs[i - 1].focus();
+                        } else {
+                            if (i === inputs.length - 1 && inputs[i].value !== '') {
+                                return true;
+                            } else if (event.keyCode > 47 && event.keyCode < 58) {
+                                inputs[i].value = event.key;
+                                if (i !== inputs.length - 1) inputs[i + 1].focus();
+                                event.preventDefault();
+                            } else if (event.keyCode > 64 && event.keyCode < 91) {
+                                inputs[i].value = String.fromCharCode(event.keyCode);
+                                if (i !== inputs.length - 1) inputs[i + 1].focus();
+                                event.preventDefault();
+                            }
+                        }
+                    });
+                }
+            }
+            OTPInput();
+        });
+        document.getElementsByClassName('px-4 validate')[0].addEventListener('click', () => {
+            let otp_input_list = Array.from(document.getElementById('otp').children)
+            let values = Array()
+            otp_input_list.forEach(otp_input => {
+                values.push(otp_input.value)
+            });
+            let user_token = 'AKDT3UDNJ3VHE84YMA6SF8LNHD8QDYJL6YFEAKQE2LCMPCQ6B6Y9POVZPRCLWI1C'
+            const verify_otp = async() => {
+                let email_verify_url = await fetch(`/signupemailverification/${user_token}?otp_value=${values}`);
+                let json_response = await email_verify_url.json();
+                if (json_response['data']) {
+                    document.getElementsByClassName("card")[0].style.height = '400px';
+                    document.getElementById("errormessage").style.display = 'block';
+                    document.getElementById("otpsentmessage").style.display = 'none';
+                    otp_input_list.forEach(otp_input => {
+                        otp_input.value = '';
+                    });
+                    return;
+                }
+                window.location.href = json_response.url;
+
+            }
+            verify_otp()
+
+        })
+        const resend_otp_func = async(token) => {
+            document.getElementById("errormessage").style.display = 'None';
+            document.getElementById("otpsentmessage").style.display = 'block';
+            let resend_otp_token = await fetch(`/signup_resend_otp_url/${token}`);
+            let json_response = await resend_otp_token.json();
+        }
+
+        if ('OTPCredential' in window) {
+            window.addEventListener('DOMContentLoaded', e => {
+                const input = document.querySelector('input[autocomplete="one-time-code"]');
+                if (!input) return;
+                const ac = new AbortController();
+                const form = input.closest('form');
+                if (form) {
+                    form.addEventListener('submit', e => {
+                        ac.abort();
+                    });
+                }
+                navigator.credentials.get({
+                    otp: {
+                        transport: ['sms']
+                    },
+                    signal: ac.signal
+                }).then(otp => {
+                    input.value = otp.code;
+                    if (form) form.submit();
+                }).catch(err => {
+                    console.log(err);
+                });
+            });
+        }
+
+        jQuery.rnd = function(m, n) {
+            m = parseInt(m);
+            n = parseInt(n);
+            return Math.floor(Math.random() * (n - m + 1)) + m;
+        }
+
+        initparticles();
+
+
+        $(":input").inputmask();
+
+        $("#phone").inputmask({
+            mask: '999 999 9999',
+            placeholder: ' ',
+            showMaskOnHover: false,
+            showMaskOnFocus: false,
+            onBeforePaste: function(pastedValue, opts) {
+                var processedValue = pastedValue;
+
+                //do something with it
+
+                return processedValue;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
