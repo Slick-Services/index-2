@@ -306,5 +306,82 @@
     // });
 
 
+    $(function() {
+        $(".profilesurvey").slice(0, 7).show();
+        $("body").on('click touchstart', '.load-more', function(e) {
+            e.preventDefault();
+            $(".profilesurvey:hidden").slice(0, 10).slideDown();
+            if ($(".profilesurvey:hidden").length == 0) {
+                $(".load-more").css('visibility', 'hidden');
+            }
+            $('html,body').animate({
+                scrollTop: $(this).offset().top
+            }, 1000);
+        });
+    });
+
+    $(function() {
+        $(".mainprofile").slice(0, 3).show();
+        $("body").on('click touchstart', '.profilebtn', function(e) {
+            e.preventDefault();
+            $(".mainprofile:hidden").slice(0, 7).slideDown();
+            if ($(".mainprofile:hidden").length == 0) {
+                $(".profilebtn").css('visibility', 'hidden');
+            }
+            $('html,body').animate({
+                scrollTop: $(this).offset().top
+            }, 1000);
+        });
+    });
+
+    /*================================
+    Fullscreen Page
+    ==================================*/
+
+    if ($('#full-view').length) {
+
+        var requestFullscreen = function(ele) {
+            if (ele.requestFullscreen) {
+                ele.requestFullscreen();
+            } else if (ele.webkitRequestFullscreen) {
+                ele.webkitRequestFullscreen();
+            } else if (ele.mozRequestFullScreen) {
+                ele.mozRequestFullScreen();
+            } else if (ele.msRequestFullscreen) {
+                ele.msRequestFullscreen();
+            } else {
+                console.log('Fullscreen API is not supported.');
+            }
+        };
+
+        var exitFullscreen = function() {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+            } else {
+                console.log('Fullscreen API is not supported.');
+            }
+        };
+
+        var fsDocButton = document.getElementById('full-view');
+        var fsExitDocButton = document.getElementById('full-view-exit');
+
+        fsDocButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            requestFullscreen(document.documentElement);
+            $('body').addClass('expanded');
+        });
+
+        fsExitDocButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            exitFullscreen();
+            $('body').removeClass('expanded');
+        });
+    }
 
 })()
