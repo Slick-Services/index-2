@@ -210,6 +210,10 @@ h6 {
     margin: 0;
 }
 
+.navbar .getstarted:focus-visible {
+    outline: none;
+}
+
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
     color: #fff;

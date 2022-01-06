@@ -3,7 +3,7 @@
         background: #fff;
     }
     .navbar .getstarted {
-        padding: 10px 45px;
+        padding: 14px 45px;
     }
     .navbar {
         justify-content: end;
@@ -214,7 +214,7 @@
         background: transparent;
     }
     .navbar .getstarted {
-        padding: 12px 25px;
+        padding: 14px 25px;
     }
     .navbar-mobile ul {
         height: 73%;
