@@ -241,6 +241,8 @@ h6 {
     justify-content: center;
     align-items: center;
     border-radius: .5rem;
+    right: 25px;
+    position: relative;
 }
 
 .mobile-nav-toggle.bi-x {
@@ -1692,7 +1694,7 @@ section#pivecy p {
 .main-content-inner .card.img {
     background: url("../img/dashboardpoint.png") no-repeat;
     width: 100%;
-    height: 345px;
+    height: 100%;
     display: flex;
     justify-content: center;
     background-size: cover;
@@ -1710,6 +1712,15 @@ section#pivecy p {
     float: right;
     text-align: right;
 }
+
+
+/* .main-content-inner .card.img .maincardavailable .card-body {
+    padding: 7.6rem 1.0rem 7.1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+} */
 
 .main-content-inner .card.img .maincardavailable .card-body h3 {
     color: rgb(175 7 78);
@@ -1954,7 +1965,8 @@ label {
     display: block;
 } */
 
-label:after {
+
+/* label:after {
     content: '\25BE';
     color: rgb(171 171 171);
     padding: 0 0 2px;
@@ -1969,7 +1981,43 @@ label:after {
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+
+.arrow_box {
+    position: relative;
+    background: #1a42a1;
+    border: 3px solid #c2258d;
 }
+
+label:after {
+    top: auto;
+    left: auto;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    right: 12px;
+    bottom: auto;
+    bottom: 15px;
+}
+
+label:after {
+    border-color: rgba(26, 66, 161, 0);
+    border-top-color: rgb(190 192 195);
+    border-width: 12px;
+    margin-left: 0;
+    border-left-width: 13px;
+}
+
+
+/* label:before {
+    border-color: rgba(194, 37, 141, 0);
+    border-top-color: #c2258d;
+    border-width: 24px;
+    margin-left: -24px;
+} */
 
 
 /*-------------------- END Login ------------------- */
