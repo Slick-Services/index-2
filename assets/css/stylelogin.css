@@ -16,12 +16,12 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(214 25 105);
+    color: #005777;
     font-family: 'Poppins', sans-serif;
 }
 
 a:hover {
-    color: rgb(214 25 105);
+    color: #005777;
     text-decoration: none;
 }
 
@@ -138,7 +138,7 @@ body.loginbg {
 .login-wrap {
     position: relative;
     background: #fff;
-    border-radius: .9rem;
+    border-radius: 10px;
     -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
     -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
     box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
@@ -147,13 +147,13 @@ body.loginbg {
 .login-wrap h3 {
     font-weight: 700;
     font-size: 20px;
-    color: rgb(214 25 105)
+    color: #005777;
 }
 
 .login-wrap .icon {
     width: 80px;
     height: 80px;
-    background: rgb(214 25 105);
+    background: #005777;
     border-radius: 50%;
     font-size: 30px;
     margin: 0 auto;
@@ -165,7 +165,7 @@ body.loginbg {
 }
 
 .form-control {
-    /* height: 48px; */
+    height: 48px;
     background: rgba(0, 0, 0, 0.05);
     color: #000;
     font-size: 16px;
@@ -177,8 +177,6 @@ body.loginbg {
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    padding: .7rem 0.8rem;
-    border-radius: .5rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -327,11 +325,11 @@ svg.svg-icon {
 /* Style the checkmark/indicator */
 
 .checkbox-primary {
-    color: rgb(214 25 105)
+    color: #005777;
 }
 
 .checkbox-primary input:checked~.checkmark:after {
-    color: rgb(214 25 105)
+    color: #005777;
 }
 
 .btn {
@@ -349,26 +347,26 @@ svg.svg-icon {
 }
 
 .btn.btn-primary {
-    background: rgb(214 25 105) !important;
-    border: 1px solid rgb(88 1 38) !important;
+    background: #005777 !important;
+    border: 1px solid #005777 !important;
     color: #fff !important;
 }
 
 .btn.btn-primary:hover {
-    border: 1px solid rgb(214 25 105);
+    border: 1px solid #005777;
     background: transparent;
-    color: rgb(214 25 105);
+    color: #005777;
 }
 
 .btn.btn-primary.btn-outline-primary {
-    border: 1px solid rgb(214 25 105);
+    border: 1px solid #005777;
     background: transparent;
-    color: rgb(214 25 105)
+    color: #005777;
 }
 
 .btn.btn-primary.btn-outline-primary:hover {
     border: 1px solid transparent;
-    background: rgb(214 25 105);
+    background: #005777;
     color: #fff;
 }
 
@@ -393,7 +391,7 @@ svg.svg-icon {
 .login-wrap .card.otp form.mainform .otninput {
     border-radius: .5rem;
     padding: 1rem;
-    border: solid 1px rgb(214 25 105)
+    border: solid 1px #005777;
 }
 
 .login-wrap .card.otp .form-control {
@@ -402,7 +400,7 @@ svg.svg-icon {
 
 .login-wrap .card.otp form.mainform button.btn.btn.validbtn {
     padding: .8rem 3.5rem;
-    background: rgb(214 25 105);
+    background: #005777;
     color: #f0f8ff;
     margin-bottom: .9rem;
     font-size: 1.1rem;
@@ -433,7 +431,7 @@ svg.svg-icon {
     /* right: 0; */
     margin: 0 auto;
     width: 100%;
-    border-radius: .8rem !important;
+    border-radius: .5rem !important;
     /*webkit-box-shadow: 0 10px 30px 0 rgb(95 186 233 / 40%) !important; 
     box-shadow: 0 10px 30px 0 rgb(95 186 233 / 40%) !important;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -443,8 +441,6 @@ svg.svg-icon {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    font-size: 1.9rem;
-    padding: .6rem .6rem;
 }
 
 @media (max-width: 767.98px) {
@@ -547,7 +543,7 @@ svg.svg-icon {
 }
 
 .icon-container .icon.icon-expand:hover {
-    background-color: rgb(214 25 105)
+    background-color: #005777;
 }
 
 @media (max-width: 575px) {
@@ -559,7 +555,7 @@ svg.svg-icon {
 .acode.otpatxt {
     font-size: 1.3rem;
     font-weight: 600;
-    color: rgb(214 25 105)
+    color: #005777;
 }
 
 form.mainform h6 {
@@ -577,112 +573,6 @@ form.mainform h6 {
     font-size: 1.2rem;
     line-height: 2rem;
     font-weight: 600;
-    color: rgb(215 25 104);
+    color: rgb(0 87 119);
     text-decoration: none;
-}
-
-.backlogin a {
-    position: relative;
-    display: inline-block;
-    /*padding: 10px 20px;*/
-    padding: 1rem 1.5rem;
-    color: rgb(214 25 105);
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px;
-}
-
-.backlogin a:hover {
-    background: rgb(214 25 105);
-    color: #fff;
-    border-radius: .6rem;
-    box-shadow: 0 0 5px #ef7bac, 0 0 25px #d54f88, 0 0 50px #f9c8dd, 0 0 100px rgb(214 25 105)
-}
-
-.backlogin a span {
-    position: absolute;
-    display: block;
-}
-
-.backlogin a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, rgb(209 23 102));
-    animation: btn-anim1 1s linear infinite;
-}
-
-@keyframes btn-anim1 {
-    0% {
-        left: -100%;
-    }
-    50%,
-    100% {
-        left: 100%;
-    }
-}
-
-.backlogin a span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, rgb(209 23 102));
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .25s
-}
-
-@keyframes btn-anim2 {
-    0% {
-        top: -100%;
-    }
-    50%,
-    100% {
-        top: 100%;
-    }
-}
-
-.backlogin a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, rgb(209 23 102));
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: .5s
-}
-
-@keyframes btn-anim3 {
-    0% {
-        right: -100%;
-    }
-    50%,
-    100% {
-        right: 100%;
-    }
-}
-
-.backlogin a span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, rgb(209 23 102));
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: .75s
-}
-
-@keyframes btn-anim4 {
-    0% {
-        bottom: -100%;
-    }
-    50%,
-    100% {
-        bottom: 100%;
-    }
 }
