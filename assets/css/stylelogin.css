@@ -72,6 +72,10 @@ body.loginbg {
     background-attachment: fixed;
 }
 
+body.loginbg.otpbg {
+    background: url(../img/otpbgN.jpg) no-repeat center top;
+}
+
 .fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
@@ -139,9 +143,12 @@ body.loginbg {
     position: relative;
     background: #fff;
     border-radius: .9rem;
-    -webkit-box-shadow: /*0px 10px 34px -15px rgba(0, 0, 0, 0.24)*/0px 10px 30px 10px rgb(237 78 145);
-    -moz-box-shadow: /*0px 10px 34px -15px rgba(0, 0, 0, 0.24)*/0px 10px 30px 10px rgb(237 78 145);
-    box-shadow: /*0px 10px 34px -15px rgba(0, 0, 0, 0.24)*/0px 10px 30px 10px rgb(237 78 145);
+    -webkit-box-shadow: /*0px 10px 34px -15px rgba(0, 0, 0, 0.24)*/
+    0px 10px 30px 10px rgb(237 78 145);
+    -moz-box-shadow: /*0px 10px 34px -15px rgba(0, 0, 0, 0.24)*/
+    0px 10px 30px 10px rgb(237 78 145);
+    box-shadow: /*0px 10px 34px -15px rgba(0, 0, 0, 0.24)*/
+    0px 10px 30px 10px rgb(237 78 145);
 }
 
 .login-wrap h3 {
