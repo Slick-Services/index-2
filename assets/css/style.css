@@ -1729,11 +1729,12 @@ section#pivecy p {
     padding-top: 2rem;
     padding-bottom: 1rem;
     font-weight: 600;
+    margin: 0;
 }
 
 .main-content-inner .card.img .maincardavailable .card-body p {
     color: rgb(175 7 78);
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     padding: 1rem 0;
     margin: 0;
     font-weight: 600;
@@ -1741,13 +1742,13 @@ section#pivecy p {
 
 .main-content-inner .card.img .maincardavailable .card-body p.pointscalculate {
     font-weight: 600;
-    font-size: 1.0rem;
+    font-size: 1.4rem;
 }
 
 .main-content-inner .card.img .maincardavailable .card-body h2 {
     margin: 0;
     padding: 0.7rem 0;
-    font-size: 1.7rem;
+    font-size: 2.9rem;
     font-weight: 600;
 }
 
@@ -1781,43 +1782,6 @@ section#pivecy p {
 }
 
 .main-content-inner .card .maincardavailable .card.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    border: none;
-    border-bottom: dashed 1px rgb(112, 112, 112, 0.7);
-    border-radius: 0px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.main-content-inner .card .maincardavailable .card.row .healthcare {
-    font-size: 1rem;
-    color: #000;
-}
-
-.main-content-inner .card .maincardavailable .card.row .mins {
-    color: #ff7657;
-    font-size: 1.1rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-}
-
-.main-content-inner .card .maincardavailable .card.row i:before {
-    padding-right: 0.3rem;
-    color: #ff7657;
-    font-size: 2.0rem;
-}
-
-.main-content-inner .card .maincardavailable .card.row i.las.la-clock {
-    display: flex;
-    align-items: center;
-}
-
-.main-content-inner .card .maincardavailable .card.row {
     display: none;
 }
 
@@ -1828,7 +1792,7 @@ section#pivecy p {
     padding: 10px 10px;
     border-radius: 8px;
     font-size: 20px;
-    margin: 2rem 0 .2rem;
+    margin: 0rem 0 .2rem;
     display: inline-block;
     padding: 11px 17px;
     font-size: 1rem;
@@ -1876,29 +1840,6 @@ section#pivecy p {
     background: #000;
     border: solid 1px #000;
 }
-
-.main-content-inner .card .maincardavailable .card.row .mins.point {
-    color: #ff7657;
-    font-size: 1.0rem;
-    font-weight: 600;
-}
-
-
-/* .main-content-inner .card .maincardavailable .btn.btn-dark.takesurvey {
-    background: #d61969;
-    border: none;
-    box-shadow: none;
-    color: rgb(253 248 250);
-    margin-top: .5rem;
-    font-weight: 600;
-    transition: .5s all;
-}
-
-.main-content-inner .card .maincardavailable .btn.btn-dark.takesurvey:hover,
-.main-content-inner .card .maincardavailable .btn.btn-dark.takesurvey:active,
-.main-content-inner .card .maincardavailable .btn.btn-dark.takesurvey.active {
-    background: #000;
-} */
 
 .main-content-inner .availablesurvey.profile .card-body form.row.g-3 .form-control,
 .main-content-inner .availablesurvey.profile .card-body form.row.g-3 .form-select {
@@ -1955,37 +1896,6 @@ label {
     margin-bottom: 1rem;
 }
 
-
-/* label:before {
-    content: '';
-    right: 4px;
-    top: 0px;
-    width: 23px;
-    height: 18px;
-    background: #fff;
-    position: absolute;
-    pointer-events: none;
-    display: block;
-} */
-
-
-/* label:after {
-    content: '\25BE';
-    color: rgb(171 171 171);
-    padding: 0 0 2px;
-    position: absolute;
-    top: 18px;
-    right: 12px;
-    pointer-events: none;
-    background: transparent;
-    font-size: 3.0rem;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 .arrow_box {
     position: relative;
     background: #1a42a1;
@@ -2009,18 +1919,113 @@ label:after {
 label:after {
     border-color: rgba(26, 66, 161, 0);
     border-top-color: rgb(190 192 195);
-    border-width: 12px;
+    border-width: 10px;
     margin-left: 0;
-    border-left-width: 13px;
+    border-left-width: 10px;
+    top: 1.4rem;
 }
 
 
-/* label:before {
-    border-color: rgba(194, 37, 141, 0);
-    border-top-color: #c2258d;
-    border-width: 24px;
-    margin-left: -24px;
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+
+.main-content-inner .availablesurvey .card.mainsurvey.profilebody .maincardavailable .card.row {
+    background: none;
+    border: none;
+}
+
+.availablesurvey .card.mainsurvey.profilebody {
+    background: #FBF6F2;
+    border-color: #EFEAEA;
+    padding: 0.7rem 1.9rem;
+}
+
+.main-content-inner .card.profilebody .maincardavailable h2 {
+    padding: 1rem 1rem 0 0.0rem;
+}
+
+.profilebody .mainprofile .icon-box {
+    text-align: center;
+    border: 1px solid #D61969;
+    padding: 0px 0 0px 0;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    border-radius: .6rem;
+}
+
+.profilebody .mainprofile .icon-box.orange {
+    border: solid 1px #FC9446;
+}
+
+.orange .profilebody .mainprofile .icon-box .icon {
+    margin: 0;
+}
+
+.profilebody .mainprofile .icon-box .mainiconboxcol {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profilebody .mainprofile .icon-box .icon i {
+    color: rgb(214 25 105);
+    font-size: 3.0rem;
+    margin: 0 1rem;
+}
+
+.profilebody .mainprofile .icon-box.orange .icon i {
+    color: #FC9446;
+}
+
+
+/* .profilebody .mainprofile .icon-box .icon::before {
+    position: absolute;
+    content: "";
+    left: -8px;
+    top: -8px;
+    height: 100%;
+    width: 100%;
+    background: rgb(247 186 209);
+    border-radius: 5px;
+    transition: all 0.3s ease-out 0s;
+    transform: translateZ(-1px);
 } */
+
+.profilebody .mainprofile .icon-box h4 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.profilebody .mainprofile .icon-box h4 a {
+    color: #212529;
+}
+
+.profilebody .mainprofile .icon-box button.btn.btn-success {
+    background: rgb(214 25 105);
+    border: none;
+    width: 100%;
+    padding: 1.1rem 0.7rem;
+    border-radius: 0;
+    font-size: 1.2rem;
+    border-radius: 0 .5rem 0.5rem 0rem;
+}
+
+.profilebody .mainprofile .icon-box button.btn.btn-success.orangebtn {
+    background: #FC9446;
+}
+
+.btn-check:active+.profilebody .mainprofile .icon-box button.btn.btn-success:focus,
+.btn-check:checked+.profilebody .mainprofile .icon-box button.btn.btn-success:focus,
+.profilebody .mainprofile .icon-box button.btn.btn-success.active:focus,
+.profilebody .mainprofile .icon-box button.btn.btn-success:active:focus,
+.show>.profilebody .mainprofile .icon-box button.btn.btn-success.dropdown-toggle:focus {
+    box-shadow: none;
+}
 
 
 /*-------------------- END Login ------------------- */

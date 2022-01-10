@@ -208,14 +208,14 @@
     .main-content-inner .card.img {
         background-position: unset;
     }
-    .main-content-inner .card.img::before {
-        display: none;
-    }
 }
 
 @media (min-width: 480px) {
     .main-content-inner .card.img .maincardavailable .card-body {
-        padding: 1.5rem 1.7rem 1.7rem;
+        padding: 0.5rem 1.7rem 0.6rem;
+    }
+    .main-content-inner .card.img::before {
+        display: none;
     }
 }
 
@@ -234,15 +234,18 @@
         width: auto;
     }
     .main-content-inner .card.img .maincardavailable .card-body {
-        padding: 2.1rem 1.7rem 2.1rem;
+        padding: 1.0rem 1.7rem 1.0rem;
     }
 }
 
-@media (min-width: 575.98px) {
+@media (min-width: 575px) {
     .section-title h2 {
         font-size: 30px;
         margin-bottom: 30px;
         padding-bottom: 30px;
+    }
+    .main-content-inner .card.img .maincardavailable .card-body {
+        padding: 2.5rem 1.7rem 2.5rem;
     }
 }
 
@@ -298,7 +301,7 @@
         padding-right: 1px;
     }
     .main-content-inner .card.img .maincardavailable .card-body {
-        padding: 2.9rem 1.7rem 2.9rem;
+        padding: 1.9rem 1.7rem 1.8rem;
     }
 }
 
@@ -411,7 +414,7 @@
         padding-right: 12px;
     }
     .main-content-inner .card.img .maincardavailable .card-body {
-        padding: 6.6rem 1.7rem 6.6rem;
+        padding: 5.5rem 1.7rem 5.6rem;
     }
 }
 
@@ -506,10 +509,20 @@
         margin-top: 1.5rem;
     }
     .main-content-inner .card.img .maincardavailable .card-body {
-        padding: 0.4rem 1.7rem 0.5rem;
+        padding: 0.3rem 1.7rem 0.3rem;
     }
     .main-content-inner .card.img .maincardavailable .card-body h3 {
+        font-size: 1.2rem;
         padding-bottom: 0rem;
+    }
+    .main-content-inner .card.img .maincardavailable .card-body p {
+        font-size: 1.0rem;
+    }
+    .main-content-inner .card.img .maincardavailable .card-body h2 {
+        font-size: 2.5rem;
+    }
+    .main-content-inner .card.img .maincardavailable .card-body p.pointscalculate {
+        font-size: 1.0rem;
     }
 }
 
@@ -562,7 +575,19 @@
         padding: 60px 0 30px;
     }
     .main-content-inner .card.img .maincardavailable .card-body {
-        padding: 1.6rem 1.7rem 1.5rem;
+        padding: 0.5rem 1.7rem 0.5rem;
+    }
+    .main-content-inner .card.img .maincardavailable .card-body h3 {
+        font-size: 1.5rem;
+    }
+    .main-content-inner .card.img .maincardavailable .card-body p {
+        font-size: 1.2rem;
+    }
+    .main-content-inner .card.img .maincardavailable .card-body h2 {
+        font-size: 2.9rem;
+    }
+    .main-content-inner .card.img .maincardavailable .card-body p.pointscalculate {
+        font-size: 1.4rem;
     }
     .main-content-inner .card.img .maincardavailable .card-body h3 {
         padding-bottom: 1rem;
@@ -597,14 +622,11 @@
     .services.section-bg {
         padding: 60px 0;
     }
-    .main-content-inner .card.img .maincardavailable .card-body {
-        padding: 1.5rem 1.7rem 1.6rem;
-    }
 }
 
 @media (min-width: 1400px) {
     .main-content-inner .card.img .maincardavailable .card-body {
-        padding: 3.0rem 1.7rem 3.0rem;
+        padding: 1.9rem 1.7rem 2.1rem;
     }
 }
 
@@ -620,6 +642,6 @@
 
 @media (min-width: 1920px) {
     .main-content-inner .card.img .maincardavailable .card-body {
-        padding: 3.1rem 1.7rem 3.1rem;
+        padding: 2.0rem 1.7rem 2.0rem;
     }
 }
