@@ -51,28 +51,27 @@
 <body>
 
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
+    <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-12 col-sm-3">
+                <div class="col-6 col-sm-3">
                     <div class="logo mr-auto">
                         <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-9">
-                    <nav class="nav-menu d-none d-lg-flex float-right">
-                        <ul class="col-sm-8 col-12">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#howit">How it Works</a></li>
-                            <li><a href="#contactus">Contact Us</a></li>
+                <div class="col-6 col-sm-9 mainnavbar">
+                    <!-- <nav id="navbar" class="nav-menu float-right col-12"> -->
+                    <nav id="navbar" class="navbar nav-menu">
+                        <ul id="MainMenu">
+                            <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+                            <li><a class="nav-link scrollto" href="#about">About</a></li>
+                            <li><a class="nav-link scrollto" href="#services">How it Works</a></li>
+                            <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+                            <li><a class="nav-link scrollto getstarted scrollto col-2 d-flex d-lg-none mainlogin" href="#about">Login</a></li>
                         </ul>
-                        <a href="#about" class="get-started-btn scrollto col-sm-2 col-12 mainlogin">Login</a>
-                        <!--<ul class="col-sm-3 col-12 mainlogin">
-			  <li><a href="#help">Help</a></li>
-			  <li><a href="login.html">Login</a></li>
-			  </ul>-->
+                        <i class="las la-bars mobile-nav-toggle"></i>
+                        <a href="#about" class="getstarted scrollto d-lg-flex d-none col-sm-3 col-lg-2 col-3 mainlogin">Login</a>
                     </nav>
                     <!-- .nav-menu -->
                 </div>
