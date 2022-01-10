@@ -1,1276 +1,557 @@
 @media (min-width: 320px) {
-    body {
-        overflow-x: hidden;
+    #header {
+        background: #fff;
     }
-    #header .logo img {
-        max-height: 50px;
+    .navbar .getstarted {
+        padding: 14px 45px;
     }
-    #hero-inner {
-        background: url("../img/Hero_bg1.png")no-repeat;
+    .navbar {
+        justify-content: end;
+    }
+    #hero .formsmainphpmain {
+        top: 0;
+    }
+    .navbar-mobile ul {
         height: auto;
-    }
-    #hero-inner .faqinner {
-        background: url("../img/bg_ptc.jpg")no-repeat;
-    }
-    #hero-inner h1 {
-        font-size: 1.0rem;
-        line-height: 0px;
     }
     #hero {
-        /*height: auto;*/
-        padding: 0px 0 50px;
-        text-align: center;
-        ;
+        height: auto;
     }
-    #hero .hero-img img {
+    #hero .container .contentheromain {
+        display: block;
+        padding: 15px;
+        margin: 70px 0 15px;
+    }
+    #hero:before {
+        background: none;
+        background-position: right;
+    }
+    #hero .btn-get-started {
+        padding: 14px 20px 14px 20px;
+    }
+    #hero p {
+        margin-bottom: 0;
+    }
+    #hero .reedmoremain {
+        margin-bottom: 1rem;
+    }
+    .about .aboutmaintak {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-nav .mainlogin {
+        float: left;
         max-width: 100%;
     }
-    #hero .row {
-        margin-top: 7rem;
-        margin-bottom: 1rem;
-    }
-    #hero h1 {
-        font-size: 20px;
-        line-height: 30px;
-    }
-    .mobile-nav {
-        height: 260px;
-    }
-    .mobile-nav a.get-started-btn {
-        padding: 20px 10px;
-        width: 100px;
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
-        margin-left: 1rem;
-        text-align: center;
-        margin-top: 1rem;
-    }
     .section-title {
-        padding-bottom: 1rem;
-        padding-top: 0rem;
+        padding-bottom: 20px;
     }
-    .section-title h2 {
-        margin-bottom: .7rem;
-        font-size: 19px;
-    }
-    .howitworks .icon-box {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .about {
-        background-size: cover;
-        o-background-size: cover;
-        webkit-background-size: cover;
-        moz-background-size: cover;
-    }
-    .faq {
-        padding: 1rem 0 1rem;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-    }
-    .faq.privacy {
-        padding: 1rem 0 1rem;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-    }
-    .clients {
-        margin: 1rem 0;
-        padding: 1rem 0;
-    }
-    section.progess {
-        overflow: initial;
-        padding: 0px 0 0rem;
-        margin-top: -2rem;
-    }
-    .progress {
-        height: auto;
-        background-size: cover;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-    }
-    .progress.pink .mainprogress {
-        flex-direction: column-reverse;
-        margin: 1.0rem auto 1.9rem;
-    }
-    .progress.pink .mainprogress .rectkal {
-        text-align: center;
-    }
-    .progress.pink .progress-bar p {
-        font-size: 16px;
-        margin: 10px 0 10px 0;
-        font-weight: 500;
-    }
-    .progress.pink .progress-bar {
-        top: 1.0rem;
-        text-align: center;
-    }
-    .howitworks {
-        padding: 2rem 0;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-    .howitworks .icon-boxes .mainrewordbox {
-        min-width: 100%;
-    }
-    .howitworks .icon-box {
-        padding: 16px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .signup .section-title h2 {
-        font-size: 16px;
-        line-height: 1.4;
-    }
-    .signup .php-email-form button[type="submit"] {
-        padding: 25px 40px 24px 45px;
-        border-radius: 3rem 0;
-        font-size: 20px;
-        right: -13px;
-        top: -1rem;
-    }
-    .signup .php-email-form {
-        padding: 1.5rem 0.9rem 4em;
-        margin-top: 1.5rem;
-    }
-    footer#footer:before {
-        display: none;
-    }
-    footer#footer .ftrightline {
-        display: none;
-    }
-    #footer .footer-top .footer-links {
-        align-items: self-start;
-    }
-    #footer .footer-top {
-        padding: 2rem 0 1rem 0;
-        border-bottom: none;
-    }
-    #footer .mainsocial {
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-    }
-    #footer .footer-top .footer-contact p br {
-        display: none;
-    }
-    /*==== Dashboard css=====*/
-    /* #dashboard #header {
-        width: auto;
-    } */
-    #dashboard #header .logo img {
-        max-height: 50px;
-    }
-    /*#dashboard #header .manbtnlogout .welcometxt br {
-        display: flex;
-    }*/
-    #dashboard #header .manbtnlogout {
-        margin-top: .5rem;
-        margin-bottom: 0;
-        justify-content: flex-end;
-    }
-    #dashboard #header.header-scrolled.sticky {
-        position: -webkit-fixed;
-        position: fixed;
-    }
-    #dashboard #header .manbtnlogout .welcometxt {
-        font-size: .9rem;
-        font-weight: 600;
-    }
-    #dashboard .navbar li {
-        justify-content: flex-start;
-    }
-    #dashboard .navbar a i,
-    #dashboard .navbar a:focus i {
-        line-height: 1;
-    }
-    #dashboard .about-us .cardleftmaincontentpart {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        padding: .5rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .card .card-body {
-        padding: 1rem 0.5rem;
-    }
-    #dashboard .about-us .icon-box .lorenmaincontent {
-        margin-top: 1rem;
-    }
-    #dashboard .about-us .icon-box span {
-        font-size: 1.2rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart.mainimgpart {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0 .7rem;
-        border: none;
-        box-shadow: none;
-        display: block;
-        margin: auto;
-        float: none;
-        padding: 0;
-    }
-    .d-flex.align-items-stretch.aos-init.aos-animate {
-        display: block !important;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg {
-        padding: 1rem 1rem;
-        margin: 1rem 2rem 2rem;
-        margin: 10px 0;
-        flex-direction: column;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h2 {
-        margin-bottom: 0;
-    }
-    #dashboard .section-title h2 {
-        font-size: 27px;
-        margin-bottom: 5px;
-        padding-bottom: 5px;
-    }
-    #dashboard .about-us .icon-box {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    #dashboard .about-us .icon-box .btn.btn-dark {
-        font-size: 1.4rem;
-        padding: 14px 18px;
-    }
-    #dashboard .about-us .icon-box .minstext {
-        position: relative;
-        top: auto;
-        right: auto;
-        display: inline-flex;
-        width: auto;
-        align-items: center;
-        justify-content: center;
-    }
-    #dashboard .about-us .iconbox-blue i {
-        color: rgb(7 92 123);
-        font-size: 1.5rem;
-        display: flex;
-        /* align-items: center; */
-        /* justify-content: space-evenly; */
-        align-items: center;
-        justify-content: center;
-    }
-    #dashboard .about-us .iconbox-blue i span {
-        font-size: 1.0rem;
-        margin: 0 0 0 .2rem;
-    }
-    #dashboard .about-us .icon-box .cardheddingmain {
-        display: flex;
-        align-items: baseline;
-    }
-    #dashboard .mobile-nav-toggle {
-        position: fixed;
-        right: 15px;
-        top: 15px;
-    }
-    #dashboard .mainclient {
-        display: none;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints .earnpointtxt {
-        align-items: center;
-    }
-    #dashboard #header .manbtnlogout button.btn.signinbtn {
-        height: auto;
+    .section-title h2:after,
+    .section-title h2:before {
+        top: 1px;
         width: 50px;
     }
-    #dashboard .about-us .icon-box.iconbox-blue.morehieght {
+    .section-title h2 {
+        font-size: 15px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        width: 140px;
+    }
+    .services .mainservicesrow {
+        padding-top: 0rem;
+    }
+    .clients {
+        margin: 10px 0 10px;
+        padding: 40px 0 0;
+    }
+    .clients .owl-item {
+        padding: 10px 20px 0;
+        margin-top: 8px;
+    }
+    .faq {
+        padding-bottom: 45px;
+    }
+    .services.section-bg {
         height: auto;
+        padding: 30px 0 50px;
+    }
+    .services .icon-box {
+        width: 120px;
+        height: 120px;
+    }
+    .services .icon {
+        width: 60px;
+        height: 60px;
+    }
+    .services .icon i {
+        font-size: 30px;
+    }
+    .services .title {
+        margin-bottom: 15px;
+        font-size: 15px;
+        padding-top: 25px;
+    }
+    .why-us {
+        padding: 1rem 0 1rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .why-us.privacy {
+        padding: 1rem 0 1rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    #footer .footer-top .footer-info {
+        padding: 0px;
+    }
+    #footer .footer-top .footer-links h3 {
+        margin: 0 0 20px 0;
+    }
+    .breadcrumbs ol {
+        font-size: 14px;
+    }
+    .breadcrumbs ol li+li {
+        padding-left: 5px;
+    }
+    .blog .sidebar {
+        padding: 15px 20px;
+        margin: 0 0 20px 0px;
+    }
+    .blog .entries {
+        order: 2;
+    }
+    .blog .sdbar {
+        order: 1;
+    }
+    #footer .footer-top .footer-links {
+        flex-direction: column;
+    }
+    #footer .footer-top .footer-links ul {
+        flex-direction: column;
+    }
+    #footer .footer-top .footer-contact .row {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #footer .footer-top .footer-contact h3 {
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+    #footer .footer-top .footer-contact {
+        justify-content: center;
+    }
+    #footer .footer-top .footer-contact p {
+        border-right: none;
     }
 }
 
-@media (min-width:1px) and (max-width:575px) {
-    #dashboard .about-us .icon-box .btn.btn-dark {}
-    #dashboard .about-us .icon-box span {
-        font-size: 1.5rem;
-    }
-    #dashboard .about-us .icon-box span.pl-1.points {
-        font-size: 1.3rem;
-        height: 0;
-        position: relative;
-        top: -3px;
-        margin: 0 0 0 6px;
-    }
-    #dashboard .about-us .icon-box .btn.btn-dark {
-        border-radius: 10px;
-        box-shadow: 0 5px 5px 0 rgb(246 130 31 / 38%);
-        background: rgb(246 130 31);
-        border-color: rgb(246 130 31);
-        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-        width: calc(100% - 15px);
-        padding-left: calc(2.2rem - 18px) !important;
-        padding-right: calc(2.2rem - 12px) !important;
-        padding-top: calc(1.5rem - 15px) !important;
-        padding-bottom: calc(1.9rem - 15px) !important;
-        font-size: 2.3rem;
-    }
-    #dashboard .about-us .iconbox-blue i {
-        position: relative;
-        top: 32px;
-    }
-    #dashboard .about-us .icon-box .minstext {
-        position: absolute;
-        top: auto;
-        right: 0;
-    }
-}
-
-@media (min-width: 360px) {
-    .signup .php-email-form button[type="submit"] {
-        right: -15px;
-    }
-}
+@media (min-width: 360px) {}
 
 @media (min-width: 400px) {
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg {
+    .navbar-mobile ul {
+        height: 45%;
+    }
+    .breadcrumbs ol li+li {
+        padding-left: 10px;
+    }
+    .breadcrumbs ol {
+        font-size: 15px;
+    }
+    .blog .sidebar .sidebar-title.otherservices:before {
+        width: 100%;
+    }
+    .section-title h2 {
+        font-size: 18px;
+    }
+    .section-title h2:after,
+    .section-title h2:before {
+        top: 3px;
+        width: 70px;
+    }
+    #footer .footer-top .footer-links {
         flex-direction: row;
-        justify-content: space-evenly;
-        padding: 2.5rem 0;
     }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints .earnpointtxt {
+    #footer .footer-top .footer-links ul {
+        flex-direction: row;
+    }
+    #footer .footer-top .footer-links ul a {
+        font-size: .9rem;
+    }
+    #footer .footer-top .footer-links {
         align-items: flex-start;
-    }
-}
-
-@media (min-width: 480px) {
-    #dashboard .navbar {
-        justify-content: flex-start;
     }
 }
 
 @media (min-width: 500px) {
-    #dashboard .navbar a,
-    #dashboard .navbar a:focus {
-        padding: 10px 0 10px 10px;
+    .navbar-mobile ul {
+        height: 65%;
+    }
+    .services .mainicon {
+        margin-top: 20px;
+    }
+    .services .icon {
+        width: 90px;
+        height: 90px;
+    }
+    .section-title h2 {
+        width: auto;
     }
 }
 
-@media (min-width: 575px) {
-    .progress {
-        height: auto;
-        background-size: cover;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-    }
-    /*==== Dashboard css=====*/
-    #dashboard .navbar {
-        padding: 0;
-        justify-content: flex-start;
-        align-items: center;
-        order: 2 !important;
-    }
-    #dashboard .mobile-nav-toggle {
-        position: relative;
-        top: auto;
-        display: none;
-    }
-    #dashboard #header .manbtnlogout .welcometxt {
-        font-size: .9rem;
+@media (min-width: 575.98px) {
+    .section-title h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
     }
 }
 
 @media (max-width: 575.98px) {}
 
 @media (min-width: 576px) {
-    #header .logo img {
-        max-height: 65px;
+    #header {
+        background: transparent;
     }
-    #hero {
-        padding: 30px 0 90px;
+    .navbar .getstarted {
+        padding: 14px 25px;
     }
-    .mobile-nav {
-        height: 430px;
+    .navbar-mobile ul {
+        height: 73%;
     }
-    .progress {
-        height: auto;
-        background-size: contain;
-        -o-background-size: contain;
-        -moz-background-size: contain;
-        -webkit-background-size: contain;
+    #hero:before {
+        background: url("../img/hero_curve_small.png") no-repeat;
+        background-position: right;
     }
-    .progress.pink .mainprogress {
-        justify-content: flex-start;
-        flex-direction: row;
-        margin: -3.8rem 0 0 0;
+    #hero .container .contentheromain {
+        display: flex;
+        padding: 40px 10px;
+        margin: 100px 0;
+        align-items: center;
+        justify-content: space-between;
     }
-    .progress.pink .progress-bar {
-        top: auto;
-        text-align: left;
+    #hero h1 {
+        font-size: 21px;
+        line-height: 30px;
     }
-    .progress.pink .progress-bar p {
-        font-size: 15px;
-        margin: 0;
+    #hero p {
+        font-size: 16px;
+        line-height: 1.9;
+        margin: 7px 0;
+        padding: 6px 15px 10px 0;
     }
-    .section-title h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
+    #hero .btn-get-started {
+        padding: 13px 15px 13px 15px;
     }
-    .howitworks .mainrewordbox {
-        padding-right: 0rem;
+    #hero .reedmoremain {
+        margin-bottom: 0;
     }
-    #footer .mainsocial {
-        padding-bottom: 0rem;
-        padding-top: 0rem;
+    .services.section-bg {
+        padding: 90px 0;
     }
-    .howitworks {
-        padding: 1.5rem 0;
-        margin-bottom: 1.5rem;
-    }
-    .section-title {
-        padding-bottom: 1.5rem;
-        padding-top: .5rem;
-    }
-    .faq {
+    .why-us {
         padding: 1.5rem 0 1.5rem;
         margin-bottom: 1.5rem;
         margin-top: 1.5rem;
     }
-    .clients {
-        margin: 1.5rem 0;
-        padding: 1.5rem 0;
+    #footer .footer-top .footer-contact p {
+        border-right: solid 1px #fff;
+        padding-right: 1px;
     }
-    /*==== Dashboard css=====*/
-    #dashboard #header .logo img {
-        max-height: 70px;
+}
+
+@media (min-width: 600px) {
+    .navbar-mobile ul {
+        height: 30%;
     }
-    #dashboard .navbar {
-        justify-content: center;
-    }
-    #dashboard .about-us .icon-box .btn.btn-dark {
-        /*! border-radius: 7px; */
-        font-size: 1.0rem;
-        padding: 10px 8px;
-    }
-    #dashboard .section-title h2 {
+    .section-title h2 {
         font-size: 32px;
-        margin-bottom: 10px;
-        padding-bottom: 10px;
     }
-    #dashboard .about-us .icon-box .lorenmaincontent {
-        left: .5%;
-        margin: 0;
-    }
-    #dashboard .about-us .iconbox-blue i span {
-        font-size: 1.1rem;
-    }
-    #dashboard .about-us .icon-box span.sprte {
-        font-size: 1.0rem;
-        margin: 4px 4px 0px 0px
-    }
-    #dashboard .about-us .iconbox-blue i {
-        font-size: 1.3rem;
-        align-items: flex-start;
-        justify-content: center;
-    }
-    #dashboard .about-us .iconbox-blue i span {
-        font-size: 1.1rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart {
-        padding: 1rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .card .card-body {
-        padding: 1rem 1rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart.mainimgpart {
-        padding: 0;
-        display: block;
-        justify-content: center;
-    }
-    #dashboard .about-us .cardleftmaincontentpart {
-        padding: 1rem 1.3rem 0;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg {
-        padding: 3rem 1rem;
-        margin: 0;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h2 {
-        font-size: 2.3rem;
-        line-height: 40px;
-        margin-bottom: 1rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints .mainbankicon {
-        font-size: 12rem;
-    }
-    #dashboard .about-us .icon-box {
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-    }
-    #dashboard .about-us .icon-box .minstext {
-        position: relative;
-        top: auto;
-        right: auto;
-    }
-    #dashboard .about-us .icon-box .btn.btn-dark {
-        font-size: 1.0rem;
-        width: calc(100% - 15px);
-        padding-left: calc(2.2rem - 28px) !important;
-        padding-right: calc(2.2rem - 11px) !important;
-        padding-top: calc(1.7rem - 15px) !important;
-        padding-bottom: calc(1.8rem - 15px) !important;
-    }
-    #dashboard .about-us .icon-box span {
-        font-size: 0.9rem;
-    }
-    #dashboard .about-us .icon-box p {
-        font-size: .88rem;
+    .services .mainservicesrow {
+        padding-top: 2.0rem;
     }
 }
 
-@media (min-width: 640px) {}
-
-@media (min-width: 641px) {
-    .progress.pink .mainprogress {
-        margin-top: -3.5rem;
+@media (min-width: 640px) {
+    .navbar-mobile ul {
+        height: auto;
     }
-    #dashboard .about-us .icon-box p {
-        font-size: .9rem;
+    #hero h1 {
+        font-size: 24px;
+        line-height: 33px;
     }
-}
-
-@media (min-width: 767px) {
-    .progress.pink .mainprogress {
-        margin-top: -3.33rem;
+    #footer .footer-top .footer-links ul a {
+        font-size: 1rem;
     }
 }
+
+@media (min-width: 767px) {}
 
 @media (min-width: 768px) {
-    #hero {
-        /*height: auto;*/
-        padding: 100px 0 50px;
-        background-size: cover;
-        -o-background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        text-align: left;
+    .navbar-mobile ul {
+        height: 27%;
     }
-    .mobile-nav {
-        height: 350px;
+    #hero h1 {
+        font-size: 35px;
+        line-height: 45px;
     }
-    #hero .row {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+    .blog .member .member-info {
+        bottom: -60.9%;
     }
-    #hero-inner {
-        height: 350px;
+    #hero .btn-menu,
+    #hero .btn-book {
+        font-size: 14px;
     }
-    #hero-inner h1 {
-        font-size: 1.5rem;
-        line-height: 40px;
-    }
-    section.progess {
-        padding: 0 0 4rem 0;
-        margin: 0;
-    }
-    .howitworks .icon-box {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    .howitworks {
-        text-align: left;
-    }
-    .howitworks .icon-boxes .mainrewordbox {
-        min-width: inherit;
+    #hero p {
+        margin: 10px 0;
+        padding: 15px 0 25px;
     }
     .section-title {
-        padding-bottom: 2rem;
-        padding-top: 1rem;
+        padding-bottom: 15px;
     }
-    .mobile-nav {
-        height: 410px;
+    .section-title h2:after,
+    .section-title h2:before {
+        top: 8px;
+        width: 90px;
     }
-    .progress {
-        background-size: contain;
-        -o-background-size: contain;
-        -moz-background-size: contain;
-        -webkit-background-size: cover;
-        height: 80px;
+    .section-title h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
-    .progress.pink .mainprogress {
-        margin-top: -3.7rem;
-        justify-content: space-around;
+    .services .mainservicesrow {
+        padding-top: 3.0rem;
     }
-    .progress.pink .progress-bar p {
-        font-size: 22px;
+    .clients {
+        padding: 40px 0 0;
     }
-    .signup .php-email-form {
-        padding: 2.5rem 1.9rem 4em;
+    .clients .owl-item {
+        padding: 20px 20px 0;
+        margin-top: 15px;
     }
-    .signup .php-email-form button[type="submit"] {
-        right: -31px;
-        padding: 25px 45px 24px;
-        top: -1rem;
+    .faq {
+        padding-bottom: 55px;
     }
-    .signup .section-title h2 {
-        font-size: 20px;
-        line-height: 1.4;
-        margin-bottom: 2rem;
+    .services.section-bg {
+        /* height: 55vh;*/
+        padding: 45px 0;
     }
-    .howitworks .mainrewordbox {
-        padding-right: 2rem;
+    .services .mainicon .icon-boxmain {
+        margin-bottom: 30px;
     }
-    .howitworks .icon-box {
-        padding: 20px;
-        margin-left: 1rem;
-        margin-right: 1rem;
+    .services .icon-box {
+        width: 160px;
+        height: 160px;
     }
-    #footer .social-links a {
-        font-size: 1.5rem;
-        padding: .7rem 1.0rem;
-        margin-top: .4rem;
-        margin-bottom: .1rem;
+    .services .icon {
+        width: 90px;
+        height: 90px;
+    }
+    .services .icon i {
+        font-size: 35px;
+    }
+    .services .title {
+        margin-bottom: 20px;
+        font-size: 18px;
+        padding-top: 40px;
+    }
+    #footer .footer-top .footer-contact {
+        justify-content: flex-start;
+    }
+    .blog .sidebar {
+        padding: 20px 20px;
+        margin: 0 0 30px 0px;
     }
     #footer .footer-top .footer-links {
         align-items: center;
     }
-    #footer .footer-top .footer-contact p br {
-        display: none;
-    }
-    #dashboard #header.header-scrolled.sticky {
-        position: -webkit-sticky;
-        position: sticky;
-    }
-    #dashboard #header.header-scrolled {
-        margin: 0;
-    }
-    #dashboard #header .manbtnlogout {
-        margin-top: 1rem;
-        margin-bottom: .5rem;
-        justify-content: flex-start;
-    }
-    #dashboard .about-us .icon-box .btn.btn-dark {
-        padding: 13px 18px 15px;
-        font-size: 1.4rem;
-    }
-    #dashboard .about-us .icon-box span {
-        font-size: 1.1rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg {
-        padding: 3rem 5rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h1 span {
-        font-size: 4rem;
+    #footer .footer-top .footer-contact p {
+        padding-right: 12px;
     }
 }
 
-@media (min-width: 991px) {
-    .progress.pink .mainprogress {
-        margin-top: -3.5rem;
-        justify-content: flex-start;
+@media (min-width: 800px) {
+    .navbar-mobile ul {
+        height: 55%;
     }
 }
 
-@media (min-width:830px) and (max-width:991px) {
-    .progress.pink .mainprogress {
-        justify-content: flex-start;
-    }
-    .progress.pink .mainprogress .rectkal {
-        margin-left: 2rem;
-    }
-}
+@media (min-width: 991px) {}
 
 @media (min-width: 992px) {
+    .navbar {
+        justify-content: space-between;
+    }
+    .mobile-nav .mainlogin {
+        float: right;
+    }
     .nav-menu a {
-        padding: 11px 8px;
-        font-size: 14px;
+        padding: 12px 25px 12px 0;
     }
-    .nav-menu .get-started-btn {
-        margin-left: 7px;
-        padding: 20px 16px;
-        font-size: 14px;
-    }
-    .mobile-nav a.get-started-btn {
-        padding: 20px 10px;
-        width: auto;
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
-        margin-left: 2rem;
-        text-align: center;
-        margin-top: 1rem;
-    }
-    #hero-inner {
-        height: 350px;
-    }
-    #hero-inner h1 {
-        font-size: 2.5rem;
-    }
-    #hero {
-        height: 575px;
-        /*height: 60vh;*/
-        background-size: cover;
-        -o-background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
+    .nav-menu a.get-started-btn {
+        margin: auto;
     }
     #hero h1 {
-        font-size: 35px;
+        font-size: 40px;
         line-height: 50px;
+        margin: 20px 0 0 0;
     }
-    #hero .row {
-        margin-top: -2rem;
-        margin-bottom: 2rem;
-    }
-    section.progess {
-        padding: 1rem 0 5.0rem;
-        margin-top: -4rem;
+    #hero .btn-get-started {
+        padding: 16px 25px 16px 25px;
     }
     .section-title {
-        padding-bottom: 4rem;
-        padding-top: 1rem;
+        padding-bottom: 45px;
+    }
+    .section-title h2:after,
+    .section-title h2:before {
+        top: 11px;
+        width: 120px;
+    }
+    .section-title h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .clients {
+        margin: 15px 0 10px;
+        padding: 60px 0 15px;
+    }
+    .clients .owl-item {
+        padding: 20px 20px 0;
+        margin-top: 35px;
     }
     .faq {
-        padding: 2.5rem 0 4rem;
-        margin-bottom: 1.0rem;
-        margin-top: 1rem;
+        padding-bottom: 60px;
     }
-    .faq.privacy {
+    .services .mainicon .icon-boxmain {
+        margin-bottom: 0px;
+    }
+    .services .mainicon {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .services.section-bg {
+        /* height: 87vh;*/
+        padding: 60px 0;
+    }
+    .services .icon-box {
+        width: 190px;
+        height: 190px;
+    }
+    .services .icon {
+        width: 100px;
+        height: 100px;
+    }
+    .services .icon i {
+        font-size: 40px;
+    }
+    .services .title {
+        margin-bottom: 27px;
+        font-size: 18px;
+        padding-top: 55px;
+    }
+    .why-us {
+        padding: 1rem 0 5rem;
+        margin-bottom: 0.5rem;
+        margin-top: 2rem;
+    }
+    .why-us.privacy {
         padding: 1.5rem 0 5rem;
         margin-bottom: 1.5rem;
         margin-top: 1.5rem;
     }
-    .clients {
-        margin: 1rem 0 2rem;
-        padding: 4rem 0;
-    }
-    .howitworks .mainrewordbox {
-        padding-right: 0rem;
-    }
-    .howitworks .icon-box {
-        padding: 30px;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    .progress {
-        height: 100px;
-        background-size: cover;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-    }
-    .progress.pink .mainprogress {
-        margin-top: -3rem;
-        justify-content: flex-start;
-    }
-    .progress.pink .progress-bar p {
-        font-size: 25px;
-    }
-    .howitworks {
-        padding: 2rem 0;
-        margin-bottom: 2rem;
-    }
-    .signup .php-email-form {
-        padding: 2.5rem 1.9rem 4em;
-    }
-    .signup .php-email-form button[type="submit"] {
-        padding: 24px 40px 24px 43px;
-        border-radius: 3.0rem 0;
-        font-size: 20px;
-        right: -46px;
-        top: -0.9rem;
-    }
-    #footer .footer-top {
-        border-bottom: 1px solid rgb(0 87 119);
-    }
-    footer#footer:before {
-        display: block;
-        right: 33.9%;
-        height: 100%;
-    }
-    footer#footer .ftrightline {
-        height: 100%;
-        display: block;
-        right: 1.6%;
-    }
-    #footer .footer-top .footer-contact p br {
-        display: block;
-    }
-    #dashboard .navbar {
-        justify-content: center;
-        align-items: center;
-        order: 2 !important;
-    }
-    #dashboard .navbar li {
-        justify-content: center;
-    }
-    #dashboard .navbar a,
-    #dashboard .navbar a:focus {
-        padding: 10px 0 10px 20px;
-    }
-    #dashboard #header .manbtnlogout {
-        justify-content: end;
-        margin: 0;
-    }
-    #dashboard .about-us .cardleftmaincontentpart {
-        margin-top: 0rem;
-        margin-bottom: .5rem;
-        padding: .8rem;
-    }
-    #dashboard .about-us .icon-box .btn.btn-dark {
-        padding: 12px 12px;
-        font-size: 0.9rem;
-    }
-    #dashboard .about-us .icon-box .lorenmaincontent {
-        left: 2%;
-    }
-    #dashboard .about-us .iconbox-blue i {
-        font-size: 1.5rem;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    #dashboard .about-us .iconbox-blue i span {
-        font-size: 1.1rem;
-    }
-    #dashboard .about-us .icon-box p {
-        line-height: 22px;
-        padding: 0;
-    }
-    /* #dashboard .about-us .cardleftmaincontentpart.mainimgpart {
-        padding: .5rem;
-    } */
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg {
-        padding: 3rem 1rem;
-        margin: 0rem 0rem 2rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h2 {
-        font-size: 1.3rem;
-        line-height: 40px;
-        margin-bottom: .5rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h1 {
-        font-size: 2.0rem;
-        /*margin-bottom: .5rem;
-        margin-top: .3rem;*/
-    }
-    #dashboard .mainclient {
-        display: flex;
-    }
-    #dashboard .about-us .cardleftmaincontentpart.mainimgpart {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0.5rem .7rem 0rem;
-        border-width: 0.25px;
-        border-color: rgb(196, 195, 195);
-        border-style: solid;
-        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.16);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints .mainbankicon {
-        font-size: 8rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h1 span {
-        font-size: 3rem;
-    }
-    .d-flex.align-items-stretch.aos-init.aos-animate {
-        display: flex !important;
-    }
 }
 
 @media (min-width: 1024px) {
-    #hero {
-        height: 600px;
-        padding: 90px 0 70px;
+    .services.section-bg {
+        padding: 45px 0;
     }
-    #hero {
-        /*height: auto;*/
-        background-size: cover;
-        -o-background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
+    #hero .container .contentheromain {
+        padding: 80px 0px;
+        margin: 100px 0;
     }
-    #hero .row {
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-    }
-    #hero h1 {
-        font-size: 35px;
-        line-height: 50px;
-    }
-    #hero p {
-        font-size: 15px;
-        line-height: 25px;
-    }
-    .nav-menu a {
-        padding: 11px 6px;
-    }
-    .progress.pink .mainprogress {
-        margin-top: -3.1rem;
-    }
-    .progress.pink .progress-bar p {
-        font-size: 27px;
-    }
-    .signup .php-email-form button[type="submit"] {
-        right: -31px;
-    }
-    .howitworks .icon-box {
-        margin-left: .5rem;
-        margin-right: .5rem;
-    }
-    section.progess {
-        margin-top: -1rem;
-    }
-    footer#footer:before {
-        right: 34.4%;
-    }
-    footer#footer .ftrightline {
-        right: 3.1%;
-    }
-    #dashboard .about-us .cardleftmaincontentpart.mainimgpart {
-        padding: 0.5rem .7rem 0rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-12 {
-        margin-top: .5rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 button.btn {
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-    #dashboard .about-us .icon-box.iconbox-blue.morehieght {
-        height: 85vh;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h1 {
-        font-size: 2.0rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h1 span {
-        font-size: 4rem;
-    }
-}
-
-@media (min-width: 1100px) {
-    .nav-menu a {
-        padding: 11px 8px;
-    }
-    section.progess {
-        padding: 1rem 0 5rem;
-        margin-top: -1rem;
-    }
-    .progress {
-        height: 110px;
-    }
-    .progress.pink .mainprogress {
-        margin-top: -2.8rem;
+    .nav-menu a.get-started-btn {
+        margin: 0;
     }
 }
 
 @media (min-width: 1200px) {
-    #hero {
-        /*height: 47vh;*/
-        height: 720px;
+    .navbar {
+        justify-content: space-around;
     }
-    /* #hero {
-        height: 80vh;
-    } */
-    #hero h1 {
-        font-size: 40px;
-        line-height: 65px;
+    .blog .member .member-info {
+        bottom: -57.9%;
     }
-    #hero p {
-        font-size: 17px;
-        line-height: 30px;
+    .blog .member h4 {
+        font-size: 16px;
+    }
+    .blog .sidebar {
+        padding: 20px 20px;
+        margin: 0 0 60px 15px;
     }
     .nav-menu a {
-        padding: 11px 16px;
+        padding: 12px 40px 12px 0;
     }
-    #hero {
-        /*height: 85vh;*/
+    #hero h1 {
+        font-size: 45px;
+        line-height: 55px;
+        margin: 0 0 0 0;
     }
-    #hero-inner {
-        height: 400px;
+    #hero p {
+        margin: 0;
     }
-    .progress {
-        height: 90px;
+    #hero .formsmainphpmain {
+        top: 0;
     }
-    .progress.pink .progress-bar p {
-        font-size: 32px;
+    .services .mainservicesrow {
+        padding-top: 4.0rem;
     }
-    .progress.pink .mainprogress {
-        margin-top: -4.5rem;
-    }
-    .howitworks {
-        padding: 8rem 0px 5rem;
-        margin-bottom: 3rem;
-    }
-    .faq {
-        padding: 4rem 0 6rem;
-        margin-bottom: 2rem;
-        margin-top: 1.0rem;
-    }
-    footer#footer:before {
-        right: 34.2%;
-    }
-    #footer .social-links a {
-        padding: .7rem 2rem;
-        font-size: 2.0rem;
-    }
-    footer#footer .ftrightline {
-        right: 2.5%;
-    }
-    #dashboard .about-us .icon-box .btn.btn-dark {
-        padding: 20px 24px;
-        font-size: 1.1rem;
-    }
-    #dashboard .about-us .icon-box .lorenmaincontent {
-        left: 2%;
-    }
-    #dashboard .about-us .iconbox-blue i {
-        font-size: 2rem;
-    }
-    #dashboard .about-us .iconbox-blue i span {
-        font-size: 1.3rem;
-    }
-    #dashboard .about-us .icon-box p {
-        line-height: 24px;
-    }
-    #dashboard .about-us .cardleftmaincontentpart {
-        padding: 1rem 1.3rem 0;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg {
-        padding: 3rem 1rem;
-        margin: 1rem 1rem 2rem;
-    }
-    #dashboard .about-us .content h2 {
-        font-size: 42px;
-        margin-bottom: 20px;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h1 {
-        font-size: 2.2rem;
-        margin-bottom: .5rem;
-        margin-top: 1.3rem;
-    }
-    #dashboard #header .manbtnlogout .welcometxt {
-        font-size: 1rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h2 {
-        font-size: 1.6rem;
-        margin-bottom: 0rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-12 {
-        margin-top: var(--bs-gutter-y);
-    }
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 button.btn {
-        margin-bottom: .5rem;
-        margin-top: 0.45rem;
-    }
-    #dashboard .about-us .icon-box .btn.btn-dark {
-        font-size: 1.4rem;
-        width: calc(100% - 15px);
-        padding-left: calc(2.0rem - 18px) !important;
-        padding-right: calc(2.0rem - 12px) !important;
-        padding-top: calc(2.0rem - 15px) !important;
-        padding-bottom: calc(2.1rem - 15px) !important;
-    }
-}
-
-@media (min-width: 1280px) {
-    .progress {
-        height: 110px;
-    }
-    .progress.pink .mainprogress {
-        margin-top: -4.0rem;
-    }
-    footer#footer:before {
-        right: 35.1%;
-    }
-    footer#footer .ftrightline {
-        right: 5.5%;
-    }
-    #dashboard .about-us .icon-box.iconbox-blue.morehieght {
-        height: 94vh;
+    .clients {
+        margin: 15px 0 10px;
+        padding: 60px 0 30px;
     }
 }
 
 @media (min-width: 1366px) {
-    #hero {
-        height: 786px;
-        padding: 90px 0 90px;
-    }
-    #hero .hero-img img {
-        max-width: 100%;
-    }
-    #hero .row {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    section.progess {
-        padding: 0px 0 5rem;
-    }
-    .progress {
-        height: 120px;
+    .navbar {
+        justify-content: space-between;
     }
     #hero h1 {
-        font-size: 40px;
-        line-height: 65px;
+        font-size: 59px;
+        line-height: 78px;
+        margin: 0 0 20px 0;
     }
-    .about {
-        background-size: contain;
-        o-background-size: contain;
-        webkit-background-size: contain;
-        moz-background-size: contain;
+    #hero p {
+        margin: 10px 0;
     }
-    .faq .mainfaqimg {
-        width: 100vw;
-        height: 100%;
+    #hero .formsmainphpmain {
+        top: 0;
     }
-    .nav-menu a {
-        padding: 11px 15px;
+    .testimonials .card-title a {
+        font-size: 2.3rem;
     }
-    .nav-menu .get-started-btn {
-        margin-left: 7px;
-        padding: 20px 20px;
+    .services.section-bg {
+        /*height: 70vh;*/
+        padding: 60px 0;
     }
-    .howitworks {
-        padding: 3rem 0px 3rem;
-        margin-bottom: 3rem;
+    .section-title {
+        padding-bottom: 10px;
     }
-    .progress.pink .mainprogress {
-        margin-top: -3.8rem;
-    }
-    footer#footer:before {
-        /*right: 36.1%;
-		height: 49.5%;*/
-        right: 36.1%;
-    }
-    footer#footer .ftrightline {
-        right: 8.3%;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg {
-        margin: 1rem 2rem 2rem;
-        padding: 2rem 1rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h2 {
-        font-size: 1.5rem;
-    }
-    #dashboard .about-us .icon-box .lorenmaincontent {
-        left: 2%;
-    }
-    #dashboard .about-us .icon-box .btn.btn-dark {
-        padding: 20px 25px;
-        font-size: 1.3rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-12 {
-        margin-top: 1.20rem;
-    }
-    #dashboard .about-us .cardleftmaincontentpart .pointsbg.mainpoints h1 {
-        font-size: 2.5rem;
-        margin-bottom: .5rem;
-        margin-top: 1rem;
+    .services.section-bg {
+        padding: 60px 0;
     }
 }
 
-@media (min-width: 1400px) {
-    #hero {
-        height: 850px;
-        /*height: 100vh;*/
-        padding: 100px 0;
-    }
-    #hero .row {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        top: 0rem;
-    }
-    #hero .hero-img img {
-        max-width: none;
-    }
-    .nav-menu a {
-        padding: 11px 16px;
-        font-size: 16px;
-    }
-    .nav-menu .get-started-btn {
-        margin-left: 13px;
-        padding: 22px 30px;
-        font-size: 16px;
-    }
-    .progress {
-        height: 160px;
-    }
-    .progress.pink .mainprogress {
-        margin-top: -4.2rem;
-    }
-    footer#footer:before {
-        right: 36.6%;
-    }
-    footer#footer .ftrightline {
-        right: 9.9%;
-    }
-    /*#dashboard #header .manbtnlogout .welcometxt br {
-        display: none;
-    }*/
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-6,
-    #dashboard .about-us .cardleftmaincontentpart .card-body form.row.g-3 .col-md-12 {
-        margin-top: 1.43rem;
-    }
-    #dashboard .about-us .icon-box .btn.btn-dark {
-        padding: 17px 12px;
-    }
-    #dashboard .about-us .icon-box.iconbox-blue.morehieght {
-        height: 85vh;
-    }
-}
+@media (min-width: 1400px) {}
 
 @media (min-width: 1500px) {
-    #hero {
-        height: 900px;
+    #hero:before {
+        background: url("../img/hero_curve.png") no-repeat;
+        background-position: right;
     }
-    .progress {
-        height: 170px;
-    }
-    footer#footer:before {
-        right: 35.3%;
-    }
-    footer#footer .ftrightline {
-        right: 6.0%;
+    .services.section-bg {
+        padding: 60px 0;
     }
 }
 
-@media (min-width: 1920px) {
-    .nav-menu a {
-        padding: 11px 20px;
-        font-size: 16px;
-    }
-    #hero {
-        height: 1080px;
-    }
-    footer#footer:before {
-        right: 38.4%;
-        height: 100%;
-    }
-    footer#footer .ftrightline {
-        height: 100%;
-        right: 15.3%;
-    }
-    .progress {
-        height: 175px;
-    }
-}
-
-@media (min-width: 2100px) {
-    footer#footer:before {
-        right: 42.10%;
-    }
-    footer#footer .ftrightline {
-        right: 26.3%;
-    }
-    .about {
-        background-size: cover;
-        -o-background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-    }
-}
-
-
-/* (1366x768) WXGA Display */
-
-@media screen and (min-width: 1441px) and (max-width: 1920px) {
-    #dashboard .error-content {
-        margin-top: 100px;
-    }
-}
+@media (min-width: 1920px) {}
