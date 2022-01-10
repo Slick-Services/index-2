@@ -1708,7 +1708,7 @@ section#pivecy p {
 }
 
 .main-content-inner .card.img .maincardavailable .card-body {
-    padding: 1.0rem 1.7rem 0.5rem;
+    padding: 2.4rem 1.7rem 2.4rem;
     float: right;
     text-align: right;
 }
@@ -1724,28 +1724,29 @@ section#pivecy p {
 
 .main-content-inner .card.img .maincardavailable .card-body h3 {
     color: rgb(175 7 78);
-    font-size: 1.1rem;
-    padding-top: 1rem;
-    padding-bottom: .0rem;
+    font-size: 1.3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     font-weight: 600;
 }
 
 .main-content-inner .card.img .maincardavailable .card-body p {
     color: rgb(175 7 78);
     font-size: 1.0rem;
-    padding: 0.4rem 0;
+    padding: 1rem 0;
     margin: 0;
     font-weight: 600;
 }
 
 .main-content-inner .card.img .maincardavailable .card-body p.pointscalculate {
     font-weight: 600;
+    font-size: 1.0rem;
 }
 
 .main-content-inner .card.img .maincardavailable .card-body h2 {
     margin: 0;
-    padding: 0.2rem 0;
-    font-size: 2.0rem;
+    padding: 0.7rem 0;
+    font-size: 1.7rem;
     font-weight: 600;
 }
 
@@ -1881,7 +1882,8 @@ section#pivecy p {
     font-weight: 600;
 }
 
-.main-content-inner .card .maincardavailable .btn.btn-dark.takesurvey {
+
+/* .main-content-inner .card .maincardavailable .btn.btn-dark.takesurvey {
     background: #d61969;
     border: none;
     box-shadow: none;
@@ -1895,7 +1897,7 @@ section#pivecy p {
 .main-content-inner .card .maincardavailable .btn.btn-dark.takesurvey:active,
 .main-content-inner .card .maincardavailable .btn.btn-dark.takesurvey.active {
     background: #000;
-}
+} */
 
 .main-content-inner .availablesurvey.profile .card-body form.row.g-3 .form-control,
 .main-content-inner .availablesurvey.profile .card-body form.row.g-3 .form-select {
