@@ -72,10 +72,6 @@ body.loginbg {
     background-attachment: fixed;
 }
 
-body.loginbg.otpbg {
-    background: url(../img/otpbgN.jpg) no-repeat center top;
-}
-
 .fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
