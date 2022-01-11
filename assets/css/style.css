@@ -2081,13 +2081,7 @@ label:after {
     box-shadow: none;
 }
 
-.survey .faq-list li {
-    padding: 0;
-    box-shadow: none;
-    border: solid 1px #9A9A9A;
-}
-
-.survey .faq-list a {
+.survey a {
     padding: 20px 35px 20px 15px;
     display: flex;
     align-items: center;
@@ -2096,15 +2090,15 @@ label:after {
     font-size: 1rem;
 }
 
-.survey .faq-list .icon-show,
-.survey .faq-list .icon-close {
+.survey .icon-show,
+.survey .icon-close {
     font-size: 24px;
     position: relative;
     right: -15px;
     top: auto;
 }
 
-.survey .faq-list .answer {
+.survey .answer {
     width: 100%;
     padding: .5rem 0;
     /* margin-top: 1rem; */
@@ -2112,24 +2106,24 @@ label:after {
     padding: 20px 15px;
 }
 
-.survey .faq-list .answer label {
+.survey .answer label {
     display: flex;
     flex-direction: row;
     align-items: center;
     cursor: pointer;
 }
 
-.survey .faq-list .answer label span {
+.survey .answer label span {
     font-size: 1.1rem;
     font-weight: 500;
 }
 
-.survey .faq-list .answer label:after,
-.survey .faq-list .answer label::before {
+.survey label:after,
+.survey label::before {
     display: none;
 }
 
-.survey .faq-list .answer input {
+.survey .answer input {
     position: relative !important;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -2140,7 +2134,7 @@ label:after {
     cursor: pointer;
 }
 
-.survey .faq-list .answer input:before {
+.survey .answer input:before {
     content: '';
     display: block;
     box-sizing: content-box;
@@ -2151,12 +2145,12 @@ label:after {
     padding: 6px;
 }
 
-.survey .faq-list .answer input:checked:before {
+.survey .answer input:checked:before {
     border-color: rgb(214 25 105);
     transition: 0.5s border-color ease;
 }
 
-.survey .faq-list .answer input:after {
+.survey .answer input:after {
     content: '';
     display: block;
     position: absolute;
@@ -2171,11 +2165,11 @@ label:after {
     transform: translate(-50%, -50%) scale(0);
 }
 
-.survey .faq-list .answer input[type="checkbox"]:before {
+.survey .answer input[type="checkbox"]:before {
     border-radius: 6px;
 }
 
-.survey .faq-list .answer input[type="checkbox"]:after {
+.survey .answer input[type="checkbox"]:after {
     width: 13px;
     height: 20px;
     border-radius: 0;
@@ -2184,7 +2178,7 @@ label:after {
     box-shadow: 4px 4px 0px 0px rgb(214 25 105);
 }
 
-.survey .faq-list .answer input[type="checkbox"]:checked:after {
+.survey .answer input[type="checkbox"]:checked:after {
     -webkit-animation: toggleOnCheckbox 0.2s ease forwards;
     animation: toggleOnCheckbox 0.2s ease forwards;
 }
@@ -2215,6 +2209,33 @@ label:after {
     100% {
         transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
     }
+}
+
+.modal .modal-header h3.modal-title.w-100 {
+    color: rgb(214 25 105);
+}
+
+.modal-body h5 {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.modal-footer>* {
+    padding: .7rem 1.5rem;
+    border-radius: .5rem;
+}
+
+.modal-footer .btn-secondary {
+    background: rgb(214 25 105);
+    border: none;
+}
+
+p.commentmsg {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: rgb(252 148 70);
+    font-weight: 600;
+    text-align: center;
 }
 
 
