@@ -318,13 +318,6 @@ h6 {
     position: relative;
 }
 
-.navbar .translet {
-    display: flex;
-    justify-content: flex-end;
-    width: auto;
-    padding-right: 1rem;
-}
-
 
 /*--------------------------------------------------------------
 # Hero Section
