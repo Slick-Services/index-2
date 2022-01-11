@@ -71,6 +71,7 @@
                             <li><a class="nav-link scrollto" href="#services">How it Works</a></li>
                             <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
                             <li><a class="nav-link scrollto getstarted scrollto col-2 d-flex d-lg-none mainlogin" href="#about">Login</a></li>
+                            <div id="google_translate_element" class="translet"></div>
                         </ul>
                         <i class="las la-bars mobile-nav-toggle"></i>
                         <a href="#about" class="getstarted scrollto d-lg-flex d-none col-sm-3 col-lg-2 col-3 mainlogin">Login</a>
@@ -372,6 +373,23 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js
+    <script>
+        //$(".skiptranslate goog-te-gadget").replaceWith("no");
+        // document.getElementById("google_translate_element").innerHTML = "New text!";
+        $("div.skiptranslate goog-te-gadget").replaceWith("<h2>New heading</h2>");
+    </script>
 
 </body>
 
