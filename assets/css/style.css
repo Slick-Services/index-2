@@ -1766,7 +1766,8 @@ section#pivecy p {
 
 /*------------------------- END Core Css -------------------*/
 
-.main-content-inner .card .maincardavailable .btn.btn-dark {
+
+/* .main-content-inner .card .maincardavailable .btn.btn-dark {
     padding: 13px 18px;
     border-radius: 8px;
     box-shadow: 0 5px 5px 0 rgb(222 222 222 / 80%);
@@ -1774,6 +1775,16 @@ section#pivecy p {
     border-color: #212529;
     transition: .3s all;
     font-size: 1rem;
+} */
+
+.main-content-inner .card .maincardavailable .btn.btn-dark {
+    padding: 1.4rem 1.1rem;
+    border-radius: 0px 8px 8px 0px;
+    background: #212529;
+    border-color: #212529;
+    transition: .3s all;
+    font-size: 1rem;
+    float: right;
 }
 
 .main-content-inner .mainavilablesurvey {
@@ -1781,12 +1792,51 @@ section#pivecy p {
 }
 
 .main-content-inner .card .maincardavailable .btn.btn-dark:hover {
-    background: #ff7657;
-    border: solid 1px #ff7657;
+    background: #212529;
+    border: solid 1px #212529;
 }
 
 .main-content-inner .card .maincardavailable .card.row {
     display: none;
+}
+
+.main-content-inner .card .maincardavailable .card.row.profilesurvey {
+    border: none;
+}
+
+.main-content-inner .card .maincardavailable .card.row .mainearn {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 1rem;
+    /* width: 100%; */
+}
+
+.main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols {
+    border: solid 2px #000;
+    display: flex;
+    flex-direction: row;
+    width: 49%;
+    border-radius: .7rem;
+    padding-left: .7rem;
+}
+
+.main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols.orange {
+    border-color: #FC9446;
+}
+
+.main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols.pink {
+    border-color: rgb(214 25 105);
+}
+
+.main-content-inner .card .maincardavailable .orange .btn.btn-dark {
+    background: #FC9446;
+    border-color: #FC9446;
+}
+
+.main-content-inner .card .maincardavailable .pink .btn.btn-dark {
+    background: rgb(214 25 105);
+    border-color: #d61969;
 }
 
 .load-more.btn,
@@ -1796,7 +1846,7 @@ section#pivecy p {
     padding: 10px 10px;
     border-radius: 8px;
     font-size: 20px;
-    margin: 0rem 0 .2rem;
+    margin: 0.7rem 0 .2rem;
     display: inline-block;
     padding: 11px 17px;
     font-size: 1rem;
