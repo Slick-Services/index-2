@@ -1893,8 +1893,8 @@ label {
 }
 
 .main-content-inner .availablesurvey.profile .card-body form.row.g-3 button.btn.mainbtnchange {
-    border-radius: .6rem;
-    padding: .6rem 1.7rem;
+    border-radius: .5rem;
+    padding: .8rem 2.7rem;
     transition: all .1s;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -1977,7 +1977,7 @@ label:after {
 
 .profilebody .mainprofile .icon-box .icon i {
     color: rgb(214 25 105);
-    font-size: 3.0rem;
+    font-size: 2.0rem;
     margin: 0 1rem;
 }
 
@@ -2001,7 +2001,7 @@ label:after {
 
 .profilebody .mainprofile .icon-box h4 {
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     margin: 0;
 }
 
@@ -2015,7 +2015,7 @@ label:after {
     width: 100%;
     padding: 1.1rem 0.7rem;
     border-radius: 0;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     border-radius: 0 .5rem 0.5rem 0rem;
 }
 
@@ -2029,6 +2029,142 @@ label:after {
 .profilebody .mainprofile .icon-box button.btn.btn-success:active:focus,
 .show>.profilebody .mainprofile .icon-box button.btn.btn-success.dropdown-toggle:focus {
     box-shadow: none;
+}
+
+.survey .faq-list li {
+    padding: 0;
+    box-shadow: none;
+    border: solid 1px #9A9A9A;
+}
+
+.survey .faq-list a {
+    padding: 20px 35px 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.survey .faq-list .icon-show,
+.survey .faq-list .icon-close {
+    font-size: 24px;
+    position: relative;
+    right: -15px;
+    top: auto;
+}
+
+.survey .faq-list .answer {
+    width: 100%;
+    padding: .5rem 0;
+    /* margin-top: 1rem; */
+    border-top: solid 1px #9A9A9A;
+    padding: 20px 15px;
+}
+
+.survey .faq-list .answer label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.survey .faq-list .answer label span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.survey .faq-list .answer label:after,
+.survey .faq-list .answer label::before {
+    display: none;
+}
+
+.survey .faq-list .answer input {
+    position: relative !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 8px 15px 8px 0;
+    box-sizing: content-box;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.survey .faq-list .answer input:before {
+    content: '';
+    display: block;
+    box-sizing: content-box;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #ccc;
+    transition: 0.2s border-color ease;
+    padding: 6px;
+}
+
+.survey .faq-list .answer input:checked:before {
+    border-color: rgb(214 25 105);
+    transition: 0.5s border-color ease;
+}
+
+.survey .faq-list .answer input:after {
+    content: '';
+    display: block;
+    position: absolute;
+    box-sizing: content-box;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 50%;
+    background-color: rgb(214 25 105);
+    width: 14px;
+    height: 14px;
+    border-radius: 100vh;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.survey .faq-list .answer input[type="checkbox"]:before {
+    border-radius: 6px;
+}
+
+.survey .faq-list .answer input[type="checkbox"]:after {
+    width: 13px;
+    height: 20px;
+    border-radius: 0;
+    transform: translate(-50%, -85%) scale(0) rotate(45deg);
+    background-color: transparent;
+    box-shadow: 4px 4px 0px 0px rgb(214 25 105);
+}
+
+.survey .faq-list .answer input[type="checkbox"]:checked:after {
+    -webkit-animation: toggleOnCheckbox 0.2s ease forwards;
+    animation: toggleOnCheckbox 0.2s ease forwards;
+}
+
+@-webkit-keyframes toggleOnCheckbox {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -85%) scale(0) rotate(45deg);
+    }
+    70% {
+        opacity: 1;
+        transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
+    }
+    100% {
+        transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
+    }
+}
+
+@keyframes toggleOnCheckbox {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -85%) scale(0) rotate(45deg);
+    }
+    70% {
+        opacity: 1;
+        transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
+    }
+    100% {
+        transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
+    }
 }
 
 
