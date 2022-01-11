@@ -1776,6 +1776,10 @@ section#pivecy p {
     font-size: 1rem;
 }
 
+.main-content-inner .mainavilablesurvey {
+    padding-right: 0;
+}
+
 .main-content-inner .card .maincardavailable .btn.btn-dark:hover {
     background: #ff7657;
     border: solid 1px #ff7657;

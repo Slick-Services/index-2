@@ -144,6 +144,9 @@
     #footer .footer-top .footer-contact p {
         border-right: none;
     }
+    .main-content-inner {
+        margin-top: 6rem;
+    }
     .main-content-inner .card.img {
         background-position: center center;
     }
@@ -507,6 +510,9 @@
         padding: 1.5rem 0 5rem;
         margin-bottom: 1.5rem;
         margin-top: 1.5rem;
+    }
+    .main-content-inner {
+        margin-top: 4rem;
     }
     .main-content-inner .card.img .maincardavailable .card-body {
         padding: 0.3rem 1.7rem 0.3rem;
