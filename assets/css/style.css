@@ -318,6 +318,21 @@ h6 {
     position: relative;
 }
 
+.navbar .translet {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    padding-right: 1rem;
+}
+
+.navbar #google_translate_element.translet span {
+    display: none;
+}
+
+.navbar #google_translate_element.translet {
+    content: "Powered by";
+}
+
 
 /*--------------------------------------------------------------
 # Hero Section
