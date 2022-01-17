@@ -735,6 +735,9 @@
     .services.section-bg {
         padding: 60px 0;
     }
+    .main-content-inner .card .maincardavailable .btn.btn-dark {
+        padding: 1.2rem 1.4rem;
+    }
 }
 
 @media (min-width: 1400px) {

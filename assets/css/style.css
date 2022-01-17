@@ -1811,7 +1811,7 @@ section#pivecy p {
     background: #212529;
     border-color: #212529;
     transition: .3s all;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     float: right;
 }
 
@@ -1889,7 +1889,7 @@ section#pivecy p {
 
 .main-content-inner .card .maincardavailable .orange .btn.btn-dark .pl-1,
 .main-content-inner .card .maincardavailable .btn.btn-dark .pl-1 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -2126,6 +2126,14 @@ label:after {
     border-radius: 0;
     font-size: 1.0rem;
     border-radius: 0 .5rem 0.5rem 0rem;
+}
+
+.profilebody .mainprofile .icon-box button.btn.btn-success:hover,
+.profilebody .mainprofile .icon-box button.btn.btn-success.orangebtn:hover,
+.profilebody .mainprofile .icon-box button.btn.btn-success.orangebtn.active,
+.profilebody .mainprofile .icon-box button.btn.btn-success.orangebtn:active,
+{
+    background: #000;
 }
 
 .profilebody .mainprofile .icon-box button.btn.btn-success.orangebtn {
