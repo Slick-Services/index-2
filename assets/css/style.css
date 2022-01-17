@@ -1820,7 +1820,8 @@ section#pivecy p {
     margin-bottom: 1.5rem;
 }
 
-.main-content-inner .card .maincardavailable .btn.btn-dark:hover {
+.main-content-inner .card .maincardavailable .btn.btn-dark:hover,
+.main-content-inner .card .maincardavailable .orange .btn.btn-dark:hover {
     background: #212529;
     border: solid 1px #212529;
 }
@@ -2286,6 +2287,13 @@ label:after {
 .modal-footer .btn-secondary {
     background: rgb(214 25 105);
     border: none;
+}
+
+.modal-footer .btn-secondary:hover,
+.modal-footer .btn-secondary:active,
+.modal-footer .btn-secondary.active,
+.modal-footer .btn-secondary:focus {
+    background: #000;
 }
 
 p.commentmsg {
