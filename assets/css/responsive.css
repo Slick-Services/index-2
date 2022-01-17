@@ -182,8 +182,36 @@
         padding: 0.7rem 0.5rem;
     }
     .profilebody .mainprofile .icon-box button.btn.btn-success {
-        padding: 1.2rem 0.3rem;
+        padding: 1.0rem 0.3rem;
         font-size: 0.9rem;
+    }
+    #header.dashbaord .nav-menu li {
+        justify-content: start;
+    }
+    .main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols {
+        width: 100%;
+        margin-bottom: 1rem;
+        justify-content: inherit;
+    }
+    .main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols .healthcare {
+        font-size: 1.0rem;
+    }
+    .main-content-inner .card .maincardavailable .card.row .mainearn {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .main-content-inner .card .maincardavailable .btn.btn-dark {
+        padding: 1.2rem 0.2rem;
+    }
+    .main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols i {
+        font-size: 0.9rem;
+    }
+    .main-content-inner .mainavilablesurvey {
+        margin-top: 1.5rem;
+    }
+    #header.dashbaord .nav-menu.navbar-mobile li {
+        width: inherit;
+        cursor: pointer;
     }
 }
 
@@ -232,9 +260,24 @@
     .profilebody .mainprofile .icon-box h4 {
         font-size: 1rem;
     }
+    .main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols .healthcare {
+        font-size: 1.1rem;
+    }
+    .main-content-inner .card .maincardavailable .btn.btn-dark {
+        padding: 1.2rem 2.0rem;
+    }
+    .main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols i {
+        font-size: 1.1rem;
+    }
+    .main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols i::before {
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 480px) {
+    .navbar-mobile ul {
+        height: 75%;
+    }
     .main-content-inner .card.img .maincardavailable .card-body {
         padding: /*0.5rem 1.7rem 0.6rem*/
         0.9rem 1.7rem 1.1rem;
@@ -249,7 +292,7 @@
         padding: 0.7rem 1.9rem;
     }
     .profilebody .mainprofile .icon-box button.btn.btn-success {
-        padding: 1.4rem 0.7rem;
+        padding: 1.2rem 0.7rem;
         font-size: 1.0rem;
     }
 }
@@ -270,6 +313,12 @@
     }
     .main-content-inner .card.img .maincardavailable .card-body {
         padding: 1.0rem 1.7rem 1.0rem;
+    }
+    .main-content-inner .card .maincardavailable .btn.btn-dark {
+        padding: 1.2rem 4.0rem;
+    }
+    .main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols .healthcare {
+        font-size: 1.2rem;
     }
 }
 
@@ -340,6 +389,9 @@
     }
     .profilebody .mainprofile .icon-box .icon i {
         font-size: 2.0rem;
+    }
+    .main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols .healthcare {
+        font-size: 1.0rem;
     }
 }
 
@@ -517,7 +569,6 @@
         margin-bottom: 2rem;
     }
     .services.section-bg {
-        /* height: 87vh;*/
         padding: 60px 0;
     }
     .services .icon-box {
@@ -549,6 +600,9 @@
     .main-content-inner {
         margin-top: 4rem;
     }
+    #header.dashbaord .nav-menu li {
+        justify-content: center;
+    }
     .main-content-inner .card.img .maincardavailable .card-body {
         padding: 0.3rem 1.7rem 0.3rem;
     }
@@ -564,6 +618,13 @@
     }
     .main-content-inner .card.img .maincardavailable .card-body p.pointscalculate {
         font-size: 1.0rem;
+    }
+    .main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols {
+        font-size: .9rem;
+        padding-left: .3rem;
+    }
+    .main-content-inner .card .maincardavailable .btn.btn-dark {
+        padding: 1.2rem 2rem;
     }
 }
 
@@ -632,6 +693,17 @@
     }
     .main-content-inner .card.img .maincardavailable .card-body h3 {
         padding-bottom: 1rem;
+    }
+    .main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols {
+        padding-left: .7rem;
+        font-size: 1rem;
+        width: 49%;
+    }
+    .main-content-inner .card .maincardavailable .card.row .mainearn {
+        flex-direction: row;
+    }
+    .main-content-inner .card .maincardavailable .btn.btn-dark {
+        padding: 1.2rem .3rem;
     }
 }
 

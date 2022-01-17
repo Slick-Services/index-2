@@ -1,9 +1,3 @@
-/**
- * Template Name: Flexor - v4.7.0
- * Template URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
 (function() {
     "use strict";
 
@@ -69,6 +63,7 @@
             }
         })
     }
+
     window.addEventListener('load', navbarlinksActive)
     onscroll(document, navbarlinksActive)
 

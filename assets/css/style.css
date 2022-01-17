@@ -27,6 +27,11 @@ h6 {
     font-family: "Poppins", sans-serif;
 }
 
+:visited {
+    text-decoration: white;
+    outline: none;
+}
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -1570,6 +1575,26 @@ section#pivecy p {
     width: 100%;
 }
 
+#header.dashbaord .nav-menu>ul>li.active:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: rgb(216 49 119);
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+    height: 4px;
+    padding: 0;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+}
+
+#header.dashbaord .navbar-mobile a:hover,
+#header.dashbaord .navbar-mobile .active,
+#header.dashbaord .navbar-mobile li:hover>a {
+    color: #d83177;
+}
+
 #header.dashbaord .nav-menu a {
     font-size: 1rem;
 }
@@ -1659,7 +1684,7 @@ section#pivecy p {
 }
 
 .availablesurvey .card.mainsurvey .card-body {
-    padding: 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 1.2rem 0.5rem;
 }
 
 .h-full {
@@ -1781,12 +1806,12 @@ section#pivecy p {
 } */
 
 .main-content-inner .card .maincardavailable .btn.btn-dark {
-    padding: 1.4rem 1.1rem;
+    padding: 1.2rem 1.5rem;
     border-radius: 0px 8px 8px 0px;
     background: #212529;
     border-color: #212529;
     transition: .3s all;
-    font-size: 1rem;
+    font-size: 1.2rem;
     float: right;
 }
 
@@ -1817,7 +1842,7 @@ section#pivecy p {
 }
 
 .main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols {
-    border: solid 2px #000;
+    border: solid 1px #000;
     display: flex;
     flex-direction: row;
     width: 49%;
@@ -1829,6 +1854,20 @@ section#pivecy p {
     border-color: #FC9446;
 }
 
+.main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols i {
+    display: flex;
+    align-items: center;
+    font-size: 1.0rem;
+}
+
+.main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols i .mins {
+    margin-left: .2rem;
+}
+
+.main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols i::before {
+    font-size: 1.5rem;
+}
+
 .main-content-inner .card .maincardavailable .card.row .mainearn .mainprfilecols.pink {
     border-color: rgb(214 25 105);
 }
@@ -1836,11 +1875,26 @@ section#pivecy p {
 .main-content-inner .card .maincardavailable .orange .btn.btn-dark {
     background: #FC9446;
     border-color: #FC9446;
+    display: flex;
+    flex-direction: column;
 }
 
-.main-content-inner .card .maincardavailable .pink .btn.btn-dark {
+.main-content-inner .card .maincardavailable .btn.btn-dark {
     background: rgb(214 25 105);
     border-color: #d61969;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content-inner .card .maincardavailable .orange .btn.btn-dark .pl-1,
+.main-content-inner .card .maincardavailable .btn.btn-dark .pl-1 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.main-content-inner .card .maincardavailable .btn.btn-dark .mainearnpoint {
+    display: flex;
+    flex-direction: column;
 }
 
 .load-more.btn,
@@ -2240,6 +2294,7 @@ p.commentmsg {
     color: rgb(252 148 70);
     font-weight: 600;
     text-align: center;
+    padding-bottom: 1.3rem;
 }
 
 
