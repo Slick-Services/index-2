@@ -171,6 +171,20 @@
         position: relative;
         z-index: 1;
     }
+    .profilebody .mainprofile .icon-box .icon i {
+        font-size: 1.7rem;
+        margin: 0 .5rem;
+    }
+    .profilebody .mainprofile .icon-box h4 {
+        font-size: 0.9rem;
+    }
+    .availablesurvey .card.mainsurvey.profilebody {
+        padding: 0.7rem 0.5rem;
+    }
+    .profilebody .mainprofile .icon-box button.btn.btn-success {
+        padding: 1.2rem 0.3rem;
+        font-size: 0.9rem;
+    }
 }
 
 @media (min-width: 360px) {}
@@ -211,14 +225,32 @@
     .main-content-inner .card.img {
         background-position: unset;
     }
+    .profilebody .mainprofile .icon-box .icon i {
+        font-size: 1.9rem;
+        margin: 0 0.7rem;
+    }
+    .profilebody .mainprofile .icon-box h4 {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 480px) {
     .main-content-inner .card.img .maincardavailable .card-body {
-        padding: 0.5rem 1.7rem 0.6rem;
+        padding: /*0.5rem 1.7rem 0.6rem*/
+        0.9rem 1.7rem 1.1rem;
+    }
+    .main-content-inner .card.img .maincardavailable .card-body h2 {
+        font-size: 2.1rem;
     }
     .main-content-inner .card.img::before {
         display: none;
+    }
+    .availablesurvey .card.mainsurvey.profilebody {
+        padding: 0.7rem 1.9rem;
+    }
+    .profilebody .mainprofile .icon-box button.btn.btn-success {
+        padding: 1.4rem 0.7rem;
+        font-size: 1.0rem;
     }
 }
 
@@ -304,7 +336,10 @@
         padding-right: 1px;
     }
     .main-content-inner .card.img .maincardavailable .card-body {
-        padding: 1.9rem 1.7rem 1.8rem;
+        padding: 2.3rem 1.7rem 2.3rem;
+    }
+    .profilebody .mainprofile .icon-box .icon i {
+        font-size: 2.0rem;
     }
 }
 
@@ -417,7 +452,7 @@
         padding-right: 12px;
     }
     .main-content-inner .card.img .maincardavailable .card-body {
-        padding: 5.5rem 1.7rem 5.6rem;
+        padding: 5.9rem 1.7rem 6.1rem;
     }
 }
 
@@ -581,7 +616,7 @@
         padding: 60px 0 30px;
     }
     .main-content-inner .card.img .maincardavailable .card-body {
-        padding: 0.5rem 1.7rem 0.5rem;
+        padding: 0.7rem 1.7rem 0.8rem;
     }
     .main-content-inner .card.img .maincardavailable .card-body h3 {
         font-size: 1.5rem;
@@ -632,7 +667,7 @@
 
 @media (min-width: 1400px) {
     .main-content-inner .card.img .maincardavailable .card-body {
-        padding: 1.9rem 1.7rem 2.1rem;
+        padding: 2.2rem 1.7rem 2.4rem;
     }
 }
 

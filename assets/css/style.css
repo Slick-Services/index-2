@@ -1525,7 +1525,12 @@ section#pivecy p {
     padding-right: 0;
 }
 
-#header.dashbaord .nav-menu>ul>li>a:before {
+#header.dashbaord .nav-menu>ul>li {
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 7px;
+}
+
+#header.dashbaord .nav-menu>ul>li:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -1540,7 +1545,7 @@ section#pivecy p {
     border-radius: 0 0 10px 10px;
 }
 
-#header.dashbaord .nav-menu a {
+#header.dashbaord .nav-menu li {
     display: block;
     position: relative;
     color: rgba(0, 0, 0, 1.0);
@@ -1548,8 +1553,6 @@ section#pivecy p {
     transition: 0.3s;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
-    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.16);
-    border-radius: 7px;
     padding: 0.0rem 1.0rem 0.3rem;
     text-align: center;
     justify-content: center;
@@ -1560,9 +1563,9 @@ section#pivecy p {
     margin-right: 1rem;
 }
 
-#header.dashbaord .nav-menu a:hover:before,
-#header.dashbaord .nav-menu li:hover>a:before,
-#header.dashbaord .nav-menu .active>a:before {
+#header.dashbaord .nav-menu li:hover:before,
+#header.dashbaord .nav-menu li:hover:before,
+#header.dashbaord .nav-menu .active>li:before {
     visibility: visible;
     width: 100%;
 }
@@ -1789,6 +1792,7 @@ section#pivecy p {
 
 .main-content-inner .mainavilablesurvey {
     padding-right: 0;
+    margin-bottom: 1.5rem;
 }
 
 .main-content-inner .card .maincardavailable .btn.btn-dark:hover {
@@ -2063,7 +2067,7 @@ label:after {
     background: rgb(214 25 105);
     border: none;
     width: 100%;
-    padding: 1.1rem 0.7rem;
+    padding: 1.4rem 0.7rem;
     border-radius: 0;
     font-size: 1.0rem;
     border-radius: 0 .5rem 0.5rem 0rem;
