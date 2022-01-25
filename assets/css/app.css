@@ -959,14 +959,14 @@
 .sidebar-wrapper .sidebar-header {
     font-size: 2rem;
     font-weight: 700;
-    padding: 2rem 2rem 2.5rem;
+    padding: 1.0rem 2rem 1.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .sidebar-wrapper .sidebar-header img {
-    height: 2.2rem
+    height: 2.0rem;
 }
 
 .sidebar-wrapper .sidebar-toggler.x {
@@ -1687,7 +1687,8 @@
 }
 
 .page-heading {
-    margin: 0 0 2rem
+    margin: 0 0 2rem;
+    padding: 1rem;
 }
 
 .page-heading h3 {
