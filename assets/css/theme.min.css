@@ -20134,7 +20134,7 @@ iframe {
 }
 
 .app-header-dark {
-    background-color: #346cb0;
+    background-color: rgb(67 94 190);
     color: hsla(0, 0%, 100%, .8)
 }
 

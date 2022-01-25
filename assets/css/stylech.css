@@ -1,3 +1,15 @@
+button.btn-primary {
+    background-color: #435ebe;
+}
+
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgb(63 188 222);
+    border-color: rgb(29 112 135);
+}
+
 .top-bar-list {
     flex: 1;
 }
