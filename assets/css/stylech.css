@@ -194,6 +194,18 @@ a.btn.btn-app.active {
     box-shadow: none;
 }
 
+.col-5.text-end a {
+    color: #000;
+}
+
+button.btn.btn-primary.btn-floated {
+    border-radius: 50%;
+}
+
+button.btn.btn-primary.btn-floated i {
+    margin: 0;
+}
+
 h2.projecttitle {
     font-size: 1.0rem;
     color: #000;

@@ -173,7 +173,7 @@ a {
 
 a:hover {
     color: #234875;
-    text-decoration: underline
+    text-decoration: none;
 }
 
 a:not([href]),
@@ -8211,7 +8211,8 @@ a.list-group-item-title:hover {
 }
 
 .list-group-divider .list-group-item.active {
-    border-color: transparent
+    border-color: transparent;
+    background: none;
 }
 
 .list-group-divider .list-group-item:not(:first-child)>.list-group-item-body,
