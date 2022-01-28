@@ -79,3 +79,93 @@ a.burger-btn.d-block.d-xl-none {
     border-radius: .4rem;
     margin: .6rem;
 }
+
+button.btn.btn-primary {
+    background: rgb(63 188 222);
+    border-color: rgb(32 138 167);
+    border-radius: .4rem;
+}
+
+button.btn.btn-primary i {
+    margin-right: .4rem;
+}
+
+.table {
+    border: solid 2px #ecedf1;
+}
+
+.card .card-header~.card-body {
+    padding-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.dataTable-top,
+.dataTable-bottom {
+    padding: 1rem 0;
+}
+
+.form-select:focus {
+    border-color: rgb(63 188 222);
+    outline: 0;
+    box-shadow: none;
+}
+
+select:focus-visible {
+    outline: none;
+}
+
+form.mainformfiled span.required {
+    color: red;
+}
+
+.dataTable-bottom .pagination .page-item {
+    margin-right: 0.4rem;
+}
+
+.card.admindashc {
+    min-height: 130px;
+}
+
+.card.admindashc .card-header {
+    border-bottom: solid 1px #000;
+}
+
+.card.admindashc .card-body p {
+    margin-bottom: .8rem;
+    font-size: .9rem;
+}
+
+.card.admindashc .card-body {
+    margin-left: .5rem;
+}
+
+.card.admindashc .card-body p.title {
+    font-weight: 600;
+    margin-bottom: .2rem;
+}
+
+.card.admindashc .card-footer {
+    border: none;
+    padding-bottom: .9rem;
+    margin: 0 .5rem;
+    justify-content: end;
+}
+
+.card.admindashc .card-header {
+    border-bottom: solid 1px #000;
+    padding-bottom: .3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.3rem;
+    padding-left: .1rem;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+    border-color: #254e7f;
+    box-shadow: none;
+}
+
+footer p {
+    margin-top: 1rem;
+}

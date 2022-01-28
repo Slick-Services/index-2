@@ -142,7 +142,7 @@
                             </ul>
                         </li>
 
-                        <li class="sidebar-item  ">
+                        <li class="sidebar-item  has-sub">
                             <a href="table.html" class='sidebar-link'>
                                 <i class="bi bi-grid-1x2-fill"></i>
                                 <span>Extras</span>
@@ -299,14 +299,15 @@
                             <header class="page-navs bg-light shadow-sm">
                                 <!-- .input-group -->
                                 <div class="input-group has-clearable">
-                                    <button type="button" class="close" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times-circle"></i></span></button> <label class="input-group-prepend" for="searchClients"><span class="input-group-text"><span class="oi oi-magnifying-glass"></span></span></label>                                    <input type="text" class="form-control" id="searchClients" data-filter=".board .list-group-item" placeholder="Find clients">
+                                    <button type="button" class="close" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times-circle"></i></span></button> <label class="input-group-prepend" for="searchClients"><span class="input-group-text"><span class="oi oi-magnifying-glass"></span></span></label>
+                                    <input type="text" class="form-control" id="searchClients" data-filter=".board .list-group-item" placeholder="Find clients">
                                 </div>
                                 <!-- /.input-group -->
                             </header><button type="button" class="btn btn-primary btn-floated position-absolute" data-toggle="modal" data-target="#clientNewModal" title="Add new client"><i class="fa fa-plus"></i></button>
                             <!-- board -->
                             <div class="board p-0 perfect-scrollbar">
                                 <!-- .list-group -->
-                                <div class="list-group list-group-flush list-group-divider border-top" data-toggle="radiolist">
+                                <div class="list-group list-group-flush list-group-divider border-top border-bottom" data-toggle="radiolist">
                                     <!-- .list-group-item -->
                                     <div class="list-group-item active" data-toggle="sidebar" data-sidebar="show">
                                         <a href="#" class="stretched-link"></a>
@@ -650,7 +651,7 @@
                         <!-- /.page-sidebar -->
                         <!-- Keep in mind that modals should be placed outsite of page sidebar -->
                         <!-- .modal -->
-                        <form id="clientNewForm" name="clientNewForm">
+                        <form id="clientNewForm" name="clientNewForm" class="mainformfiled">
                             <div class="modal fade" id="clientNewModal" tabindex="-1" role="dialog" aria-labelledby="clientNewModalLabel" aria-hidden="true">
                                 <!-- .modal-dialog -->
                                 <div class="modal-dialog" role="document">
@@ -659,7 +660,8 @@
                                         <!-- .modal-header -->
                                         <div class="modal-header">
                                             <h6 id="clientNewModalLabel" class="modal-title inline-editable">
-                                                <span class="sr-only">Client name</span> <input type="text" class="form-control form-control-lg" placeholder="Registration Form" required="">
+                                                <span class="sr-only">Client name</span>
+                                                <!-- <input type="text" class="form-control form-control-lg" value="Alexane Collins" placeholder="Name (e.g. John Doe)" required=""> -->
                                             </h6>
                                         </div>
                                         <!-- /.modal-header -->
@@ -669,17 +671,20 @@
                                             <div class="form-row">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label for="cnContactName">Business Name</label><span class="required">*</span> <input type="text" id="cnContactName" class="form-control">
+                                                        <label for="cnContactName">Business Name</label><span class="required">*</span>
+                                                        <input type="text" id="cnContactName" class="form-control" name="bname" placeholder="Business Name">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label for="cnContactEmail">Address 1</label><span class="required">*</span> <input type="email" id="cnContactEmail" class="form-control">
+                                                        <label for="cnContactEmail">Address 1</label><span class="required">*</span>
+                                                        <input type="email" id="cnContactEmail" class="form-control" name="address 1" placeholder="address 1">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label for="cnStreet">Address 2</label><span class="required">*</span> <input type="text" id="cnStreet" class="form-control">
+                                                        <label for="cnStreet">Address 2</label><span class="required">*</span>
+                                                        <input type="text" id="cnStreet" class="form-control" name="address 2" placeholder="address 2">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
@@ -693,40 +698,38 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="cnStates">Country</label><span class="required">*</span>
-                                                        <select id="cnStates" class="custom-select d-block w-100">
-                                                        <option value=""> Choose... </option>
-                                                        <option> States </option>
-                                                        </select>
+                                                        <label for="cnStates">State</label><span class="required">*</span>
+                                                        <input type="text" id="cnState" class="form-control" name="State" placeholder="State">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="cnCity">City</label><span class="required">*</span>
-                                                        <select id="cnCity" class="custom-select d-block w-100">
-                                                        <option value=""> Choose... </option>
-                                                        <option> San Francisco </option>
-                                                        </select>
+                                                        <input type="text" id="cnCity" class="form-control" name="City" placeholder="City">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="cnZip">Zip</label><span class="required">*</span> <input type="text" id="cnZip" class="form-control">
+                                                        <label for="cnZip">Zip</label><span class="required">*</span>
+                                                        <input type="text" id="cnZip" class="form-control" name="zip" placeholder="zip">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label for="cnZip">Website URL</label><span class="required">*</span> <input type="text" id="cnweburl" class="form-control">
+                                                        <label for="cnZip">Website URL</label><span class="required">*</span>
+                                                        <input type="text" id="cnweburl" class="form-control" name="Website url" placeholder="Website url">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label for="cnTax">TAX / VAT Number</label><span class="required">*</span> <input type="text" id="cntaxno" class="form-control">
+                                                        <label for="cnTax">TAX / VAT Number</label><span class="required">*</span>
+                                                        <input type="text" id="cntaxno" class="form-control" name="TAX Number" placeholder="TAX Number">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label for="cnTax">Additional Notes</label><span class="required">*</span> <input type="text" id="cntaxno" class="form-control">
+                                                        <label for="cnTax">Additional Notes</label><span class="required">*</span>
+                                                        <input type="text" id="cntaxno" class="form-control" name="Additional Notes" placeholder="Additional Notes">
                                                     </div>
                                                 </div>
                                                 <!-- <div class="col-md-6">
@@ -763,7 +766,8 @@
                                         <!-- .modal-header -->
                                         <div class="modal-header">
                                             <h6 id="clientBillingEditModalLabel" class="modal-title inline-editable">
-                                                <span class="sr-only">Client name</span> <input type="text" class="form-control form-control-lg" value="Zathunicon, Inc." placeholder="E.g. Stilearning, Inc." required="">
+                                                <span>Contact Details Form</span>
+                                                <!-- <input type="text" class="form-control form-control-lg" value="Alexane Collins" placeholder="Name (e.g. John Doe)" required=""> -->
                                             </h6>
                                         </div>
                                         <!-- /.modal-header -->
@@ -773,35 +777,75 @@
                                             <div class="form-row">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label for="ceStreet">Street</label> <input type="text" id="ceStreet" class="form-control" value="280 Suzanne Throughway">
+                                                        <label for="cnContactName">Business Name</label><span class="required">*</span>
+                                                        <input type="text" id="cnContactName" class="form-control" name="bname" placeholder="Business Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="cnContactEmail">Address 1</label><span class="required">*</span>
+                                                        <input type="email" id="cnContactEmail" class="form-control" name="address 1" placeholder="address 1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="cnStreet">Address 2</label><span class="required">*</span>
+                                                        <input type="text" id="cnStreet" class="form-control" name="address 2" placeholder="address 2">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="ceSuite">Suite</label> <input type="text" id="ceSuite" class="form-control" value="Breannabury">
+                                                        <label for="cnCountry">Country</label><span class="required">*</span>
+                                                        <select id="cnCountry" class="custom-select d-block w-100">
+                                                    <option value=""> Choose... </option>
+                                                    <option> United States </option>
+                                                    </select>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="ceZip">Zip</label> <input type="text" id="ceZip" class="form-control" value="45801">
+                                                        <label for="cnStates">State</label><span class="required">*</span>
+                                                        <input type="text" id="cnState" class="form-control" name="State" placeholder="State">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="ceCountry">Country</label> <select id="ceCountry" class="custom-select d-block w-100">
-                              <option value=""> Choose... </option>
-                              <option selected> United States </option>
-                            </select>
+                                                        <label for="cnCity">City</label><span class="required">*</span>
+                                                        <input type="text" id="cnCity" class="form-control" name="City" placeholder="City">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="ceCity">City</label> <select id="ceCity" class="custom-select d-block w-100">
-                              <option value=""> Choose... </option>
-                              <option selected> San Francisco </option>
-                            </select>
+                                                        <label for="cnZip">Zip</label><span class="required">*</span>
+                                                        <input type="text" id="cnZip" class="form-control" name="zip" placeholder="zip">
                                                     </div>
                                                 </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="cnZip">Website URL</label><span class="required">*</span>
+                                                        <input type="text" id="cnweburl" class="form-control" name="Website url" placeholder="Website url">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="cnTax">TAX / VAT Number</label><span class="required">*</span>
+                                                        <input type="text" id="cntaxno" class="form-control" name="TAX Number" placeholder="TAX Number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="cnTax">Additional Notes</label><span class="required">*</span>
+                                                        <input type="text" id="cntaxno" class="form-control" name="Additional Notes" placeholder="Additional Notes">
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="cnSuite">Suite</label><span class="required">*</span> <input type="text" id="cnSuite" class="form-control">
+                                                </div>
+                                            </div> -->
+
+
+
                                             </div>
                                             <!-- /.form-row -->
                                         </div>
@@ -827,8 +871,9 @@
                                     <div class="modal-content">
                                         <!-- .modal-header -->
                                         <div class="modal-header">
-                                            <h6 id="clientContactNewModalLabel" class="modal-title inline-editable">
-                                                <span class="sr-only">Contact name</span> <input type="text" class="form-control form-control-lg" placeholder="Name (e.g. John Doe)" required="">
+                                            <h6 id="clientContactEditModalLabel" class="modal-title inline-editable">
+                                                <span>Contact Details Form</span>
+                                                <!-- <input type="text" class="form-control form-control-lg" value="Alexane Collins" placeholder="Name (e.g. John Doe)" required=""> -->
                                             </h6>
                                         </div>
                                         <!-- /.modal-header -->
@@ -836,16 +881,26 @@
                                         <div class="modal-body">
                                             <!-- .form-group -->
                                             <div class="form-group">
-                                                <div class="form-label-group">
-                                                    <input type="email" id="cnEmail" class="form-control" placeholder="Email" required=""> <label for="cnEmail">Email</label>
-                                                </div>
+                                                <label for="cnEmail">First Name</label>
+                                                <input type="email" id="cnEmail" class="form-control" placeholder="First Name" required="">
                                             </div>
                                             <!-- /.form-group -->
                                             <!-- .form-group -->
                                             <div class="form-group">
-                                                <div class="form-label-group">
-                                                    <input type="tel" id="cnPhone" class="form-control" placeholder="Phone"> <label for="cnPhone">Phone</label>
-                                                </div>
+                                                <label for="cnEmail">Last Name</label>
+                                                <input type="email" id="cnEmail" class="form-control" placeholder="Last Name" required="">
+                                            </div>
+                                            <!-- /.form-group -->
+                                            <!-- .form-group -->
+                                            <div class="form-group">
+                                                <label for="cnEmail">Email</label>
+                                                <input type="email" id="cnEmail" class="form-control" placeholder="Email" required="">
+                                            </div>
+                                            <!-- /.form-group -->
+                                            <!-- .form-group -->
+                                            <div class="form-group">
+                                                <label for="cnPhone">Phone</label>
+                                                <input type="tel" id="cnPhone" class="form-control" placeholder="Phone">
                                             </div>
                                             <!-- /.form-group -->
                                         </div>
@@ -872,7 +927,8 @@
                                         <!-- .modal-header -->
                                         <div class="modal-header">
                                             <h6 id="clientContactEditModalLabel" class="modal-title inline-editable">
-                                                <span class="sr-only">Contact name</span> <input type="text" class="form-control form-control-lg" value="Alexane Collins" placeholder="Name (e.g. John Doe)" required="">
+                                                <span>Contact Details Form</span>
+                                                <!-- <input type="text" class="form-control form-control-lg" value="Alexane Collins" placeholder="Name (e.g. John Doe)" required=""> -->
                                             </h6>
                                         </div>
                                         <!-- /.modal-header -->
@@ -880,16 +936,26 @@
                                         <div class="modal-body">
                                             <!-- .form-group -->
                                             <div class="form-group">
-                                                <div class="form-label-group">
-                                                    <input type="email" id="ceEmail" class="form-control" value="fhauck@gmail.com" placeholder="Email" required=""> <label for="ceEmail">Email</label>
-                                                </div>
+                                                <label for="cnEmail">First Name</label>
+                                                <input type="email" id="cnEmail" class="form-control" placeholder="First Name" required="">
                                             </div>
                                             <!-- /.form-group -->
                                             <!-- .form-group -->
                                             <div class="form-group">
-                                                <div class="form-label-group">
-                                                    <input type="tel" id="cePhone" class="form-control" value="0621099222" placeholder="Phone"> <label for="cePhone">Phone</label>
-                                                </div>
+                                                <label for="cnEmail">Last Name</label>
+                                                <input type="email" id="cnEmail" class="form-control" placeholder="Last Name" required="">
+                                            </div>
+                                            <!-- /.form-group -->
+                                            <!-- .form-group -->
+                                            <div class="form-group">
+                                                <label for="cnEmail">Email</label>
+                                                <input type="email" id="cnEmail" class="form-control" placeholder="Email" required="">
+                                            </div>
+                                            <!-- /.form-group -->
+                                            <!-- .form-group -->
+                                            <div class="form-group">
+                                                <label for="cnPhone">Phone</label>
+                                                <input type="tel" id="cnPhone" class="form-control" placeholder="Phone">
                                             </div>
                                             <!-- /.form-group -->
                                         </div>
