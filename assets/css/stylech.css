@@ -94,11 +94,13 @@ button.btn.btn-primary i {
     border: solid 2px #ecedf1;
 }
 
-.card .card-header~.card-body {
-    padding-top: 0;
+
+/* .card .card-header~.card-body.target {
+    padding-top: .5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-}
+    padding-bottom: .5rem;
+} */
 
 .dataTable-top,
 .dataTable-bottom {
@@ -121,6 +123,14 @@ form.mainformfiled span.required {
 
 .dataTable-bottom .pagination .page-item {
     margin-right: 0.4rem;
+}
+
+.border-radius-5 {
+    border-radius: .7rem;
+}
+
+.boxshedow {
+    box-shadow: 0 0 0 1px rgb(67 94 190 / 32%), 0 8px 14px 0 rgb(67 94 190 / 21%);
 }
 
 .card.admindashc {
@@ -164,6 +174,30 @@ form.mainformfiled span.required {
 .btn-primary:focus {
     border-color: #254e7f;
     box-shadow: none;
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+a.btn.btn-app {
+    border: solid 1px rgb(32 138 167);
+    color: rgb(63 188 222);
+}
+
+a.btn.btn-app:hover,
+a.btn.btn-app:focus,
+a.btn.btn-app:active,
+a.btn.btn-app.active {
+    background-color: rgb(63 188 222);
+    color: #fff;
+    box-shadow: none;
+}
+
+h2.projecttitle {
+    font-size: 1.0rem;
+    color: #000;
+    font-weight: 600;
 }
 
 footer p {
