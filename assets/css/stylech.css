@@ -194,10 +194,6 @@ a.btn.btn-app.active {
     box-shadow: none;
 }
 
-.col-5.text-end a {
-    color: #000;
-}
-
 button.btn.btn-primary.btn-floated {
     border-radius: 50%;
 }
@@ -206,10 +202,26 @@ button.btn.btn-primary.btn-floated i {
     margin: 0;
 }
 
+.btn-close:focus {
+    box-shadow: none;
+}
+
+:focus-visible {
+    outline: none;
+}
+
 h2.projecttitle {
-    font-size: 1.0rem;
+    font-size: 1.8rem;
     color: #000;
     font-weight: 600;
+}
+
+.row.tile_count .form-group,
+.row.tile_count {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer p {
