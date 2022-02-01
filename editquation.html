@@ -8,6 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
@@ -25,6 +26,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/theme.min.css">
     <link rel="stylesheet" href="assets/css/stylech.css">
+
 </head>
 
 <body>
@@ -143,7 +145,7 @@
                             </ul>
                         </li>
 
-                        <li class="sidebar-item  ">
+                        <li class="sidebar-item  has-sub">
                             <a href="table.html" class='sidebar-link'>
                                 <i class="bi bi-grid-1x2-fill"></i>
                                 <span>Extras</span>
@@ -165,12 +167,13 @@
         </div>
 
         <div id="main">
-            <header id="innerheder" class="mb-3 ">
-                <a href="#" class="burger-btn d-block d-xl-none">
-                    <i class="bi bi-justify fs-3"></i>
-                </a>
+            <header id="innerheder">
+
                 <!-- .top-bar-list -->
                 <div class="top-bar-list app-header app-header-dark">
+                    <a href="#" class="burger-btn d-block d-xl-none">
+                        <i class="bi bi-justify fs-3"></i>
+                    </a>
                     <!-- .top-bar-item -->
                     <div class="top-bar-item px-2 d-md-none d-lg-none d-xl-none">
                         <!-- toggle menu -->
@@ -288,299 +291,152 @@
                 </div>
                 <!-- /.top-bar-list -->
             </header>
+            <!-- .app-main -->
+            <main class="app-main">
+                <!-- .wrapper -->
+                <div class="wrapper">
+                    <!-- .page -->
+                    <div class="page has-sidebar has-sidebar-fluid has-sidebar-expand-xl">
+                        <div class="page-heading mt-3 mb-0">
+                            <div class="page-title">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 order-md-1 order-last">
+                                        <h3>Edit Question</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <section>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card boxshedow border-radius-5">
+                                            <div class="card-header border-bottom">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <h2 class="projecttitle d-flex align-items-center">
+                                                            <a href="{% url 'questions:questiondashboard' %}"><button type="button" class="btn btn-dark"><i class="fa fa-arrow-left"></i> Back to Question List</button></a>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-4 text-end py-0">
+                                                        <a href="#">
+                                                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                    <i class="fa fa-language"> </i> Translate</button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body mt-3">
+                                                <div class="x_content">
+                                                    {% if messages %} {% for message in messages %}
+                                                    <div class="alert {{ message.tags }}" role="alert">{{ message }}</div>
+                                                    {% endfor %} {% endif %}
+                                                    <form class="form-horizontal" action="{% url 'questions:edit_question' question.id %}" method="post">
+                                                        {% csrf_token %}
+                                                        <div class="form-group">
+                                                            <label for="question" class="control-label col-md-2 col-sm-3 col-xs-12">Question ID: </label>
+                                                            <div class="col-md-8 col-sm-9 col-xs-12" style="padding-top: 8px;">
+                                                                {{question.parent_question_id}}
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="question" class="control-label col-md-2 col-sm-3 col-12">Question Text:<span class="text-danger">*</span></label>
+                                                            <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                <input type="text" name="question_text" id="question_text" required placeholder="Enter Question" value="{{question.parent_question_text}}" class="form-control mb-2">
+                                                            </div>
+                                                        </div>
+                                                        {% if question.parent_question_type == 'SS' or question.parent_question_type == 'MS' %} {% for answer in answers %}
 
-            <div class="page-heading">
-                <div class="page-title">
-                    <div class="row">
-                        <div class="col-12 col-md-6 order-md-1 order-last">
-                            <h3>DataTable</h3>
+                                                        <div class="form-group">
+                                                            <label for="ans" class="control-label col-md-2 col-sm-3 col-12">Option {{ forloop.counter }}:<span class="text-danger">*</span></label>
+                                                            <div class="col-md-8 col-sm-9 col-xs-12">
+                                                                <input type="text" name="{{answer.id}}" id="{{answer.id}}" required placeholder="Enter Question" value="{{answer.parent_answer_text}}" class="form-control ans mb-2">
+                                                            </div>
+                                                        </div>
+                                                        {% endfor %} {% endif %} {% if question.parent_question_type == 'NU' %} {% for answer in answers %}
+                                                        <div class="form-group row">
+                                                            <label for="ans" class="control-label col-md-2 col-sm-3 col-12">Numeric Range <span class="text-danger">*</span></label>
+                                                            <div class="col-md-2 col-sm-2 col-xs-4">
+                                                                <input type="number" name="min_range" id="min_range" placeholder="Min" class="form-control mb-2" value={{answer.numeric_min_range}}>
+                                                            </div>
+                                                            <div class="col-md-2 col-sm-2 col-xs-4">
+                                                                <input type="number" name="max_range" id="max_range" placeholder="Max" class="form-control mb-2" value={{answer.numeric_max_range}}>
+                                                            </div>
+                                                        </div>
+                                                        {% endfor %} {% endif %}
+                                                        <div class="ln_solid"></div>
+
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer justify-content-center align-items-center pt-2">
+                                                <div class=" form-group ">
+                                                    <div class="col-12 ">
+                                                        <a href="{% url 'questions:questiondashboard' %} " type="button " class="btn btn-danger mx-3"><i class="fa fa-times"></i> Cancel</a>
+                                                        <button type="submit " class="btn btn-primary "><i class="fa fa-save "></i> Submit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
                         </div>
+
                     </div>
+                    <!-- /.page -->
                 </div>
-                <section class="section">
-                    <div class="card">
-                        <div class="card-header">
-                            Simple Datatable
-                        </div>
-                        <div class="card-body">
-                            <table class="table table-striped" id="table1">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Phone</th>
-                                        <th>City</th>
-                                        <th>Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Graiden</td>
-                                        <td>vehicula.aliquet@semconsequat.co.uk</td>
-                                        <td>076 4820 8838</td>
-                                        <td>Offenburg</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dale</td>
-                                        <td>fringilla.euismod.enim@quam.ca</td>
-                                        <td>0500 527693</td>
-                                        <td>New Quay</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nathaniel</td>
-                                        <td>mi.Duis@diam.edu</td>
-                                        <td>(012165) 76278</td>
-                                        <td>Grumo Appula</td>
-                                        <td>
-                                            <span class="badge bg-danger">Inactive</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Darius</td>
-                                        <td>velit@nec.com</td>
-                                        <td>0309 690 7871</td>
-                                        <td>Ways</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Oleg</td>
-                                        <td>rhoncus.id@Aliquamauctorvelit.net</td>
-                                        <td>0500 441046</td>
-                                        <td>Rossignol</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kermit</td>
-                                        <td>diam.Sed.diam@anteVivamusnon.org</td>
-                                        <td>(01653) 27844</td>
-                                        <td>Patna</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jermaine</td>
-                                        <td>sodales@nuncsit.org</td>
-                                        <td>0800 528324</td>
-                                        <td>Mold</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ferdinand</td>
-                                        <td>gravida.molestie@tinciduntadipiscing.org</td>
-                                        <td>(016977) 4107</td>
-                                        <td>Marlborough</td>
-                                        <td>
-                                            <span class="badge bg-danger">Inactive</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kuame</td>
-                                        <td>Quisque.purus@mauris.org</td>
-                                        <td>(0151) 561 8896</td>
-                                        <td>Tresigallo</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Deacon</td>
-                                        <td>Duis.a.mi@sociisnatoquepenatibus.com</td>
-                                        <td>07740 599321</td>
-                                        <td>Karapınar</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Channing</td>
-                                        <td>tempor.bibendum.Donec@ornarelectusante.ca</td>
-                                        <td>0845 46 49</td>
-                                        <td>Warrnambool</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Aladdin</td>
-                                        <td>sem.ut@pellentesqueafacilisis.ca</td>
-                                        <td>0800 1111</td>
-                                        <td>Bothey</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cruz</td>
-                                        <td>non@quisturpisvitae.ca</td>
-                                        <td>07624 944915</td>
-                                        <td>Shikarpur</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Keegan</td>
-                                        <td>molestie.dapibus@condimentumDonecat.edu</td>
-                                        <td>0800 200103</td>
-                                        <td>Assen</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ray</td>
-                                        <td>placerat.eget@sagittislobortis.edu</td>
-                                        <td>(0112) 896 6829</td>
-                                        <td>Hofors</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Maxwell</td>
-                                        <td>diam@dapibus.org</td>
-                                        <td>0334 836 4028</td>
-                                        <td>Thane</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Carter</td>
-                                        <td>urna.justo.faucibus@orci.com</td>
-                                        <td>07079 826350</td>
-                                        <td>Biez</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Stone</td>
-                                        <td>velit.Aliquam.nisl@sitametrisus.com</td>
-                                        <td>0800 1111</td>
-                                        <td>Olivar</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Berk</td>
-                                        <td>fringilla.porttitor.vulputate@taciti.edu</td>
-                                        <td>(0101) 043 2822</td>
-                                        <td>Sanquhar</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Philip</td>
-                                        <td>turpis@euenimEtiam.org</td>
-                                        <td>0500 571108</td>
-                                        <td>Okara</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kibo</td>
-                                        <td>feugiat@urnajustofaucibus.co.uk</td>
-                                        <td>07624 682306</td>
-                                        <td>La Cisterna</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bruno</td>
-                                        <td>elit.Etiam.laoreet@luctuslobortisClass.edu</td>
-                                        <td>07624 869434</td>
-                                        <td>Rocca d"Arce</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Leonard</td>
-                                        <td>blandit.enim.consequat@mollislectuspede.net</td>
-                                        <td>0800 1111</td>
-                                        <td>Lobbes</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Hamilton</td>
-                                        <td>mauris@diam.org</td>
-                                        <td>0800 256 8788</td>
-                                        <td>Sanzeno</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Harding</td>
-                                        <td>Lorem.ipsum.dolor@etnetuset.com</td>
-                                        <td>0800 1111</td>
-                                        <td>Obaix</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Emmanuel</td>
-                                        <td>eget.lacus.Mauris@feugiatSednec.org</td>
-                                        <td>(016977) 8208</td>
-                                        <td>Saint-Remy-Geest</td>
-                                        <td>
-                                            <span class="badge bg-success">Active</span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                <!-- /.wrapper -->
+            </main>
+            <!-- /.app-main -->
 
-                </section>
-            </div>
 
             <footer>
-                <div class="footer clearfix mb-0 text-muted px-3">
-                    <div class="float-start">
+                <div class="footer clearfix mb-0 text-muted px-3 ">
+                    <div class="float-start ">
                         <p>2021 &copy; Abc</p>
                     </div>
-                    <!-- <div class="float-end">
-                        <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a href="http://ahmadsaugi.com">A. Saugi</a></p>
+                    <!-- <div class="float-end ">
+                        <p>Crafted with <span class="text-danger "><i class="bi bi-heart "></i></span> by <a href="http://ahmadsaugi.com ">A. Saugi</a></p>
                     </div> -->
                 </div>
             </footer>
         </div>
     </div>
-    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
-    <script src="assets/js/pages/dashboard.js"></script>
-    <script src="assets/vendors/simple-datatables/simple-datatables.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+
+    <script src="assets/js/pages/dashboard.js "></script>
+
+
+    <script src="assets/vendors/simple-datatables/simple-datatables.js "></script>
+    <!-- BEGIN BASE JS -->
+    <script src="assets/vendors/jquery/jquery.min.js "></script>
+    <script src="assets/vendors/popper.js/umd/popper.min.js "></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js "></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script> -->
+
+    <!-- END BASE JS -->
+
+    <!-- END PLUGINS JS -->
     <script>
         // Simple Datatable
         let table1 = document.querySelector('#table1');
         let dataTable = new simpleDatatables.DataTable(table1);
     </script>
 
-    <script src="assets/js/mazer.js"></script>
+    <script src="assets/js/mazer.js "></script>
+    <!-- BEGIN THEME JS -->
+    <script src="assets/js/theme.min.js "></script>
+    <!-- END THEME JS -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+
+
+
 </body>
 
 </html>

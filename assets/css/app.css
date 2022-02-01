@@ -359,7 +359,9 @@
 }
 
 .card .card-header {
-    border: none
+    border: none;
+    background: none;
+    padding: .9rem 1rem;
 }
 
 .card .card-header h4 {
