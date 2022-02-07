@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Mazer Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/vendors/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+    <link rel="stylesheet" href="assets/vendors/simple-datatables/style.css">
+    <link rel="stylesheet" href="assets/vendors/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/apexcharts/apexcharts.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="assets/css/stylech.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active app-aside-light">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="Logo" srcset=""></a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
+
+                        <li class="sidebar-item active has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-stack"></i>
+                                <span>Home</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="sidebar-item ">
+                                    <a href="{% url 'employee:dashboard' %}">Dashboard</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'employee:admindashboard' %}">Admin Dashboard</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-collection-fill"></i>
+                                <span>Question</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'questions:questiondashboard' %}">Questions</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'questions:createquestion' %}">Create a new Question</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>Project</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'project:project' %}">Project</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'project:createproject' %}">Create a new project</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'project:cancelproject' %}">Cancel a project</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'project:closeprojectview' %}">Close a project</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- <li class="sidebar-title">Forms &amp; Tables</li> -->
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-hexagon-fill"></i>
+                                <span>Data download</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'datadownload:question-response' %}">Question Response</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'datadownload:projectdata' %}">Project Data</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'datadownload:revenuedata' %}">Revenue Data</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item has-sub">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-medical-fill"></i>
+                                <span>Supply Source</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'supplier:supplier' %}">Suppliers</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-pen-fill"></i>
+                                <span>Customer</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'customer:customer' %}">Customers</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'customer:addnewcustomer' %}">Add New Customer</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="table.html" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>Extras</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'employee:signup' %}">User Registration</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'employee:userprofiles' %}">User Profiles</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+
+        <div id="main">
+            <header id="innerheder">
+
+                <!-- .top-bar-list -->
+                <div class="top-bar-list app-header app-header-dark">
+                    <a href="#" class="burger-btn d-block d-xl-none">
+                        <i class="bi bi-justify fs-3"></i>
+                    </a>
+                    <!-- .top-bar-item -->
+                    <div class="top-bar-item px-2 d-md-none d-lg-none d-xl-none">
+                        <!-- toggle menu -->
+                        <button class="hamburger hamburger-squeeze" type="button" data-toggle="aside" aria-label="toggle menu"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+                        <!-- /toggle menu -->
+                    </div>
+                    <!-- /.top-bar-item -->
+                    <!-- .top-bar-item -->
+                    <div class="top-bar-item top-bar-item-full">
+                        <!-- .top-bar-search -->
+                        <form class="top-bar-search">
+                            <!-- .input-group -->
+                            <div class="input-group input-group-search dropdown">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><span class="oi oi-magnifying-glass"></span></span>
+                                </div><input type="text" class="form-control" data-toggle="dropdown" aria-label="Search" placeholder="Search">
+                                <!-- .dropdown-menu -->
+                                <div class="dropdown-menu dropdown-menu-rich dropdown-menu-xl mx-n4 mw-100">
+                                    <div class="dropdown-arrow mx-3"></div>
+                                    <!-- .dropdown-scroll -->
+                                    <div class="dropdown-scroll perfect-scrollbar h-auto" style="max-height: 360px">
+                                        <!-- .list-group -->
+                                        <div class="list-group list-group-flush list-group-reflow mb-2">
+                                            <h6 class="list-group-header d-flex justify-content-between">
+                                                <span>Shortcut</span>
+                                            </h6>
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"></a>
+                                                <div class="tile tile-sm bg-muted">
+                                                    <i class="fas fa-user-plus"></i>
+                                                </div>
+                                                <div class="mx-2"> Create user </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"></a>
+                                                <div class="tile tile-sm bg-muted">
+                                                    <i class="fas fa-dollar-sign"></i>
+                                                </div>
+                                                <div class="mx-2"> Create invoice </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <h6 class="list-group-header d-flex justify-content-between mt-2">
+                                                <span>In projects</span> <a href="#" class="font-weight-normal">Show more</a>
+                                            </h6>
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"><span class="sr-only">Go to search result</span></a>
+                                                <div class="user-avatar user-avatar-sm bg-muted">
+                                                    <img src="assets/images/avatars/bootstrap.svg" alt="">
+                                                </div>
+                                                <div class="mx-2">
+                                                    <div class="mb-n1"> Bootstrap </div><small class="text-muted">Just now</small>
+                                                </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"><span class="sr-only">Go to search result</span></a>
+                                                <div class="user-avatar user-avatar-sm bg-muted">
+                                                    <img src="assets/images/avatars/slack.svg" alt="">
+                                                </div>
+                                                <div class="mx-2">
+                                                    <div class="mb-n1"> Slack </div><small class="text-muted">Updated 25 minutes ago</small>
+                                                </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <!-- /.list-group-item -->
+                                            <h6 class="list-group-header d-flex justify-content-between mt-2">
+                                                <span>Another section</span> <a href="#" class="font-weight-normal">Show more</a>
+                                            </h6>
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"><span class="sr-only">Go to search result</span></a>
+                                                <div class="tile tile-sm bg-muted"> P </div>
+                                                <div class="mx-2">
+                                                    <div class="mb-n1"> Product name </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                        </div>
+                                        <!-- /.list-group -->
+                                    </div>
+                                    <!-- /.dropdown-scroll -->
+                                    <a href="#" class="dropdown-footer">Show all results</a>
+                                </div>
+                                <!-- /.dropdown-menu -->
+                            </div>
+                            <!-- /.input-group -->
+                        </form>
+                        <!-- /.top-bar-search -->
+                    </div>
+                    <!-- /.top-bar-item -->
+                    <!-- .top-bar-item -->
+                    <div class="top-bar-item top-bar-item-right px-0 d-none d-sm-flex">
+                        <!-- .btn-account -->
+                        <div class="dropdown d-none d-md-flex">
+                            <button class="btn-account dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-avatar user-avatar-md"><img src="assets/images/profile.jpg" alt=""></span> <span class="account-summary pr-lg-4 d-none d-lg-block"><span class="account-name">Beni Arisandi</span> <span class="account-description">Marketing Manager</span></span></button>
+                            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button> -->
+
+                            <!-- .dropdown-menu -->
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <div class="dropdown-arrow d-lg-none" x-arrow=""></div>
+                                <div class="dropdown-arrow mx-3 d-none d-lg-block"></div>
+                                <h6 class="dropdown-header d-none d-md-block d-lg-none"> Beni Arisandi </h6><a class="dropdown-item" href="user-profile.html"><span class="dropdown-icon oi oi-person"></span> Profile</a> <a class="dropdown-item" href="auth-signin-v1.html"><span class="dropdown-icon oi oi-account-logout"></span> Logout</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Help Center</a> <a class="dropdown-item" href="#">Ask Forum</a> <a class="dropdown-item" href="#">Keyboard Shortcuts</a>
+                            </div>
+                            <!-- /.dropdown-menu -->
+                        </div>
+                        <!-- /.btn-account -->
+                    </div>
+                    <!-- /.top-bar-item -->
+                </div>
+                <!-- /.top-bar-list -->
+            </header>
+
+            <!-- .app-main -->
+            <main class="app-main">
+                <!-- .wrapper -->
+                <div class="wrapper">
+                    <!-- .page -->
+                    <div class="page has-sidebar has-sidebar-fluid has-sidebar-expand-xl">
+                        <div class="page-heading mt-3 mb-0">
+                            <div class="page-title mb-3">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 order-md-1 order-last">
+                                        <h3>Work Load Tracking</h3>
+										<a href="#myModal" role="button" class="btn btn-default" data-toggle="modal">Launch demo modal</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card p-4 boxshedow">
+                                <div class="row mb-4">
+                                    <div class="col-6">
+                                        <h2 class="projecttitle">
+                                            <a href="#" class="btn btn-app">
+                                                <i class="fa fa-play"></i>
+                                            </a> test Project 18dec 2021
+                                        </h2>
+                                    </div>
+                                    <div class="col-6 text-end py-0">
+                                        <a href="#">
+                                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="fa fa-plus"></i>Add New Supplier</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4>Bar Chart</h4>
+                                            </div>
+                                            <div class="card-body min-barhight">
+                                                <div id="bar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-4">
+                                        <div class="card admindashc">
+                                            <div class="card-header">
+                                                <h4>Project Description</h4>
+                                            </div>
+                                            <div class="card-body py-4-3">
+                                                <div class="project_detail">
+                                                    <p class="title">Client Company</p>
+                                                    <p>Test Customer</p>
+                                                    <p class="title">Client Invoice Contact</p>
+                                                    <p>Test Name Test Lanst Name</p>
+                                                    <p class="title">Client Project Leader</p>
+                                                    <p>Test Name Test Lanst Name</p>
+                                                </div>
+
+                                                <div class="project_detail">
+                                                    <p class="title">Sales Person</p>
+                                                    <p>Ashish Sahu</p>
+                                                    <p class="title">Project Manager</p>
+                                                    <p>
+                                                        Narendra Vishwakarma
+                                                    </p>
+                                                    <p class="title">Invoicing Month</p>
+                                                    <p>December 2021
+                                                    </p>
+                                                    <p class="title">Booked Revenue</p>
+                                                    <p>$ 600</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#">
+                                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticeditproject">
+                                                        <i class="fa fa-edit"></i> Edit Project Details</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card p-1 border-radius-5 boxshedow">
+                                        <div class="card-header d-flex align-items-center flex-column">
+                                            <h2 class="projecttitle m-0 col-12">
+                                                <a href="#" class="btn btn-app">
+                                                    <i class="fa fa-pause"></i>
+                                                </a>
+                                                <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                            </h2>
+                                            <div class="col-12 d-flex mt-3">
+                                                <div class="col-6 pb-1 text-start">
+                                                    <a href="#"><i class="fa fa-language"></i> 
+                                                        <span class="black">English</span></a>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <a href="#"><i class="fa fa-map-marker"> </i>
+                                                        <span class="black">United States</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pt-1 pb-1  border-top">
+                                            <div class="row border-bottom m-2 pb-3">
+
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Hits </span>
+                                                    <span class="value text-success"> 3 </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center">
+                                                    <span class="name"> Survey Starts </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Completes </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Terminates </span>
+                                                    <span class="value text-success"> 0/0 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center ">
+                                                    <span class="name"> Quotafull </span>
+                                                    <span class="value text-success"> 0 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Incidence </span>
+                                                    <span class="value text-success"> 100.0% </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center  ">
+                                                    <span class="name"> Median LOI </span>
+                                                    <span class="value text-success"> 0.0 Min </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card p-1 border-radius-5 boxshedow">
+                                        <div class="card-header d-flex align-items-center flex-column">
+                                            <h2 class="projecttitle m-0 col-12">
+                                                <a href="#" class="btn btn-app">
+                                                    <i class="fa fa-pause"></i>
+                                                </a>
+                                                <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                            </h2>
+                                            <div class="col-12 d-flex mt-3">
+                                                <div class="col-6 pb-1 text-start">
+                                                    <a href="#"><i class="fa fa-language"></i> 
+                                                        <span class="black">English</span></a>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <a href="#"><i class="fa fa-map-marker"> </i>
+                                                        <span class="black">United States</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pt-1 pb-1  border-top">
+                                            <div class="row border-bottom m-2 pb-3">
+
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Hits </span>
+                                                    <span class="value text-success"> 3 </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center">
+                                                    <span class="name"> Survey Starts </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Completes </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Terminates </span>
+                                                    <span class="value text-success"> 0/0 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center ">
+                                                    <span class="name"> Quotafull </span>
+                                                    <span class="value text-success"> 0 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Incidence </span>
+                                                    <span class="value text-success"> 100.0% </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center  ">
+                                                    <span class="name"> Median LOI </span>
+                                                    <span class="value text-success"> 0.0 Min </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card p-1 border-radius-5 boxshedow">
+                                        <div class="card-header d-flex align-items-center flex-column">
+                                            <h2 class="projecttitle m-0 col-12">
+                                                <a href="#" class="btn btn-app">
+                                                    <i class="fa fa-pause"></i>
+                                                </a>
+                                                <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                            </h2>
+                                            <div class="col-12 d-flex mt-3">
+                                                <div class="col-6 pb-1 text-start">
+                                                    <a href="#"><i class="fa fa-language"></i> 
+                                                        <span class="black">English</span></a>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <a href="#"><i class="fa fa-map-marker"> </i>
+                                                        <span class="black">United States</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pt-1 pb-1  border-top">
+                                            <div class="row border-bottom m-2 pb-3">
+
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Hits </span>
+                                                    <span class="value text-success"> 3 </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center">
+                                                    <span class="name"> Survey Starts </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Completes </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Terminates </span>
+                                                    <span class="value text-success"> 0/0 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center ">
+                                                    <span class="name"> Quotafull </span>
+                                                    <span class="value text-success"> 0 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Incidence </span>
+                                                    <span class="value text-success"> 100.0% </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center  ">
+                                                    <span class="name"> Median LOI </span>
+                                                    <span class="value text-success"> 0.0 Min </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card p-1 border-radius-5 boxshedow">
+                                        <div class="card-header d-flex align-items-center flex-column">
+                                            <h2 class="projecttitle m-0 col-12">
+                                                <a href="#" class="btn btn-app">
+                                                    <i class="fa fa-pause"></i>
+                                                </a>
+                                                <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                            </h2>
+                                            <div class="col-12 d-flex mt-3">
+                                                <div class="col-6 pb-1 text-start">
+                                                    <a href="#"><i class="fa fa-language"></i> 
+                                                        <span class="black">English</span></a>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <a href="#"><i class="fa fa-map-marker"> </i>
+                                                        <span class="black">United States</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pt-1 pb-1  border-top">
+                                            <div class="row border-bottom m-2 pb-3">
+
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Hits </span>
+                                                    <span class="value text-success"> 3 </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center">
+                                                    <span class="name"> Survey Starts </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Completes </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Terminates </span>
+                                                    <span class="value text-success"> 0/0 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center ">
+                                                    <span class="name"> Quotafull </span>
+                                                    <span class="value text-success"> 0 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Incidence </span>
+                                                    <span class="value text-success"> 100.0% </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center  ">
+                                                    <span class="name"> Median LOI </span>
+                                                    <span class="value text-success"> 0.0 Min </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card p-1 border-radius-5 boxshedow">
+                                        <div class="card-header d-flex align-items-center flex-column">
+                                            <h2 class="projecttitle m-0 col-12">
+                                                <a href="#" class="btn btn-app">
+                                                    <i class="fa fa-pause"></i>
+                                                </a>
+                                                <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                            </h2>
+                                            <div class="col-12 d-flex mt-3">
+                                                <div class="col-6 pb-1 text-start">
+                                                    <a href="#"><i class="fa fa-language"></i> 
+                                                        <span class="black">English</span></a>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <a href="#"><i class="fa fa-map-marker"> </i>
+                                                        <span class="black">United States</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pt-1 pb-1  border-top">
+                                            <div class="row border-bottom m-2 pb-3">
+
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Hits </span>
+                                                    <span class="value text-success"> 3 </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center">
+                                                    <span class="name"> Survey Starts </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Completes </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Terminates </span>
+                                                    <span class="value text-success"> 0/0 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center ">
+                                                    <span class="name"> Quotafull </span>
+                                                    <span class="value text-success"> 0 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Incidence </span>
+                                                    <span class="value text-success"> 100.0% </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center  ">
+                                                    <span class="name"> Median LOI </span>
+                                                    <span class="value text-success"> 0.0 Min </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card p-1 border-radius-5 boxshedow">
+                                        <div class="card-header d-flex align-items-center flex-column">
+                                            <h2 class="projecttitle m-0 col-12">
+                                                <a href="#" class="btn btn-app">
+                                                    <i class="fa fa-pause"></i>
+                                                </a>
+                                                <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                            </h2>
+                                            <div class="col-12 d-flex mt-3">
+                                                <div class="col-6 pb-1 text-start">
+                                                    <a href="#"><i class="fa fa-language"></i> 
+                                                        <span class="black">English</span></a>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <a href="#"><i class="fa fa-map-marker"> </i>
+                                                        <span class="black">United States</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pt-1 pb-1  border-top">
+                                            <div class="row border-bottom m-2 pb-3">
+
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Hits </span>
+                                                    <span class="value text-success"> 3 </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center">
+                                                    <span class="name"> Survey Starts </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Completes </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Terminates </span>
+                                                    <span class="value text-success"> 0/0 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center ">
+                                                    <span class="name"> Quotafull </span>
+                                                    <span class="value text-success"> 0 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Incidence </span>
+                                                    <span class="value text-success"> 100.0% </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center  ">
+                                                    <span class="name"> Median LOI </span>
+                                                    <span class="value text-success"> 0.0 Min </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card p-1 border-radius-5 boxshedow">
+                                        <div class="card-header d-flex align-items-center flex-column">
+                                            <h2 class="projecttitle m-0 col-12">
+                                                <a href="#" class="btn btn-app">
+                                                    <i class="fa fa-pause"></i>
+                                                </a>
+                                                <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                            </h2>
+                                            <div class="col-12 d-flex mt-3">
+                                                <div class="col-6 pb-1 text-start">
+                                                    <a href="#"><i class="fa fa-language"></i> 
+                                                        <span class="black">English</span></a>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <a href="#"><i class="fa fa-map-marker"> </i>
+                                                        <span class="black">United States</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pt-1 pb-1  border-top">
+                                            <div class="row border-bottom m-2 pb-3">
+
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Hits </span>
+                                                    <span class="value text-success"> 3 </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center">
+                                                    <span class="name"> Survey Starts </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Completes </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Terminates </span>
+                                                    <span class="value text-success"> 0/0 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center ">
+                                                    <span class="name"> Quotafull </span>
+                                                    <span class="value text-success"> 0 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Incidence </span>
+                                                    <span class="value text-success"> 100.0% </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center  ">
+                                                    <span class="name"> Median LOI </span>
+                                                    <span class="value text-success"> 0.0 Min </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card p-1 border-radius-5 boxshedow">
+                                        <div class="card-header d-flex align-items-center flex-column">
+                                            <h2 class="projecttitle m-0 col-12">
+                                                <a href="#" class="btn btn-app">
+                                                    <i class="fa fa-pause"></i>
+                                                </a>
+                                                <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                            </h2>
+                                            <div class="col-12 d-flex mt-3">
+                                                <div class="col-6 pb-1 text-start">
+                                                    <a href="#"><i class="fa fa-language"></i> 
+                                                        <span class="black">English</span></a>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <a href="#"><i class="fa fa-map-marker"> </i>
+                                                        <span class="black">United States</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pt-1 pb-1  border-top">
+                                            <div class="row border-bottom m-2 pb-3">
+
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Hits </span>
+                                                    <span class="value text-success"> 3 </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center">
+                                                    <span class="name"> Survey Starts </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Completes </span>
+                                                    <span class="value text-success"> 2 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                    <span class="name"> Terminates </span>
+                                                    <span class="value text-success"> 0/0 </span>
+                                                </div>
+                                                <div class="col-4 d-flex flex-column align-items-center ">
+                                                    <span class="name"> Quotafull </span>
+                                                    <span class="value text-success"> 0 </span>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom m-2 pb-3">
+                                                <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                    <span class="name"> Incidence </span>
+                                                    <span class="value text-success"> 100.0% </span>
+                                                </div>
+                                                <div class="col-6 d-flex flex-column align-items-center  ">
+                                                    <span class="name"> Median LOI </span>
+                                                    <span class="value text-success"> 0.0 Min </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- /.page -->
+                </div>
+                <!-- /.wrapper -->
+            </main>
+            <!-- /.app-main -->
+
+            <footer>
+                <div class="footer clearfix mb-0 text-muted px-3">
+                    <div class="float-start">
+                        <p>2021 &copy; Abc</p>
+                    </div>
+                    <!-- <div class="float-end">
+                        <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a href="http://ahmadsaugi.com">A. Saugi</a></p>
+                    </div> -->
+                </div>
+            </footer>
+
+            <!-- Modal staticBackdrop -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Group Target Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <form class="form-horizontal form-label-left input_mask project_description_form" method="POST" id="group-from" action="/project/creategroup/7/">
+
+                                    <div class="form-group row">
+                                        <div class="col-4">
+                                            <label class="col-form-label control-label">Group Name</label>
+                                            <input type="text" name="group_name" id="group_name" required="required" placeholder="Group Name" class="form-control" />
+                                        </div>
+                                        <div class="col-4">
+                                            <label class="col-form-label control-label">Country</label>
+                                            <select name="target_country" id="target_country" class="form-control" required="required">
+                                                <option value="">Choose...</option>
+                                                <option value="4">Afghanistan</option>
+                                                <option value="65">Algeria</option>
+                                                <option value="13">American Samoa</option>
+                                                <option value="2">Andorra</option>
+                                                <option value="1">Andorra Test</option>
+                                                <option value="10">Angola</option>
+                                                <option value="6">Anguilla</option>
+                                                <option value="11">Antarctica</option>
+                                                <option value="5">Antigua and Barbuda</option>
+                                                <option value="12">Argentina</option>
+                                                <option value="8">Armenia</option>
+                                                <option value="16">Aruba</option>
+                                                <option value="15">Australia</option>
+                                                <option value="14">Austria</option>
+                                                <option value="17">Azerbaijan</option>
+                                                <option value="33">Bahamas</option>
+                                                <option value="24">Bahrain</option>
+                                                <option value="20">Bangladesh</option>
+                                                <option value="19">Barbados</option>
+                                                <option value="37">Belarus</option>
+                                                <option value="21">Belgium</option>
+                                                <option value="38">Belize</option>
+                                                <option value="26">Benin</option>
+                                                <option value="28">Bermuda</option>
+                                                <option value="34">Bhutan</option>
+                                                <option value="30">Bolivia</option>
+                                                <option value="18">Bosnia and Herzegovina</option>
+                                                <option value="36">Botswana</option>
+                                                <option value="35">Bouvet Island</option>
+                                                <option value="32">Brazil</option>
+                                                <option value="31">British Antarctic Territory</option>
+                                                <option value="111">British Indian Ocean Territory</option>
+                                                <option value="251">British Virgin Islands</option>
+                                                <option value="29">Brunei</option>
+                                                <option value="23">Bulgaria</option>
+                                                <option value="22">Burkina Faso</option>
+                                                <option value="25">Burundi</option>
+                                                <option value="123">Cambodia</option>
+                                                <option value="48">Cameroon</option>
+                                                <option value="39">Canada</option>
+                                                <option value="53">Canton and Enderbury Islands</option>
+                                                <option value="55">Cape Verde</option>
+                                                <option value="130">Cayman Islands</option>
+                                                <option value="42">Central African Republic</option>
+                                                <option value="226">Chad</option>
+                                                <option value="47">Chile</option>
+                                                <option value="49">China</option>
+                                                <option value="56">Christmas Island</option>
+                                                <option value="40">Cocos [Keeling] Islands</option>
+                                                <option value="50">Colombia</option>
+                                                <option value="125">Comoros</option>
+                                                <option value="43">Congo - Brazzaville</option>
+                                                <option value="41">Congo - Kinshasa</option>
+                                                <option value="46">Cook Islands</option>
+                                                <option value="51">Costa Rica</option>
+                                                <option value="103">Croatia</option>
+                                                <option value="54">Cuba</option>
+                                                <option value="57">Cyprus</option>
+                                                <option value="58">Czech Republic</option>
+                                                <option value="45">CÃƒÂ´te dÃ¢â‚¬â„¢Ivoire</option>
+                                                <option value="62">Denmark</option>
+                                                <option value="61">Djibouti</option>
+                                                <option value="63">Dominica</option>
+                                                <option value="64">Dominican Republic</option>
+                                                <option value="176">Dronning Maud Land</option>
+                                                <option value="59">East Germany</option>
+                                                <option value="66">Ecuador</option>
+                                                <option value="68">Egypt</option>
+                                                <option value="222">El Salvador</option>
+                                                <option value="93">Equatorial Guinea</option>
+                                                <option value="70">Eritrea</option>
+                                                <option value="67">Estonia</option>
+                                                <option value="72">Ethiopia</option>
+                                                <option value="75">Falkland Islands</option>
+                                                <option value="77">Faroe Islands</option>
+                                                <option value="74">Fiji</option>
+                                                <option value="73">Finland</option>
+                                                <option value="79">France</option>
+                                                <option value="85">French Guiana</option>
+                                                <option value="185">French Polynesia</option>
+                                                <option value="227">French Southern Territories</option>
+                                                <option value="78">French Southern and Antarctic Territories</option>
+                                                <option value="81">Gabon</option>
+                                                <option value="90">Gambia</option>
+                                                <option value="84">Georgia</option>
+                                                <option value="60">Germany</option>
+                                                <option value="87">Ghana</option>
+                                                <option value="88">Gibraltar</option>
+                                                <option value="94">Greece</option>
+                                                <option value="89">Greenland</option>
+                                                <option value="83">Grenada</option>
+                                                <option value="92">Guadeloupe</option>
+                                                <option value="97">Guam</option>
+                                                <option value="96">Guatemala</option>
+                                                <option value="86">Guernsey</option>
+                                                <option value="91">Guinea</option>
+                                                <option value="98">Guinea-Bissau</option>
+                                                <option value="99">Guyana</option>
+                                                <option value="104">Haiti</option>
+                                                <option value="101">Heard Island and McDonald Islands</option>
+                                                <option value="102">Honduras</option>
+                                                <option value="100">Hong Kong SAR China</option>
+                                                <option value="105">Hungary</option>
+                                                <option value="114">Iceland</option>
+                                                <option value="110">India</option>
+                                                <option value="106">Indonesia</option>
+                                                <option value="113">Iran</option>
+                                                <option value="112">Iraq</option>
+                                                <option value="107">Ireland</option>
+                                                <option value="109">Isle of Man</option>
+                                                <option value="108">Israel</option>
+                                                <option value="115">Italy</option>
+                                                <option value="117">Jamaica</option>
+                                                <option value="119">Japan</option>
+                                                <option value="116">Jersey</option>
+                                                <option value="120">Johnston Island</option>
+                                                <option value="118">Jordan</option>
+                                                <option value="131">Kazakhstan</option>
+                                                <option value="121">Kenya</option>
+                                                <option value="124">Kiribati</option>
+                                                <option value="129">Kuwait</option>
+                                                <option value="122">Kyrgyzstan</option>
+                                                <option value="132">Laos</option>
+                                                <option value="141">Latvia</option>
+                                                <option value="133">Lebanon</option>
+                                                <option value="138">Lesotho</option>
+                                                <option value="137">Liberia</option>
+                                                <option value="142">Libya</option>
+                                                <option value="135">Liechtenstein</option>
+                                                <option value="139">Lithuania</option>
+                                                <option value="140">Luxembourg</option>
+                                                <option value="155">Macau SAR China</option>
+                                                <option value="151">Macedonia</option>
+                                                <option value="148">Madagascar</option>
+                                                <option value="163">Malawi</option>
+                                                <option value="165">Malaysia</option>
+                                                <option value="162">Maldives</option>
+                                                <option value="152">Mali</option>
+                                                <option value="160">Malta</option>
+                                                <option value="149">Marshall Islands</option>
+                                                <option value="157">Martinique</option>
+                                                <option value="158">Mauritania</option>
+                                                <option value="161">Mauritius</option>
+                                                <option value="260">Mayotte</option>
+                                                <option value="80">Metropolitan France</option>
+                                                <option value="164">Mexico</option>
+                                                <option value="76">Micronesia</option>
+                                                <option value="150">Midway Islands</option>
+                                                <option value="145">Moldova</option>
+                                                <option value="144">Monaco</option>
+                                                <option value="154">Mongolia</option>
+                                                <option value="146">Montenegro</option>
+                                                <option value="159">Montserrat</option>
+                                                <option value="143">Morocco</option>
+                                                <option value="166">Mozambique</option>
+                                                <option value="153">Myanmar [Burma]</option>
+                                                <option value="167">Namibia</option>
+                                                <option value="177">Nauru</option>
+                                                <option value="175">Nepal</option>
+                                                <option value="173">Netherlands</option>
+                                                <option value="9">Netherlands Antilles</option>
+                                                <option value="178">Neutral Zone</option>
+                                                <option value="168">New Caledonia</option>
+                                                <option value="180">New Zealand</option>
+                                                <option value="172">Nicaragua</option>
+                                                <option value="169">Niger</option>
+                                                <option value="171">Nigeria</option>
+                                                <option value="179">Niue</option>
+                                                <option value="170">Norfolk Island</option>
+                                                <option value="127">North Korea</option>
+                                                <option value="249">North Vietnam</option>
+                                                <option value="156">Northern Mariana Islands</option>
+                                                <option value="174">Norway</option>
+                                                <option value="181">Oman</option>
+                                                <option value="183">Pacific Islands Trust Territory</option>
+                                                <option value="188">Pakistan</option>
+                                                <option value="196">Palau</option>
+                                                <option value="193">Palestinian Territories</option>
+                                                <option value="182">Panama</option>
+                                                <option value="198">Panama Canal Zone</option>
+                                                <option value="186">Papua New Guinea</option>
+                                                <option value="197">Paraguay</option>
+                                                <option value="258">People&#x27;s Democratic Republic of Yemen</option>
+                                                <option value="184">Peru</option>
+                                                <option value="187">Philippines</option>
+                                                <option value="191">Pitcairn Islands</option>
+                                                <option value="189">Poland</option>
+                                                <option value="194">Portugal</option>
+                                                <option value="192">Puerto Rico</option>
+                                                <option value="199">Qatar</option>
+                                                <option value="201">Romania</option>
+                                                <option value="203">Russia</option>
+                                                <option value="204">Rwanda</option>
+                                                <option value="200">RÃƒÂ©union</option>
+                                                <option value="27">Saint BarthÃƒÂ©lemy</option>
+                                                <option value="211">Saint Helena</option>
+                                                <option value="126">Saint Kitts and Nevis</option>
+                                                <option value="134">Saint Lucia</option>
+                                                <option value="147">Saint Martin</option>
+                                                <option value="190">Saint Pierre and Miquelon</option>
+                                                <option value="248">Saint Vincent and the Grenadines</option>
+                                                <option value="257">Samoa</option>
+                                                <option value="216">San Marino</option>
+                                                <option value="205">Saudi Arabia</option>
+                                                <option value="217">Senegal</option>
+                                                <option value="202">Serbia</option>
+                                                <option value="52">Serbia and Montenegro</option>
+                                                <option value="207">Seychelles</option>
+                                                <option value="215">Sierra Leone</option>
+                                                <option value="210">Singapore</option>
+                                                <option value="214">Slovakia</option>
+                                                <option value="212">Slovenia</option>
+                                                <option value="206">Solomon Islands</option>
+                                                <option value="218">Somalia</option>
+                                                <option value="261">South Africa</option>
+                                                <option value="95">South Georgia and the South Sandwich Islands</option>
+                                                <option value="128">South Korea</option>
+                                                <option value="71">Spain</option>
+                                                <option value="136">Sri Lanka</option>
+                                                <option value="208">Sudan</option>
+                                                <option value="219">Suriname</option>
+                                                <option value="213">Svalbard and Jan Mayen</option>
+                                                <option value="224">Swaziland</option>
+                                                <option value="209">Sweden</option>
+                                                <option value="44">Switzerland</option>
+                                                <option value="223">Syria</option>
+                                                <option value="220">SÃƒÂ£o TomÃƒÂ© and PrÃƒÂ­ncipe</option>
+                                                <option value="239">Taiwan</option>
+                                                <option value="230">Tajikistan</option>
+                                                <option value="240">Tanzania</option>
+                                                <option value="229">Thailand</option>
+                                                <option value="232">Timor-Leste</option>
+                                                <option value="228">Togo</option>
+                                                <option value="231">Tokelau</option>
+                                                <option value="235">Tonga</option>
+                                                <option value="237">Trinidad and Tobago</option>
+                                                <option value="234">Tunisia</option>
+                                                <option value="236">Turkey</option>
+                                                <option value="233">Turkmenistan</option>
+                                                <option value="225">Turks and Caicos Islands</option>
+                                                <option value="238">Tuvalu</option>
+                                                <option value="243">U.S. Minor Outlying Islands</option>
+                                                <option value="195">U.S. Miscellaneous Pacific Islands</option>
+                                                <option value="252">U.S. Virgin Islands</option>
+                                                <option value="242">Uganda</option>
+                                                <option value="241">Ukraine</option>
+                                                <option value="221">Union of Soviet Socialist Republics</option>
+                                                <option value="3">United Arab Emirates</option>
+                                                <option value="82">United Kingdom</option>
+                                                <option value="244">United States</option>
+                                                <option value="264">Unknown or Invalid Region</option>
+                                                <option value="245">Uruguay</option>
+                                                <option value="246">Uzbekistan</option>
+                                                <option value="254">Vanuatu</option>
+                                                <option value="247">Vatican City</option>
+                                                <option value="250">Venezuela</option>
+                                                <option value="253">Vietnam</option>
+                                                <option value="256">Wake Island</option>
+                                                <option value="255">Wallis and Futuna</option>
+                                                <option value="69">Western Sahara</option>
+                                                <option value="259">Yemen</option>
+                                                <option value="262">Zambia</option>
+                                                <option value="263">Zimbabwe</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <label class="col-form-label control-label">Language</label>
+                                            <select name="target_language" id="target_language" class="form-control" required="required">
+                                                        <option value="">Choose...</option>
+                                                        <option value="1">Abkhazian</option>
+                                                        <option value="2">Afar</option>
+                                                        <option value="3">Afrikaans</option>
+                                                        <option value="4">Akan</option>
+                                                        <option value="5">Albanian</option>
+                                                        <option value="6">Amharic</option>
+                                                        <option value="7">Arabic</option>
+                                                        <option value="8">Aragonese</option>
+                                                        <option value="9">Armenian</option>
+                                                        <option value="10">Assamese</option>
+                                                        <option value="11">Avaric</option>
+                                                        <option value="12">Avestan</option>
+                                                        <option value="13">Aymara</option>
+                                                        <option value="14">Azerbaijani</option>
+                                                        <option value="15">Bambara</option>
+                                                        <option value="16">Bashkir</option>
+                                                        <option value="17">Basque</option>
+                                                        <option value="18">Belarusian</option>
+                                                        <option value="19">Bengali</option>
+                                                        <option value="20">Biharilanguages</option>
+                                                        <option value="21">Bislama</option>
+                                                        <option value="22">Bosnian</option>
+                                                        <option value="23">Breton</option>
+                                                        <option value="24">Bulgarian</option>
+                                                        <option value="25">Burmese</option>
+                                                        <option value="26">Catalanm,Valencian</option>
+                                                        <option value="80">CentralKhmer</option>
+                                                        <option value="27">Chamorro</option>
+                                                        <option value="28">Chechen</option>
+                                                        <option value="29">Chichewa,Chewa,Nyanja</option>
+                                                        <option value="30">Chinese</option>
+                                                        <option value="121">ChurchÂ Slavic</option>
+                                                        <option value="31">Chuvash</option>
+                                                        <option value="32">Cornish</option>
+                                                        <option value="33">Corsican</option>
+                                                        <option value="34">Cree</option>
+                                                        <option value="35">Croatian</option>
+                                                        <option value="36">Czech</option>
+                                                        <option value="37">Danish</option>
+                                                        <option value="38">Divehi, Dhivehi, Maldivian</option>
+                                                        <option value="39">Dutch, Flemish</option>
+                                                        <option value="40">Dzongkha</option>
+                                                        <option value="41">English</option>
+                                                        <option value="42">Esperanto</option>
+                                                        <option value="43">Estonian</option>
+                                                        <option value="44">Ewe</option>
+                                                        <option value="45">Faroese</option>
+                                                        <option value="46">Fijian</option>
+                                                        <option value="47">Finnish</option>
+                                                        <option value="48">French</option>
+                                                        <option value="49">Fulah</option>
+                                                        <option value="143">Gaelic, ScottishGaelic</option>
+                                                        <option value="50">Galician</option>
+                                                        <option value="91">Ganda</option>
+                                                        <option value="51">Georgian</option>
+                                                        <option value="52">German</option>
+                                                        <option value="53">Greek, Modern(1453)</option>
+                                                        <option value="54">Guarani</option>
+                                                        <option value="55">Gujarati</option>
+                                                        <option value="56">Haitian, HaitianCreole</option>
+                                                        <option value="57">Hausa</option>
+                                                        <option value="58">Hebrew</option>
+                                                        <option value="59">Herero</option>
+                                                        <option value="60">Hindi</option>
+                                                        <option value="61">HiriMotu</option>
+                                                        <option value="62">Hungarian</option>
+                                                        <option value="70">Icelandic</option>
+                                                        <option value="69">Ido</option>
+                                                        <option value="67">Igbo</option>
+                                                        <option value="64">Indonesian</option>
+                                                        <option value="63">Interlingua</option>
+                                                        <option value="65">Interlingue, Occidental</option>
+                                                        <option value="72">Inuktitut</option>
+                                                        <option value="68">Inupiaq</option>
+                                                        <option value="66">Irish</option>
+                                                        <option value="71">Italian</option>
+                                                        <option value="73">Japanese</option>
+                                                        <option value="74">Javanese</option>
+                                                        <option value="75">Kalaallisut, Greenlandic</option>
+                                                        <option value="76">Kannada</option>
+                                                        <option value="77">Kanuri</option>
+                                                        <option value="78">Kashmiri</option>
+                                                        <option value="79">Kazakh</option>
+                                                        <option value="81">Kikuyu, Gikuyu</option>
+                                                        <option value="82">Kinyarwanda</option>
+                                                        <option value="83">Kirghiz, Kyrgyz</option>
+                                                        <option value="84">Komi</option>
+                                                        <option value="85">Kongo</option>
+                                                        <option value="86">Korean</option>
+                                                        <option value="88">Kuanyama, Kwanyama</option>
+                                                        <option value="87">Kurdish</option>
+                                                        <option value="94">Lao</option>
+                                                        <option value="89">Latin</option>
+                                                        <option value="97">Latvian</option>
+                                                        <option value="92">Limburgan, Limburger, Limburgish</option>
+                                                        <option value="93">Lingala</option>
+                                                        <option value="95">Lithuanian</option>
+                                                        <option value="96">Luba-Katanga</option>
+                                                        <option value="90">Luxembourgish, Letzeburgesch</option>
+                                                        <option value="99">Macedonian</option>
+                                                        <option value="100">Malagasy</option>
+                                                        <option value="101">Malay</option>
+                                                        <option value="102">Malayalam</option>
+                                                        <option value="103">Maltese</option>
+                                                        <option value="98">Manx</option>
+                                                        <option value="104">Maori</option>
+                                                        <option value="105">Marathi</option>
+                                                        <option value="106">Marshallese</option>
+                                                        <option value="107">Mongolian</option>
+                                                        <option value="108">Nauru</option>
+                                                        <option value="109">Navajo, Navaho</option>
+                                                        <option value="112">Ndonga</option>
+                                                        <option value="111">Nepali</option>
+                                                        <option value="110">NorthNdebele</option>
+                                                        <option value="139">NorthernSami</option>
+                                                        <option value="115">Norwegian</option>
+                                                        <option value="113">Norwegian Bokmal</option>
+                                                        <option value="114">Norwegian Nynorsk</option>
+                                                        <option value="118">Occitan</option>
+                                                        <option value="119">Ojibwa</option>
+                                                        <option value="123">Oriya</option>
+                                                        <option value="120">Oromo</option>
+                                                        <option value="124">Ossetian, Ossetic</option>
+                                                        <option value="126">Pali</option>
+                                                        <option value="129">Pashto, Pushto</option>
+                                                        <option value="127">Persian</option>
+                                                        <option value="128">Polish</option>
+                                                        <option value="130">Portuguese</option>
+                                                        <option value="125">Punjabi, Panjabi</option>
+                                                        <option value="131">Quechua</option>
+                                                        <option value="134">Romanian, Moldavian, Moldovan</option>
+                                                        <option value="132">Romansh</option>
+                                                        <option value="133">Rundi</option>
+                                                        <option value="135">Russian</option>
+                                                        <option value="140">Samoan</option>
+                                                        <option value="141">Sango</option>
+                                                        <option value="136">Sanskrit</option>
+                                                        <option value="137">Sardinian</option>
+                                                        <option value="142">Serbian</option>
+                                                        <option value="144">Shona</option>
+                                                        <option value="116">SichuanYi, Nuosu</option>
+                                                        <option value="138">Sindhi</option>
+                                                        <option value="145">Sinhala, Sinhalese</option>
+                                                        <option value="146">Slovak</option>
+                                                        <option value="147">Slovenian</option>
+                                                        <option value="148">Somali</option>
+                                                        <option value="117">South Ndebele</option>
+                                                        <option value="149">SouthernSotho</option>
+                                                        <option value="150">Spanish, Castilian</option>
+                                                        <option value="151">Sundanese</option>
+                                                        <option value="152">Swahili</option>
+                                                        <option value="153">Swati</option>
+                                                        <option value="154">Swedish</option>
+                                                        <option value="161">Tagalog</option>
+                                                        <option value="167">Tahitian</option>
+                                                        <option value="156">Tajik</option>
+                                                        <option value="183">Tamil</option>
+                                                        <option value="165">Tatar</option>
+                                                        <option value="155">Telugu</option>
+                                                        <option value="157">Thai</option>
+                                                        <option value="159">Tibetan</option>
+                                                        <option value="158">Tigrinya</option>
+                                                        <option value="122">TongaÂ (TongaIslands)</option>
+                                                        <option value="164">Tsonga</option>
+                                                        <option value="162">Tswana</option>
+                                                        <option value="163">Turkish</option>
+                                                        <option value="160">Turkmen</option>
+                                                        <option value="166">Twi</option>
+                                                        <option value="168">Uighur, Uyghur</option>
+                                                        <option value="169">Ukrainian</option>
+                                                        <option value="170">Urdu</option>
+                                                        <option value="171">Uzbek</option>
+                                                        <option value="172">Venda</option>
+                                                        <option value="173">Vietnamese</option>
+                                                        <option value="184">VolapÃ¼k</option>
+                                                        <option value="174">Walloon</option>
+                                                        <option value="175">Welsh</option>
+                                                        <option value="177">WesternFrisian</option>
+                                                        <option value="176">Wolof</option>
+                                                        <option value="178">Xhosa</option>
+                                                        <option value="179">Yiddish</option>
+                                                        <option value="180">Yoruba</option>
+                                                        <option value="181">Zhuang, Chuang</option>
+                                                        <option value="182">Zulu</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-6">
+                                            <label class="control-label">Start Date</label>
+                                            <input type="date" id="startdate" name="startdate" class="form-control" required="required">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="control-label">End Date</label>
+                                            <input type="date" id="enddate" name="enddate" class="form-control" required="required">
+                                        </div>
+                                    </div>
+
+                                    <h4 class="mt-4">Target Specs</h4>
+                                    <div class="form-group row">
+                                        <div class="col-4">
+                                            <label class="control-label">incidence</label>
+                                            <input type="number" name="incidence" id="incidence" required="required" placeholder="incidence" class="form-control" data-validate-minmax="1,100" />
+                                        </div>
+
+                                        <div class="col-4">
+                                            <label class="control-label">LOI</label>
+                                            <input type="number" name="loi" id="loi" required="required" placeholder="LOI" class="form-control" data-validate-minmax="1,100" />
+                                        </div>
+                                        <div class="col-4">
+                                            <label class="control-label">Completes</label>
+                                            <input type="number" name="completes" id="completes" required="required" placeholder="Completes" class="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-6">
+                                            <label class="control-label">CPI</label>
+                                            <input type="number" name="cpi" id="cpi" required="required" placeholder="CPI" step="0.01" class="form-control" />
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="control-label">Total</label>
+                                            <input type="number" name="total" id="total" required="required" placeholder="0" step="0.01" class="form-control" readonly="readonly" />
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="modal-footer">
+                                        <div class="col-md-12 col-sm-12">
+                                            <button type="submit" class="btn btn-success">Create</button>
+                                            <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div> -->
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Create</button>
+                            <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal staticeditproject -->
+            <div class="modal fade" id="staticeditproject" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticeditprojectLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticstaticeditprojectLabel">Client Contacts</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="errormessage"></div>
+                            <!-------------Form Start Update project description----------------->
+                            <form class="form-horizontal form-label-left input_mask project_description_form" method="POST" action="/project/updateprojectdescription/7/" onsubmit="contactformsubmit()">
+                                <input type="hidden" name="csrfmiddlewaretoken" value="bNYIEash2OUE17OAyTMOhmCRbIkhdLfpjDbUNFaNcPhxq02PcRxEgkyHeBNiTWyO">
+                                <div class="form-group">
+                                    <label class="col-form-label control-label">Invoicing Contact</label>
+                                    <select name="client_invoice_contact" id="client_invoice_contact" class="form-control">
+                                        <option value="">Choose...</option>
+                                        <option value="3" selected>Test Name Test Lanst Name</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label control-label">Project Leader</label>
+                                    <select name="client_contact" id="client_contact" class="form-control">
+                                       <option value="">Choose...</option>
+                                       <option value="3" selected>Test Name Test Lanst Name</option>
+                                            </select>
+                                </div>
+                                <div class="clearfix"></div>
+                                <h4>Internal Details</h4>
+                                <div class="form-group">
+                                    <label class="control-label">Sales Person</label>
+                                    <select name="sales_contact" id="sales_contact" class="form-control">
+                                        <option value="">Choose..</option>
+                                        <option value="praveen@linkinfotech.com">Praveen Dixit</option>
+                                        <option value="Ashish@slickservices.in" selected>Ashish Sahu</option>
+                                        <option value="narendra@slickservices.in">Narendra Vishwakarma</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Project Manager</label>
+                                    <select name="project_manager" id="project_manager" class="form-control">
+                                        <option value="">Choose..</option>
+                                        <option value="praveen@linkinfotech.com">Praveen Dixit</option>
+                                        <option value="Ashish@slickservices.in" selected>Ashish Sahu</option>
+                                        <option value="narendra@slickservices.in">Narendra Vishwakarma</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Invoicing Month</label>
+                                    <select class="form-control" name="invoice_month" id="invoice_month">
+                                                <option value="">Month</option>
+                                                <option value="1">January</option>
+                                                <option value="2">February</option>
+                                                <option value="3">March</option>
+                                                <option value="4">April</option>
+                                                <option value="5">May</option>
+                                                <option value="6">June</option>
+                                                <option value="7">July</option>
+                                                <option value="8">August</option>
+                                                <option value="9">September</option>
+                                                <option value="10">October</option>
+                                                <option value="11">November</option>
+                                                <option value="12" selected>December</option>
+                                            </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Invoicing Year</label>
+                                    <select class="form-control" name="invoice_year" id="invoice_year">
+                                                <option value="">Year</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2023">2023</option>
+                                            </select>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-success">Update</button>
+                                    <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </form>
+                            <!-------------Form End Update project description----------------->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+<div id="topModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">Top-Level</h3>
+	</div>
+	<div class="modal-body">
+		<p>This modal should appear above the other modal.</p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	</div>
+</div>
+</div>
+</div>
+  
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">Modal header</h3>
+	</div>
+	<div class="modal-body">
+		<p>Click "Open Modal" to open another modal with this modal staying open.</p>
+      	<p>Default behavior of Bootstrap is for the other modal to render beneath this one because it is above it within the html document.</p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		<button class="btn btn-primary" data-toggle="modal" data-target="#topModal">Open Modal</button>
+	</div>
+</div>
+</div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="assets/js/pages/dashboard.js"></script>
+
+
+    <script src="assets/vendors/simple-datatables/simple-datatables.js"></script>
+    <!-- BEGIN BASE JS -->
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/popper.js/umd/popper.min.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+
+    <!-- END BASE JS -->
+
+    <!-- END PLUGINS JS -->
+    <script>
+        // Simple Datatable
+        let table1 = document.querySelector('#table1');
+        let dataTable = new simpleDatatables.DataTable(table1);
+    </script>
+
+    <script src="assets/js/mazer.js"></script>
+    <!-- BEGIN THEME JS -->
+    <script src="assets/js/theme.min.js"></script>
+    <!-- END THEME JS -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/ui-apexchart.js"></script>
+	
+	<script>
+		(function($, window) {
+    'use strict';
+
+    var MultiModal = function(element) {
+        this.$element = $(element);
+        this.modalCount = 0;
+    };
+
+    MultiModal.BASE_ZINDEX = 1040;
+
+    MultiModal.prototype.show = function(target) {
+        var that = this;
+        var $target = $(target);
+        var modalIndex = that.modalCount++;
+
+        $target.css('z-index', MultiModal.BASE_ZINDEX + (modalIndex * 20) + 10);
+
+        // Bootstrap triggers the show event at the beginning of the show function and before
+        // the modal backdrop element has been created. The timeout here allows the modal
+        // show function to complete, after which the modal backdrop will have been created
+        // and appended to the DOM.
+        window.setTimeout(function() {
+            // we only want one backdrop; hide any extras
+            if(modalIndex > 0)
+                $('.modal-backdrop').not(':first').addClass('hidden');
+
+            that.adjustBackdrop();
+        });
+    };
+
+    MultiModal.prototype.hidden = function(target) {
+        this.modalCount--;
+
+        if(this.modalCount) {
+           this.adjustBackdrop();
+
+            // bootstrap removes the modal-open class when a modal is closed; add it back
+            $('body').addClass('modal-open');
+        }
+    };
+
+    MultiModal.prototype.adjustBackdrop = function() {
+        var modalIndex = this.modalCount - 1;
+        $('.modal-backdrop:first').css('z-index', MultiModal.BASE_ZINDEX + (modalIndex * 20));
+    };
+
+    function Plugin(method, target) {
+        return this.each(function() {
+            var $this = $(this);
+            var data = $this.data('multi-modal-plugin');
+
+            if(!data)
+                $this.data('multi-modal-plugin', (data = new MultiModal(this)));
+
+            if(method)
+                data[method](target);
+        });
+    }
+
+    $.fn.multiModal = Plugin;
+    $.fn.multiModal.Constructor = MultiModal;
+
+    $(document).on('show.bs.modal', function(e) {
+        $(document).multiModal('show', e.target);
+    });
+
+    $(document).on('hidden.bs.modal', function(e) {
+        $(document).multiModal('hidden', e.target);
+    });
+}(jQuery, window));
+	
+	</script>
+
+</body>
+
+</html>

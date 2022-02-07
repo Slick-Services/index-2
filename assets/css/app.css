@@ -1077,14 +1077,15 @@
     color: #25396f;
     display: block;
     font-size: .85rem;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: .5px;
     padding: .7rem 1rem;
-    transition: all .3s
+    transition: all .3s;
+    margin-left: .5rem;
 }
 
 .sidebar-wrapper .menu .submenu .submenu-item a:hover {
-    /* margin-left: .3rem */
+    margin-left: .5rem
 }
 
 .sidebar-backdrop {

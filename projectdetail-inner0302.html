@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Mazer Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+
+    <!-- <link rel="stylesheet" href="assets/vendors/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/vendors/apexcharts/apexcharts.css">
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css"> -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/vendors/simple-datatables/style.css">
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="assets/css/stylech.css">
+
+
+
+
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active app-aside-light">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="Logo" srcset=""></a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
+
+                        <li class="sidebar-item active has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="fa fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="sidebar-item ">
+                                    <a href="{% url 'employee:dashboard' %}">Dashboard</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'employee:admindashboard' %}">Admin Dashboard</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="fa fa-question"></i>
+                                <span>Question</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'questions:questiondashboard' %}">Questions</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'questions:createquestion' %}">Create a new Question</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="fa fa-tasks"></i>
+                                <span>Project</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'project:project' %}">Project</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'project:createproject' %}">Create a new project</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'project:cancelproject' %}">Cancel a project</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'project:closeprojectview' %}">Close a project</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- <li class="sidebar-title">Forms &amp; Tables</li> -->
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="fa fa-download"></i>
+                                <span>Data download</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'datadownload:question-response' %}">Question Response</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'datadownload:projectdata' %}">Project Data</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'datadownload:revenuedata' %}">Revenue Data</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item has-sub">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <i class="fa fa-download"></i>
+                                <span>Supply Source</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'supplier:supplier' %}">Suppliers</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="fa fa-user"></i>
+                                <span>Customer</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'customer:customer' %}">Customers</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'customer:addnewcustomer' %}">Add New Customer</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="table.html" class='sidebar-link'>
+                                <i class="fa fa-th-large"></i>
+                                <span>Extras</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'employee:signup' %}">User Registration</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'employee:userprofiles' %}">User Profiles</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+
+        <div id="main">
+            <header id="innerheder">
+
+                <!-- .top-bar-list -->
+                <div class="top-bar-list app-header app-header-dark">
+                    <a href="#" class="burger-btn d-block d-xl-none">
+                        <i class="bi bi-justify fs-3"></i>
+                    </a>
+                    <!-- .top-bar-item -->
+                    <div class="top-bar-item px-2 d-md-none d-lg-none d-xl-none">
+                        <!-- toggle menu -->
+                        <button class="hamburger hamburger-squeeze" type="button" data-toggle="aside" aria-label="toggle menu"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+                        <!-- /toggle menu -->
+                    </div>
+                    <!-- /.top-bar-item -->
+                    <!-- .top-bar-item -->
+                    <div class="top-bar-item top-bar-item-full">
+                        <!-- .top-bar-search -->
+                        <form class="top-bar-search">
+                            <!-- .input-group -->
+                            <div class="input-group input-group-search dropdown">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><span class="oi oi-magnifying-glass"></span></span>
+                                </div><input type="text" class="form-control" data-toggle="dropdown" aria-label="Search" placeholder="Search">
+                                <!-- .dropdown-menu -->
+                                <div class="dropdown-menu dropdown-menu-rich dropdown-menu-xl mx-n4 mw-100">
+                                    <div class="dropdown-arrow mx-md-3"></div>
+                                    <!-- .dropdown-scroll -->
+                                    <div class="dropdown-scroll perfect-scrollbar h-auto" style="max-height: 360px">
+                                        <!-- .list-group -->
+                                        <div class="list-group list-group-flush list-group-reflow mb-2">
+                                            <h6 class="list-group-header d-flex justify-content-between">
+                                                <span>Shortcut</span>
+                                            </h6>
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"></a>
+                                                <div class="tile tile-sm bg-muted">
+                                                    <i class="fas fa-user-plus"></i>
+                                                </div>
+                                                <div class="mx-md-2"> Create user </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"></a>
+                                                <div class="tile tile-sm bg-muted">
+                                                    <i class="fas fa-dollar-sign"></i>
+                                                </div>
+                                                <div class="mx-md-2"> Create invoice </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <h6 class="list-group-header d-flex justify-content-between mt-2">
+                                                <span>In projects</span> <a href="#" class="font-weight-normal">Show more</a>
+                                            </h6>
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"><span class="sr-only">Go to search result</span></a>
+                                                <div class="user-avatar user-avatar-sm bg-muted">
+                                                    <img src="assets/images/avatars/bootstrap.svg" alt="">
+                                                </div>
+                                                <div class="mx-md-2">
+                                                    <div class="mb-n1"> Bootstrap </div><small class="text-muted">Just now</small>
+                                                </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"><span class="sr-only">Go to search result</span></a>
+                                                <div class="user-avatar user-avatar-sm bg-muted">
+                                                    <img src="assets/images/avatars/slack.svg" alt="">
+                                                </div>
+                                                <div class="mx-md-2">
+                                                    <div class="mb-n1"> Slack </div><small class="text-muted">Updated 25 minutes ago</small>
+                                                </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <!-- /.list-group-item -->
+                                            <h6 class="list-group-header d-flex justify-content-between mt-2">
+                                                <span>Another section</span> <a href="#" class="font-weight-normal">Show more</a>
+                                            </h6>
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"><span class="sr-only">Go to search result</span></a>
+                                                <div class="tile tile-sm bg-muted"> P </div>
+                                                <div class="mx-md-2">
+                                                    <div class="mb-n1"> Product name </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                        </div>
+                                        <!-- /.list-group -->
+                                    </div>
+                                    <!-- /.dropdown-scroll -->
+                                    <a href="#" class="dropdown-footer">Show all results</a>
+                                </div>
+                                <!-- /.dropdown-menu -->
+                            </div>
+                            <!-- /.input-group -->
+                        </form>
+                        <!-- /.top-bar-search -->
+                    </div>
+                    <!-- /.top-bar-item -->
+                    <!-- .top-bar-item -->
+                    <div class="top-bar-item top-bar-item-right px-0 d-none d-sm-flex">
+                        <!-- .btn-account -->
+                        <div class="dropdown d-none d-md-flex">
+                            <button class="btn-account dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-avatar user-avatar-md"><img src="assets/images/profile.jpg" alt=""></span> <span class="account-summary pr-lg-4 d-none d-lg-block"><span class="account-name">Beni Arisandi</span> <span class="account-description">Marketing Manager</span></span></button>
+                            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button> -->
+
+                            <!-- .dropdown-menu -->
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <div class="dropdown-arrow d-lg-none" x-arrow=""></div>
+                                <div class="dropdown-arrow mx-md-3 d-none d-lg-block"></div>
+                                <h6 class="dropdown-header d-none d-md-block d-lg-none"> Beni Arisandi </h6><a class="dropdown-item" href="user-profile.html"><span class="dropdown-icon oi oi-person"></span> Profile</a> <a class="dropdown-item" href="auth-signin-v1.html"><span class="dropdown-icon oi oi-account-logout"></span> Logout</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Help Center</a> <a class="dropdown-item" href="#">Ask Forum</a> <a class="dropdown-item" href="#">Keyboard Shortcuts</a>
+                            </div>
+                            <!-- /.dropdown-menu -->
+                        </div>
+                        <!-- /.btn-account -->
+                    </div>
+                    <!-- /.top-bar-item -->
+                </div>
+                <!-- /.top-bar-list -->
+            </header>
+
+            <!-- .app-main -->
+            <main class="app-main">
+                <!-- .wrapper -->
+                <div class="wrapper">
+                    <!-- .page -->
+                    <div class="page has-sidebar has-sidebar-fluid has-sidebar-expand-xl">
+                        <div class="page-heading mt-3 mb-0">
+                            <div class="page-title mb-3">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 order-md-1 order-last">
+                                        <h3>Work Load Tracking</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .sidebar-section -->
+                            <div class="sidebar-section sidebar-section-fill">
+                                <div class="row mb-4">
+                                    <div class="col-md-8">
+                                        <div class="card p-1 boxshedow">
+                                            <div class="card-header d-flex border-bottom">
+                                                <div class="col-md-8">
+                                                    <h2 class="projecttitle d-flex align-items-center">
+                                                        <a href="#" class="btn btn-app">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                        <p class="m-0 mx-md-2">test Project 18dec 2022</p>
+                                                    </h2>
+                                                </div>
+                                                <div class="col-md-4 text-end py-0">
+                                                    <!-- <a href="#">
+                                                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                                    <i class="fa fa-plus"></i>Pre-Screener</button>
+                                                    </a> -->
+                                                    <a data-bs-toggle="modal" href="#myModal" class="btn btn-primary"><i class="fa fa-plus mr-1"></i>Pre-Screener</a>
+                                                    <a>
+                                                        <button class="btn btn-primary mx-md-1" data-bs-toggle="modal" data-bs-target="#staticeditproject">
+                                                        <i class="fa fa-plus"></i>Survey Url</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="card-body pt-1">
+                                                <div class="row">
+
+                                                    <div class="col-md-3 d-flex align-items-center">
+                                                        <div class="card maincrd burnt">
+                                                            <div class="card-header p-2">
+                                                                <h2>{{}}</h2>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <p>
+                                                                    Median LOI
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 d-flex align-items-center">
+                                                        <div class="card maincrd burntnexa">
+                                                            <div class="card-header p-2">
+                                                                <h2>{{}}</h2>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <p>
+                                                                    Incidence
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-3 d-flex align-items-center">
+                                                        <div class="card maincrd blue">
+                                                            <div class="card-header p-2">
+                                                                <h2>{{}}</h2>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <p>
+                                                                    Total Visitor
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 d-flex align-items-center">
+                                                        <div class="card maincrd apple">
+                                                            <div class="card-header p-2">
+                                                                <h2>{{}}</h2>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <p>
+                                                                    Total Starts
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+
+                                                <div class="row mt-1">
+
+                                                    <div class="col-md-2 d-flex align-items-center">
+                                                        <div class="card maincrd razzmatazz">
+                                                            <div class="card-header p-2">
+                                                                <h2>{{}}</h2>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <p>
+                                                                    Completes
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 d-flex align-items-center">
+                                                        <div class="card maincrd orange">
+                                                            <div class="card-header p-2">
+                                                                <h2>{{}}</h2>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <p>
+                                                                    Incompletes
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 d-flex align-items-center">
+                                                        <div class="card maincrd lightblue">
+                                                            <div class="card-header p-2">
+                                                                <h2>{{}}</h2>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <p>
+                                                                    Terminates
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 d-flex align-items-center">
+                                                        <div class="card maincrd radiant">
+                                                            <div class="card-header p-2">
+                                                                <h2>{{}}</h2>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <p>
+                                                                    Security Terminates
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 d-flex align-items-center">
+                                                        <div class="card maincrd blackperal">
+                                                            <div class="card-header p-2">
+                                                                <h2>{{}}</h2>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <p>
+                                                                    Quotafulls
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row mt-1">
+
+                                                    <div class="col-md-6 d-flex align-items-center">
+                                                        <div class="card maincrd revnue">
+                                                            <div class="card-header p-2">
+                                                                <h2>{{}}</h2>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <p>
+                                                                    Revenue
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 d-flex align-items-center">
+                                                        <div class="card maincrd expence">
+                                                            <div class="card-header p-2">
+                                                                <h2>{{}}</h2>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <p>
+                                                                    Expense
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card boxshedow">
+                                            <div class="card-header d-flex flex-column border-bottom">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <h2 class="projecttitle d-flex align-items-center">
+                                                            <!-- <a href="#" class="btn btn-app">
+                                                            <i class="fa fa-play"></i>
+                                                        </a> -->
+                                                            <p class="m-0 mx-md-2">Bid Specs</p>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-4 text-end py-0">
+                                                        <a href="#">
+                                                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                    <i class="fa fa-plus"></i> Suppliers</button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 d-flex mt-3 px-4">
+                                                        <div class="col-6 pb-1 text-start">
+                                                            <a href="#"><i class="fa fa-language"></i> 
+                                                            <span class="black">English</span></a>
+                                                        </div>
+                                                        <div class="col-6 text-end">
+                                                            <a href="#"><i class="fa fa-map-marker"> </i>
+                                                            <span class="black">United States</span>
+                                                        </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+
+                                                <div class="card-body p-1 px-5 pt-4 pb-1">
+                                                    <form class="form-card pl-3" onsubmit="event.preventDefault()" action="" method="post">
+                                                        <div class="row justify-content-between text-left mb-2">
+                                                            <div class="form-group col-sm-4 flex-column d-flex">
+                                                                <label class="form-control-label">Incidence<span class="text-danger"> *</span></label>
+                                                                <input type="text" class="form-control group-input" id="fname" name="fname" placeholder="10" onblur="validate(1)">
+                                                            </div>
+                                                            <div class="form-group col-sm-4 flex-column d-flex">
+                                                                <label class="form-control-label">Median LOI<span class="text-danger"> *</span></label>
+                                                                <input type="text" class="form-control group-input" id="lname" name="lname" placeholder="15" onblur="validate(2)"> </div>
+                                                        </div>
+                                                        <div class="row justify-content-between text-left mb-2">
+                                                            <div class="form-group col-sm-4 flex-column d-flex">
+                                                                <label class="form-control-label">Completes<span class="text-danger"> *</span></label>
+                                                                <input type="text" class="form-control group-input" id="email" name="email" placeholder="120" onblur="validate(3)"> </div>
+                                                            <div class="form-group col-sm-4 flex-column d-flex">
+                                                                <label class="form-control-label">CPI<span class="text-danger"> *</span></label>
+                                                                <input type="text" class="form-control group-input" id="mob" name="mob" placeholder="25" onblur="validate(4)">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row justify-content-center text-left mb-2">
+                                                            <div class="form-group col-sm-4 flex-column d-flex">
+                                                                <label class="form-control-label">Total Revenue<span class="text-danger"> *</span></label>
+                                                                <input type="text" class="form-control group-input" id="job" name="job" placeholder="8" onblur="validate(5)"> </div>
+                                                        </div>
+                                                        <div class="row justify-content-end">
+                                                            <div class="form-group">
+                                                                <button class="btn btn-primary mx-1  col-sm-12">
+                                                                        Save</button> </div>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card p-1 border-radius-5 boxshedow">
+                                            <div class="card-header d-flex align-items-center flex-column">
+                                                <h2 class="projecttitle m-0 col-12">
+                                                    <a href="#" class="btn btn-app">
+                                                        <i class="fa fa-pause"></i>
+                                                    </a>
+                                                    <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                                </h2>
+                                                <div class="col-12 d-flex mt-2">
+                                                    <div class="col-6 pb-1 text-start">
+                                                        <a href="#"><i class="fa fa-language"></i> 
+                                                            <span class="black">English</span></a>
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                        <a href="#"><i class="fa fa-map-marker"> </i>
+                                                            <span class="black">United States</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body px-0 pt-1 pb-1  border-top">
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Hits </span>
+                                                        <span class="value text-success"> 3 </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center">
+                                                        <span class="name"> Survey Starts </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Completes </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Terminates </span>
+                                                        <span class="value text-success"> 0/0 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center ">
+                                                        <span class="name"> Quotafull </span>
+                                                        <span class="value text-success"> 0 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Incidence </span>
+                                                        <span class="value text-success"> 100.0% </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center  ">
+                                                        <span class="name"> Median LOI </span>
+                                                        <span class="value text-success"> 0.0 Min </span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card p-1 border-radius-5 boxshedow">
+                                            <div class="card-header d-flex align-items-center flex-column">
+                                                <h2 class="projecttitle m-0 col-12">
+                                                    <a href="#" class="btn btn-app">
+                                                        <i class="fa fa-pause"></i>
+                                                    </a>
+                                                    <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                                </h2>
+                                                <div class="col-12 d-flex mt-2">
+                                                    <div class="col-6 pb-1 text-start">
+                                                        <a href="#"><i class="fa fa-language"></i> 
+                                                            <span class="black">English</span></a>
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                        <a href="#"><i class="fa fa-map-marker"> </i>
+                                                            <span class="black">United States</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body px-0 pt-1 pb-1  border-top">
+                                                <div class="row border-bottom m-2 pb-3">
+
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Hits </span>
+                                                        <span class="value text-success"> 3 </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center">
+                                                        <span class="name"> Survey Starts </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Completes </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Terminates </span>
+                                                        <span class="value text-success"> 0/0 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center ">
+                                                        <span class="name"> Quotafull </span>
+                                                        <span class="value text-success"> 0 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Incidence </span>
+                                                        <span class="value text-success"> 100.0% </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center  ">
+                                                        <span class="name"> Median LOI </span>
+                                                        <span class="value text-success"> 0.0 Min </span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card p-1 border-radius-5 boxshedow">
+                                            <div class="card-header d-flex align-items-center flex-column">
+                                                <h2 class="projecttitle m-0 col-12">
+                                                    <a href="#" class="btn btn-app">
+                                                        <i class="fa fa-pause"></i>
+                                                    </a>
+                                                    <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                                </h2>
+                                                <div class="col-12 d-flex mt-3">
+                                                    <div class="col-6 pb-1 text-start">
+                                                        <a href="#"><i class="fa fa-language"></i> 
+                                                            <span class="black">English</span></a>
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                        <a href="#"><i class="fa fa-map-marker"> </i>
+                                                            <span class="black">United States</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body px-0 pt-1 pb-1  border-top">
+                                                <div class="row border-bottom m-2 pb-3">
+
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Hits </span>
+                                                        <span class="value text-success"> 3 </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center">
+                                                        <span class="name"> Survey Starts </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Completes </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Terminates </span>
+                                                        <span class="value text-success"> 0/0 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center ">
+                                                        <span class="name"> Quotafull </span>
+                                                        <span class="value text-success"> 0 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Incidence </span>
+                                                        <span class="value text-success"> 100.0% </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center  ">
+                                                        <span class="name"> Median LOI </span>
+                                                        <span class="value text-success"> 0.0 Min </span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card p-1 border-radius-5 boxshedow">
+                                            <div class="card-header d-flex align-items-center flex-column">
+                                                <h2 class="projecttitle m-0 col-12">
+                                                    <a href="#" class="btn btn-app">
+                                                        <i class="fa fa-pause"></i>
+                                                    </a>
+                                                    <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                                </h2>
+                                                <div class="col-12 d-flex mt-3">
+                                                    <div class="col-6 pb-1 text-start">
+                                                        <a href="#"><i class="fa fa-language"></i> 
+                                                            <span class="black">English</span></a>
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                        <a href="#"><i class="fa fa-map-marker"> </i>
+                                                            <span class="black">United States</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body px-0 pt-1 pb-1  border-top">
+                                                <div class="row border-bottom m-2 pb-3">
+
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Hits </span>
+                                                        <span class="value text-success"> 3 </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center">
+                                                        <span class="name"> Survey Starts </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Completes </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Terminates </span>
+                                                        <span class="value text-success"> 0/0 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center ">
+                                                        <span class="name"> Quotafull </span>
+                                                        <span class="value text-success"> 0 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Incidence </span>
+                                                        <span class="value text-success"> 100.0% </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center  ">
+                                                        <span class="name"> Median LOI </span>
+                                                        <span class="value text-success"> 0.0 Min </span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card p-1 border-radius-5 boxshedow">
+                                            <div class="card-header d-flex align-items-center flex-column">
+                                                <h2 class="projecttitle m-0 col-12">
+                                                    <a href="#" class="btn btn-app">
+                                                        <i class="fa fa-pause"></i>
+                                                    </a>
+                                                    <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                                </h2>
+                                                <div class="col-12 d-flex mt-3">
+                                                    <div class="col-6 pb-1 text-start">
+                                                        <a href="#"><i class="fa fa-language"></i> 
+                                                            <span class="black">English</span></a>
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                        <a href="#"><i class="fa fa-map-marker"> </i>
+                                                            <span class="black">United States</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body px-0 pt-1 pb-1  border-top">
+                                                <div class="row border-bottom m-2 pb-3">
+
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Hits </span>
+                                                        <span class="value text-success"> 3 </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center">
+                                                        <span class="name"> Survey Starts </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Completes </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Terminates </span>
+                                                        <span class="value text-success"> 0/0 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center ">
+                                                        <span class="name"> Quotafull </span>
+                                                        <span class="value text-success"> 0 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Incidence </span>
+                                                        <span class="value text-success"> 100.0% </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center  ">
+                                                        <span class="name"> Median LOI </span>
+                                                        <span class="value text-success"> 0.0 Min </span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card p-1 border-radius-5 boxshedow">
+                                            <div class="card-header d-flex align-items-center flex-column">
+                                                <h2 class="projecttitle m-0 col-12">
+                                                    <a href="#" class="btn btn-app">
+                                                        <i class="fa fa-pause"></i>
+                                                    </a>
+                                                    <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                                </h2>
+                                                <div class="col-12 d-flex mt-3">
+                                                    <div class="col-6 pb-1 text-start">
+                                                        <a href="#"><i class="fa fa-language"></i> 
+                                                            <span class="black">English</span></a>
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                        <a href="#"><i class="fa fa-map-marker"> </i>
+                                                            <span class="black">United States</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body px-0 pt-1 pb-1  border-top">
+                                                <div class="row border-bottom m-2 pb-3">
+
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Hits </span>
+                                                        <span class="value text-success"> 3 </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center">
+                                                        <span class="name"> Survey Starts </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Completes </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Terminates </span>
+                                                        <span class="value text-success"> 0/0 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center ">
+                                                        <span class="name"> Quotafull </span>
+                                                        <span class="value text-success"> 0 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Incidence </span>
+                                                        <span class="value text-success"> 100.0% </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center  ">
+                                                        <span class="name"> Median LOI </span>
+                                                        <span class="value text-success"> 0.0 Min </span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card p-1 border-radius-5 boxshedow">
+                                            <div class="card-header d-flex align-items-center flex-column">
+                                                <h2 class="projecttitle m-0 col-12">
+                                                    <a href="#" class="btn btn-app">
+                                                        <i class="fa fa-pause"></i>
+                                                    </a>
+                                                    <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                                </h2>
+                                                <div class="col-12 d-flex mt-3">
+                                                    <div class="col-6 pb-1 text-start">
+                                                        <a href="#"><i class="fa fa-language"></i> 
+                                                            <span class="black">English</span></a>
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                        <a href="#"><i class="fa fa-map-marker"> </i>
+                                                            <span class="black">United States</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body px-0 pt-1 pb-1  border-top">
+                                                <div class="row border-bottom m-2 pb-3">
+
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Hits </span>
+                                                        <span class="value text-success"> 3 </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center">
+                                                        <span class="name"> Survey Starts </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Completes </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Terminates </span>
+                                                        <span class="value text-success"> 0/0 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center ">
+                                                        <span class="name"> Quotafull </span>
+                                                        <span class="value text-success"> 0 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Incidence </span>
+                                                        <span class="value text-success"> 100.0% </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center  ">
+                                                        <span class="name"> Median LOI </span>
+                                                        <span class="value text-success"> 0.0 Min </span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card p-1 border-radius-5 boxshedow">
+                                            <div class="card-header d-flex align-items-center flex-column">
+                                                <h2 class="projecttitle m-0 col-12">
+                                                    <a href="#" class="btn btn-app">
+                                                        <i class="fa fa-pause"></i>
+                                                    </a>
+                                                    <span class="mx-1"><a href="#">100000007 | US</a></span>
+                                                </h2>
+                                                <div class="col-12 d-flex mt-3">
+                                                    <div class="col-6 pb-1 text-start">
+                                                        <a href="#"><i class="fa fa-language"></i> 
+                                                            <span class="black">English</span></a>
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                        <a href="#"><i class="fa fa-map-marker"> </i>
+                                                            <span class="black">United States</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body px-0 pt-1 pb-1  border-top">
+                                                <div class="row border-bottom m-2 pb-3">
+
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Hits </span>
+                                                        <span class="value text-success"> 3 </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center">
+                                                        <span class="name"> Survey Starts </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Completes </span>
+                                                        <span class="value text-success"> 2 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center  border-end">
+                                                        <span class="name"> Terminates </span>
+                                                        <span class="value text-success"> 0/0 </span>
+                                                    </div>
+                                                    <div class="col-4 d-flex flex-column align-items-center ">
+                                                        <span class="name"> Quotafull </span>
+                                                        <span class="value text-success"> 0 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row border-bottom m-2 pb-3">
+                                                    <div class="col-6 d-flex flex-column align-items-center border-end">
+                                                        <span class="name"> Incidence </span>
+                                                        <span class="value text-success"> 100.0% </span>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column align-items-center  ">
+                                                        <span class="name"> Median LOI </span>
+                                                        <span class="value text-success"> 0.0 Min </span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <!-- /.tab-content -->
+                        </div>
+                        <!-- /.sidebar-section -->
+
+                    </div>
+
+                </div>
+                <!-- /.page -->
+        </div>
+        <!-- /.wrapper -->
+        </main>
+        <!-- /.app-main -->
+
+        <footer>
+            <div class="footer clearfix mb-0 text-muted px-3">
+                <div class="float-start">
+                    <p>2021 &copy; Abc</p>
+                </div>
+                <!-- <div class="float-end">
+                        <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a href="http://ahmadsaugi.com">A. Saugi</a></p>
+                    </div> -->
+            </div>
+        </footer>
+
+        <div class="modal" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticeditprojectLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom">
+                        <h5 class="modal-title" id="myModalLabel">Group Target Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 text-end mt-2 mb-3">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                <i class="fa fa-plus m-0"></i></button></div>
+                            <div class="item form-group">
+                                <table id="datatable" class="table table-striped projects">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 20%">Question ID</th>
+                                            <th>Question Text</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td>
+                                                ADHOC1002
+                                            </td>
+                                            <td>
+                                                Please enter your age?
+                                            </td>
+                                            <!-- <td>
+                                    <a href="#"><button type="button" class="btn btn-info"><i class="fa fa-edit"></i></button></a>
+                                  </td> -->
+                                            <td>
+                                                <a href="#myModal2" data-bs-toggle="modal" class="btn btn-info report"><i class="fa fa-eye"></i></a>
+                                                <div class="modal fade" id="myModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticeditprojectLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg modal-dialog-centered p-2">
+                                                        <div class="modal-content innermodel">
+                                                            <div class="modal-body">
+                                                                <span class="section">Answer Options</span>
+                                                                <ul class="to_do">
+
+                                                                    <input type="number" name="range_min_2" value="25" data-validate-minmax="0,10000" class="form-control" placeholder="Min Range" disabled=""> -
+                                                                    <input type="number" name="range_max_2" value="65" data-validate-minmax="0,10000" class="form-control" placeholder="Max Range" disabled="">
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <!-- <a href="#" data-bs-dismiss="modal" class="btn btn-info">Close</a> -->
+                                                                <!--<button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button> -->
+                                                                <button type="button" class="btn btn-info" onclick="preventCloseModal('#myModal2')">Close</button>
+                                                                <script>
+                                                                    function preventCloseModal(ele) {
+                                                                        $(ele).closest(".modal").modal('hide');
+                                                                        $(ele).closest('.modal-backdrop').remove();
+                                                                    }
+                                                                </script>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                <a href="/project/removeprescreenerquestion/12/100000007/7/"><button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button></a>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                Business1004
+                                            </td>
+                                            <td>
+                                                In which department do you work?
+                                            </td>
+                                            <!-- <td>
+                                    <a href="#"><button type="button" class="btn btn-info"><i class="fa fa-edit"></i></button></a>
+                                  </td> -->
+                                            <td>
+                                                <a href="#myModal3" class="btn btn-info report" data-bs-toggle="modal" data-target="#myModal3"><i class="fa fa-eye"></i></a>
+                                                <div class="modal fade" data-bs-backdrop="static" aria-labelledby="staticeditprojectLabel" data-bs-keyboard="false" id="myModal3" tabindex="-1" role="dialog" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                        <div class="modal-content innermodel">
+                                                            <div class="modal-body">
+                                                                <span class="section">Answer Options</span>
+                                                                <ul class="to_do">
+
+                                                                    <input type="number" name="range_min_2" value="25" data-validate-minmax="0,10000" class="form-control" placeholder="Min Range" disabled=""> -
+                                                                    <input type="number" name="range_max_2" value="65" data-validate-minmax="0,10000" class="form-control" placeholder="Max Range" disabled="">
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <!-- <a href="#" data-bs-dismiss="modal" class="btn btn-info">Close</a> -->
+                                                                <!--<button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button> -->
+                                                                <button type="button" class="btn btn-info" onclick="preventCloseModal('#myModal3')">Close</button>
+                                                                <script>
+                                                                    function preventCloseModal(ele) {
+                                                                        $(ele).closest(".modal").modal('hide');
+                                                                        $(ele).closest('.modal-backdrop').remove();
+                                                                    }
+                                                                </script>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                <a href="/project/removeprescreenerquestion/13/100000007/7/"><button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button></a>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                ADHOC1001
+                                            </td>
+                                            <td>
+                                                Are you?
+                                            </td>
+                                            <!-- <td>
+                                    <a href="#"><button type="button" class="btn btn-info"><i class="fa fa-edit"></i></button></a>
+                                  </td> -->
+                                            <td>
+                                                <a href="#">
+                                                    <button type="button" class="btn btn-info report" data-toggle="modal" data-target="#myModal3"><i class="fa fa-eye"></i></button></a>
+                                                <div class="modal fade modal-xl" style="max-width: 80%;" data-keyboard="false" id="myModal3" tabindex="-1" role="dialog" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg" style="max-width: 80%;">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <span class="section">Answer Options</span>
+                                                                <ul class="to_do">
+
+
+
+                                                                    <li>
+                                                                        <div class="icheckbox_flat-green checked disabled" style="position: relative;"><input type="checkbox" class="flat" name="answer_1" checked="" disabled="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                                        Male
+                                                                    </li>
+
+
+                                                                </ul>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <!-- <button type="button" class="btn btn-info" data-dismiss="modal">Close</button> -->
+                                                                <button type="button" class="btn btn-info" onclick="preventCloseModal('#myModal4')">Close</button>
+                                                                <script>
+                                                                    function preventCloseModal(ele) {
+                                                                        $(ele).closest(".modal").modal('hide');
+                                                                        $(ele).closest('.modal-backdrop').remove();
+                                                                    }
+                                                                </script>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                <a href="/project/removeprescreenerquestion/14/100000007/7/"><button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button></a>
+                                            </td>
+
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="modal" id="myModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticeditprojectLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">2nd Modal title</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                    </div>
+                    <div class="container"></div>
+                    <div class="modal-body">
+                        Content for the dialog / modal goes here. Content for the dialog / modal goes here. Content for the dialog / modal goes here. Content for the dialog / modal goes here. Content for the dialog / modal goes here.
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Close</a>
+                        <a href="#" class="btn btn-primary">Save changes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myModal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticeditprojectLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">3nd Modal title</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                    </div>
+                    <div class="container"></div>
+                    <div class="modal-body">
+                        Content for the dialog / modal goes here. Content for the dialog / modal goes here. Content for the dialog / modal goes here. Content for the dialog / modal goes here. Content for the dialog / modal goes here.
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Close</a>
+                        <a href="#" class="btn btn-primary">Save changes</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Modal staticeditproject -->
+        <div class="modal fade" id="staticeditproject" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticeditprojectLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom">
+                        <h5 class="modal-title" id="staticBackdropLabel">Survey URLS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <form class="mainfrom" method="POST" id="group-from" action="/project/creategroup/7/">
+
+                                <div class="form-group row align-items-center mb-2">
+                                    <div class="col-md-3">
+                                        <label class="col-form-label control-label">Live URL :</label>
+                                    </div>
+                                    <div class="col-md-9">https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js</div>
+                                </div>
+
+                                <div class="form-group row align-items-center mb-2">
+                                    <div class="col-md-3">
+                                        <label class="col-form-label control-label">Test URL :</label>
+                                    </div>
+                                    <div class="col-md-9">https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js</div>
+                                </div>
+
+                                <h4 class="mt-4 p-0 mb-2">Redirects
+                                    <hr class="space">
+                                </h4>
+
+                                <div class="form-group row align-items-center mb-2">
+                                    <div class="col-md-3">
+                                        <label class="col-form-label control-label">Complete URL :</label>
+                                    </div>
+                                    <div class="col-md-9">https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js</div>
+                                </div>
+
+                                <div class="form-group row align-items-center mb-2">
+                                    <div class="col-md-3">
+                                        <label class="col-form-label control-label">Terminate URL :</label>
+                                    </div>
+                                    <div class="col-md-9">https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js</div>
+                                </div>
+
+                                <div class="form-group row align-items-center mb-2">
+                                    <div class="col-md-3">
+                                        <label class="col-form-label control-label">Quotaful URL :</label>
+                                    </div>
+                                    <div class="col-md-9">https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js</div>
+                                </div>
+
+                                <div class="form-group row align-items-center mb-2">
+                                    <div class="col-md-3">
+                                        <label class="col-form-label control-label">Security Term URL :</label>
+                                    </div>
+                                    <div class="col-md-9">https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js</div>
+                                </div>
+
+                                <h4 class="mt-4 p-0 mb-2">Client URls
+                                    <hr class="space">
+                                </h4>
+                                <div class="row mx-md-5 mt-md-3">
+                                    <div class="form-group form-row">
+                                        <label class="control-label col-md-3 p-0 d-flex align-items-center">URL Type</label>
+                                        <div class="col-md-9">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-row singleurl">
+                                        <label class="control-label col-md-3 p-0 d-flex align-items-center" for="clientliveurl">Live URL :</label>
+                                        <div class="col-md-9">
+                                            <input type="number" id="clientliveurl" name="clientliveurl" value="{{group.project_group_liveurl}}" required="required" placeholder="LOI" class="form-control" data-validate-minmax="1,100">
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-row singleurl">
+                                        <label class="control-label col-md-3 p-0 d-flex align-items-center m-0" for="clienttesturl">Test URL :</label>
+                                        <div class="col-md-9">
+                                            <input type="number" id="clienttesturl" name="clienttesturl" class="form-control" value="{{group.project_group_testurl}}" required="required" placeholder="Completes">
+                                        </div>
+                                    </div>
+                                    <div class=" mt-3 mb-2 row">
+                                        <div class="form-group d-flex col-md-7 p-0">
+                                            <label class="control-label col-md-5 m-0 d-flex align-items-center m-0" for="multipleurlfile">Upload File</label>
+                                            <input type="file" class=" col-md-7 mx-md-3 p-0" id="multipleurlfile" name="multipleurlfile">
+                                        </div>
+                                        <div class="form-group col-md-2 p-0">
+                                            <a href="{% static 'demofiles/multipleurl.csv' %}" download><i class="fas fa-download"></i> Download file</a>
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <a href="{% static 'demofiles/multipleurl.csv' %}" download><i class="fa fa-upload"></i> Upload URLs</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mt-0 mb-3">
+                                        <div class="form-check col-md-6">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              IP Check
+                                            </label>
+                                        </div>
+                                        <div class="form-check col-md-6">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                              Project ID Check
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class=" col-12 mt-2 mb-3 justify-content-center d-flex">
+                                        <button type="submit" class="btn btn-success" id="updateclienturls" data-bs-dismiss="modal"><i class="fa fa-save mr-2"></i>Save</button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer rivermargin border-top">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="assets/vendors/simple-datatables/simple-datatables.js"></script>
+    <!-- BEGIN BASE JS -->
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/popper.js/umd/popper.min.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+
+    <!-- END BASE JS -->
+
+    <!-- END PLUGINS JS -->
+    <script>
+        // Simple Datatable
+        let table1 = document.querySelector('#table1');
+        let dataTable = new simpleDatatables.DataTable(table1);
+    </script>
+
+    <script src="assets/js/mazer.js"></script>
+    <!-- BEGIN THEME JS -->
+    <script src="assets/js/theme.min.js"></script>
+
+
+    <!-- END THEME JS -->
+    <!-- <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/ui-apexchart.js"></script> -->
+    <script src="assets/js/pages/dashboard.js"></script>
+    <script>
+        $(document).ready(function() {
+            var selectedurlOption = $('.urltype option:selected').val();
+            urlOptionChange(selectedurlOption)
+            $("select.urltype").change(function() {
+                var selectedOption = $(this).children("option:selected").val();
+                urlOptionChange(selectedOption)
+
+            });
+        })
+
+        function urlOptionChange(selectedOption) {
+            if (selectedOption == '2') {
+                $('.singleurl').hide();
+                $('#clientliveurl').val('');
+                $('#clienttesturl').val('');
+                $('.multipleurl').show();
+            }
+            if (selectedOption == '1') {
+                $('.multipleurl').hide();
+                $('.singleurl').show();
+            }
+        }
+
+        function updatesurveyurls() {
+            alert('call done')
+
+            var form = $('#updateclienturls')[0];
+            var formData = new FormData(form);
+            // formData.append('multipleurls_file', file, file.name);
+            $("#surveyurlsmessage").html('Uploading...')
+                // console.log(formData)
+            $.ajax({
+                type: "POST",
+                url: '{% url "project:updatesurveyurls" 232323 %}',
+                data: formData,
+                success: function(data) {
+                    if (data.status) {
+                        msg = '<div class="alert alert-success alert-dismissible fade in" role="alert">            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>URLs have been saved!</div>'
+
+                        $("#surveyurlsmessage").html(msg)
+                    } else {
+                        msg = '<div class="alert alert-danger alert-dismissible fade in" role="alert">            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>Something went wrong. Please try again!</div>'
+                        $("#surveyurlsmessage").html(msg)
+                    }
+                }
+            });
+        }
+    </script>
+
+    <!-- <script>
+        $(document).ready(function() {
+
+            $('#openBtn').click(() => $('#myModal').modal({
+                show: true
+            }));
+
+            $(document).on('show.bs.modal', '.modal', function() {
+                const zIndex = 1040 + 10 * $('.modal:visible').length;
+                $(this).css('z-index', zIndex);
+                setTimeout(() => $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack'));
+            });
+
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+
+</body>
+
+</html>
