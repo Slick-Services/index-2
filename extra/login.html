@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Mazer Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/vendors/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+    <link rel="stylesheet" href="assets/vendors/simple-datatables/style.css">
+    <link rel="stylesheet" href="assets/vendors/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="assets/css/stylech.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center h100">
+                <div class="col-md-4">
+                    <h2 class="text-center mb-3 logintxt">Login</h2>
+                    <div class="card p-1 border-radius-5 boxshedow my-5 mt-3">
+
+                        <form class="card-body cardbody-color p-lg-4">
+
+                            <div class="text-center mb-3">
+                                <img src="assets/images/logo/logo.png" class="img-fluid mb-3 mt-2" width="200px" alt="profile">
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="Username" aria-describedby="emailHelp" placeholder="User Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" class="form-control" id="password" placeholder="password">
+                            </div>
+                            <div class="text-center"><button type="submit" class="btn login btn-primary col-sm-12 px-5 mb-5">Login</button></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+    <script src="assets/vendors/simple-datatables/simple-datatables.js"></script>
+    <!-- BEGIN BASE JS -->
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/popper.js/umd/popper.min.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- END BASE JS -->
+
+    <!-- END PLUGINS JS -->
+    <script>
+        // Simple Datatable
+        let table1 = document.querySelector('#table1');
+        let dataTable = new simpleDatatables.DataTable(table1);
+    </script>
+    <script src="assets/js/mazer.js"></script>
+    <!-- BEGIN THEME JS -->
+    <script src="assets/js/theme.min.js"></script>
+    <!-- END THEME JS -->
+
+    <script>
+        (function($, window) {
+            'use strict';
+
+            var MultiModal = function(element) {
+                this.$element = $(element);
+                this.modalCount = 0;
+            };
+
+            MultiModal.BASE_ZINDEX = 1040;
+
+            MultiModal.prototype.show = function(target) {
+                var that = this;
+                var $target = $(target);
+                var modalIndex = that.modalCount++;
+
+                $target.css('z-index', MultiModal.BASE_ZINDEX + (modalIndex * 20) + 10);
+
+                // Bootstrap triggers the show event at the beginning of the show function and before
+                // the modal backdrop element has been created. The timeout here allows the modal
+                // show function to complete, after which the modal backdrop will have been created
+                // and appended to the DOM.
+                window.setTimeout(function() {
+                    // we only want one backdrop; hide any extras
+                    if (modalIndex > 0)
+                        $('.modal-backdrop').not(':first').addClass('hidden');
+
+                    that.adjustBackdrop();
+                });
+            };
+
+            MultiModal.prototype.hidden = function(target) {
+                this.modalCount--;
+
+                if (this.modalCount) {
+                    this.adjustBackdrop();
+
+                    // bootstrap removes the modal-open class when a modal is closed; add it back
+                    $('body').addClass('modal-open');
+                }
+            };
+
+            MultiModal.prototype.adjustBackdrop = function() {
+                var modalIndex = this.modalCount - 1;
+                $('.modal-backdrop:first').css('z-index', MultiModal.BASE_ZINDEX + (modalIndex * 20));
+            };
+
+            function Plugin(method, target) {
+                return this.each(function() {
+                    var $this = $(this);
+                    var data = $this.data('multi-modal-plugin');
+
+                    if (!data)
+                        $this.data('multi-modal-plugin', (data = new MultiModal(this)));
+
+                    if (method)
+                        data[method](target);
+                });
+            }
+
+            $.fn.multiModal = Plugin;
+            $.fn.multiModal.Constructor = MultiModal;
+
+            $(document).on('show.bs.modal', function(e) {
+                $(document).multiModal('show', e.target);
+            });
+
+            $(document).on('hidden.bs.modal', function(e) {
+                $(document).multiModal('hidden', e.target);
+            });
+        }(jQuery, window));
+    </script>
+
+</body>
+
+</html>

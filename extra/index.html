@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Mazer Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/vendors/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+    <link rel="stylesheet" href="assets/vendors/simple-datatables/style.css">
+    <link rel="stylesheet" href="assets/vendors/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="assets/css/stylech.css">
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active app-aside-light">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="Logo" srcset=""></a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
+
+                        <li class="sidebar-item active has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-stack"></i>
+                                <span>Home</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="sidebar-item ">
+                                    <a href="{% url 'employee:dashboard' %}">Dashboard</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'employee:admindashboard' %}">Admin Dashboard</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-collection-fill"></i>
+                                <span>Question</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'questions:questiondashboard' %}">Questions</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'questions:createquestion' %}">Create a new Question</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>Project</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'project:project' %}">Project</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'project:createproject' %}">Create a new project</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'project:cancelproject' %}">Cancel a project</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'project:closeprojectview' %}">Close a project</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- <li class="sidebar-title">Forms &amp; Tables</li> -->
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-hexagon-fill"></i>
+                                <span>Data download</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'datadownload:question-response' %}">Question Response</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'datadownload:projectdata' %}">Project Data</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'datadownload:revenuedata' %}">Revenue Data</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item has-sub">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-medical-fill"></i>
+                                <span>Supply Source</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'supplier:supplier' %}">Suppliers</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-pen-fill"></i>
+                                <span>Customer</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'customer:customer' %}">Customers</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'customer:addnewcustomer' %}">Add New Customer</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="table.html" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>Extras</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="{% url 'employee:signup' %}">User Registration</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{% url 'employee:userprofiles' %}">User Profiles</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+
+        <div id="main">
+            <header id="innerheder" class="mb-3 ">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+                <!-- .top-bar-list -->
+                <div class="top-bar-list app-header app-header-dark">
+                    <!-- .top-bar-item -->
+                    <div class="top-bar-item px-2 d-md-none d-lg-none d-xl-none">
+                        <!-- toggle menu -->
+                        <button class="hamburger hamburger-squeeze" type="button" data-toggle="aside" aria-label="toggle menu"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+                        <!-- /toggle menu -->
+                    </div>
+                    <!-- /.top-bar-item -->
+                    <!-- .top-bar-item -->
+                    <div class="top-bar-item top-bar-item-full">
+                        <!-- .top-bar-search -->
+                        <form class="top-bar-search">
+                            <!-- .input-group -->
+                            <div class="input-group input-group-search dropdown">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><span class="oi oi-magnifying-glass"></span></span>
+                                </div><input type="text" class="form-control" data-toggle="dropdown" aria-label="Search" placeholder="Search">
+                                <!-- .dropdown-menu -->
+                                <div class="dropdown-menu dropdown-menu-rich dropdown-menu-xl ml-n4 mw-100">
+                                    <div class="dropdown-arrow ml-3"></div>
+                                    <!-- .dropdown-scroll -->
+                                    <div class="dropdown-scroll perfect-scrollbar h-auto" style="max-height: 360px">
+                                        <!-- .list-group -->
+                                        <div class="list-group list-group-flush list-group-reflow mb-2">
+                                            <h6 class="list-group-header d-flex justify-content-between">
+                                                <span>Shortcut</span>
+                                            </h6>
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"></a>
+                                                <div class="tile tile-sm bg-muted">
+                                                    <i class="fas fa-user-plus"></i>
+                                                </div>
+                                                <div class="ml-2"> Create user </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"></a>
+                                                <div class="tile tile-sm bg-muted">
+                                                    <i class="fas fa-dollar-sign"></i>
+                                                </div>
+                                                <div class="ml-2"> Create invoice </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <h6 class="list-group-header d-flex justify-content-between mt-2">
+                                                <span>In projects</span> <a href="#" class="font-weight-normal">Show more</a>
+                                            </h6>
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"><span class="sr-only">Go to search result</span></a>
+                                                <div class="user-avatar user-avatar-sm bg-muted">
+                                                    <img src="assets/images/avatars/bootstrap.svg" alt="">
+                                                </div>
+                                                <div class="ml-2">
+                                                    <div class="mb-n1"> Bootstrap </div><small class="text-muted">Just now</small>
+                                                </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"><span class="sr-only">Go to search result</span></a>
+                                                <div class="user-avatar user-avatar-sm bg-muted">
+                                                    <img src="assets/images/avatars/slack.svg" alt="">
+                                                </div>
+                                                <div class="ml-2">
+                                                    <div class="mb-n1"> Slack </div><small class="text-muted">Updated 25 minutes ago</small>
+                                                </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <!-- /.list-group-item -->
+                                            <h6 class="list-group-header d-flex justify-content-between mt-2">
+                                                <span>Another section</span> <a href="#" class="font-weight-normal">Show more</a>
+                                            </h6>
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"><span class="sr-only">Go to search result</span></a>
+                                                <div class="tile tile-sm bg-muted"> P </div>
+                                                <div class="ml-2">
+                                                    <div class="mb-n1"> Product name </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                        </div>
+                                        <!-- /.list-group -->
+                                    </div>
+                                    <!-- /.dropdown-scroll -->
+                                    <a href="#" class="dropdown-footer">Show all results</a>
+                                </div>
+                                <!-- /.dropdown-menu -->
+                            </div>
+                            <!-- /.input-group -->
+                        </form>
+                        <!-- /.top-bar-search -->
+                    </div>
+                    <!-- /.top-bar-item -->
+                    <!-- .top-bar-item -->
+                    <div class="top-bar-item top-bar-item-right px-0 d-none d-sm-flex">
+                        <!-- .btn-account -->
+                        <div class="dropdown d-none d-md-flex">
+                            <button class="btn-account dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-avatar user-avatar-md"><img src="assets/images/profile.jpg" alt=""></span> <span class="account-summary pr-lg-4 d-none d-lg-block"><span class="account-name">Beni Arisandi</span> <span class="account-description">Marketing Manager</span></span></button>
+                            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button> -->
+
+                            <!-- .dropdown-menu -->
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <div class="dropdown-arrow d-lg-none" x-arrow=""></div>
+                                <div class="dropdown-arrow ml-3 d-none d-lg-block"></div>
+                                <h6 class="dropdown-header d-none d-md-block d-lg-none"> Beni Arisandi </h6><a class="dropdown-item" href="user-profile.html"><span class="dropdown-icon oi oi-person"></span> Profile</a> <a class="dropdown-item" href="auth-signin-v1.html"><span class="dropdown-icon oi oi-account-logout"></span> Logout</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Help Center</a> <a class="dropdown-item" href="#">Ask Forum</a> <a class="dropdown-item" href="#">Keyboard Shortcuts</a>
+                            </div>
+                            <!-- /.dropdown-menu -->
+                        </div>
+                        <!-- /.btn-account -->
+                    </div>
+                    <!-- /.top-bar-item -->
+                </div>
+                <!-- /.top-bar-list -->
+            </header>
+
+            <div class="page-heading">
+                <div class="page-title">
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-md-1 order-last">
+                            <h3>DataTable</h3>
+                        </div>
+                    </div>
+                </div>
+                <section class="section">
+                    <div class="card">
+                        <div class="card-header">
+                            Simple Datatable
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped" id="table1">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th>City</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Graiden</td>
+                                        <td>vehicula.aliquet@semconsequat.co.uk</td>
+                                        <td>076 4820 8838</td>
+                                        <td>Offenburg</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dale</td>
+                                        <td>fringilla.euismod.enim@quam.ca</td>
+                                        <td>0500 527693</td>
+                                        <td>New Quay</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nathaniel</td>
+                                        <td>mi.Duis@diam.edu</td>
+                                        <td>(012165) 76278</td>
+                                        <td>Grumo Appula</td>
+                                        <td>
+                                            <span class="badge bg-danger">Inactive</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Darius</td>
+                                        <td>velit@nec.com</td>
+                                        <td>0309 690 7871</td>
+                                        <td>Ways</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Oleg</td>
+                                        <td>rhoncus.id@Aliquamauctorvelit.net</td>
+                                        <td>0500 441046</td>
+                                        <td>Rossignol</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kermit</td>
+                                        <td>diam.Sed.diam@anteVivamusnon.org</td>
+                                        <td>(01653) 27844</td>
+                                        <td>Patna</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jermaine</td>
+                                        <td>sodales@nuncsit.org</td>
+                                        <td>0800 528324</td>
+                                        <td>Mold</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ferdinand</td>
+                                        <td>gravida.molestie@tinciduntadipiscing.org</td>
+                                        <td>(016977) 4107</td>
+                                        <td>Marlborough</td>
+                                        <td>
+                                            <span class="badge bg-danger">Inactive</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kuame</td>
+                                        <td>Quisque.purus@mauris.org</td>
+                                        <td>(0151) 561 8896</td>
+                                        <td>Tresigallo</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deacon</td>
+                                        <td>Duis.a.mi@sociisnatoquepenatibus.com</td>
+                                        <td>07740 599321</td>
+                                        <td>Karapınar</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Channing</td>
+                                        <td>tempor.bibendum.Donec@ornarelectusante.ca</td>
+                                        <td>0845 46 49</td>
+                                        <td>Warrnambool</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aladdin</td>
+                                        <td>sem.ut@pellentesqueafacilisis.ca</td>
+                                        <td>0800 1111</td>
+                                        <td>Bothey</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cruz</td>
+                                        <td>non@quisturpisvitae.ca</td>
+                                        <td>07624 944915</td>
+                                        <td>Shikarpur</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Keegan</td>
+                                        <td>molestie.dapibus@condimentumDonecat.edu</td>
+                                        <td>0800 200103</td>
+                                        <td>Assen</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ray</td>
+                                        <td>placerat.eget@sagittislobortis.edu</td>
+                                        <td>(0112) 896 6829</td>
+                                        <td>Hofors</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maxwell</td>
+                                        <td>diam@dapibus.org</td>
+                                        <td>0334 836 4028</td>
+                                        <td>Thane</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Carter</td>
+                                        <td>urna.justo.faucibus@orci.com</td>
+                                        <td>07079 826350</td>
+                                        <td>Biez</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Stone</td>
+                                        <td>velit.Aliquam.nisl@sitametrisus.com</td>
+                                        <td>0800 1111</td>
+                                        <td>Olivar</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Berk</td>
+                                        <td>fringilla.porttitor.vulputate@taciti.edu</td>
+                                        <td>(0101) 043 2822</td>
+                                        <td>Sanquhar</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Philip</td>
+                                        <td>turpis@euenimEtiam.org</td>
+                                        <td>0500 571108</td>
+                                        <td>Okara</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kibo</td>
+                                        <td>feugiat@urnajustofaucibus.co.uk</td>
+                                        <td>07624 682306</td>
+                                        <td>La Cisterna</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bruno</td>
+                                        <td>elit.Etiam.laoreet@luctuslobortisClass.edu</td>
+                                        <td>07624 869434</td>
+                                        <td>Rocca d"Arce</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Leonard</td>
+                                        <td>blandit.enim.consequat@mollislectuspede.net</td>
+                                        <td>0800 1111</td>
+                                        <td>Lobbes</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hamilton</td>
+                                        <td>mauris@diam.org</td>
+                                        <td>0800 256 8788</td>
+                                        <td>Sanzeno</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Harding</td>
+                                        <td>Lorem.ipsum.dolor@etnetuset.com</td>
+                                        <td>0800 1111</td>
+                                        <td>Obaix</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Emmanuel</td>
+                                        <td>eget.lacus.Mauris@feugiatSednec.org</td>
+                                        <td>(016977) 8208</td>
+                                        <td>Saint-Remy-Geest</td>
+                                        <td>
+                                            <span class="badge bg-success">Active</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+            <footer>
+                <div class="footer clearfix mb-0 text-muted px-3">
+                    <div class="float-start">
+                        <p>2021 &copy; Abc</p>
+                    </div>
+                    <!-- <div class="float-end">
+                        <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a href="http://ahmadsaugi.com">A. Saugi</a></p>
+                    </div> -->
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+    <script src="assets/vendors/simple-datatables/simple-datatables.js"></script>
+    <script>
+        // Simple Datatable
+        let table1 = document.querySelector('#table1');
+        let dataTable = new simpleDatatables.DataTable(table1);
+    </script>
+
+    <script src="assets/js/mazer.js"></script>
+</body>
+
+</html>
