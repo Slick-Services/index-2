@@ -200,7 +200,7 @@ h6 {
     white-space: nowrap;
     transition: 0.3s;
     font-weight: 600;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    transition: 0.3s;
 }
 
 .navbar a i,
@@ -227,7 +227,8 @@ h6 {
     top: auto;
     background: rgb(28 70 171);
     bottom: 0;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    /* transition: width 0.3s ease 0s, left 0.3s ease 0s; */
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .navbar .getstarted,
@@ -1051,7 +1052,7 @@ img.img-hover-zoom--point-zoom {
 
 .contact .php-email-form {
     box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-    padding: 30px;
+    padding: 32px;
     background: #fff;
 }
 
