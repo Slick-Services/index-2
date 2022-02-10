@@ -13,18 +13,18 @@
     <!--<link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon//apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon//apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon//apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon//apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon//apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon//apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon//apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon//apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon//android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon//favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon//favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -36,11 +36,6 @@
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <!--<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">-->
-    <!--<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">-->
-    <!--<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">-->
-    <!--<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">-->
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -55,24 +50,28 @@
 
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
-        <div class="container d-flex align-items-center justify-content-between">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-4 p-0">
+                    <a href="index.html" class="logo">
+                        <img src="assets/img/logo.png" alt="" class="img-fluid">
+                    </a>
+                </div>
 
-            <!--<h1 class="logo"><a href="index.html">Multi</a></h1>-->
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
-
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                    <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
-                </ul>
-                <i class="las la-bars mobile-nav-toggle"></i>
-            </nav>
-            <!-- .navbar -->
-
+                <div class="col-8">
+                    <nav id="navbar" class="navbar">
+                        <ul>
+                            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                            <li><a class="nav-link scrollto" href="#about">About</a></li>
+                            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                            <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+                            <a class="getstarted scrollto" href="#contact">Contact</a>
+                        </ul>
+                        <i class="las la-bars mobile-nav-toggle"></i>
+                    </nav>
+                </div>
+                <!-- .navbar -->
+            </div>
         </div>
     </header>
     <!-- End Header -->
@@ -91,7 +90,7 @@
                     <h2 class="animate__animated animate__fadeInUp">We're In The Business of Collecting
                         <span> Authenticate Opinions</span>
                     </h2>
-                    <a href="#about" class="btn-get-started scrollto">Read More</a>
+                    <a href="#about" class="btn-get-started scrollto btn btn-white btn-animate">Read More</a>
                 </div>
             </div>
         </div>
@@ -200,7 +199,7 @@
         <!-- End Counts Section -->
 
         <!-- ======= Why Us Section ======= -->
-        <section id="why-us" class="why-us section-bg">
+        <!-- <section id="why-us" class="why-us section-bg">
             <div class="container-fluid" data-aos="fade-up">
 
                 <div class="row">
@@ -252,7 +251,7 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
         <!-- End Why Us Section -->
 
         <!-- ======= Services Section ======= -->
@@ -268,48 +267,72 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <div class="icon-box">
                             <div class="icon"><i class="las la-tachometer-alt"></i></div>
-                            <h4><a href="">Online Sample and Data Collection</a></h4>
-                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                            <h4><a href="">Primary Market Research</a></h4>
+                            <!-- <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> -->
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                         <div class="icon-box">
                             <div class="icon"><i class="las la-file-alt"></i></div>
-                            <h4><a href="">Survey Programming</a></h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <h4><a href="">Secondary Research</a></h4>
+                            <!-- <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> -->
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
                         <div class="icon-box">
                             <div class="icon"><i class="las la-chart-bar"></i></div>
-                            <h4><a href="">Data Analysis</a></h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                            <h4><a href="">Qualitative Research</a></h4>
+                            <!-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> -->
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
                         <div class="icon-box">
                             <div class="icon"><i class="las la-table"></i></div>
-                            <h4><a href="">Tabulation</a></h4>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                            <h4><a href="">Quantitative Research</a></h4>
+                            <!-- <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p> -->
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
                         <div class="icon-box">
                             <div class="icon"><i class="las la-code"></i></div>
-                            <h4><a href="">Open End data coding</a></h4>
-                            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+                            <h4><a href="">Desk Research</a></h4>
+                            <!-- <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p> -->
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
                         <div class="icon-box">
                             <div class="icon"><i class="las la-globe"></i></div>
-                            <h4><a href="">Translations</a></h4>
-                            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+                            <h4><a href="">Face to Face Inerviews</a></h4>
+                            <!-- <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p> -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-box">
+                            <div class="icon"><i class="las la-globe"></i></div>
+                            <h4><a href="">Data Analytics</a></h4>
+                            <!-- <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p> -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-box">
+                            <div class="icon"><i class="las la-globe"></i></div>
+                            <h4><a href="">CLT'S & FGD</a></h4>
+                            <!-- <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p> -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-box">
+                            <div class="icon"><i class="las la-globe"></i></div>
+                            <h4><a href="">Company Promotion, Stategy & Branding</a></h4>
+                            <!-- <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p> -->
                         </div>
                     </div>
 
@@ -504,11 +527,11 @@
                             <a href="index.html" class="logo">
                                 <img src="assets/img/logo.png" alt="" class="img-fluid mb-3">
                             </a>
-                            <p class="pb-3">Our creativity is your start of successful projects!</p>
+                            <p class="pb-4">Our creativity is your start of successful projects!</p>
                             <p>
-                                A108 Adam Street <br> NY 535022, USA<br><br>
-                                <strong>Phone:</strong> +1 5589 55488 55<br>
-                                <strong>Email:</strong> info@example.com<br>
+                                <i class="fa fa-map bx-chevron-right"></i> Location<br> Padek Road, <br> Rajkot, India - 360003<br><br class="nophone">
+                                <strong>Phone:</strong> +91 8320560168<br>
+                                <strong>Email:</strong> info@imrv.com<br>
                             </p>
                             <div class="social-links mt-4">
                                 <a href="https://www.facebook.com" class="facebook"><i class="lab la-facebook-f"></i></a>
@@ -541,15 +564,6 @@
                         </ul>
                     </div>
 
-                    <!--<div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
-                        </form>
-
-                    </div>-->
-
                 </div>
             </div>
         </div>
@@ -559,10 +573,6 @@
                 &copy; Copyright <strong><span>IMRV</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/multi-responsive-bootstrap-template/ -->
                 Designed by <a href="https://www.slickservices.in/">slickservices</a>
             </div>
         </div>
@@ -575,10 +585,7 @@
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
-    <!--<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>-->
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <!--<script src="assets/vendor/php-email-form/validate.js"></script>-->
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

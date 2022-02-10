@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Mazer Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="assets/vendors/open-iconic/font/css/open-iconic-bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/vendors/iconly/bold.css"> -->
+    <link rel="stylesheet" href="assets/vendors/simple-datatables/style.css">
+    <!-- <link rel="stylesheet" href="assets/vendors/open-iconic/font/css/open-iconic-bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/vendors/apexcharts/apexcharts.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <!-- <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="assets/css/stylech.css">
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active app-aside-light">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="/dashboard/"><img src="assets/images/logo/logo.png" alt="Logo" srcset=""></a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
+                        <li class="sidebar-item active has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-stack"></i>
+                                <span>Home</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="sidebar-item ">
+                                    <a href="/dashboard/">Dashboard</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="/admindashboard/">Admin Dashboard</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-collection-fill"></i>
+                                <span>Question</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="/question/">Questions</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="/question/add-new-question/">Create a new Question</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>Project</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="/project/">Project</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="/project/createproject/">Create a new project</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="/project/cancelproject/">Cancel a project</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="/project/closeproject/">Close a project</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li class="sidebar-title">Forms &amp; Tables</li> -->
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-hexagon-fill"></i>
+                                <span>Data download</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item ">
+                                    <a href="/data/question-response/">Question Response</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="/data/projectdata/">Project Data</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="/data/revenuedata/">Revenue Data</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item has-sub">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-medical-fill"></i>
+                                <span>Supply Source</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item ">
+                                    <a href="/supplier/">Suppliers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-pen-fill"></i>
+                                <span>Customer</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item ">
+                                    <a href="/customer/">Customers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item  has-sub">
+                            <a href="table.html" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>Extras</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="/signup/">User Registration</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="/userprofiles/">User Profiles</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <div id="main">
+            <header id="innerheder" class="mb-3 ">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+                <!-- .top-bar-list -->
+                <div class="top-bar-list app-header app-header-dark">
+                    <!-- .top-bar-item -->
+                    <div class="top-bar-item px-2 d-md-none d-lg-none d-xl-none">
+                        <!-- toggle menu -->
+                        <button class="hamburger hamburger-squeeze" type="button" data-toggle="aside" aria-label="toggle menu"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+                        <!-- /toggle menu -->
+                    </div>
+                    <!-- /.top-bar-item -->
+                    <!-- .top-bar-item -->
+                    <div class="top-bar-item top-bar-item-full">
+                        <!-- .top-bar-search -->
+                        <form class="top-bar-search">
+                            <!-- .input-group -->
+                            <div class="input-group input-group-search dropdown">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><span class="oi oi-magnifying-glass"></span></span>
+                                </div>
+                                <input type="text" class="form-control" data-toggle="dropdown" aria-label="Search" placeholder="Search">
+                                <!-- .dropdown-menu -->
+                                <div class="dropdown-menu dropdown-menu-rich dropdown-menu-xl ml-n4 mw-100">
+                                    <div class="dropdown-arrow ml-3"></div>
+                                    <!-- .dropdown-scroll -->
+                                    <div class="dropdown-scroll perfect-scrollbar h-auto" style="max-height: 360px">
+                                        <!-- .list-group -->
+                                        <div class="list-group list-group-flush list-group-reflow mb-2">
+                                            <h6 class="list-group-header d-flex justify-content-between">
+                                                <span>Shortcut</span>
+                                            </h6>
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"></a>
+                                                <div class="tile tile-sm bg-muted">
+                                                    <i class="fas fa-user-plus"></i>
+                                                </div>
+                                                <div class="ml-2"> Create user </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"></a>
+                                                <div class="tile tile-sm bg-muted">
+                                                    <i class="fas fa-dollar-sign"></i>
+                                                </div>
+                                                <div class="ml-2"> Create invoice </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <h6 class="list-group-header d-flex justify-content-between mt-2">
+                                                <span>In projects</span> <a href="#" class="font-weight-normal">Show more</a>
+                                            </h6>
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"><span class="sr-only">Go to search result</span></a>
+                                                <div class="user-avatar user-avatar-sm bg-muted">
+                                                    <img src="assets/images/avatars/bootstrap.svg" alt="">
+                                                </div>
+                                                <div class="ml-2">
+                                                    <div class="mb-n1"> Bootstrap </div>
+                                                    <small class="text-muted">Just now</small>
+                                                </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"><span class="sr-only">Go to search result</span></a>
+                                                <div class="user-avatar user-avatar-sm bg-muted">
+                                                    <img src="assets/images/avatars/slack.svg" alt="">
+                                                </div>
+                                                <div class="ml-2">
+                                                    <div class="mb-n1"> Slack </div>
+                                                    <small class="text-muted">Updated 25 minutes ago</small>
+                                                </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                            <!-- /.list-group-item -->
+                                            <h6 class="list-group-header d-flex justify-content-between mt-2">
+                                                <span>Another section</span> <a href="#" class="font-weight-normal">Show more</a>
+                                            </h6>
+                                            <!-- .list-group-item -->
+                                            <div class="list-group-item py-2">
+                                                <a href="#" class="stretched-link"><span class="sr-only">Go to search result</span></a>
+                                                <div class="tile tile-sm bg-muted"> P </div>
+                                                <div class="ml-2">
+                                                    <div class="mb-n1"> Product name </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.list-group-item -->
+                                        </div>
+                                        <!-- /.list-group -->
+                                    </div>
+                                    <!-- /.dropdown-scroll -->
+                                    <a href="#" class="dropdown-footer">Show all results</a>
+                                </div>
+                                <!-- /.dropdown-menu -->
+                            </div>
+                            <!-- /.input-group -->
+                        </form>
+                        <!-- /.top-bar-search -->
+                    </div>
+                    <!-- /.top-bar-item -->
+                    <!-- .top-bar-item -->
+                    <div class="top-bar-item top-bar-item-right px-0 d-none d-sm-flex">
+                        <!-- .btn-account -->
+                        <div class="dropdown d-none d-md-flex">
+                            <button class="btn-account dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-avatar user-avatar-md"><i class="fas fa-user"></i></span> <span class="account-summary pr-lg-4 d-none d-lg-block"><span class="account-name"></span> <span class="account-description">Marketing Manager</span></span></button>
+                            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button> -->
+                            <!-- .dropdown-menu -->
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <div class="dropdown-arrow d-lg-none" x-arrow=""></div>
+                                <div class="dropdown-arrow ml-3 d-none d-lg-block"></div>
+                                <h6 class="dropdown-header d-none d-md-block d-lg-none"> Beni Arisandi </h6>
+                                <a class="dropdown-item" href="/logout/"><span class="dropdown-icon oi oi-account-logout"></span> Logout</a>
+                                <div class="dropdown-divider"></div>
+                            </div>
+                            <!-- /.dropdown-menu -->
+                        </div>
+                        <!-- /.btn-account -->
+                    </div>
+                    <!-- /.top-bar-item -->
+                </div>
+                <!-- /.top-bar-list -->
+            </header>
+            <!-- .app-main -->
+            <main class="app-main">
+                <!-- .wrapper -->
+                <div class="wrapper">
+                    <!-- .page -->
+                    <main class="app-main">
+                        <!-- .wrapper -->
+                        <div class="wrapper">
+                            <!-- .page -->
+                            <div class="page has-sidebar has-sidebar-fluid has-sidebar-expand-xl">
+                                <div class="page-heading mt-0 mb-0">
+                                    <div class="page-title">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 order-md-1 order-last mb-3">
+                                                <h3>Supply Source </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <section>
+                                        <form novalidate method="post" action="">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="card boxshedow border-radius-5 p-3">
+                                                        <div class="row justify-content-between p-0">
+                                                            <a href="#">
+                                                                <button type="button" class="btn btn-dark backbtn mt-1 mb-4">
+                                                                <i class="fa fa-angle-left"></i> Back                                                            
+                                                            </button>
+                                                            </a>
+                                                            <div class="col-md-12 border-bottom card-header p-1 mx-2">
+                                                                <h3 class="m-0 mb-1">Persnol Info</h3>
+                                                            </div>
+                                                            <div class="card-body mt-3 p-2">
+                                                                <div class="mainpersnolinfosuplier pl-3">
+                                                                    <div class="col-md-6 item form-group pl-0">
+                                                                        <label class="control-label" for="department">Department<span class="required">*</span>
+                                                                    </label>
+
+                                                                        <select name="department" id="department" class="form-control col-md-7" required="">
+                                                                       <option value="">Choose...</option>
+                                                                       <option value="1">Project Management</option>
+                                                                       <option value="2">Bids &amp; Supply</option>
+                                                                       <option value="3">Sales</option>
+                                                                       <option value="4">Panel</option>
+                                                                       <option value="5">Accounts</option>
+                                                                       <option value="6">Leadership</option>
+                                                                       </select>
+                                                                    </div>
+                                                                    <div class="form-row">
+                                                                        <div class="col-md-6 item form-group">
+                                                                            <label class="control-label" for="position">Completes <span class="required">*</span>
+                                                                        </label>
+                                                                            <input id="position" class="form-control col-md-7" data-validate-length-range="1,24" data-validate-words="1" name="position" placeholder="Position" required="required" type="text">
+                                                                        </div>
+                                                                        <div class="col-md-6 item form-group">
+                                                                            <label class="control-label" for="position">CPI <span class="required">*</span>
+                                                                        </label>
+                                                                            <input id="position" class="form-control col-md-7" data-validate-length-range="1,24" data-validate-words="1" name="position" placeholder="Position" required="required" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="redirectheder mt-4">
+                                                                    <div class="col-md-12  border-bottom card-header p-1">
+                                                                        <h3 class="m-0 mb-1">Redirect URLs</h3>
+                                                                    </div>
+                                                                    <div class="mainpersnolinfosuplier mt-4 pl-2">
+                                                                        <div class="form-row">
+                                                                            <div class="col-md-6 item form-group">
+                                                                                <div class="item form-group">
+                                                                                    <label class="control-label col-md-12" for="textarea">Complete URL <span class="required">*</span>
+                                                                            </label>
+                                                                                    <div class="col-md-12">
+                                                                                        <textarea id="completeurl" name="completeurl" required="required" name="textarea" class="form-control col-md-12"></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6 item form-group">
+                                                                                <div class="item form-group">
+                                                                                    <label class="control-label col-md-12" for="textarea">Terminate URL <span class="required">*</span>
+                                                                            </label>
+                                                                                    <div class="col-md-12">
+                                                                                        <textarea id="terminateurl" name="terminateurl" required="required" name="textarea" class="form-control col-md-12"></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-row">
+                                                                            <div class="col-md-6 item form-group">
+                                                                                <div class="item form-group">
+                                                                                    <label class="control-label col-md-12" for="textarea">Quotaul URL <span class="required">*</span>
+                                                                            </label>
+                                                                                    <div class="col-md-12">
+                                                                                        <textarea id="completeurl" name="completeurl" required="required" name="textarea" class="form-control col-md-12"></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6 item form-group">
+                                                                                <div class="item form-group">
+                                                                                    <label class="control-label col-md-12" for="textarea">Security Terminate URL <span class="required">*</span>
+                                                                            </label>
+                                                                                    <div class="col-md-12">
+                                                                                        <textarea id="terminateurl" name="terminateurl" required="required" name="textarea" class="form-control col-md-12"></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="card-footer justify-content-center align-items-center pt-2">
+                                                                <div class=" form-group  mt-3">
+                                                                    <div class="col-12 ">
+                                                                        <a href="#" type="button " class="btn btn-dark mr-2"> Cancel</a>
+                                                                        <button type="submit " class="btn btn-success "> Submit</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </section>
+                                </div>
+                            </div>
+                            <!-- /.page -->
+                        </div>
+                        <!-- /.wrapper -->
+                    </main>
+                    <!-- /.page -->
+                </div>
+                <!-- /.wrapper -->
+            </main>
+            <!-- /.app-main -->
+            <footer>
+                <div class="footer clearfix mb-0 text-muted px-3">
+                    <div class="float-start">
+                        <p>2021 &copy; Slick Services</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/vendors/simple-datatables/simple-datatables.js"></script>
+    <!-- BEGIN BASE JS -->
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/popper.js/umd/popper.min.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- END BASE JS -->
+    <!-- END PLUGINS JS -->
+    <script>
+        // Simple Datatable
+        let table1 = document.querySelector('#table1');
+        let dataTable = new simpleDatatables.DataTable(table1);
+    </script>
+    <script src="assets/js/mazer.js"></script>
+    <!-- BEGIN THEME JS -->
+    <script src="assets/js/theme.min.js"></script>
+    <!-- END THEME JS -->
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/ui-apexchart.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+</body>
+
+</html>

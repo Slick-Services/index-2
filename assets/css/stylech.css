@@ -75,17 +75,21 @@ button.btn-primary {
 a.burger-btn.d-block.d-xl-none {
     color: #fff;
     background: #102570;
-    padding: .2rem .5rem 0.1rem;
+    /* padding: .2rem .5rem 0.1rem; */
     border-radius: .4rem;
     margin: .6rem;
+    padding: 8px;
+    line-height: 0;
 }
 
 button.btn.btn-primary,
 .btn.btn-primary {
     background: rgb(63 188 222);
     border-color: rgb(32 138 167);
-    border-radius: .4rem;
+    border-radius: .5rem;
     font-size: 1rem;
+    height: auto;
+    padding: 0.5rem 0.8rem;
 }
 
 button.btn,
@@ -97,6 +101,14 @@ button,
 
 button.btn.btn-primary i {
     margin-right: .4rem;
+}
+
+button.backbtn {
+    padding: .5rem 1.3rem .5rem 0.8rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    height: auto;
+    border-radius: 0.4rem;
 }
 
 .table {
@@ -665,6 +677,66 @@ a.btn.btn-warning.text-end.col-6 {
     color: #fff !important;
     background-color: #bb2d3b;
     border-color: #bb2d3b;
+}
+
+h2.projecttitle {
+    display: flex;
+    align-items: center;
+}
+
+.tooltip {
+    display: inline;
+    position: relative;
+    opacity: 1;
+    font-size: 2rem;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.tooltip:hover span {
+    font-size: 2rem;
+}
+
+.tooltip:hover[title] {
+    font-size: 1rem;
+}
+
+.tooltip:hover:after {
+    background: #333;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+}
+
+.tooltip:hover:before {
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+ul.dropdown-menu.mainactiondropdown {
+    position: absolute;
+    top: 42px !important;
+    z-index: 99999;
+    height: 180px;
+}
+
+section.section.mt-3 {
+    /* overflow: hidden; */
+    position: relative;
+    z-index: 0;
 }
 
 footer p {

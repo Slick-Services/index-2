@@ -1646,7 +1646,8 @@
 }
 
 .stats-icon.blue {
-    background-color: #57caeb
+    background-color: #57caeb;
+    box-shadow: none;
 }
 
 .stats-icon.red {
