@@ -502,6 +502,8 @@ h6 {
 #hero .btn-get-started:focus {
     background: #1c468e;
     border-color: #1c468e;
+    box-shadow: none;
+    outline: none;
 }
 
 
@@ -1391,4 +1393,29 @@ img.img-hover-zoom--point-zoom {
     #footer .footer-top .footer-info {
         margin: -20px 0 30px 0;
     }
+}
+
+.innerheader-scrolled {
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+
+select.form-select:focus {
+    box-shadow: none;
+    border-color: #ED1B24;
+}
+
+a:focus-visible {
+    outline: none;
+    border: none;
+}
+
+.mt-20 {
+    margin-top: 6rem;
+}
+
+.mainmodalbtn {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-bottom: 2rem;
 }

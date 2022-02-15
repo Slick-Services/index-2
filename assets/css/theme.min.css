@@ -5985,9 +5985,14 @@ a.close.disabled {
     }
 }
 
+@media (min-width:768px) {
+    .modal-md {
+        max-width: 670px
+    }
+}
+
 @media (min-width:992px) {
-    .modal-lg,
-    .modal-xl {
+    .modal-lg {
         max-width: 800px
     }
 }

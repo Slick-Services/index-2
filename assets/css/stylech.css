@@ -739,6 +739,24 @@ section.section.mt-3 {
     z-index: 0;
 }
 
+@media (min-width:768px) {
+    .modal-md {
+        max-width: 670px
+    }
+}
+
+@media (min-width:992px) {
+    .modal-lg {
+        max-width: 750px
+    }
+}
+
+@media (min-width:1200px) {
+    .modal-xl {
+        max-width: 1140px
+    }
+}
+
 footer p {
     margin-top: 1rem;
 }
