@@ -59,7 +59,7 @@ p {
 }
 
 body.loginbg {
-    background: url(../img/loginbg.jpg) no-repeat center top;
+    background: url(../img/loginbgnew.jpg) no-repeat center top;
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
@@ -71,6 +71,17 @@ body.loginbg {
     justify-content: center;
     background-attachment: fixed;
 }
+
+
+/* body.loginbg:before {
+    content: "";
+    position: absolute;
+    top: auto;
+    left: 0;
+    background: rgb(48 110 217 / 38%);
+    width: 100%;
+    height: 100%;
+} */
 
 .fadeInDown {
     -webkit-animation-name: fadeInDown;
@@ -141,7 +152,7 @@ body.loginbg {
     border-radius: 10px;
     -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
     -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
-    box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 11px 11px 8px rgb(20 44 86 / 42%);
 }
 
 .login-wrap h3 {

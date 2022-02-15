@@ -1025,9 +1025,9 @@ img.img-hover-zoom--point-zoom {
     color: #0b2341;
     text-align: center;
     box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-    padding: 20px 0 30px 0;
+    padding: 17px 0 30px 0;
     background: #fff;
-    min-height: 175px;
+    /* min-height: 175px; */
 }
 
 .contact .info-box i {
@@ -1122,7 +1122,7 @@ img.img-hover-zoom--point-zoom {
 }
 
 .contact .php-email-form button[type=submit] {
-    background: #ED1B24;
+    background: rgb(28 70 142);
     border: 0;
     padding: 10px 30px;
     border-radius: .5rem;
@@ -1131,7 +1131,7 @@ img.img-hover-zoom--point-zoom {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-    background: rgb(28 70 142);
+    background: #ED1B24;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1218,7 +1218,7 @@ img.img-hover-zoom--point-zoom {
     border-top: 4px solid #ED1B24;
     padding: 40px 20px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 #footer .footer-top .footer-info img {
@@ -1234,26 +1234,33 @@ img.img-hover-zoom--point-zoom {
 }
 
 #footer .footer-top .footer-info p {
+    font-size: 1.1rem;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-weight: 600;
+    padding: 0 6rem 0 1rem;
+}
+
+#footer .footer-top .footer-info span {
     font-size: 1rem;
     line-height: 30px;
     margin-bottom: 0;
     font-weight: 600;
 }
 
+#footer .footer-top .footer-info span.location {
+    font-size: 1.0rem;
+    line-height: 1.7;
+}
+
 #footer .footer-top h4 {
-    font-size: 17px;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #fff;
     position: relative;
     padding-bottom: 12px;
     font-weight: 700;
     color: #ed1b24;
-}
-
-#footer .footer-top .social-links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 #footer .footer-top .social-links a {
@@ -1272,6 +1279,7 @@ img.img-hover-zoom--point-zoom {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
     transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
 }
 
