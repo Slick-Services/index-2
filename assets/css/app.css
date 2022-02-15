@@ -936,7 +936,7 @@
 
 #sidebar.active .sidebar-wrapper {
     left: 0;
-    z-index: 99999;
+    z-index: 999;
 }
 
 #sidebar:not(.active) .sidebar-wrapper {

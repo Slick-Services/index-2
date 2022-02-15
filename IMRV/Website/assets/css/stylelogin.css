@@ -353,9 +353,9 @@ svg.svg-icon {
 }
 
 .btn.btn-primary:hover {
-    border: 1px solid #005777;
-    background: transparent;
-    color: #005777;
+    border: 1px solid #ed1c25 !important;
+    background: #ed1c25 !important;
+    color: #fff;
 }
 
 .btn.btn-primary.btn-outline-primary {
@@ -375,15 +375,6 @@ svg.svg-icon {
     margin-bottom: 1rem;
 }
 
-
-/* .form-group .submit {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-} */
-
 .login-wrap .card.otp {
     border: none;
 }
@@ -392,6 +383,10 @@ svg.svg-icon {
     border-radius: .5rem;
     padding: 1rem;
     border: solid 1px #005777;
+}
+
+.form-control:focus {
+    box-shadow: none;
 }
 
 .login-wrap .card.otp .form-control {
@@ -425,22 +420,16 @@ svg.svg-icon {
 }
 
 .form-group .submit {
-    /* position: absolute; */
-    /* top: 20px; */
-    /* left: 0; */
-    /* right: 0; */
     margin: 0 auto;
     width: 100%;
-    border-radius: .5rem !important;
-    /*webkit-box-shadow: 0 10px 30px 0 rgb(95 186 233 / 40%) !important; 
-    box-shadow: 0 10px 30px 0 rgb(95 186 233 / 40%) !important;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;*/
+    border-radius: .5rem;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    font-size: 1.5rem;
+    line-height: 1;
 }
 
 @media (max-width: 767.98px) {
