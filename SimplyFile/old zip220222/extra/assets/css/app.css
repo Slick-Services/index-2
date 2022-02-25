@@ -936,7 +936,7 @@
 
 #sidebar.active .sidebar-wrapper {
     left: 0;
-    z-index: 999;
+    z-index: 99999;
 }
 
 #sidebar:not(.active) .sidebar-wrapper {
@@ -1646,8 +1646,7 @@
 }
 
 .stats-icon.blue {
-    background-color: #57caeb;
-    box-shadow: none;
+    background-color: #57caeb
 }
 
 .stats-icon.red {
