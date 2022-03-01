@@ -1062,13 +1062,17 @@
 
     $(document).ready(function() {
         // Swiper: Slider
-        new Swiper('.swiper-container', {
+        new Swiper('.testimonials-slider', {
             loop: true,
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
             slidesPerView: 1,
             paginationClickable: true,
             spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
             // breakpoints: {
             //     1920: {
             //         slidesPerView: 3,
@@ -1107,21 +1111,29 @@
             prevButton: '.swiper-button-prev',
             slidesPerView: 2,
             paginationClickable: true,
-            spaceBetween: 20,
-            // breakpoints: {
-            //     1920: {
-            //         slidesPerView: 2,
-            //         spaceBetween: 30
-            //     },
-            //     1028: {
-            //         slidesPerView: 2,
-            //         spaceBetween: 30
-            //     },
-            //     480: {
-            //         slidesPerView: 1,
-            //         spaceBetween: 10
-            //     }
-            // }
+            spaceBetween: 0,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                1920: {
+                    slidesPerView: 2,
+                    spaceBetween: 0
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 0
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                },
+                240: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                }
+            }
         });
     });
 

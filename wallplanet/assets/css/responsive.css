@@ -9,6 +9,87 @@
 	
 	.home5-cosmetic .slideshow .slideshow__title { font-size:53px; }
 	.home5-cosmetic .slideshow .slideshow__subtitle { font-size:20px; }
+	#footer .footer-top .footer-contact.rightsidelogo {margin-right: 1rem;}
+	#footer .footer-top .footer-contact.leftsideul {margin-left: 1rem;}
+
+	.galleryimgslideshow .container-fluid {padding: 0 55px;}
+
+	.galleryimgslideshow img {width: calc((100% / 3) * 1 - 40px);}
+	.galleryimgslideshow .rightrow img.thirdslide { right: -17rem;}
+	.galleryimgslideshow .leftrow img.thirdslide {right: -5rem;}
+	
+}
+
+@media only screen and (max-width: 1366px) {
+	#footer .footer-top .footer-contact.rightsidelogo {margin-right: 0rem;}
+	#footer .footer-top .footer-contact.leftsideul {margin-left: 0rem;}
+	
+	#footer .social-links a { font-size: 19px;  padding: 0 0.6rem;}
+	#footer .footer-top .footer-contact p {font-size: 15px;}
+
+
+	/*.galleryimgslideshow img {width: calc((100% / 4) * 1 - 40px);}
+	.galleryimgslideshow .rightrow img.thirdslide { right: -19rem;}
+	.galleryimgslideshow .leftrow img.thirdslide {right: 0rem;}*/
+
+	.galleryimgslideshow {
+		height: auto;
+	}
+
+	.galleryimgslideshow .rightrow img.thirdslide {
+    position: relative;
+    left: auto;
+    top: auto;
+    right: -22rem;
+    bottom: -13rem;
+    float: left;
+    z-index: 3;
+}
+
+.galleryimgslideshow img {
+    width: calc((100% / 3) * 1 - 70px);
+}
+
+.galleryimgslideshow .rightrow img.secondslide {
+    right: -5rem;
+    left: auto;
+    float: right;
+    position: relative;
+    z-index: 1;
+    top: -1rem;
+}
+
+.galleryimgslideshow .rightrow img.firstslide {
+    position: relative;
+    top: -9rem;
+    bottom: auto;
+    float: right;
+    z-index: 0;
+}
+
+.galleryimgslideshow .leftrow img.thirdslide {
+    position: relative;
+    right: -8rem;
+    top: auto;
+    left: auto;
+    bottom: -13rem;
+    float: left;
+    z-index: 3;
+}
+.galleryimgslideshow .leftrow img.secondslide {
+    right: 18rem;
+    position: relative;
+    z-index: 1;
+    top: -1rem;
+}
+.galleryimgslideshow .leftrow img.firstslide {
+    position: relative;
+    top: -9rem;
+    bottom: auto;
+    float: left;
+    z-index: 0;
+}
+
 }
 
 @media only screen and (max-width: 1199px) {
@@ -35,6 +116,34 @@
 	
 	.home11-grid .slideshow .wrap-caption { max-width:520px; }
 	.home11-grid .slideshow .slideshow__title { font-size:55px; }
+	
+	#footer .footer-top .footer-contact.rightsidelogo {margin-right: 0rem;}
+	#footer .footer-top .footer-contact.leftsideul {margin-left: 0rem;}
+
+	.galleryimgslideshow { height: auto;}
+
+	.galleryimgslideshow img { width: calc((100% / 4) * 1 - 0px);}
+	.galleryimgslideshow .leftrow img.thirdslide {
+    position: relative;
+    right: 0rem;
+    top: auto;
+    left: auto;
+    bottom: -12rem;
+    float: left;
+    z-index: 3;
+}
+
+.galleryimgslideshow .rightrow img.thirdslide {
+    position: relative;
+    left: auto;
+    top: auto;
+    right: -30Rem;
+    bottom: -12rem;
+    float: left;
+    z-index: 3;
+}
+
+	
 }
 
 
@@ -77,6 +186,9 @@
 	.home8-jewellery .slideshow .slideshow__subtitle { font-size:13px; }
 	
 	.home11-grid .slideshow .slideshow__title { font-size:40px; }
+	
+	#footer .social-links a { font-size: 15px;  padding: 0 0.3rem;}
+	#footer .footer-top .footer-contact p {font-size: 13px;}
 
 }
 
@@ -202,7 +314,8 @@
 	
 	.product-labels.rounded .lbl { height:35px; width:35px; font-size:10px; }
 	
-	.feature-row__text .row-text { padding: 20px; }
+	.feature-row__text .row-text { padding: 20px; }	
+	
 }
 
 @media only screen and (min-width: 767px) {
@@ -409,6 +522,8 @@
 	.store-info li:last-child { border-bottom:0; }
 	
 	#footer .addressFooter li:last-of-type { padding-bottom:0; }
+	
+	#footer .small {flex-direction: column;}
 }
 
 @media only screen and (max-width: 575px) {	
@@ -439,6 +554,10 @@
  	.timermobile .saleTime span>span span { font-size:9px; display:block; float:none }
 	
 	.hero { height:200px; }
+	
+	.arrivel .social  {	padding-right: 3rem;}
+	.arrivel .social i {font-size: 1.9rem;  line-height: 0;}
+	.arrivel .social a { width: 50px; height: 50px;}
 	
 	.image-banner-3 { margin-bottom:25px; }
 	.imgBnrOuter .inner .ttl { line-height:20px; font-size:14px; padding:10px; }
@@ -504,6 +623,10 @@
 	.latest-blog .wrap-blog .article__grid-image img { width:100%; margin-bottom:20px; }
 	.latest-blog .wrap-blog .wrap-blog-inner { padding:0; }
 	
+	.arrivel .social  {	padding-right: 1rem;}
+	.arrivel .social i {font-size: 1.5rem;  line-height: 0;}
+	.arrivel .social a { width: 40px; height: 40px;}
+	
 	.sidebar-product .related-product .grid__item { width:100%; }
 	.sidebar-product .related-product .grid__item:nth-child(2n+1) { clear:left; }
 	
@@ -517,7 +640,7 @@
 	
 	.collection-box .container-fluid { padding:0 15px; }
 	
-	#footer { margin-top:20px; }
+	#footer { margin-top:20px; }	
 	
 }
 
