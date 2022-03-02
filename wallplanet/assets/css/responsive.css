@@ -2,7 +2,7 @@
 @media only screen and (max-width: 1500px)  {
 	.rightrow { right: 6rem;}
 	.galleryimgslideshow  ul li img {width: 270px; height: 270px;}
-	.portfolio .portfolio-item .portfolio-info h4 {font-size: .9rem;} 
+	.portfolio .portfolio-item .portfolio-info h4 {font-size: .9rem;margin: 0;} 
 }
 
 @media only screen and (max-width: 1450px) {
