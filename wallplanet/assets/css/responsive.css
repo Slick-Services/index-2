@@ -3,6 +3,8 @@
 	.rightrow { right: 6rem;}
 	.galleryimgslideshow  ul li img {width: 270px; height: 270px;}
 	.portfolio .portfolio-item .portfolio-info h4 {font-size: .9rem;margin: 0;} 
+	.portfolio .portfolio-item .portfolio-info { padding: 15px 15px 15px 10px;}
+	.portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link { top: calc(50% - 14px); color: #fff;}
 }
 
 @media only screen and (max-width: 1450px) {
