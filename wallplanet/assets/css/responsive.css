@@ -16,9 +16,7 @@
 	.collection-hero__image { height:auto; }
 	
 	.home5-cosmetic .slideshow .slideshow__title { font-size:53px; }
-	.home5-cosmetic .slideshow .slideshow__subtitle { font-size:20px; }
-	#footer .footer-top .footer-contact.rightsidelogo {margin-right: 1rem;}
-	#footer .footer-top .footer-contact.leftsideul {margin-left: 1rem;}
+	.home5-cosmetic .slideshow .slideshow__subtitle { font-size:20px; }	
 
 	.galleryimgslideshow .container-fluid {padding: 0 55px;}
 
@@ -30,8 +28,7 @@
 }
 
 @media only screen and (max-width: 1366px) {
-	#footer .footer-top .footer-contact.rightsidelogo {margin-right: 0rem;}
-	#footer .footer-top .footer-contact.leftsideul {margin-left: 0rem;}
+	
 	
 	#footer .social-links a { font-size: 19px;  padding: 0 0.6rem;}
 	#footer .footer-top .footer-contact p {font-size: 15px;}
@@ -80,8 +77,6 @@
 	.home11-grid .slideshow .wrap-caption { max-width:520px; }
 	.home11-grid .slideshow .slideshow__title { font-size:55px; }
 	
-	#footer .footer-top .footer-contact.rightsidelogo {margin-right: 0rem;}
-	#footer .footer-top .footer-contact.leftsideul {margin-left: 0rem;}
 
 	/*.galleryimgslideshow { height: auto;}
 
