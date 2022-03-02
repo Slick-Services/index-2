@@ -565,14 +565,14 @@ section {padding: 60px 0; overflow: hidden;}
 .galleryimgslideshow .leftrow ul li:nth-child(1) {position: relative;top: -6rem;}
 .galleryimgslideshow .leftrow ul li:nth-child(2) {position: relative;top: -2rem; left: -6rem;}
 .galleryimgslideshow .leftrow ul li:nth-child(3) {position: relative;top: 6rem; left: -15rem;}
-.galleryimgslideshow .leftrow ul li img {width: 300px; height: 300px;}
+/*.galleryimgslideshow .leftrow ul li img {width: 300px; height: 300px;}*/
 
 .galleryimgslideshow .rightrow ul {list-style: none; display: flex; float: right;flex-direction: row-reverse;}
 .galleryimgslideshow .rightrow ul li {display: flex;}
 .galleryimgslideshow .rightrow ul li:nth-child(1) {position: relative;top: -7rem;}
 .galleryimgslideshow .rightrow ul li:nth-child(2) {position: relative;top: -2rem; left: 6rem;}
 .galleryimgslideshow .rightrow ul li:nth-child(3) {position: relative;top: 6rem; left: auto;right: -15rem;}
-.galleryimgslideshow .rightrow ul li img {width: 300px; height: 300px;}
+.galleryimgslideshow  ul li img {width: 300px; height: 300px;}
 .leftrow {
     float: left;
     width: auto;
