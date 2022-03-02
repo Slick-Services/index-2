@@ -1,4 +1,9 @@
 
+@media only screen and (max-width: 1500px)  {
+	.rightrow { right: 6rem;}
+	.galleryimgslideshow  ul li img {width: 270px; height: 270px;} 
+}
+
 @media only screen and (max-width: 1450px) {
 	.slideshow .slideshow__title { font-size:45px; }
 	.home2-default .slideshow .slideshow__title { font-size:50px; }
@@ -17,8 +22,7 @@
 	/*.galleryimgslideshow img {width: calc((100% / 3) * 1 - 40px);}
 	.galleryimgslideshow .rightrow img.thirdslide { right: -17rem;}
 	.galleryimgslideshow .leftrow img.thirdslide {right: -5rem;}*/
-	.rightrow { right: 6rem;}
-	.galleryimgslideshow  ul li img {width: 270px; height: 270px;} 
+
 	
 }
 
