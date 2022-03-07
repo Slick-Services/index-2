@@ -910,11 +910,11 @@ section#pivecy p { width: 100%;}
 .property-detail-meta { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 20px 0 30px;}
 .property-detail-meta > li > a { margin-right: -1px; border: 1px solid #eeeeee; padding: 14px 20px; display: block; color: #969696;}
 .share-box { position: relative;}
-.share-box .share-box-social {opacity: 0;visibility: hidden;position: absolute;left: 50%;/* bottom: 100%; */ display: -webkit-box; display: -ms-flexbox; display: flex;background: #ee7b02;padding: 10px 15px;
+.share-box .share-box-social {opacity: 0;visibility: hidden;position: absolute;left: 50%;/* bottom: 100%; */ display: -webkit-box; display: -ms-flexbox; display: flex;background: #ee7b02;padding: 13px 11px 10px;
     -webkit-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;border-radius: 7px;-webkit-transform: translate(-50%, 0px);transform: translate(-50%, 0px);}
 .share-box .share-box-social:before {width: 0;height: 0;border-style: solid;border-width: 6px 6px 0 6px;border-color: #ee7b02 transparent transparent transparent;content: "";position: absolute;left: 50%;
-    top: -6px;z-index: 99;margin-left: -3px; transform: rotate(180deg);}
-.share-box .share-box-social li a { padding: 0 10px; color: #ffffff; font-size: 13px; display: block;}
+    top: -6px;z-index: 99;margin-left: -5px; transform: rotate(180deg);}
+.share-box .share-box-social li a { padding: 0 10px; color: #ffffff; font-size: 16px; display: block;}
 .btn-primary:hover:not(:disabled):not(.disabled):active {background: #ee7b02; border-color: #ee7b02;}
 .share-box:hover .share-box-social { opacity: 1; visibility: visible; margin-bottom: 6px;}
 .property-detail-meta > li > a:hover { color: #ee7b02;}
