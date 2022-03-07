@@ -929,7 +929,8 @@ hr {border-top: dashed 1px #ee7b02;}
 /*.property-list-style-2 li:first-child {line-height: 0; padding-bottom: 1.1rem;}*/
 .property-list.lastfeatur li {margin-bottom: 1rem;}
 .property-list-style-2 li:first-child, .property-list.lastfeatur li:first-child {line-height: 0; padding-bottom: 1.1rem;}
-.card.rounded, .card.rounded img {border-radius: 1rem !important;}
+.card.rounded {border-radius: 1.3rem !important;}
+.card.rounded img {border-radius: 1.9rem !important;}
 .card.rounded {box-shadow: 0 6px 6px 3px #00000021;}
 .section-title.text-start h3 {font-size: 25px;}
 .productdetails span.mindot {display: flex; align-items: center; font-size: 1.3rem;}
@@ -957,3 +958,4 @@ p.small {font-size: .95rem;}
 p.big {font-size: 1.0rem;}
 .recentimg img {height: 95px; border-radius: .5rem;}
 .breadcrumb-item+.breadcrumb-item::before {content: "";}
+/*.similor.productdetails .productdetails h3 { padding-top: .7rem; margin-bottom: .5rem;}*/
