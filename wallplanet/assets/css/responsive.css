@@ -482,6 +482,7 @@
 	#footer .addressFooter li:last-of-type { padding-bottom:0; }
 	
 	#footer .small {flex-direction: column;}
+	#footer .footer-top .footer-contact {flex-direction: column;}
 }
 
 @media only screen and (max-width: 575px) {	

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<!-- belle/home2-default.html   11 Nov 2019 12:22:28 GMT -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Wall Planet</title>
+    <meta name="description" content="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.png" /> -->
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+
+    <!-- Bootstap CSS -->
+    <!--<link rel="stylesheet" href="assets/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- <link rel="stylesheet" href="assets/css/productstyle.css"> -->
+
+</head>
+
+<body>
+
+    <div class="pageWrapper">
+
+        <!--Search Form Drawer-->
+        <div class="search">
+            <div class="search__form">
+                <form class="search-bar__form" action="#">
+                    <button class="go-btn search__button" type="submit"><i class="icon anm anm-search-l"></i></button>
+                    <input class="search__input" type="search" name="q" value="" placeholder="Search entire store..." aria-label="Search" autocomplete="off">
+                </form>
+                <button type="button" class="search-trigger close-btn"><i class="anm anm-times-l"></i></button>
+            </div>
+        </div>
+        <!--End Search Form Drawer-->
+        <!--Top Header-->
+        <div class="top-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-10 col-sm-8 col-md-6 col-lg-5 d-flex">
+                        <div class="currency-picker">
+                            <span class="selected-currency">USD</span>
+                            <ul id="currencies">
+                                <li data-currency="INR" class="">INR</li>
+                                <li data-currency="GBP" class="">GBP</li>
+                                <li data-currency="CAD" class="">CAD</li>
+                                <li data-currency="USD" class="selected">USD</li>
+                                <li data-currency="AUD" class="">AUD</li>
+                                <li data-currency="EUR" class="">EUR</li>
+                                <li data-currency="JPY" class="">JPY</li>
+                            </ul>
+                        </div>
+                        <!--<div class="language-dropdown">
+                        <span class="language-dd">English</span>
+                        <ul id="language">
+                            <li class="">German</li>
+                            <li class="">French</li>
+                        </ul>
+                        </div>-->
+                        <p class="phone-no rotedright me-3 ms-2"><i class="anm anm-phone-call-r"></i> +440 0(111) 044 833</p>
+                        <p class="phone-no email"><i class="icon icon-email"></i> Inquiry</p>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-3 d-none d-md-block d-lg-block">
+                        <div class="text-center">
+                            <p class="top-header_middle-text"> Worldwide Express Shipping</p>
+                        </div>
+                    </div>
+                    <div class="col-2 col-sm-4 col-md-2 col-lg-4 text-right">
+                        <span class="user-menu d-block d-lg-none"><i class="anm anm-user-al" aria-hidden="true"></i></span>
+                        <ul class="customer-links list-inline">
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="register.html">Create Account</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Top Header-->
+        <!--Header-->
+        <header>
+
+            <div class="header-wrap animated d-flex border-bottom">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!--Desktop Logo-->
+                        <div class="logo col-8 col-sm-8 col-md-9 col-lg-2 d-lg-block pl-0">
+                            <a href="index.html">
+                                <img src="assets/img/logo.png" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
+                            </a>
+                        </div>
+                        <!--End Desktop Logo-->
+                        <!--Mobile Logo-->
+                        <!-- <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo.png" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
+                                </a>
+                            </div>
+                        </div> -->
+
+                        <div class="d-none d-lg-block col-lg-9">
+                            <!--Desktop Menu-->
+                            <nav class="grid__item col-auto" id="AccessibleNav">
+                                <!-- for mobile -->
+                                <ul id="siteNav" class="site-nav medium right hidearrow">
+                                    <li class="lvl1 parent"><a href="#">Home</li>
+                                    <li class="lvl1 parent"><a href="#">Category</a></li>
+                                    <li class="lvl1 parent"><a href="#">Why choose us </a></li>
+                                    <li class="lvl1 parent dropdown"><a href="#">Contact </a></li>
+                                </ul>
+                            </nav>
+                            <!--End Desktop Menu-->
+                        </div>
+                        <!--Mobile Logo-->
+                        <div class="col-4 col-sm-4 col-md-3 col-lg-1 p-sm-0 pe-2">
+                            <div class=" mainserchicon">
+                                <div class="d-block d-lg-none">
+                                    <button type="button" class="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open">
+                        	<i class="icon anm anm-times-l"></i>
+                            <i class="anm anm-bars-r"></i>
+                            </button>
+                                </div>
+                                <div class="site-header__search">
+                                    <button type="button" class="search-trigger"><i class="icon anm anm-search-l"></i></button>
+                                </div>
+                                <div class="site-cart">
+                                    <a href="#" class="site-header__cart" title="Cart">
+                                        <i class="icon anm anm-bag-l"></i>
+                                        <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">2</span>
+                                    </a>
+                                    <!--Minicart Popup-->
+                                    <div id="header-cart" class="block block-cart">
+                                        <ul class="mini-products-list">
+                                            <li class="item">
+                                                <a class="product-image" href="#">
+                                                    <img src="assets/img/product-images/cape-dress-1.jpg" alt="3/4 Sleeve Kimono Dress" title="" />
+                                                </a>
+                                                <div class="product-details">
+                                                    <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
+                                                    <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
+                                                    <a class="pName" href="cart.html">Sleeve Kimono Dress</a>
+                                                    <div class="variant-cart">Black / XL</div>
+                                                    <div class="wrapQtyBtn">
+                                                        <div class="qtyField">
+                                                            <span class="label">Qty:</span>
+                                                            <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
+                                                            <input type="text" id="Quantity" name="quantity" value="1" class="product-form__input qty">
+                                                            <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="priceRow">
+                                                        <div class="product-price">
+                                                            <span class="money">$59.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <a class="product-image" href="#">
+                                                    <img src="assets/img/product-images/cape-dress-2.jpg" alt="Elastic Waist Dress - Black / Small" title="" />
+                                                </a>
+                                                <div class="product-details">
+                                                    <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
+                                                    <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
+                                                    <a class="pName" href="cart.html">Elastic Waist Dress</a>
+                                                    <div class="variant-cart">Gray / XXL</div>
+                                                    <div class="wrapQtyBtn">
+                                                        <div class="qtyField">
+                                                            <span class="label">Qty:</span>
+                                                            <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
+                                                            <input type="text" id="Quantity" name="quantity" value="1" class="product-form__input qty">
+                                                            <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="priceRow">
+                                                        <div class="product-price">
+                                                            <span class="money">$99.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="total">
+                                            <div class="total-in">
+                                                <span class="label">Cart Subtotal:</span><span class="product-price"><span class="money">$748.00</span></span>
+                                            </div>
+                                            <div class="buttonSet text-center">
+                                                <a href="cart.html" class="btn btn-secondary btn--small">View Cart</a>
+                                                <a href="checkout.html" class="btn btn-secondary btn--small">Checkout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Minicart Popup-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Header-->
+
+            <!--Mobile Menu-->
+            <div class="mobile-nav-wrapper" role="navigation">
+                <div class="closemobileMenu"><i class="icon anm anm-times-l pull-right"></i> Close Menu</div>
+                <ul id="MobileNav" class="mobile-nav">
+                    <li class="lvl1 parent"><a href="index.html">Home</a>
+
+                    </li>
+                    <li class="lvl1 parent"><a href="#">Shop </a>
+
+                    </li>
+                    <li class="lvl1 parent"><a href="product-layout-1.html">Product </a>
+
+                    </li>
+                    <li class="lvl1 parent"><a href="about-us.html">Pages</a>
+
+                    </li>
+                    <li class="lvl1 parent"><a href="blog-left-sidebar.html">Blog</a>
+
+                    </li>
+                    <li class="lvl1"><a href="#"><b>Buy Now!</b></a>
+                    </li>
+                </ul>
+            </div>
+            <!--End Mobile Menu-->
+        </header>
+
+        <!--=================================
+Breadcrumb -->
+        <div class="bg-light">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item">
+                                <a href="http://themes.potenzaglobalsolutions.com/html/real-villa/index.html"> <i class="fas fa-home"></i> </a>
+                            </li>
+                            <li class="breadcrumb-item"> <i class="fas fa-chevron-right pe-1 ps-1"></i> <a href="#">Pages</a></li>
+                            <li class="breadcrumb-item active"> <i class="fas fa-chevron-right pe-1 ps-1"></i> <span> Stunning 2 bedroom home in village</span></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--=================================
+Breadcrumb -->
+        <!---------Start main contant part------->
+        <main id="main">
+
+            <!-- ======= Start product details Section ======= -->
+
+            <section id="productdetails" class="space-pt productdetails">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 mb-5 mb-lg-0 order-lg-2">
+                            <div class="sticky-top">
+                                <div class="mb-4">
+                                    <div class="section-title text-start" data-aos="zoom-in">
+                                        <h3>Living Room wall design</h3>
+                                    </div>
+                                    <span class="mb-3 mindot">Colors
+                                        <ul class="dot">
+                                            <li><i class="fas fa-circle fa-xs pe-2 red"></i></li>
+                                            <li><i class="fas fa-circle fa-xs pe-2 orange"></i></li>
+                                            <li><i class="fas fa-circle fa-xs pe-2 pink"></i></li>
+                                            <li><i class="fas fa-circle fa-xs pe-2 darkred"></i></li>
+                                        </ul>                                         
+                                        </span>
+                                    <span class="price font-xll d-flex"><b class="text-primary">$5000</b> <p class="sub-price text-dark">(7/Sqft)</p></span>
+                                    <ul class="property-detail-meta list-unstyled ">
+                                        <li>
+                                            <a href="#"> <i class="fas fa-star text-warning pe-2"></i>3.9/5 </a>
+                                        </li>
+                                        <li class="share-box">
+                                            <a href="#"> <i class="fas fa-share-alt"></i> </a>
+                                            <ul class="list-unstyled share-box-social">
+                                                <li> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+                                                <li> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+                                                <li> <a href="#"><i class="fab fa-linkedin"></i></a> </li>
+                                                <li> <a href="#"><i class="fab fa-instagram"></i></a> </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"> <i class="fas fa-heart"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> <i class="fas fa-exchange-alt"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> <i class="fas fa-print"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="agent-contact">
+                                    <div class="d-flex align-items-center p-4 border border-bottom-0">
+                                        <div class="agent-contact-avatar me-3">
+                                            <img class="img-fluid rounded-circle avatar avatar-xl" src="assets/img/browsecatogry/extra.jpg" alt="">
+                                        </div>
+                                        <div class="agent-contact-name">
+                                            <h6>Joana williams</h6>
+                                            <a href="#">Company Assistant</a>
+                                            <span class="d-block"><i class="fas fa-phone-volume pe-2 mt-2"></i>(123) 345-6789</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <a href="#" class="btn btn-dark col b-radius-none">Send Message</a>
+                                        <a href="#" class="btn btn-primary col ms-0 b-radius-none">Request info</a>
+                                    </div>
+                                </div>
+                                <div class="Recent Listing mt-5 pt-1">
+                                    <div class="section-title text-start pb-4" data-aos="zoom-in">
+                                        <h3>Recent Listing</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="recentimg">
+                                                <a href="">
+                                                    <img src="assets/img/recent/RL1.png">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="mb-2 big">Grasscloth Wallpaper</p>
+                                            <p class="mb-2 orange">$900 ($10 sq/ft)</p>
+                                            <p class="mb-2 small">5000 sq/ft</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-sm-5">
+                                        <div class="col-sm-6">
+                                            <div class="recentimg">
+                                                <a href="">
+                                                    <img src="assets/img/recent/RL2.png">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="mb-2 big">Grasscloth Wallpaper</p>
+                                            <p class="mb-2 orange">$900 ($10 sq/ft)</p>
+                                            <p class="mb-2 small">5000 sq/ft</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-sm-5">
+                                        <div class="col-sm-6">
+                                            <div class="recentimg">
+                                                <a href="">
+                                                    <img src="assets/img/recent/RL3.png">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="mb-2 big">Grasscloth Wallpaper</p>
+                                            <p class="mb-2 orange">$900 ($10 sq/ft)</p>
+                                            <p class="mb-2 small">5000 sq/ft</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 order-lg-1">
+                            <div class="property-detail-img popup-gallery mb-3">
+                                <div id="carousel" class="owl-carousel owl-loaded owl-drag" data-animateout="fadeOut" data-nav-arrow="true" data-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1" data-xx-items="1" data-space="0" data-loop="true">
+
+
+                                    <div class="item">
+                                        <a class="portfolio-img" href="assets/img/bg_details.jpg">
+                                            <img class="img-fluid" src="assets/img/bg_details.jpg" alt=""></a>
+                                    </div>
+                                    <!-- <div class="item">
+                                        <a class="portfolio-img" href="assets/img/bg_details.jpg">
+                                            <img class="img-fluid" src="assets/img/bg_details.jpg" alt=""></a>
+                                    </div>
+                                    <div class="item">
+                                        <a class="portfolio-img" href="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg">
+                                            <img class="img-fluid" src="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg" alt=""></a>
+                                    </div>
+                                    <div class="item">
+                                        <a class="portfolio-img" href="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg">
+                                            <img class="img-fluid" src="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg" alt=""></a>
+                                    </div>
+                                    <div class="item">
+                                        <a class="portfolio-img" href="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg">
+                                            <img class="img-fluid" src="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg" alt=""></a>
+                                    </div>
+                                    <div class="item">
+                                        <a class="portfolio-img" href="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg">
+                                            <img class="img-fluid" src="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg" alt=""></a>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="property-info mt-5">
+                                <div class="row">
+                                    <div class="col-sm-3 mb-3 mb-sm-0 section-title text-start" data-aos="zoom-in">
+                                        <h5>Wallpaper details</h5>
+                                    </div>
+                                    <div class="col-sm-9" data-aos="zoom-in">
+                                        <div class="row mb-0">
+                                            <div class="col-sm-6">
+                                                <ul class="property-list list-unstyled">
+                                                    <li><b class="propartyname">Wallpaper Type :</b> Vinyle Coated Fabric</li>
+                                                    <li><b class="propartyname">Category  Type :</b> Leaving Room</li>
+                                                    <li><b class="propartyname">Wallpaper Color :</b> Red & Light Gray</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="property-list list-unstyled">
+                                                    <li><b class="propartyname">Bedrooms:</b> 3D Solid</li>
+                                                    <li><b class="propartyname">Bathrooms:</b> 1200 sq/ft</li>
+                                                    <li><b class="propartyname">Bathrooms:</b> $500 ($8 sq/ft)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mt-4 mb-4 mb-sm-5 mt-sm-5">
+                            <div class="property-description">
+                                <div class="row">
+                                    <div class="col-sm-3 mb-3 mb-sm-0 section-title text-start" data-aos="zoom-in">
+                                        <h5>Description</h5>
+                                    </div>
+                                    <div class="col-sm-9" data-aos="zoom-in">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor odio sit amet ornare tempor. Integer maximus ex eu mi maximus volutpat. Proin et sapien at mi volutpat ultricies vitae non enim. Morbi sit amet
+                                            sapien dui. Cras eu ultricies eros. Nam eget fermentum orci. Aenean consectetur commodo magna eu hendrerit. </p>
+                                        <p>Nunc venenatis efficitur elit, sed efficitur neque bibendum sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                                        <p>Nunc placerat lobortis lectus, sit amet accumsan dui scelerisque a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed mi sit amet urna consectetur posuere a quis ligula. Donec et mattis
+                                            purus. Nullam sagittis erat arcu.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mt-4 mb-4 mb-sm-5 mt-sm-5">
+                            <div class="property-features">
+                                <div class="row align-items-baseline">
+                                    <div class="col-sm-3 mb-3 mb-sm-0 section-title text-start" data-aos="zoom-in">
+                                        <h5>Category</h5>
+                                    </div>
+                                    <div class="col-sm-9" data-aos="zoom-in">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <ul class="property-list-style-2 list-unstyled mb-0">
+                                                    <li>Hotel / Restaurent</li>
+                                                    <li>Office</li>
+                                                    <li>Living Room</li>
+                                                    <li>Bed Room</li>
+                                                    <li>Kitchen</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="property-list-style-2 list-unstyled mb-0">
+                                                    <li>Children Room</li>
+                                                    <li>Meeting Room</li>
+                                                    <li>Teenager's Room</li>
+                                                    <li>Bathroom</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mt-4 mb-4 mb-sm-5 mt-sm-5">
+                            <div class="property-features">
+                                <div class="row align-items-baseline">
+                                    <div class="col-sm-3 mb-3 mb-sm-0 section-title text-start" data-aos="zoom-in">
+                                        <h5>Wallpaper Type</h5>
+                                    </div>
+                                    <div class="col-sm-9" data-aos="zoom-in">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <ul class="property-list-style-2 black list-unstyled mb-0">
+                                                    <li>Vinyl Wallpaper</li>
+                                                    <li>Solid Sheet Vinyl</li>
+                                                    <li>Vinyl Coated Fabric</li>
+                                                    <li>Vinyl Coated Paper</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="property-list-style-2 black list-unstyled mb-0">
+                                                    <li>Non-Woven Wallpaper</li>
+                                                    <li>Easy-Walls Wallpaper</li>
+                                                    <li>Prepasted Wallpaper</li>
+                                                    <li>Grasscloth Wallpaper</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mt-4 mb-4 mb-sm-5 mt-sm-5">
+                            <div class="property-features">
+                                <div class="row align-items-baseline">
+                                    <div class="col-sm-3 mb-3 mb-sm-0 section-title text-start" data-aos="zoom-in">
+                                        <h5>Features</h5>
+                                    </div>
+                                    <div class="col-sm-9" data-aos="zoom-in">
+                                        <div class="row mb-0">
+                                            <div class="col-sm-6">
+                                                <ul class="property-list list-unstyled">
+                                                    <li>100 % Waterproof</li>
+                                                    <li>Anti dust (Dust free)</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="property-list list-unstyled">
+                                                    <li>Easy Removal & Easy Clean</li>
+                                                    <li>Good Degree of Protection & Durability</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= End product details Section ======= -->
+
+            <!-- ======= Start Similor product Section ======= -->
+
+            <section id="similor" class="similor productdetails">
+
+
+
+                <div class="container">
+                    <div class="section-title text-start" data-aos="zoom-in">
+                        <h5>Similar Categories</h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card rounded">
+                                <img src="assets/img/browsecatogry/extra.jpg" alt="" title="" class="img-fluid p-2 rounded">
+                                <h3 class="ps-4 pb-4 text-primary">Floral Design</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card rounded">
+                                <img src="assets/img/browsecatogry/extra.jpg" alt="" title="" class="img-fluid p-2 rounded">
+                                <h3 class="ps-4 pb-4 text-primary">Pattern Design</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card rounded">
+                                <img src="assets/img/browsecatogry/extra.jpg" alt="" title="" class="img-fluid p-2 rounded">
+                                <h3 class="ps-4 pb-4 text-primary">Texture Design</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= End Similor product Section ======= -->
+
+        </main>
+        <!---------End main contant part-------->
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="footer-top">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="footer-contact">
+
+                            <div class="col-md-4 pl-0 rightsidelogo">
+                                <div class="ftlogobg"><img src="assets/img/logo.png" class="img-fluid" /></div>
+                                <p class=" mainsocial">Call : +91 9811115892</p>
+                                <div class="social-links">
+                                    <p class="follows">Follows on :
+                                        <a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter fa-spin"></i></a>
+                                        <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+                                        <a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-12 footer-links  pl-0 pl-lg-0 pt-3  pt-md-0">
+                                <ul>
+                                    <li><a href="/privacypolicy">Privacy Policy</a></li>
+                                    <li><a href="/faq">Faq</a></li>
+                                    <li><a href="/termsandconditions">Terms of Service</a></li>
+                                    <li><a href="/non-disclosure-agreement">NDA</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4 footer-newsletter">
+                                <h4>Sign up for our newsletter</h4>
+                                <form action="" method="post">
+                                    <input type="email" name="email">
+                                    <button class="btn btn-primary"> submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="copyrightmain">
+                                <div class="copyright text-center">
+                                    Copyright © 2020. All rights reserved by<strong><span><a href="#"> Slickservices</a></span></strong>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!--Scoll Top-->
+        <span id="site-scroll"><i class="icon las la-arrow-up"></i></span>
+        <!--End Scoll Top-->
+
+        <!-- <a href="" class="back-to-top d-flex align-items-center justify-content-center"><i class="las la-arrow-up"></i></a> -->
+
+    </div>
+
+    <!-- Including Jquery -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/brands.min.js" integrity="sha512-oPuIMrT4JN6Cw359VQkuI0OPn1reFOKJm1YUOjXxgIzMmNMY7g4jenNcJdYcF3dt90WyNajzivr3vZFSzgqLow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/vendor/jquery-3.3.1.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/jquery.cookie.js"></script>
+    <script src="assets/vendor/wow.min.js"></script>
+    <script src="assets/vendor/plugins.js"></script>
+    <!-- <script src="assets/vendor/glightbox/js/glightbox.min.js"></script> -->
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // var owlslider = jQuery("div.owl-carousel");
+        // if (owlslider.length > 0) {
+        //     owlslider.each(function() {
+        //         var $this = $(this),
+        //             $items = ($this.data('items')) ? $this.data('items') : 1,
+        //             $loop = ($this.attr('data-loop')) ? $this.data('loop') : true,
+        //             $navdots = ($this.data('nav-dots')) ? $this.data('nav-dots') : false,
+        //             $navarrow = ($this.data('nav-arrow')) ? $this.data('nav-arrow') : false,
+        //             $autoplay = ($this.attr('data-autoplay')) ? $this.data('autoplay') : true,
+        //             $autospeed = ($this.attr('data-autospeed')) ? $this.data('autospeed') : 5000,
+        //             $smartspeed = ($this.attr('data-smartspeed')) ? $this.data('smartspeed') : 1000,
+        //             $autohgt = ($this.data('autoheight')) ? $this.data('autoheight') : false,
+        //             $space = ($this.attr('data-space')) ? $this.data('space') : 30,
+        //             $animateOut = ($this.attr('data-animateOut')) ? $this.data('animateOut') : false;
+
+        //         $(this).owlCarousel({
+        //             loop: $loop,
+        //             items: $items,
+        //             responsive: {
+        //                 0: {
+        //                     items: $this.data('xx-items') ? $this.data('xx-items') : 1
+        //                 },
+        //                 480: {
+        //                     items: $this.data('xs-items') ? $this.data('xs-items') : 1
+        //                 },
+        //                 768: {
+        //                     items: $this.data('sm-items') ? $this.data('sm-items') : 2
+        //                 },
+        //                 980: {
+        //                     items: $this.data('md-items') ? $this.data('md-items') : 3
+        //                 },
+        //                 1200: {
+        //                     items: $items
+        //                 }
+        //             },
+        //             dots: $navdots,
+        //             autoplayTimeout: $autospeed,
+        //             smartSpeed: $smartspeed,
+        //             autoHeight: $autohgt,
+        //             margin: $space,
+        //             nav: $navarrow,
+        //             navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+        //             autoplay: $autoplay,
+        //             autoplayHoverPause: true
+        //         });
+        //     });
+        // }
+    </script>
+
+
+    <!--For Newsletter Popup-->
+
+</body>
+
+
+</html>
