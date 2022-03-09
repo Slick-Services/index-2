@@ -1,10 +1,17 @@
 
+@media only screen and (max-width: 1920px)  {
+	.portfolio .mainportfolio { padding: 2rem 25rem 2rem 25rem;  position: relative;   margin: auto;}
+	.portfolio-item.filter-web.last  {right: 0;}
+}
+
 @media only screen and (max-width: 1500px)  {
 	.rightrow { right: 4rem;}
 	.galleryimgslideshow  ul li img {width: 270px; height: 270px;}
 	.portfolio .portfolio-item .portfolio-info h4 {font-size: .9rem;margin: 0;} 
 	.portfolio .portfolio-item .portfolio-info { padding: 15px 15px 15px 10px;}
 	.portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link { top: calc(50% - 14px);font-size: 20px;}
+	.portfolio .mainportfolio { padding: 2rem 8rem 2rem 7rem;  position: relative;   margin: auto;}
+	.portfolio .mainportfolio { padding: 2rem 20rem 2rem 20rem;  position: relative;   margin: auto;}
 }
 
 @media only screen and (max-width: 1450px) {
@@ -24,8 +31,10 @@
 	.galleryimgslideshow .rightrow img.thirdslide { right: -17rem;}
 	.galleryimgslideshow .leftrow img.thirdslide {right: -5rem;}*/
 
-	
+	.portfolio .mainportfolio { padding: 2rem 12rem 2rem 12rem;  position: relative;   margin: auto;}
+	.portfolio-item.filter-web.last  {right: 0;}	
 }
+
 
 @media only screen and (max-width: 1366px) {
 	
