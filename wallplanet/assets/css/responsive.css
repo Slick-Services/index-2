@@ -2,7 +2,8 @@
 @media only screen and (max-width: 1920px)  {
 	.portfolio .mainportfolio { padding: 2rem 25rem 2rem 25rem;  position: relative;   margin: auto;}
 	.portfolio-item.filter-web.last  {right: 0;}
-	.col-lg-4.col-md-6.portfolio-item.filter-app.first {top: 3.0rem !important;}
+	.portfolio-item.filter-app.first {top: 1.9rem !important;}
+	.portfolio-item.filter-app.first img.img-fluid { height: 430px;}
 }
 
 @media only screen and (max-width: 1500px)  {
@@ -13,7 +14,8 @@
 	.portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link { top: calc(50% - 14px);font-size: 20px;}
 	.portfolio .mainportfolio { padding: 2rem 8rem 2rem 7rem;  position: relative;   margin: auto;}
 	.portfolio .mainportfolio { padding: 2rem 20rem 2rem 20rem;  position: relative;   margin: auto;}
-	.col-lg-4.col-md-6.portfolio-item.filter-app.first {top: 2.7rem !important;}
+	.portfolio-item.filter-app.first {top: 0.7rem !important;}
+	.portfolio-item.filter-app.first img.img-fluid { height: 353px;}
 }
 
 @media only screen and (max-width: 1450px) {
@@ -35,6 +37,7 @@
 
 	.portfolio .mainportfolio { padding: 2rem 12rem 2rem 12rem;  position: relative;   margin: auto;}
 	.portfolio-item.filter-web.last  {right: 0;}	
+	.portfolio-item.filter-app.first img.img-fluid { height: 430px;}
 }
 
 
