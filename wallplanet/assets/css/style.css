@@ -520,6 +520,7 @@ section {padding: 60px 0; overflow: hidden;}
 .section-title h2::after { content: ""; position: absolute; display: block; width: 50px; height: 3px; background: #ef7b01;
   bottom: 0; left: calc(50% - 25px);}
 .section-title p { margin-bottom: 0;}
+.section-title i {font-size: 1.5rem; margin-right: .7rem; background: #ffeee2; padding: .7rem;color: #fdad59; border-radius: .4rem; cursor: pointer;}
 
 /*--------------------------------------------------------------
 # Services
@@ -896,7 +897,7 @@ strong,
 
 section#pivecy p { width: 100%;}
 
-#site-scroll {color: #fff;line-height: 38px;cursor: pointer; font-size: 20px; height: 40px; right: 30px; position: fixed; border-radius: 3px; text-align: center;transition: all 0.3s ease 0s;-moz-transition: all 0.3s ease 0s;
+#site-scroll {color: #fff;line-height: 38px;cursor: pointer; font-size: 20px; height: 40px; right: 30px; position: fixed; border-radius: .5rem; text-align: center;transition: all 0.3s ease 0s;-moz-transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s; width: 40px;bottom: 50px; z-index: 444; display: none; background: #000;}
 #site-scroll i {line-height: 40px;}
 .property-list-style-2 li:before {content: "\f111"; font-family: "Font Awesome 5 Free"; font-style: normal; font-weight: 900;color: #ee7b02; font-size: 8px;margin-right: 10px;}
@@ -959,3 +960,102 @@ p.big {font-size: 1.0rem;}
 .recentimg img {height: 95px; border-radius: .5rem;}
 .breadcrumb-item+.breadcrumb-item::before {content: "";}
 /*.similor.productdetails .productdetails h3 { padding-top: .7rem; margin-bottom: .5rem;}*/
+#button {display: inline-block;background-color: #FF9800;width: 50px;height: 50px;text-align: center;border-radius: 4px; position: fixed; bottom: 30px; right: 30px; transition: background-color .3s, 
+    opacity .5s, visibility .5s; opacity: 0; visibility: hidden; z-index: 1000;}
+#button::after { content: "\f077"; font-family: FontAwesome; font-weight: normal; font-style: normal; font-size: 2em; line-height: 50px; color: #fff;}
+#button:hover { cursor: pointer; background-color: #333;}
+#button:active { background-color: #555;}
+#button.show { opacity: 1;  visibility: visible;}
+.filtermain.productdetails .filter .card { display: flex;  align-items: center;  padding: 2.0rem 1.2rem; border-radius: .8rem; border-color: #E1E1E1;}
+.filtermain.productdetails .filter .card .filterform h2 {margin-bottom: 1.7rem;}
+.filtermain.productdetails .filter .card .filterform input {border: solid .075rem #BEBEBE; border-radius: .4rem; padding: 1.5rem .7rem 1.6rem;}
+:placeholder 		{color: #969696;}
+moz:placeholder {color: #969696;}
+webkit:placeholder {color: #969696;}
+.filtermain.productdetails .filter .card .filterform input:focus,
+.filtermain.productdetails .filter .card .filterform input:hover,
+.filtermain.productdetails .filter .card .filterform input:active {box-shadow: none; border-color: #ef7b00;}
+
+
+/*span.custom-rangeslider__label {display: none}*/
+.filtermain.productdetails .filter .card .filterform input.custom-rangeInput {border: none;	border-radius: 0;	padding: 0;}
+	/* General Rules For Range Slider */
+.custom-rangeslider {position: relative;margin-top: 40px; padding: 0;}
+.custom-rangeInput {width: 100%; background: transparent; -webkit-appearance: none; -moz-appearance: none; appearance: none;box-sizing: border-box;cursor: pointer;outline: 0;border: 0;padding: 0;margin: 0;
+  background-color: transparent; height: 6px;}
+
+.custom-rangeInput::-ms-thumb:active {cursor: grabbing; cursor: -webkit-grabbing;}
+.custom-rangeInput::-webkit-slider-runnable-track { -webkit-appearance: none; appearance: none;box-sizing: border-box; height: 5px; width: 100%; cursor: pointer; border: none; padding: 0; margin: 0;background: grey;}
+.custom-rangeInput::-moz-range-track { -moz-appearance: none; appearance: none;box-sizing: border-box; height: 5px;width: 100%; cursor: pointer; border: none; padding: 0; margin: 0; background: grey;}
+.custom-rangeInput::-ms-track {appearance: none; box-sizing: border-box; height: 5px; width: 100%; cursor: pointer; border: none; padding: 0; margin: 0; background: grey; color: transparent; border: none; outline: none;}
+.custom-rangeInput:focus, .custom-rangeInput:active { outline: none;}
+.custom-rangeInput::-ms-tooltip {display: none;}
+.custom-rangeslider__tooltip {line-height: 24px; position: absolute; height: 30px; width: 45px; background-color: #fff; padding: 3px 3px; border: 1px rgb(238 123 0) solid; top: -3px; left: 0; text-align: center;
+    transform: translate(-26%, 0); border-radius: 3px; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; pointer-events: none;}
+.custom-rangeslider__tooltip {display: block; position: absolute; height: 33px; line-height: 33px; min-width: 36px; padding: 0 10px; top: -3px; transform: translate(-50%, -100%); background: rgb(239 123 0); color: #fff;border-radius: 100px;
+    white-space: nowrap; font-weight: bold; font-size: 1.0em; text-align: center;}		
+/*.custom-rangeslider__tooltip:after {display: block;content: " "; background: #fff; position: absolute; border: 1px #33ccff solid; border-top: 0; border-left: 0; width: 10px;height: 10px;left: calc(50% - 6px); bottom: -6px; transform: rotate(45deg);}*/
+.custom-rangeslider__label {width: 100%;display: block;}
+.custom-rangeslider__label span {display: block;}
+.custom-rangeslider__label-min { float: left;}
+.custom-rangeslider__label-max { float: right;}
+.custom-rangeslider__label:after {content: ""; display: table; clear: both;}
+.card.mainwallpaper { border-radius: 15px; background: #F6F6F6; border: none;}
+.card.mainwallpaper {margin-bottom: 2.5rem;}
+.card.mainwallpaper img {border-radius: 15px 15px 0 0;}
+.card.mainwallpaper h3 {padding: 2.5rem 1.3rem 1.3rem;font-size: 1rem;color: #231F20;margin: 0;}
+.card.mainwallpaper h4 {padding: .5rem 1.3rem 1.3rem 1.4rem;color: #F58220;}
+.card.mainwallpaper .card-footer {border-radius: 0 0 15px 15px;border: solid 1px #E1E1E1;	background: #fff;}
+
+.custom-rangeInput::-webkit-slider-thumb {-webkit-appearance: none; appearance: none;box-sizing: border-box;background-color: #21324f; outline: 2px solid #ffffff; width: 20px; height: 20px; border: none; border-radius: 50%; cursor: move; cursor: grab; cursor: -webkit-grab; margin-top: -8px; /* fallback if grab cursor is unsupported */ }
+.custom-rangeInput::-webkit-slider-thumb:active { cursor: grabbing; cursor: -webkit-grabbing;}
+.custom-rangeInput::-moz-range-thumb {-moz-appearance: none; appearance: none;box-sizing: border-box;background-color: #21324f; outline: 2px solid #ffffff; width: 20px; height: 20px; border: none;  border-radius: 50%; cursor: move; cursor: grab;  cursor: -webkit-grab; /* fallback if grab cursor is unsupported */  }
+.custom-rangeInput::-moz-range-thumb:active {cursor: grabbing; cursor: -webkit-grabbing;}
+.custom-rangeInput::-ms-thumb { appearance: none; box-sizing: border-box; background-color: #21324f; outline: 2px solid #ffffff; width: 20px; height: 20px;border: none; border-radius: 50%; cursor: move; cursor: grab; cursor: -webkit-grab; margin: auto; /* fallback if grab cursor is unsupported */ }
+
+.custom-rangeInput::-webkit-slider-thumb:active,
+.custom-rangeInput::-webkit-slider-thumb,
+.custom-rangeInput::-moz-range-thumb,
+.custom-rangeInput::-moz-range-thumb:active,
+.custom-rangeInput::-ms-thumb  {display: none;}
+
+.filtermain.productdetails .filter .card form.filterform { display: flex; flex-direction: column;}
+button.btn.btn-primary { margin: 3.0rem auto .5rem; text-align: center; border-radius: .5rem;}
+
+
+/*.property-btn a {
+	display: block;
+	padding: 15px;
+	font-size: 15px;
+	text-align: center;
+	background: #FFFFFF;
+	color: #231F20;
+}*/
+
+/*.property-btn .property-listing-actions li a {
+	-ms-flex-item-align: center;
+	align-self: center;
+	color: #969696;
+	padding: 12px 20px;
+	background: transparent;
+}
+.property-btn .property-listing-actions li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+}*/
+
+.property-btn .property-link {margin-right: auto;	width: 100%;}
+.property-btn a {display: block;padding: 15px;font-size: 15px;text-align: center;background: #fafafa;color: #001935;width: 100%;border-radius: 0 0 0px 15px;}
+.property-btn .property-listing-actions {display: -webkit-box;display: -ms-flexbox;display: flex;border-top: 1px solid #eeeeee;border-bottom: 0px solid #eeeeee;}
+.property-btn .property-listing-actions li {display: -webkit-box;display: -ms-flexbox;display: flex;position: relative;}
+.property-btn .property-listing-actions li::before {content: "";border-right: 1px solid #eeeeee;position: absolute;left: 0;top: 0;height: 100%;}
+.property-btn .property-listing-actions li i {margin-right: 0px;}
+.property-btn .property-listing-actions li a {-ms-flex-item-align: center;align-self: center;color: #969696;padding: 14px 20px;background: transparent;border-radius: 0;}
+.property-btn .property-listing-actions li.property-compare a {border-radius: 0 !important;}
+.property-btn .property-listing-actions li a:last-child {border-bottom-right-radius: 15px;}
+.property-btn a:hover,
+.property-btn .property-listing-actions li a:hover {background: #F58220;color: #ffffff;}
+.property-btn {display: -webkit-box;display: -ms-flexbox;display: flex;	margin: auto;}
+.filtermain.productdetails .card .filterform button.btn.btn-primary { margin: 3.5rem auto .5rem; padding: .7rem 1.4rem; text-align: center; width: 100%; border-radius: .5rem;}

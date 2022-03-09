@@ -469,7 +469,7 @@
 	.categories-item img { width:100%; }
 	.categories-list-items .btn { font-size:12px; padding:5px 10px; }
 	
-	#site-scroll { font-size:18px; line-height:30px; height:30px; width:30px; right:15px; bottom:30px; }
+	#site-scroll {font-size: 30px; line-height: 45px; height: 45px; width: 45px; right: 15px; bottom: 30px;}
 	#site-scroll i { line-height:30px; }
 	
 	.close-announcement { right:10px; }

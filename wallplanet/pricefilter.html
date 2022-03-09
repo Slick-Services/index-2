@@ -259,265 +259,186 @@ Breadcrumb -->
 
             <!-- ======= Start product details Section ======= -->
 
-            <section id="productdetails" class="space-pt productdetails">
+            <section id="productdetails" class="filtermain productdetails">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 mb-5 mb-lg-0 order-1">
-                            <div class="sticky-top">
-                                <div class="mb-4">
-                                    <div class="section-title text-start" data-aos="zoom-in">
-                                        <h3>Living Room wall design</h3>
-                                    </div>
-                                    <span class="mb-3 mindot">Colors
-                                        <ul class="dot">
-                                            <a href=""><li><i class="fas fa-circle fa-xs pe-2 red"></i></li></a>
-                                            <a href=""><li><i class="fas fa-circle fa-xs pe-2 orange"></i></li></a>
-                                            <a href=""><li><i class="fas fa-circle fa-xs pe-2 pink"></i></li></a>
-                                            <a href=""><li><i class="fas fa-circle fa-xs pe-2 darkred"></i></li></a>
-                                        </ul>                                         
-                                        </span>
-                                    <span class="price font-xll d-flex"><b class="text-primary">$5000</b> <p class="sub-price text-dark">(7/Sqft)</p></span>
-                                    <ul class="property-detail-meta list-unstyled ">
-                                        <li>
-                                            <a href="#"> <i class="fas fa-star text-warning pe-2"></i>3.9/5 </a>
-                                        </li>
-                                        <li class="share-box">
-                                            <a href="#"> <i class="fas fa-share-alt"></i> </a>
-                                            <ul class="list-unstyled share-box-social">
-                                                <li> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
-                                                <li> <a href="#"><i class="fab fa-twitter"></i></a> </li>
-                                                <li> <a href="#"><i class="fab fa-linkedin"></i></a> </li>
-                                                <li> <a href="#"><i class="fab fa-instagram"></i></a> </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#"> <i class="fas fa-heart"></i> </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> <i class="fas fa-exchange-alt"></i> </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> <i class="fas fa-print"></i> </a>
-                                        </li>
-                                    </ul>
+                            <div class="filter">
+                                <div class="section-title text-start pb-4 aos-init aos-animate d-flex align-items-center" data-aos="zoom-in">
+                                    <i class="icon icon-filter"></i>
+                                    <h3 class="m-0">Filter</h3>
                                 </div>
-                                <div class="agent-contact">
-                                    <div class="d-flex align-items-center p-4 border border-bottom-0">
-                                        <div class="agent-contact-avatar me-3">
-                                            <img class="img-fluid rounded-circle avatar avatar-xl" src="assets/img/browsecatogry/extra.jpg" alt="">
+                                <div class="card col-sm-6 col-md-6 col-lg-12 m-auto m-0">
+                                    <form class="filterform col-12" action="" method="post" oninput="output.value = Math.round(range.valueAsNumber / 1000)">
+                                        <h2>Any Price</h2>
+                                        <input type="text" class="walltype form-control mb-3" placeholder="Enter Wallpaper Type" value="" name="Enter Wallpaper Type">
+                                        <input type="text" class="walltype form-control mb-3 mt-4" placeholder="Enter Category" value="" name="Enter Category">
+                                        <h2 class="mt-5 mb-2 pb-3">Any Price</h2>
+                                        <div class="custom-rangeslider mt-2">
+                                            <input class="custom-rangeInput" title="Percentage" id="range-slider1" type="range" min="0" max="100" value="50" step="1" data-tooltip="true" aria-controls="rangeTooltip rangeLabel" aria-live="polite">
+                                            <span class="custom-rangeslider__tooltip">0</span>
+                                            <!-- <span class="custom-rangeslider__label">
+                                              <span class="custom-rangeslider__label-min">0%</span>
+                                            <span class="custom-rangeslider__label-max">100%</span>
+                                            </span> -->
                                         </div>
-                                        <div class="agent-contact-name">
-                                            <h6>Joana williams</h6>
-                                            <a href="#">Company Assistant</a>
-                                            <span class="d-block"><i class="fas fa-phone-volume pe-2 mt-2"></i>(123) 345-6789</span>
+
+                                        <h2 class="mt-5 mb-2 pb-2">Size</h2>
+                                        <div class="custom-rangeslider mt-2">
+                                            <input class="custom-rangeInput" title="Percentage" id="range-slider2" type="range" min="0" max="100" value="70" step="1" data-tooltip="true" aria-controls="rangeTooltip rangeLabel" aria-live="polite">
+                                            <span class="custom-rangeslider__tooltip">0</span>
+                                            <!-- <span class="custom-rangeslider__label">
+                                              <span class="custom-rangeslider__label-min">0%</span>
+                                            <span class="custom-rangeslider__label-max">100%</span>
+                                            </span> -->
                                         </div>
-                                    </div>
-                                    <div class="d-flex">
-                                        <a href="#" class="btn btn-dark col b-radius-none">Send Message</a>
-                                        <a href="#" class="btn btn-primary col ms-0 b-radius-none">Request info</a>
-                                    </div>
+                                        <button type="submit" class="btn btn-primary col-12 col-md-4">Find Wallpaper</button>
+                                    </form>
                                 </div>
-                                <div class="Recent Listing mt-5 pt-1">
-                                    <div class="section-title text-start pb-4" data-aos="zoom-in">
-                                        <h3>Recent Listing</h3>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="recentimg">
-                                                <a href="">
-                                                    <img src="assets/img/recent/RL1.png">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <p class="mb-2 big">Grasscloth Wallpaper</p>
-                                            <p class="mb-2 orange">$900 ($10 sq/ft)</p>
-                                            <p class="mb-2 small">5000 sq/ft</p>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-sm-5">
-                                        <div class="col-sm-6">
-                                            <div class="recentimg">
-                                                <a href="">
-                                                    <img src="assets/img/recent/RL2.png">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <p class="mb-2 big">Grasscloth Wallpaper</p>
-                                            <p class="mb-2 orange">$900 ($10 sq/ft)</p>
-                                            <p class="mb-2 small">5000 sq/ft</p>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-sm-5">
-                                        <div class="col-sm-6">
-                                            <div class="recentimg">
-                                                <a href="">
-                                                    <img src="assets/img/recent/RL3.png">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <p class="mb-2 big">Grasscloth Wallpaper</p>
-                                            <p class="mb-2 orange">$900 ($10 sq/ft)</p>
-                                            <p class="mb-2 small">5000 sq/ft</p>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                         <div class="col-lg-9 order-2">
-                            <div class="property-detail-img popup-gallery mb-3">
-                                <div id="carousel" class="owl-carousel owl-loaded owl-drag" data-animateout="fadeOut" data-nav-arrow="true" data-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1" data-xx-items="1" data-space="0" data-loop="true">
+                            <div class="section-title text-start pb-4 aos-init aos-animate" data-aos="zoom-in">
+                                <h3>All Wallpapers</h3>
+                            </div>
+                            <div class="row mt-1">
 
+                                <div class="col-12 col-sm-4">
+                                    <div class="card mainwallpaper">
+                                        <div class="card-body p-0">
+                                            <img src="assets/img/similar/SC1.jpg" class="img-fluid">
+                                            <h3>Grasscloth Wallpaper</h3>
+                                            <h4>$900 ($10 sq/ft)</h4>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <div class="property-btn col-12">
+                                                <a class="property-link" href="property-detail-style-01.html">See Details</a>
+                                                <ul class="property-listing-actions list-unstyled mb-0">
+                                                    <li class="property-compare"><a data-bs-toggle="tooltip" data-placement="top" title="" href="#" data-bs-original-title="Compare" aria-label="Compare"><i class="fas fa-exchange-alt"></i></a></li>
+                                                    <li class="property-favourites"><a data-bs-toggle="tooltip" data-placement="top" title="" href="#" data-bs-original-title="Favourite" aria-label="Favourite"><i class="far fa-heart"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    <div class="item">
-                                        <a class="portfolio-img" href="assets/img/bg_details.jpg">
-                                            <img class="img-fluid" src="assets/img/bg_details.jpg" alt=""></a>
-                                    </div>
-                                    <!-- <div class="item">
-                                        <a class="portfolio-img" href="assets/img/bg_details.jpg">
-                                            <img class="img-fluid" src="assets/img/bg_details.jpg" alt=""></a>
-                                    </div>
-                                    <div class="item">
-                                        <a class="portfolio-img" href="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg">
-                                            <img class="img-fluid" src="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg" alt=""></a>
-                                    </div>
-                                    <div class="item">
-                                        <a class="portfolio-img" href="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg">
-                                            <img class="img-fluid" src="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg" alt=""></a>
-                                    </div>
-                                    <div class="item">
-                                        <a class="portfolio-img" href="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg">
-                                            <img class="img-fluid" src="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg" alt=""></a>
-                                    </div>
-                                    <div class="item">
-                                        <a class="portfolio-img" href="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg">
-                                            <img class="img-fluid" src="http://themes.potenzaglobalsolutions.com/html/real-villa/images/property/big-img-01.jpg" alt=""></a>
-                                    </div> -->
-                                </div>
-                            </div>
-                            <div class="property-info mt-5">
-                                <div class="row">
-                                    <div class="col-sm-3 mb-3 mb-sm-0 section-title text-start" data-aos="zoom-in">
-                                        <h5>Wallpaper details</h5>
-                                    </div>
-                                    <div class="col-sm-9" data-aos="zoom-in">
-                                        <div class="row mb-0">
-                                            <div class="col-sm-6">
-                                                <ul class="property-list list-unstyled">
-                                                    <li><b class="propartyname">Wallpaper Type :</b> Vinyle Coated Fabric</li>
-                                                    <li><b class="propartyname">Category  Type :</b> Leaving Room</li>
-                                                    <li><b class="propartyname">Wallpaper Color :</b> Red & Light Gray</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <ul class="property-list list-unstyled">
-                                                    <li><b class="propartyname">Bedrooms:</b> 3D Solid</li>
-                                                    <li><b class="propartyname">Bathrooms:</b> 1200 sq/ft</li>
-                                                    <li><b class="propartyname">Bathrooms:</b> $500 ($8 sq/ft)</li>
+                                <div class="col-12 col-sm-4">
+                                    <div class="card mainwallpaper">
+                                        <div class="card-body p-0">
+                                            <img src="assets/img/similar/SC1.jpg" class="img-fluid">
+                                            <h3>Grasscloth Wallpaper</h3>
+                                            <h4>$900 ($10 sq/ft)</h4>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <div class="property-btn col-12">
+                                                <a class="property-link" href="property-detail-style-01.html">See Details</a>
+                                                <ul class="property-listing-actions list-unstyled mb-0">
+                                                    <li class="property-compare"><a data-bs-toggle="tooltip" data-placement="top" title="" href="#" data-bs-original-title="Compare" aria-label="Compare"><i class="fas fa-exchange-alt"></i></a></li>
+                                                    <li class="property-favourites"><a data-bs-toggle="tooltip" data-placement="top" title="" href="#" data-bs-original-title="Favourite" aria-label="Favourite"><i class="far fa-heart"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <hr class="mt-4 mb-4 mb-sm-5 mt-sm-5">
-                            <div class="property-description">
-                                <div class="row">
-                                    <div class="col-sm-3 mb-3 mb-sm-0 section-title text-start" data-aos="zoom-in">
-                                        <h5>Description</h5>
-                                    </div>
-                                    <div class="col-sm-9" data-aos="zoom-in">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor odio sit amet ornare tempor. Integer maximus ex eu mi maximus volutpat. Proin et sapien at mi volutpat ultricies vitae non enim. Morbi sit amet
-                                            sapien dui. Cras eu ultricies eros. Nam eget fermentum orci. Aenean consectetur commodo magna eu hendrerit. </p>
-                                        <p>Nunc venenatis efficitur elit, sed efficitur neque bibendum sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-                                        <p>Nunc placerat lobortis lectus, sit amet accumsan dui scelerisque a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed mi sit amet urna consectetur posuere a quis ligula. Donec et mattis
-                                            purus. Nullam sagittis erat arcu.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="mt-4 mb-4 mb-sm-5 mt-sm-5">
-                            <div class="property-features">
-                                <div class="row align-items-baseline">
-                                    <div class="col-sm-3 mb-3 mb-sm-0 section-title text-start" data-aos="zoom-in">
-                                        <h5>Category</h5>
-                                    </div>
-                                    <div class="col-sm-9" data-aos="zoom-in">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <ul class="property-list-style-2 list-unstyled mb-0">
-                                                    <li>Hotel / Restaurent</li>
-                                                    <li>Office</li>
-                                                    <li>Living Room</li>
-                                                    <li>Bed Room</li>
-                                                    <li>Kitchen</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <ul class="property-list-style-2 list-unstyled mb-0">
-                                                    <li>Children Room</li>
-                                                    <li>Meeting Room</li>
-                                                    <li>Teenager's Room</li>
-                                                    <li>Bathroom</li>
+
+                                <div class="col-12 col-sm-4">
+                                    <div class="card mainwallpaper">
+                                        <div class="card-body p-0">
+                                            <img src="assets/img/similar/SC1.jpg" class="img-fluid">
+                                            <h3>Grasscloth Wallpaper</h3>
+                                            <h4>$900 ($10 sq/ft)</h4>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <div class="property-btn col-12">
+                                                <a class="property-link" href="property-detail-style-01.html">See Details</a>
+                                                <ul class="property-listing-actions list-unstyled mb-0">
+                                                    <li class="property-compare"><a data-bs-toggle="tooltip" data-placement="top" title="" href="#" data-bs-original-title="Compare" aria-label="Compare"><i class="fas fa-exchange-alt"></i></a></li>
+                                                    <li class="property-favourites"><a data-bs-toggle="tooltip" data-placement="top" title="" href="#" data-bs-original-title="Favourite" aria-label="Favourite"><i class="far fa-heart"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <hr class="mt-4 mb-4 mb-sm-5 mt-sm-5">
-                            <div class="property-features">
-                                <div class="row align-items-baseline">
-                                    <div class="col-sm-3 mb-3 mb-sm-0 section-title text-start" data-aos="zoom-in">
-                                        <h5>Wallpaper Type</h5>
-                                    </div>
-                                    <div class="col-sm-9" data-aos="zoom-in">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <ul class="property-list-style-2 black list-unstyled mb-0">
-                                                    <li>Vinyl Wallpaper</li>
-                                                    <li>Solid Sheet Vinyl</li>
-                                                    <li>Vinyl Coated Fabric</li>
-                                                    <li>Vinyl Coated Paper</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <ul class="property-list-style-2 black list-unstyled mb-0">
-                                                    <li>Non-Woven Wallpaper</li>
-                                                    <li>Easy-Walls Wallpaper</li>
-                                                    <li>Prepasted Wallpaper</li>
-                                                    <li>Grasscloth Wallpaper</li>
+
+                                <div class="col-12 col-sm-4">
+                                    <div class="card mainwallpaper">
+                                        <div class="card-body p-0">
+                                            <img src="assets/img/similar/SC1.jpg" class="img-fluid">
+                                            <h3>Grasscloth Wallpaper</h3>
+                                            <h4>$900 ($10 sq/ft)</h4>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <div class="property-btn col-12">
+                                                <a class="property-link" href="property-detail-style-01.html">See Details</a>
+                                                <ul class="property-listing-actions list-unstyled mb-0">
+                                                    <li class="property-compare"><a data-bs-toggle="tooltip" data-placement="top" title="" href="#" data-bs-original-title="Compare" aria-label="Compare"><i class="fas fa-exchange-alt"></i></a></li>
+                                                    <li class="property-favourites"><a data-bs-toggle="tooltip" data-placement="top" title="" href="#" data-bs-original-title="Favourite" aria-label="Favourite"><i class="far fa-heart"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <hr class="mt-4 mb-4 mb-sm-5 mt-sm-5">
-                            <div class="property-features">
-                                <div class="row align-items-baseline">
-                                    <div class="col-sm-3 mb-3 mb-sm-0 section-title text-start" data-aos="zoom-in">
-                                        <h5>Features</h5>
-                                    </div>
-                                    <div class="col-sm-9" data-aos="zoom-in">
-                                        <div class="row mb-0">
-                                            <div class="col-sm-6">
-                                                <ul class="property-list list-unstyled">
-                                                    <li>100 % Waterproof</li>
-                                                    <li>Anti dust (Dust free)</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <ul class="property-list list-unstyled">
-                                                    <li>Easy Removal & Easy Clean</li>
-                                                    <li>Good Degree of Protection & Durability</li>
+
+                                <div class="col-12 col-sm-4">
+                                    <div class="card mainwallpaper">
+                                        <div class="card-body p-0">
+                                            <img src="assets/img/similar/SC1.jpg" class="img-fluid">
+                                            <h3>Grasscloth Wallpaper</h3>
+                                            <h4>$900 ($10 sq/ft)</h4>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <div class="property-btn col-12">
+                                                <a class="property-link" href="property-detail-style-01.html">See Details</a>
+                                                <ul class="property-listing-actions list-unstyled mb-0">
+                                                    <li class="property-compare"><a data-bs-toggle="tooltip" data-placement="top" title="" href="#" data-bs-original-title="Compare" aria-label="Compare"><i class="fas fa-exchange-alt"></i></a></li>
+                                                    <li class="property-favourites"><a data-bs-toggle="tooltip" data-placement="top" title="" href="#" data-bs-original-title="Favourite" aria-label="Favourite"><i class="far fa-heart"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="col-12 col-sm-4">
+                                    <div class="card mainwallpaper">
+                                        <div class="card-body p-0">
+                                            <img src="assets/img/similar/SC1.jpg" class="img-fluid">
+                                            <h3>Grasscloth Wallpaper</h3>
+                                            <h4>$900 ($10 sq/ft)</h4>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <div class="property-btn col-12">
+                                                <a class="property-link" href="property-detail-style-01.html">See Details</a>
+                                                <ul class="property-listing-actions list-unstyled mb-0">
+                                                    <li class="property-compare"><a data-bs-toggle="tooltip" data-placement="top" title="" href="#" data-bs-original-title="Compare" aria-label="Compare"><i class="fas fa-exchange-alt"></i></a></li>
+                                                    <li class="property-favourites"><a data-bs-toggle="tooltip" data-placement="top" title="" href="#" data-bs-original-title="Favourite" aria-label="Favourite"><i class="far fa-heart"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-4">
+                                    <div class="card mainwallpaper">
+                                        <div class="card-body p-0">
+                                            <img src="assets/img/similar/SC1.jpg" class="img-fluid">
+                                            <h3>Grasscloth Wallpaper</h3>
+                                            <h4>$900 ($10 sq/ft)</h4>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <div class="property-btn col-12">
+                                                <a class="property-link" href="property-detail-style-01.html">See Details</a>
+                                                <ul class="property-listing-actions list-unstyled mb-0">
+                                                    <li class="property-compare"><a data-bs-toggle="tooltip" data-placement="top" title="" href="#" data-bs-original-title="Compare" aria-label="Compare"><i class="fas fa-exchange-alt"></i></a></li>
+                                                    <li class="property-favourites"><a data-bs-toggle="tooltip" data-placement="top" title="" href="#" data-bs-original-title="Favourite" aria-label="Favourite"><i class="far fa-heart"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -600,64 +521,123 @@ Breadcrumb -->
     <script src="assets/vendor/jquery.cookie.js"></script>
     <script src="assets/vendor/wow.min.js"></script>
     <script src="assets/vendor/plugins.js"></script>
-    <!-- <script src="assets/vendor/glightbox/js/glightbox.min.js"></script> -->
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
 
 
     <script src="assets/js/main.js"></script>
+    <!--For Newsletter Popup-->
     <script>
-        // var owlslider = jQuery("div.owl-carousel");
-        // if (owlslider.length > 0) {
-        //     owlslider.each(function() {
-        //         var $this = $(this),
-        //             $items = ($this.data('items')) ? $this.data('items') : 1,
-        //             $loop = ($this.attr('data-loop')) ? $this.data('loop') : true,
-        //             $navdots = ($this.data('nav-dots')) ? $this.data('nav-dots') : false,
-        //             $navarrow = ($this.data('nav-arrow')) ? $this.data('nav-arrow') : false,
-        //             $autoplay = ($this.attr('data-autoplay')) ? $this.data('autoplay') : true,
-        //             $autospeed = ($this.attr('data-autospeed')) ? $this.data('autospeed') : 5000,
-        //             $smartspeed = ($this.attr('data-smartspeed')) ? $this.data('smartspeed') : 1000,
-        //             $autohgt = ($this.data('autoheight')) ? $this.data('autoheight') : false,
-        //             $space = ($this.attr('data-space')) ? $this.data('space') : 30,
-        //             $animateOut = ($this.attr('data-animateOut')) ? $this.data('animateOut') : false;
+        (function(win, dom) {
+            'use strict';
 
-        //         $(this).owlCarousel({
-        //             loop: $loop,
-        //             items: $items,
-        //             responsive: {
-        //                 0: {
-        //                     items: $this.data('xx-items') ? $this.data('xx-items') : 1
-        //                 },
-        //                 480: {
-        //                     items: $this.data('xs-items') ? $this.data('xs-items') : 1
-        //                 },
-        //                 768: {
-        //                     items: $this.data('sm-items') ? $this.data('sm-items') : 2
-        //                 },
-        //                 980: {
-        //                     items: $this.data('md-items') ? $this.data('md-items') : 3
-        //                 },
-        //                 1200: {
-        //                     items: $items
-        //                 }
-        //             },
-        //             dots: $navdots,
-        //             autoplayTimeout: $autospeed,
-        //             smartSpeed: $smartspeed,
-        //             autoHeight: $autohgt,
-        //             margin: $space,
-        //             nav: $navarrow,
-        //             navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
-        //             autoplay: $autoplay,
-        //             autoplayHoverPause: true
-        //         });
-        //     });
-        // }
+            // Check for .rangeControl class
+            var rangeControlList = dom.getElementsByClassName('custom-rangeInput');
+
+            // Inits components
+            var init = function() {
+
+                // Loop all controls
+                for (var i = 0; i < rangeControlList.length; i++) {
+
+                    // Apply inital
+                    updateController(rangeControlList[i]);
+                    // Update when changed
+                    rangeControlList[i].addEventListener('input', function() {
+                        updateController(this);
+                    });
+                    // Update when changed ( for older browsers )
+                    rangeControlList[i].addEventListener('change', function() {
+                        updateController(this);
+                    });
+                }
+            }
+
+            // Updates components
+            var update = function() {
+                for (var i = 0; i < rangeControlList.length; i++) {
+                    updateController(rangeControlList[i]);
+                }
+            }
+
+            // Update controller
+            var updateController = function(obj) {
+                // Thumb Position
+                var thumbPos = getThumbPercentage(obj);
+                var thumPosPX = getThumbPosition(obj);
+                if (obj.getAttribute("data-tooltip") != "false") {
+                    updateTooltip(obj.nextElementSibling, obj.value, thumPosPX, thumbPos);
+                } else {
+                    obj.nextElementSibling.style.display = "none";
+                }
+                updateProgress(obj, '#EEEEF1', '#F58220', thumbPos);
+            }
+
+            // Retun range slider pixel position according to offset
+            // obj : target object
+            var getThumbPosition = function(obj) {
+                return Math.round((obj.offsetWidth / 100) * obj.value); // Pixel
+            }
+
+            // Retun range slider percentage to thumb position
+            // obj : target object
+            var getThumbPercentage = function(obj) {
+                return Math.round(100 * obj.value / obj.getAttribute("max")); // Percentage
+            }
+
+            // Updated range slider tooltip
+            // obj : target object
+            // text : tooltip label
+            // position : absolute position
+            // percentage : percentage of current value
+            var updateTooltip = function(obj, text, position, percentage) {
+                obj.innerHTML = text; // Tooltip text
+                obj.style.left = position + 'px'; // Tooltip position
+
+                // Tooltip Position
+                var tooltipStartPos = 26;
+                var tooltipPosFix = percentage / 1.8;
+                if (percentage > 50) {
+                    tooltipPosFix = percentage / 2.2;
+                }
+                obj.style.transform = 'translate(-' + (tooltipStartPos + tooltipPosFix) + '%, 0)';
+            }
+
+            // Updated background progress bar of range slider
+            // obj : target object
+            // progressBgColor : background color
+            // progressFillColor : fill color
+            // percentage : percentage of current value
+            var updateProgress = function(obj, progressBgColor, progressFillColor, percentage) {
+                var rangeBg = 'linear-gradient(to right,  ' + progressFillColor + ' 0%, ' + progressFillColor + ' ' + percentage + '%, ' + progressBgColor + ' ' + percentage + '%, ' + progressBgColor + ' 100%)';
+                var cssRule = '#' + obj.id + '::-webkit-slider-runnable-track { background : ' + rangeBg + ' } ';
+                cssRule += '#' + obj.id + '::-moz-range-track { background : ' + rangeBg + ' } ';
+                cssRule += '#' + obj.id + '::-ms-track { background : ' + rangeBg + ' } ';
+                var applyStyle = function(styleName, cssText) {
+                    var styleElement = dom.getElementById(styleName);
+                    if (styleElement) dom.getElementsByTagName('head')[0].removeChild(styleElement);
+
+                    styleElement = dom.createElement('style');
+                    styleElement.type = 'text/css';
+                    styleElement.id = styleName;
+                    styleElement.innerHTML = cssText;
+                    dom.getElementsByTagName('head')[0].appendChild(styleElement);
+                }
+                applyStyle('range_' + obj.id, cssRule);
+            }
+
+            // Refresh on resize
+            var fireOnceOnResize;
+            win.addEventListener('resize', function() {
+                fireOnceOnResize = setTimeout(update, 100);
+            });
+
+            // Init Component
+            init();
+
+        }(window, document));
     </script>
-
 
     <!--For Newsletter Popup-->
 

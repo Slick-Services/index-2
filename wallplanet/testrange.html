@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<!-- belle/home2-default.html   11 Nov 2019 12:22:28 GMT -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Wall Planet</title>
+    <meta name="description" content="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.png" /> -->
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+
+    <!-- Bootstap CSS -->
+    <!--<link rel="stylesheet" href="assets/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- <link rel="stylesheet" href="assets/css/productstyle.css"> -->
+	<style>
+		span.custom-rangeslider__label {display: none}
+		.filtermain.productdetails .filter .card .filterform input.custom-rangeInput {
+			border: none;
+			border-radius: 0;
+			padding: 0;
+		}
+	/* General Rules For Range Slider */
+.custom-rangeslider {
+  position: relative;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.custom-rangeInput {
+  width: 100%;
+  background: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  height: 6px;
+}
+.custom-rangeInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  box-sizing: border-box;
+  background-color: #21324f;
+  outline: 2px solid #ffffff;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: move;
+  /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -webkit-grab;
+  margin-top: -8px;
+}
+.custom-rangeInput::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+.custom-rangeInput::-moz-range-thumb {
+  -moz-appearance: none;
+       appearance: none;
+  box-sizing: border-box;
+  background-color: #21324f;
+  outline: 2px solid #ffffff;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: move;
+  /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+.custom-rangeInput::-moz-range-thumb:active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+.custom-rangeInput::-ms-thumb {
+  appearance: none;
+  box-sizing: border-box;
+  background-color: #21324f;
+  outline: 2px solid #ffffff;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: move;
+  /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -webkit-grab;
+  margin: auto;
+}
+.custom-rangeInput::-ms-thumb:active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+.custom-rangeInput::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+          appearance: none;
+  box-sizing: border-box;
+  height: 5px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: grey;
+}
+.custom-rangeInput::-moz-range-track {
+  -moz-appearance: none;
+       appearance: none;
+  box-sizing: border-box;
+  height: 5px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: grey;
+}
+.custom-rangeInput::-ms-track {
+  appearance: none;
+  box-sizing: border-box;
+  height: 5px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: grey;
+  color: transparent;
+  border: none;
+  outline: none;
+}
+.custom-rangeInput:focus, .custom-rangeInput:active {
+  outline: none;
+}
+.custom-rangeInput::-ms-tooltip {
+  display: none;
+}
+
+.custom-rangeslider__tooltip {
+    line-height: 24px;
+    position: absolute;
+    height: 30px;
+    width: 45px;
+    background-color: #fff;
+    padding: 3px 3px;
+    border: 1px rgb(238 123 0) solid;
+    top: -3px;
+    left: 0;
+    text-align: center;
+    transform: translate(-26%, 0);
+    border-radius: 3px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+.custom-rangeslider__tooltip {
+    display: block;
+    position: absolute;
+    height: 33px;
+    line-height: 33px;
+    min-width: 36px;
+    padding: 0 10px;
+     top: -3px; 
+    transform: translate(-50%, -100%);
+    background: rgb(239 123 0);
+    color: #fff;
+    border-radius: 100px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 1.0em;
+    text-align: center;
+}		
+/*.custom-rangeslider__tooltip:after {
+  display: block;
+  content: " ";
+  background: #fff;
+  position: absolute;
+  border: 1px #33ccff solid;
+  border-top: 0;
+  border-left: 0;
+  width: 10px;
+  height: 10px;
+  left: calc(50% - 6px);
+  bottom: -6px;
+  transform: rotate(45deg);
+}*/
+
+.custom-rangeslider__label {
+  width: 100%;
+  display: block;
+}
+.custom-rangeslider__label span {
+  display: block;
+}
+.custom-rangeslider__label-min {
+  float: left;
+}
+.custom-rangeslider__label-max {
+  float: right;
+}
+.custom-rangeslider__label:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	</style>
+</head>
+
+<body>
+
+    <div class="pageWrapper">
+
+        <!--Search Form Drawer-->
+        <div class="search">
+            <div class="search__form">
+                <form class="search-bar__form" action="#">
+                    <button class="go-btn search__button" type="submit"><i class="icon anm anm-search-l"></i></button>
+                    <input class="search__input" type="search" name="q" value="" placeholder="Search entire store..." aria-label="Search" autocomplete="off">
+                </form>
+                <button type="button" class="search-trigger close-btn"><i class="anm anm-times-l"></i></button>
+            </div>
+        </div>
+        <!--End Search Form Drawer-->
+        <!--Top Header-->
+        <div class="top-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-10 col-sm-8 col-md-6 col-lg-5 d-flex">
+                        <div class="currency-picker">
+                            <span class="selected-currency">USD</span>
+                            <ul id="currencies">
+                                <li data-currency="INR" class="">INR</li>
+                                <li data-currency="GBP" class="">GBP</li>
+                                <li data-currency="CAD" class="">CAD</li>
+                                <li data-currency="USD" class="selected">USD</li>
+                                <li data-currency="AUD" class="">AUD</li>
+                                <li data-currency="EUR" class="">EUR</li>
+                                <li data-currency="JPY" class="">JPY</li>
+                            </ul>
+                        </div>
+                        <!--<div class="language-dropdown">
+                        <span class="language-dd">English</span>
+                        <ul id="language">
+                            <li class="">German</li>
+                            <li class="">French</li>
+                        </ul>
+                        </div>-->
+                        <p class="phone-no rotedright me-3 ms-2"><i class="anm anm-phone-call-r"></i> +440 0(111) 044 833</p>
+                        <p class="phone-no email"><i class="icon icon-email"></i> Inquiry</p>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-3 d-none d-md-block d-lg-block">
+                        <div class="text-center">
+                            <p class="top-header_middle-text"> Worldwide Express Shipping</p>
+                        </div>
+                    </div>
+                    <div class="col-2 col-sm-4 col-md-2 col-lg-4 text-right">
+                        <span class="user-menu d-block d-lg-none"><i class="anm anm-user-al" aria-hidden="true"></i></span>
+                        <ul class="customer-links list-inline">
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="register.html">Create Account</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Top Header-->
+        <!--Header-->
+        <header>
+
+            <div class="header-wrap animated d-flex border-bottom">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!--Desktop Logo-->
+                        <div class="logo col-8 col-sm-8 col-md-9 col-lg-2 d-lg-block pl-0">
+                            <a href="index.html">
+                                <img src="assets/img/logo.png" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
+                            </a>
+                        </div>
+                        <!--End Desktop Logo-->
+                        <!--Mobile Logo-->
+                        <!-- <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo.png" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
+                                </a>
+                            </div>
+                        </div> -->
+
+                        <div class="d-none d-lg-block col-lg-9">
+                            <!--Desktop Menu-->
+                            <nav class="grid__item col-auto" id="AccessibleNav">
+                                <!-- for mobile -->
+                                <ul id="siteNav" class="site-nav medium right hidearrow">
+                                    <li class="lvl1 parent"><a href="#">Home</li>
+                                    <li class="lvl1 parent"><a href="#">Category</a></li>
+                                    <li class="lvl1 parent"><a href="#">Why choose us </a></li>
+                                    <li class="lvl1 parent dropdown"><a href="#">Contact </a></li>
+                                </ul>
+                            </nav>
+                            <!--End Desktop Menu-->
+                        </div>
+                        <!--Mobile Logo-->
+                        <div class="col-4 col-sm-4 col-md-3 col-lg-1 p-sm-0 pe-2">
+                            <div class=" mainserchicon">
+                                <div class="d-block d-lg-none">
+                                    <button type="button" class="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open">
+                        	<i class="icon anm anm-times-l"></i>
+                            <i class="anm anm-bars-r"></i>
+                            </button>
+                                </div>
+                                <div class="site-header__search">
+                                    <button type="button" class="search-trigger"><i class="icon anm anm-search-l"></i></button>
+                                </div>
+                                <div class="site-cart">
+                                    <a href="#" class="site-header__cart" title="Cart">
+                                        <i class="icon anm anm-bag-l"></i>
+                                        <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">2</span>
+                                    </a>
+                                    <!--Minicart Popup-->
+                                    <div id="header-cart" class="block block-cart">
+                                        <ul class="mini-products-list">
+                                            <li class="item">
+                                                <a class="product-image" href="#">
+                                                    <img src="assets/img/product-images/cape-dress-1.jpg" alt="3/4 Sleeve Kimono Dress" title="" />
+                                                </a>
+                                                <div class="product-details">
+                                                    <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
+                                                    <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
+                                                    <a class="pName" href="cart.html">Sleeve Kimono Dress</a>
+                                                    <div class="variant-cart">Black / XL</div>
+                                                    <div class="wrapQtyBtn">
+                                                        <div class="qtyField">
+                                                            <span class="label">Qty:</span>
+                                                            <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
+                                                            <input type="text" id="Quantity" name="quantity" value="1" class="product-form__input qty">
+                                                            <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="priceRow">
+                                                        <div class="product-price">
+                                                            <span class="money">$59.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <a class="product-image" href="#">
+                                                    <img src="assets/img/product-images/cape-dress-2.jpg" alt="Elastic Waist Dress - Black / Small" title="" />
+                                                </a>
+                                                <div class="product-details">
+                                                    <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
+                                                    <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
+                                                    <a class="pName" href="cart.html">Elastic Waist Dress</a>
+                                                    <div class="variant-cart">Gray / XXL</div>
+                                                    <div class="wrapQtyBtn">
+                                                        <div class="qtyField">
+                                                            <span class="label">Qty:</span>
+                                                            <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
+                                                            <input type="text" id="Quantity" name="quantity" value="1" class="product-form__input qty">
+                                                            <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="priceRow">
+                                                        <div class="product-price">
+                                                            <span class="money">$99.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="total">
+                                            <div class="total-in">
+                                                <span class="label">Cart Subtotal:</span><span class="product-price"><span class="money">$748.00</span></span>
+                                            </div>
+                                            <div class="buttonSet text-center">
+                                                <a href="cart.html" class="btn btn-secondary btn--small">View Cart</a>
+                                                <a href="checkout.html" class="btn btn-secondary btn--small">Checkout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Minicart Popup-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Header-->
+
+            <!--Mobile Menu-->
+            <div class="mobile-nav-wrapper" role="navigation">
+                <div class="closemobileMenu"><i class="icon anm anm-times-l pull-right"></i> Close Menu</div>
+                <ul id="MobileNav" class="mobile-nav">
+                    <li class="lvl1 parent"><a href="index.html">Home</a></li>
+                    <li class="lvl1 parent"><a href="#">Shop </a></li>
+                    <li class="lvl1 parent"><a href="product-layout-1.html">Product </a></li>
+                    <li class="lvl1 parent"><a href="about-us.html">Pages</a></li>
+                    <li class="lvl1 parent"><a href="blog-left-sidebar.html">Blog</a></li>
+                    <li class="lvl1"><a href="#"><b>Buy Now!</b></a></li>
+                </ul>
+            </div>
+            <!--End Mobile Menu-->
+        </header>
+
+        <!--=================================
+Breadcrumb -->
+        <div class="bg-light">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item">
+                                <a href="http://themes.potenzaglobalsolutions.com/html/real-villa/index.html"> <i class="fas fa-home"></i> </a>
+                            </li>
+                            <li class="breadcrumb-item"> <i class="fas fa-chevron-right pe-1 ps-1"></i> <a href="#">Pages</a></li>
+                            <li class="breadcrumb-item active"> <i class="fas fa-chevron-right pe-1 ps-1"></i> <span> Stunning 2 bedroom home in village</span></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--=================================
+Breadcrumb -->
+        <!---------Start main contant part------->
+        <main id="main">
+
+            <!-- ======= Start product details Section ======= -->
+
+            <section id="productdetails" class="filtermain productdetails">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 mb-5 mb-lg-0 order-1">
+                            <div class="filter">
+                                <div class="section-title text-start pb-4 aos-init aos-animate d-flex align-items-center" data-aos="zoom-in">
+                                    <i class="icon icon-filter"></i>
+                                    <h3 class="m-0">Filter</h3>
+                                </div>
+                                <div class="card">
+                                    <form class="filterform" action="" method="post" oninput="output.value = Math.round(range.valueAsNumber / 1000)">
+                                        <h2>Any Price</h2>
+                                        <input type="text" class="walltype form-control mb-3" placeholder="Enter Wallpaper Type" value="" name="Enter Wallpaper Type">
+                                        <input type="text" class="walltype form-control mb-3" placeholder="Enter Category" value="" name="Enter Category">
+                                        <h2 class="mt-5">Any Price</h2>
+                                        <div class="custom-rangeslider">
+										  <input class="custom-rangeInput" title="Percentage" id="range-slider1" type="range" min="0" max="100" value="50" step="1" data-tooltip="true" aria-controls="rangeTooltip rangeLabel" aria-live="polite">
+										  <span class="custom-rangeslider__tooltip">0</span>
+										  <span class="custom-rangeslider__label">
+											<span class="custom-rangeslider__label-min">0%</span>
+											<span class="custom-rangeslider__label-max">100%</span>
+										  </span>
+										</div>
+
+										<div class="custom-rangeslider">
+										  <input class="custom-rangeInput" title="Percentage" id="range-slider2" type="range" min="0" max="100" value="70" step="1" data-tooltip="true" aria-controls="rangeTooltip rangeLabel" aria-live="polite">
+										  <span class="custom-rangeslider__tooltip">0</span>
+										  <span class="custom-rangeslider__label">
+											<span class="custom-rangeslider__label-min">0%</span>
+											<span class="custom-rangeslider__label-max">100%</span>
+										  </span>
+										</div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-9 order-2">
+                            <div class="section-title text-start pb-4 aos-init aos-animate" data-aos="zoom-in">
+                                <h3>All Wallpapers</h3>
+                            </div>
+                            <div class="property-detail-img popup-gallery mb-3">
+                                <div id="carousel" class="owl-carousel owl-loaded owl-drag" data-animateout="fadeOut" data-nav-arrow="true" data-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1" data-xx-items="1" data-space="0" data-loop="true">
+                                    <div class="item">
+                                        <a class="portfolio-img" href="assets/img/bg_details.jpg">
+                                            <img class="img-fluid" src="assets/img/bg_details.jpg" alt=""></a>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="property-info mt-5">
+                                <div class="row">
+                                    <div class="col-sm-3 mb-3 mb-sm-0 section-title text-start" data-aos="zoom-in">
+                                        <h5>Wallpaper details</h5>
+                                    </div>
+                                    <div class="col-sm-9" data-aos="zoom-in">
+                                        <div class="row mb-0">
+                                            <div class="col-sm-6 p-md-0">
+                                                <ul class="property-list list-unstyled">
+                                                    <li><b class="propartyname">Wallpaper Type :</b> Vinyle Coated Fabric</li>
+                                                    <li><b class="propartyname">Category  Type :</b> Leaving Room</li>
+                                                    <li><b class="propartyname">Wallpaper Color :</b> Red & Light Gray</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="property-list list-unstyled">
+                                                    <li><b class="propartyname">Bedrooms:</b> 3D Solid</li>
+                                                    <li><b class="propartyname">Bathrooms:</b> 1200 sq/ft</li>
+                                                    <li><b class="propartyname">Bathrooms:</b> $500 ($8 sq/ft)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mt-4 mb-4 mb-sm-5 mt-sm-5">
+                            <div class="property-description">
+                                <div class="row">
+                                    <div class="col-sm-3 mb-3 mb-sm-0 section-title text-start" data-aos="zoom-in">
+                                        <h5>Description</h5>
+                                    </div>
+                                    <div class="col-sm-9" data-aos="zoom-in">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor odio sit amet ornare tempor. Integer maximus ex eu mi maximus volutpat. Proin et sapien at mi volutpat ultricies vitae non enim. Morbi sit amet
+                                            sapien dui. Cras eu ultricies eros. Nam eget fermentum orci. Aenean consectetur commodo magna eu hendrerit. </p>
+                                        <p>Nunc venenatis efficitur elit, sed efficitur neque bibendum sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                                        <p>Nunc placerat lobortis lectus, sit amet accumsan dui scelerisque a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed mi sit amet urna consectetur posuere a quis ligula. Donec et mattis
+                                            purus. Nullam sagittis erat arcu.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mt-4 mb-4 mb-sm-5 mt-sm-5">
+                            <div class="property-features">
+                                <div class="row align-items-baseline">
+                                    <div class="col-sm-3 mb-3 mb-sm-0 section-title text-start" data-aos="zoom-in">
+                                        <h5>Category</h5>
+                                    </div>
+                                    <div class="col-sm-9" data-aos="zoom-in">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <ul class="property-list-style-2 list-unstyled mb-0">
+                                                    <li>Hotel / Restaurent</li>
+                                                    <li>Office</li>
+                                                    <li>Living Room</li>
+                                                    <li>Bed Room</li>
+                                                    <li>Kitchen</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="property-list-style-2 list-unstyled mb-0">
+                                                    <li>Children Room</li>
+                                                    <li>Meeting Room</li>
+                                                    <li>Teenager's Room</li>
+                                                    <li>Bathroom</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mt-4 mb-4 mb-sm-5 mt-sm-5">
+                            <div class="property-features">
+                                <div class="row align-items-baseline">
+                                    <div class="col-sm-3 mb-3 mb-sm-0 section-title text-start" data-aos="zoom-in">
+                                        <h5>Wallpaper Type</h5>
+                                    </div>
+                                    <div class="col-sm-9" data-aos="zoom-in">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <ul class="property-list-style-2 black list-unstyled mb-0">
+                                                    <li>Vinyl Wallpaper</li>
+                                                    <li>Solid Sheet Vinyl</li>
+                                                    <li>Vinyl Coated Fabric</li>
+                                                    <li>Vinyl Coated Paper</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="property-list-style-2 black list-unstyled mb-0">
+                                                    <li>Non-Woven Wallpaper</li>
+                                                    <li>Easy-Walls Wallpaper</li>
+                                                    <li>Prepasted Wallpaper</li>
+                                                    <li>Grasscloth Wallpaper</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mt-4 mb-4 mb-sm-5 mt-sm-5">
+                            <div class="property-features">
+                                <div class="row align-items-baseline">
+                                    <div class="col-sm-3 mb-3 mb-sm-0 section-title text-start" data-aos="zoom-in">
+                                        <h5>Features</h5>
+                                    </div>
+                                    <div class="col-sm-9" data-aos="zoom-in">
+                                        <div class="row mb-0">
+                                            <div class="col-sm-6">
+                                                <ul class="property-list list-unstyled">
+                                                    <li>100 % Waterproof</li>
+                                                    <li>Anti dust (Dust free)</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="property-list list-unstyled">
+                                                    <li>Easy Removal & Easy Clean</li>
+                                                    <li>Good Degree of Protection & Durability</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= End product details Section ======= -->
+
+        </main>
+        <!---------End main contant part-------->
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="footer-top">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="footer-contact">
+
+                            <div class="col-md-4 pl-0 rightsidelogo">
+                                <div class="ftlogobg"><img src="assets/img/logo.png" class="img-fluid" /></div>
+                                <p class=" mainsocial">Call : +91 9811115892</p>
+                                <div class="social-links">
+                                    <p class="follows">Follows on :
+                                        <a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter fa-spin"></i></a>
+                                        <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+                                        <a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-12 footer-links  pl-0 pl-lg-0 pt-3  pt-md-0">
+                                <ul>
+                                    <li><a href="/privacypolicy">Privacy Policy</a></li>
+                                    <li><a href="/faq">Faq</a></li>
+                                    <li><a href="/termsandconditions">Terms of Service</a></li>
+                                    <li><a href="/non-disclosure-agreement">NDA</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4 footer-newsletter">
+                                <h4>Sign up for our newsletter</h4>
+                                <form action="" method="post">
+                                    <input type="email" name="email">
+                                    <button class="btn btn-primary"> submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="copyrightmain">
+                                <div class="copyright text-center">
+                                    Copyright © 2020. All rights reserved by<strong><span><a href="#"> Slickservices</a></span></strong>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!--Scoll Top-->
+        <span id="site-scroll"><i class="icon las la-arrow-up"></i></span>
+        <!--End Scoll Top-->
+
+        <!-- <a href="" class="back-to-top d-flex align-items-center justify-content-center"><i class="las la-arrow-up"></i></a> -->
+
+    </div>
+
+    <!-- Including Jquery -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/brands.min.js" integrity="sha512-oPuIMrT4JN6Cw359VQkuI0OPn1reFOKJm1YUOjXxgIzMmNMY7g4jenNcJdYcF3dt90WyNajzivr3vZFSzgqLow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/vendor/jquery-3.3.1.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/jquery.cookie.js"></script>
+    <script src="assets/vendor/wow.min.js"></script>
+    <script src="assets/vendor/plugins.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        var btn = $('#button');
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+
+        const END = "change";
+        const START = "ontouchstart" in document ? "touchstart" : "mousedown";
+        const INPUT = "input";
+        const MAX_ROTATION = 35;
+        const SOFTEN_FACTOR = 3;
+
+        class RangeInput {
+            constructor(el) {
+                this.el = el;
+
+                this._handleEnd = this._handleEnd.bind(this);
+                this._handleStart = this._handleStart.bind(this);
+                this._handleInput = this._handleInput.bind(this);
+
+                //Call the plugin
+                $(this.el.querySelector("input[type=rangenew]")).rangeslider({
+                    polyfill: false, //Never use the native polyfill
+                    rangenewClass: "rangeslider",
+                    disabledClass: "rangeslider-disabled",
+                    horizontalClass: "rangeslider-horizontal",
+                    verticalClass: "rangeslider-vertical",
+                    fillClass: "rangeslider-fill-lower",
+                    handleClass: "rangeslider-thumb",
+                    onInit: function() {
+                        //No args are passed, so we can't change context of this
+                        const pluginInstance = this;
+
+                        //Move the range-output inside the handle so we can do all the stuff in css
+                        $(pluginInstance.$element)
+                            .parents(".rangenew")
+                            .find(".range-output")
+                            .appendTo(pluginInstance.$handle);
+                    }
+                });
+
+                this.sliderThumbEl = el.querySelector(".rangeslider-thumb");
+                this.outputEl = el.querySelector(".range-output");
+                this.inputEl = el.querySelector("input[type=rangenew]");
+                this._lastOffsetLeft = 0;
+                this._lastTimeStamp = 0;
+
+                this.el
+                    .querySelector(".rangeslider")
+                    .addEventListener(START, this._handleStart);
+            }
+
+            _handleStart(e) {
+                this._lastTimeStamp = new Date().getTime();
+                this._lastOffsetLeft = this.sliderThumbEl.offsetLeft;
+
+                //Wrap in raf because offsetLeft is updated by the plugin after this fires
+                requestAnimationFrame((_) => {
+                    //Bind through jquery because plugin doesn't fire native event
+                    $(this.inputEl).on(INPUT, this._handleInput);
+                    $(this.inputEl).on(END, this._handleEnd);
+                });
+            }
+
+            _handleEnd(e) {
+                //Unbind through jquery because plugin doesn't fire native event
+                $(this.inputEl).off(INPUT, this._handleInput);
+                $(this.inputEl).off(END, this._handleEnd);
+
+                requestAnimationFrame(
+                    (_) => (this.outputEl.style.transform = "rotate(0deg)")
+                );
+            }
+
+            _handleInput(e) {
+                let now = new Date().getTime();
+                let timeElapsed = now - this._lastTimeStamp || 1;
+                let distance = this.sliderThumbEl.offsetLeft - this._lastOffsetLeft;
+                let direction = distance < 0 ? -1 : 1;
+                let velocity = Math.abs(distance) / timeElapsed; //pixels / millisecond
+                let targetRotation = Math.min(
+                    Math.abs(distance * velocity) * SOFTEN_FACTOR,
+                    MAX_ROTATION
+                );
+
+                requestAnimationFrame(
+                    (_) =>
+                    (this.outputEl.style.transform =
+                        "rotate(" + targetRotation * -direction + "deg)")
+                );
+
+                this._lastTimeStamp = now;
+                this._lastOffsetLeft = this.sliderThumbEl.offsetLeft;
+            }
+        }
+
+        /*! rangeslider.js - v2.1.1 | (c) 2016 @andreruffert | MIT license | https://github.com/andreruffert/rangeslider.js */
+        !(function(a) {
+            "use strict";
+            "function" == typeof define && define.amd ?
+                define(["jquery"], a) :
+                "object" == typeof exports ?
+                (module.exports = a(require("jquery"))) :
+                a(jQuery);
+        })(function(a) {
+            "use strict";
+
+            function b() {
+                var a = document.createElement("input");
+                return a.setAttribute("type", "range"), "text" !== a.type;
+            }
+
+            function c(a, b) {
+                var c = Array.prototype.slice.call(arguments, 2);
+                return setTimeout(function() {
+                    return a.apply(null, c);
+                }, b);
+            }
+
+            function d(a, b) {
+                return (
+                    (b = b || 100),
+                    function() {
+                        if (!a.debouncing) {
+                            var c = Array.prototype.slice.apply(arguments);
+                            (a.lastReturnVal = a.apply(window, c)), (a.debouncing = !0);
+                        }
+                        return (
+                            clearTimeout(a.debounceTimeout),
+                            (a.debounceTimeout = setTimeout(function() {
+                                a.debouncing = !1;
+                            }, b)),
+                            a.lastReturnVal
+                        );
+                    }
+                );
+            }
+
+            function e(a) {
+                return a && (0 === a.offsetWidth || 0 === a.offsetHeight || a.open === !1);
+            }
+
+            function f(a) {
+                for (var b = [], c = a.parentNode; e(c);) b.push(c), (c = c.parentNode);
+                return b;
+            }
+
+            function g(a, b) {
+                function c(a) {
+                    "undefined" != typeof a.open && (a.open = a.open ? !1 : !0);
+                }
+                var d = f(a),
+                    e = d.length,
+                    g = [],
+                    h = a[b];
+                if (e) {
+                    for (var i = 0; e > i; i++)
+                        (g[i] = d[i].style.cssText),
+                        d[i].style.setProperty ?
+                        d[i].style.setProperty("display", "block", "important") :
+                        (d[i].style.cssText += ";display: block !important"),
+                        (d[i].style.height = "0"),
+                        (d[i].style.overflow = "hidden"),
+                        (d[i].style.visibility = "hidden"),
+                        c(d[i]);
+                    h = a[b];
+                    for (var j = 0; e > j; j++)(d[j].style.cssText = g[j]), c(d[j]);
+                }
+                return h;
+            }
+
+            function h(a, b) {
+                var c = parseFloat(a);
+                return Number.isNaN(c) ? b : c;
+            }
+
+            function i(a) {
+                return a.charAt(0).toUpperCase() + a.substr(1);
+            }
+
+            function j(b, e) {
+                if (
+                    ((this.$window = a(window)),
+                        (this.$document = a(document)),
+                        (this.$element = a(b)),
+                        (this.options = a.extend({}, n, e)),
+                        (this.polyfill = this.options.polyfill),
+                        (this.orientation =
+                            this.$element[0].getAttribute("data-orientation") ||
+                            this.options.orientation),
+                        (this.onInit = this.options.onInit),
+                        (this.onSlide = this.options.onSlide),
+                        (this.onSlideEnd = this.options.onSlideEnd),
+                        (this.DIMENSION = o.orientation[this.orientation].dimension),
+                        (this.DIRECTION = o.orientation[this.orientation].direction),
+                        (this.DIRECTION_STYLE = o.orientation[this.orientation].directionStyle),
+                        (this.COORDINATE = o.orientation[this.orientation].coordinate),
+                        this.polyfill && m)
+                )
+                    return !1;
+                (this.identifier = "js-" + k + "-" + l++),
+                (this.startEvent =
+                    this.options.startEvent.join("." + this.identifier + " ") +
+                    "." +
+                    this.identifier),
+                (this.moveEvent =
+                    this.options.moveEvent.join("." + this.identifier + " ") +
+                    "." +
+                    this.identifier),
+                (this.endEvent =
+                    this.options.endEvent.join("." + this.identifier + " ") +
+                    "." +
+                    this.identifier),
+                (this.toFixed = (this.step + "").replace(".", "").length - 1),
+                (this.$fill = a('<div class="' + this.options.fillClass + '" />')),
+                (this.$handle = a('<div class="' + this.options.handleClass + '" />')),
+                (this.$rangenew = a(
+                        '<div class="' +
+                        this.options.rangenewClass +
+                        " " +
+                        this.options[this.orientation + "Class"] +
+                        '" id="' +
+                        this.identifier +
+                        '" />'
+                    )
+                    .insertAfter(this.$element)
+                    .prepend(this.$fill, this.$handle)),
+                this.$element.css({
+                        position: "absolute",
+                        width: "1px",
+                        height: "1px",
+                        overflow: "hidden",
+                        opacity: "0"
+                    }),
+                    (this.handleDown = a.proxy(this.handleDown, this)),
+                    (this.handleMove = a.proxy(this.handleMove, this)),
+                    (this.handleEnd = a.proxy(this.handleEnd, this)),
+                    this.init();
+                var f = this;
+                this.$window.on(
+                        "resize." + this.identifier,
+                        d(function() {
+                            c(function() {
+                                f.update(!1, !1);
+                            }, 300);
+                        }, 20)
+                    ),
+                    this.$document.on(
+                        this.startEvent,
+                        "#" + this.identifier + ":not(." + this.options.disabledClass + ")",
+                        this.handleDown
+                    ),
+                    this.$element.on("change." + this.identifier, function(a, b) {
+                        if (!b || b.origin !== f.identifier) {
+                            var c = a.target.value,
+                                d = f.getPositionFromValue(c);
+                            f.setPosition(d);
+                        }
+                    });
+            }
+            Number.isNaN =
+                Number.isNaN ||
+                function(a) {
+                    return "number" == typeof a && a !== a;
+                };
+            var k = "rangeslider",
+                l = 0,
+                m = b(),
+                n = {
+                    polyfill: !0,
+                    orientation: "horizontal",
+                    rangenewClass: "rangeslider",
+                    disabledClass: "rangeslider--disabled",
+                    horizontalClass: "rangeslider--horizontal",
+                    verticalClass: "rangeslider--vertical",
+                    fillClass: "rangeslider__fill",
+                    handleClass: "rangeslider__handle",
+                    startEvent: ["mousedown", "touchstart", "pointerdown"],
+                    moveEvent: ["mousemove", "touchmove", "pointermove"],
+                    endEvent: ["mouseup", "touchend", "pointerup"]
+                },
+                o = {
+                    orientation: {
+                        horizontal: {
+                            dimension: "width",
+                            direction: "left",
+                            directionStyle: "left",
+                            coordinate: "x"
+                        },
+                        vertical: {
+                            dimension: "height",
+                            direction: "top",
+                            directionStyle: "bottom",
+                            coordinate: "y"
+                        }
+                    }
+                };
+            return (
+                (j.prototype.init = function() {
+                    this.update(!0, !1),
+                        this.onInit && "function" == typeof this.onInit && this.onInit();
+                }),
+                (j.prototype.update = function(a, b) {
+                    (a = a || !1),
+                    a &&
+                        ((this.min = h(this.$element[0].getAttribute("min"), 0)),
+                            (this.max = h(this.$element[0].getAttribute("max"), 100)),
+                            (this.value = h(
+                                this.$element[0].value,
+                                Math.round(this.min + (this.max - this.min) / 2)
+                            )),
+                            (this.step = h(this.$element[0].getAttribute("step"), 1))),
+                        (this.handleDimension = g(
+
+                            this.$handle[0],
+                            "offset" + i(this.DIMENSION)
+                        )),
+                        (this.rangeDimension = g(this.$rangenew[0], "offset" + i(this.DIMENSION))),
+                        (this.maxHandlePos = this.rangeDimension - this.handleDimension),
+                        (this.grabPos = this.handleDimension / 2),
+                        (this.position = this.getPositionFromValue(this.value)),
+                        this.$element[0].disabled ?
+                        this.$rangenew.addClass(this.options.disabledClass) :
+                        this.$rangenew.removeClass(this.options.disabledClass),
+                        this.setPosition(this.position, b);
+                }),
+                (j.prototype.handleDown = function(a) {
+                    if (
+                        (this.$document.on(this.moveEvent, this.handleMove),
+                            this.$document.on(this.endEvent, this.handleEnd), !(
+                                (" " + a.target.className + " ")
+                                .replace(/[\n\t]/g, " ")
+                                .indexOf(this.options.handleClass) > -1
+                            ))
+                    ) {
+                        var b = this.getRelativePosition(a),
+                            c = this.$rangenew[0].getBoundingClientRect()[this.DIRECTION],
+                            d = this.getPositionFromNode(this.$handle[0]) - c,
+                            e =
+                            "vertical" === this.orientation ?
+                            this.maxHandlePos - (b - this.grabPos) :
+                            b - this.grabPos;
+                        this.setPosition(e),
+                            b >= d && b < d + this.handleDimension && (this.grabPos = b - d);
+                    }
+                }),
+                (j.prototype.handleMove = function(a) {
+                    a.preventDefault();
+                    var b = this.getRelativePosition(a),
+                        c =
+                        "vertical" === this.orientation ?
+                        this.maxHandlePos - (b - this.grabPos) :
+                        b - this.grabPos;
+                    this.setPosition(c);
+                }),
+                (j.prototype.handleEnd = function(a) {
+                    a.preventDefault(),
+                        this.$document.off(this.moveEvent, this.handleMove),
+                        this.$document.off(this.endEvent, this.handleEnd),
+                        this.$element.trigger("change", {
+                            origin: this.identifier
+                        }),
+                        this.onSlideEnd &&
+                        "function" == typeof this.onSlideEnd &&
+                        this.onSlideEnd(this.position, this.value);
+                }),
+                (j.prototype.cap = function(a, b, c) {
+                    return b > a ? b : a > c ? c : a;
+                }),
+                (j.prototype.setPosition = function(a, b) {
+                    var c, d;
+                    void 0 === b && (b = !0),
+                        (c = this.getValueFromPosition(this.cap(a, 0, this.maxHandlePos))),
+                        (d = this.getPositionFromValue(c)),
+                        (this.$fill[0].style[this.DIMENSION] = d + this.grabPos + "px"),
+                        (this.$handle[0].style[this.DIRECTION_STYLE] = d + "px"),
+                        this.setValue(c),
+                        (this.position = d),
+                        (this.value = c),
+                        b &&
+                        this.onSlide &&
+                        "function" == typeof this.onSlide &&
+                        this.onSlide(d, c);
+                }),
+                (j.prototype.getPositionFromNode = function(a) {
+                    for (var b = 0; null !== a;)(b += a.offsetLeft), (a = a.offsetParent);
+                    return b;
+                }),
+                (j.prototype.getRelativePosition = function(a) {
+                    var b = i(this.COORDINATE),
+                        c = this.$rangenew[0].getBoundingClientRect()[this.DIRECTION],
+                        d = 0;
+                    return (
+                        "undefined" != typeof a["page" + b] ?
+                        (d = a["client" + b]) :
+                        "undefined" != typeof a.originalEvent["client" + b] ?
+                        (d = a.originalEvent["client" + b]) :
+                        a.originalEvent.touches &&
+                        a.originalEvent.touches[0] &&
+                        "undefined" != typeof a.originalEvent.touches[0]["client" + b] ?
+                        (d = a.originalEvent.touches[0]["client" + b]) :
+                        a.currentPoint &&
+                        "undefined" != typeof a.currentPoint[this.COORDINATE] &&
+                        (d = a.currentPoint[this.COORDINATE]),
+                        d - c
+                    );
+                }),
+                (j.prototype.getPositionFromValue = function(a) {
+                    var b, c;
+                    return (
+                        (b = (a - this.min) / (this.max - this.min)),
+                        (c = Number.isNaN(b) ? 0 : b * this.maxHandlePos)
+                    );
+                }),
+                (j.prototype.getValueFromPosition = function(a) {
+                    var b, c;
+                    return (
+                        (b = a / (this.maxHandlePos || 1)),
+                        (c =
+                            this.step * Math.round((b * (this.max - this.min)) / this.step) +
+                            this.min),
+                        Number(c.toFixed(this.toFixed))
+                    );
+                }),
+                (j.prototype.setValue = function(a) {
+                    (a !== this.value || "" === this.$element[0].value) &&
+                    this.$element.val(a).trigger("input", {
+                        origin: this.identifier
+                    });
+                }),
+                (j.prototype.destroy = function() {
+                    this.$document.off("." + this.identifier),
+                        this.$window.off("." + this.identifier),
+                        this.$element
+                        .off("." + this.identifier)
+                        .removeAttr("style")
+                        .removeData("plugin_" + k),
+                        this.$range &&
+                        this.$range.length &&
+                        this.$range[0].parentNode.removeChild(this.$range[0]);
+                }),
+                (a.fn[k] = function(b) {
+                    var c = Array.prototype.slice.call(arguments, 1);
+                    return this.each(function() {
+                        var d = a(this),
+                            e = d.data("plugin_" + k);
+                        e || d.data("plugin_" + k, (e = new j(this, b))),
+                            "string" == typeof b && e[b].apply(e, c);
+                    });
+                }),
+                "rangeslider.js is available in jQuery context e.g $(selector).rangeslider(options);"
+            );
+        });
+
+        new RangeInput(document.querySelector(".rangenew"));
+    </script>
+	<script>
+	const END = "change";
+        const START = "ontouchstart" in document ? "touchstart" : "mousedown";
+        const INPUT = "input";
+        const MAX_ROTATION = 35;
+        const SOFTEN_FACTOR = 3;
+
+        class RangeInput {
+            constructor(el) {
+                this.el = el;
+
+                this._handleEnd = this._handleEnd.bind(this);
+                this._handleStart = this._handleStart.bind(this);
+                this._handleInput = this._handleInput.bind(this);
+
+                //Call the plugin
+                $(this.el.querySelector("input[type=range]")).rangeslider({
+                    polyfill: false, //Never use the native polyfill
+                    rangeClass: "rangeslider",
+                    disabledClass: "rangeslider-disabled",
+                    horizontalClass: "rangeslider-horizontal",
+                    verticalClass: "rangeslider-vertical",
+                    fillClass: "rangeslider-fill-lower",
+                    handleClass: "rangeslider-thumb",
+                    onInit: function() {
+                        //No args are passed, so we can't change context of this
+                        const pluginInstance = this;
+
+                        //Move the range-output inside the handle so we can do all the stuff in css
+                        $(pluginInstance.$element)
+                            .parents(".range")
+                            .find(".range-output")
+                            .appendTo(pluginInstance.$handle);
+                    }
+                });
+
+                this.sliderThumbEl = el.querySelector(".rangeslider-thumb");
+                this.outputEl = el.querySelector(".range-output");
+                this.inputEl = el.querySelector("input[type=range]");
+                this._lastOffsetLeft = 0;
+                this._lastTimeStamp = 0;
+
+                this.el
+                    .querySelector(".rangeslider")
+                    .addEventListener(START, this._handleStart);
+            }
+
+            _handleStart(e) {
+                this._lastTimeStamp = new Date().getTime();
+                this._lastOffsetLeft = this.sliderThumbEl.offsetLeft;
+
+                //Wrap in raf because offsetLeft is updated by the plugin after this fires
+                requestAnimationFrame((_) => {
+                    //Bind through jquery because plugin doesn't fire native event
+                    $(this.inputEl).on(INPUT, this._handleInput);
+                    $(this.inputEl).on(END, this._handleEnd);
+                });
+            }
+
+            _handleEnd(e) {
+                //Unbind through jquery because plugin doesn't fire native event
+                $(this.inputEl).off(INPUT, this._handleInput);
+                $(this.inputEl).off(END, this._handleEnd);
+
+                requestAnimationFrame(
+                    (_) => (this.outputEl.style.transform = "rotate(0deg)")
+                );
+            }
+
+            _handleInput(e) {
+                let now = new Date().getTime();
+                let timeElapsed = now - this._lastTimeStamp || 1;
+                let distance = this.sliderThumbEl.offsetLeft - this._lastOffsetLeft;
+                let direction = distance < 0 ? -1 : 1;
+                let velocity = Math.abs(distance) / timeElapsed; //pixels / millisecond
+                let targetRotation = Math.min(
+                    Math.abs(distance * velocity) * SOFTEN_FACTOR,
+                    MAX_ROTATION
+                );
+
+                requestAnimationFrame(
+                    (_) =>
+                    (this.outputEl.style.transform =
+                        "rotate(" + targetRotation * -direction + "deg)")
+                );
+
+                this._lastTimeStamp = now;
+                this._lastOffsetLeft = this.sliderThumbEl.offsetLeft;
+            }
+        }
+
+        /*! rangeslider.js - v2.1.1 | (c) 2016 @andreruffert | MIT license | https://github.com/andreruffert/rangeslider.js */
+        !(function(a) {
+            "use strict";
+            "function" == typeof define && define.amd ?
+                define(["jquery"], a) :
+                "object" == typeof exports ?
+                (module.exports = a(require("jquery"))) :
+                a(jQuery);
+        })(function(a) {
+            "use strict";
+
+            function b() {
+                var a = document.createElement("input");
+                return a.setAttribute("type", "range"), "text" !== a.type;
+            }
+
+            function c(a, b) {
+                var c = Array.prototype.slice.call(arguments, 2);
+                return setTimeout(function() {
+                    return a.apply(null, c);
+                }, b);
+            }
+
+            function d(a, b) {
+                return (
+                    (b = b || 100),
+                    function() {
+                        if (!a.debouncing) {
+                            var c = Array.prototype.slice.apply(arguments);
+                            (a.lastReturnVal = a.apply(window, c)), (a.debouncing = !0);
+                        }
+                        return (
+                            clearTimeout(a.debounceTimeout),
+                            (a.debounceTimeout = setTimeout(function() {
+                                a.debouncing = !1;
+                            }, b)),
+                            a.lastReturnVal
+                        );
+                    }
+                );
+            }
+
+            function e(a) {
+                return a && (0 === a.offsetWidth || 0 === a.offsetHeight || a.open === !1);
+            }
+
+            function f(a) {
+                for (var b = [], c = a.parentNode; e(c);) b.push(c), (c = c.parentNode);
+                return b;
+            }
+
+            function g(a, b) {
+                function c(a) {
+                    "undefined" != typeof a.open && (a.open = a.open ? !1 : !0);
+                }
+                var d = f(a),
+                    e = d.length,
+                    g = [],
+                    h = a[b];
+                if (e) {
+                    for (var i = 0; e > i; i++)
+                        (g[i] = d[i].style.cssText),
+                        d[i].style.setProperty ?
+                        d[i].style.setProperty("display", "block", "important") :
+                        (d[i].style.cssText += ";display: block !important"),
+                        (d[i].style.height = "0"),
+                        (d[i].style.overflow = "hidden"),
+                        (d[i].style.visibility = "hidden"),
+                        c(d[i]);
+                    h = a[b];
+                    for (var j = 0; e > j; j++)(d[j].style.cssText = g[j]), c(d[j]);
+                }
+                return h;
+            }
+
+            function h(a, b) {
+                var c = parseFloat(a);
+                return Number.isNaN(c) ? b : c;
+            }
+
+            function i(a) {
+                return a.charAt(0).toUpperCase() + a.substr(1);
+            }
+
+            function j(b, e) {
+                if (
+                    ((this.$window = a(window)),
+                        (this.$document = a(document)),
+                        (this.$element = a(b)),
+                        (this.options = a.extend({}, n, e)),
+                        (this.polyfill = this.options.polyfill),
+                        (this.orientation =
+                            this.$element[0].getAttribute("data-orientation") ||
+                            this.options.orientation),
+                        (this.onInit = this.options.onInit),
+                        (this.onSlide = this.options.onSlide),
+                        (this.onSlideEnd = this.options.onSlideEnd),
+                        (this.DIMENSION = o.orientation[this.orientation].dimension),
+                        (this.DIRECTION = o.orientation[this.orientation].direction),
+                        (this.DIRECTION_STYLE = o.orientation[this.orientation].directionStyle),
+                        (this.COORDINATE = o.orientation[this.orientation].coordinate),
+                        this.polyfill && m)
+                )
+                    return !1;
+                (this.identifier = "js-" + k + "-" + l++),
+                (this.startEvent =
+                    this.options.startEvent.join("." + this.identifier + " ") +
+                    "." +
+                    this.identifier),
+                (this.moveEvent =
+                    this.options.moveEvent.join("." + this.identifier + " ") +
+                    "." +
+                    this.identifier),
+                (this.endEvent =
+                    this.options.endEvent.join("." + this.identifier + " ") +
+                    "." +
+                    this.identifier),
+                (this.toFixed = (this.step + "").replace(".", "").length - 1),
+                (this.$fill = a('<div class="' + this.options.fillClass + '" />')),
+                (this.$handle = a('<div class="' + this.options.handleClass + '" />')),
+                (this.$range = a(
+                        '<div class="' +
+                        this.options.rangeClass +
+                        " " +
+                        this.options[this.orientation + "Class"] +
+                        '" id="' +
+                        this.identifier +
+                        '" />'
+                    )
+                    .insertAfter(this.$element)
+                    .prepend(this.$fill, this.$handle)),
+                this.$element.css({
+                        position: "absolute",
+                        width: "1px",
+                        height: "1px",
+                        overflow: "hidden",
+                        opacity: "0"
+                    }),
+                    (this.handleDown = a.proxy(this.handleDown, this)),
+                    (this.handleMove = a.proxy(this.handleMove, this)),
+                    (this.handleEnd = a.proxy(this.handleEnd, this)),
+                    this.init();
+                var f = this;
+                this.$window.on(
+                        "resize." + this.identifier,
+                        d(function() {
+                            c(function() {
+                                f.update(!1, !1);
+                            }, 300);
+                        }, 20)
+                    ),
+                    this.$document.on(
+                        this.startEvent,
+                        "#" + this.identifier + ":not(." + this.options.disabledClass + ")",
+                        this.handleDown
+                    ),
+                    this.$element.on("change." + this.identifier, function(a, b) {
+                        if (!b || b.origin !== f.identifier) {
+                            var c = a.target.value,
+                                d = f.getPositionFromValue(c);
+                            f.setPosition(d);
+                        }
+                    });
+            }
+            Number.isNaN =
+                Number.isNaN ||
+                function(a) {
+                    return "number" == typeof a && a !== a;
+                };
+            var k = "rangeslider",
+                l = 0,
+                m = b(),
+                n = {
+                    polyfill: !0,
+                    orientation: "horizontal",
+                    rangeClass: "rangeslider",
+                    disabledClass: "rangeslider--disabled",
+                    horizontalClass: "rangeslider--horizontal",
+                    verticalClass: "rangeslider--vertical",
+                    fillClass: "rangeslider__fill",
+                    handleClass: "rangeslider__handle",
+                    startEvent: ["mousedown", "touchstart", "pointerdown"],
+                    moveEvent: ["mousemove", "touchmove", "pointermove"],
+                    endEvent: ["mouseup", "touchend", "pointerup"]
+                },
+                o = {
+                    orientation: {
+                        horizontal: {
+                            dimension: "width",
+                            direction: "left",
+                            directionStyle: "left",
+                            coordinate: "x"
+                        },
+                        vertical: {
+                            dimension: "height",
+                            direction: "top",
+                            directionStyle: "bottom",
+                            coordinate: "y"
+                        }
+                    }
+                };
+            return (
+                (j.prototype.init = function() {
+                    this.update(!0, !1),
+                        this.onInit && "function" == typeof this.onInit && this.onInit();
+                }),
+                (j.prototype.update = function(a, b) {
+                    (a = a || !1),
+                    a &&
+                        ((this.min = h(this.$element[0].getAttribute("min"), 0)),
+                            (this.max = h(this.$element[0].getAttribute("max"), 100)),
+                            (this.value = h(
+                                this.$element[0].value,
+                                Math.round(this.min + (this.max - this.min) / 2)
+                            )),
+                            (this.step = h(this.$element[0].getAttribute("step"), 1))),
+                        (this.handleDimension = g(
+
+                            this.$handle[0],
+                            "offset" + i(this.DIMENSION)
+                        )),
+                        (this.rangeDimension = g(this.$range[0], "offset" + i(this.DIMENSION))),
+                        (this.maxHandlePos = this.rangeDimension - this.handleDimension),
+                        (this.grabPos = this.handleDimension / 2),
+                        (this.position = this.getPositionFromValue(this.value)),
+                        this.$element[0].disabled ?
+                        this.$range.addClass(this.options.disabledClass) :
+                        this.$range.removeClass(this.options.disabledClass),
+                        this.setPosition(this.position, b);
+                }),
+                (j.prototype.handleDown = function(a) {
+                    if (
+                        (this.$document.on(this.moveEvent, this.handleMove),
+                            this.$document.on(this.endEvent, this.handleEnd), !(
+                                (" " + a.target.className + " ")
+                                .replace(/[\n\t]/g, " ")
+                                .indexOf(this.options.handleClass) > -1
+                            ))
+                    ) {
+                        var b = this.getRelativePosition(a),
+                            c = this.$range[0].getBoundingClientRect()[this.DIRECTION],
+                            d = this.getPositionFromNode(this.$handle[0]) - c,
+                            e =
+                            "vertical" === this.orientation ?
+                            this.maxHandlePos - (b - this.grabPos) :
+                            b - this.grabPos;
+                        this.setPosition(e),
+                            b >= d && b < d + this.handleDimension && (this.grabPos = b - d);
+                    }
+                }),
+                (j.prototype.handleMove = function(a) {
+                    a.preventDefault();
+                    var b = this.getRelativePosition(a),
+                        c =
+                        "vertical" === this.orientation ?
+                        this.maxHandlePos - (b - this.grabPos) :
+                        b - this.grabPos;
+                    this.setPosition(c);
+                }),
+                (j.prototype.handleEnd = function(a) {
+                    a.preventDefault(),
+                        this.$document.off(this.moveEvent, this.handleMove),
+                        this.$document.off(this.endEvent, this.handleEnd),
+                        this.$element.trigger("change", {
+                            origin: this.identifier
+                        }),
+                        this.onSlideEnd &&
+                        "function" == typeof this.onSlideEnd &&
+                        this.onSlideEnd(this.position, this.value);
+                }),
+                (j.prototype.cap = function(a, b, c) {
+                    return b > a ? b : a > c ? c : a;
+                }),
+                (j.prototype.setPosition = function(a, b) {
+                    var c, d;
+                    void 0 === b && (b = !0),
+                        (c = this.getValueFromPosition(this.cap(a, 0, this.maxHandlePos))),
+                        (d = this.getPositionFromValue(c)),
+                        (this.$fill[0].style[this.DIMENSION] = d + this.grabPos + "px"),
+                        (this.$handle[0].style[this.DIRECTION_STYLE] = d + "px"),
+                        this.setValue(c),
+                        (this.position = d),
+                        (this.value = c),
+                        b &&
+                        this.onSlide &&
+                        "function" == typeof this.onSlide &&
+                        this.onSlide(d, c);
+                }),
+                (j.prototype.getPositionFromNode = function(a) {
+                    for (var b = 0; null !== a;)(b += a.offsetLeft), (a = a.offsetParent);
+                    return b;
+                }),
+                (j.prototype.getRelativePosition = function(a) {
+                    var b = i(this.COORDINATE),
+                        c = this.$range[0].getBoundingClientRect()[this.DIRECTION],
+                        d = 0;
+                    return (
+                        "undefined" != typeof a["page" + b] ?
+                        (d = a["client" + b]) :
+                        "undefined" != typeof a.originalEvent["client" + b] ?
+                        (d = a.originalEvent["client" + b]) :
+                        a.originalEvent.touches &&
+                        a.originalEvent.touches[0] &&
+                        "undefined" != typeof a.originalEvent.touches[0]["client" + b] ?
+                        (d = a.originalEvent.touches[0]["client" + b]) :
+                        a.currentPoint &&
+                        "undefined" != typeof a.currentPoint[this.COORDINATE] &&
+                        (d = a.currentPoint[this.COORDINATE]),
+                        d - c
+                    );
+                }),
+                (j.prototype.getPositionFromValue = function(a) {
+                    var b, c;
+                    return (
+                        (b = (a - this.min) / (this.max - this.min)),
+                        (c = Number.isNaN(b) ? 0 : b * this.maxHandlePos)
+                    );
+                }),
+                (j.prototype.getValueFromPosition = function(a) {
+                    var b, c;
+                    return (
+                        (b = a / (this.maxHandlePos || 1)),
+                        (c =
+                            this.step * Math.round((b * (this.max - this.min)) / this.step) +
+                            this.min),
+                        Number(c.toFixed(this.toFixed))
+                    );
+                }),
+                (j.prototype.setValue = function(a) {
+                    (a !== this.value || "" === this.$element[0].value) &&
+                    this.$element.val(a).trigger("input", {
+                        origin: this.identifier
+                    });
+                }),
+                (j.prototype.destroy = function() {
+                    this.$document.off("." + this.identifier),
+                        this.$window.off("." + this.identifier),
+                        this.$element
+                        .off("." + this.identifier)
+                        .removeAttr("style")
+                        .removeData("plugin_" + k),
+                        this.$range &&
+                        this.$range.length &&
+                        this.$range[0].parentNode.removeChild(this.$range[0]);
+                }),
+                (a.fn[k] = function(b) {
+                    var c = Array.prototype.slice.call(arguments, 1);
+                    return this.each(function() {
+                        var d = a(this),
+                            e = d.data("plugin_" + k);
+                        e || d.data("plugin_" + k, (e = new j(this, b))),
+                            "string" == typeof b && e[b].apply(e, c);
+                    });
+                }),
+                "rangeslider.js is available in jQuery context e.g $(selector).rangeslider(options);"
+            );
+        });
+
+        new RangeInput(document.querySelector(".range"));
+	</script>
+
+    <!--For Newsletter Popup-->
+	<script>
+	(function(win, dom){
+    'use strict';
+  
+    // Check for .rangeControl class
+    var rangeControlList = dom.getElementsByClassName('custom-rangeInput');
+  
+    // Inits components
+    var init = function(){
+      
+      // Loop all controls
+      for (var i = 0; i < rangeControlList.length; i++) {
+        
+        // Apply inital
+        updateController(rangeControlList[i]);
+        // Update when changed
+        rangeControlList[i].addEventListener('input', function() {
+          updateController(this);
+        });
+        // Update when changed ( for older browsers )
+        rangeControlList[i].addEventListener('change', function() {
+          updateController(this);
+        });
+      }
+    }
+    
+    // Updates components
+    var update = function(){
+      for (var i = 0; i < rangeControlList.length; i++) {
+         updateController(rangeControlList[i]);
+      }
+    }
+
+    // Update controller
+    var updateController = function(obj){
+      // Thumb Position
+      var thumbPos = getThumbPercentage(obj);
+      var thumPosPX = getThumbPosition(obj);
+      if(obj.getAttribute("data-tooltip") != "false"){
+        updateTooltip(obj.nextElementSibling, obj.value, thumPosPX, thumbPos);
+      }else{
+        obj.nextElementSibling.style.display = "none";
+      }
+      updateProgress(obj, '#EEEEF1', '#F58220', thumbPos);
+    }
+
+    // Retun range slider pixel position according to offset
+    // obj : target object
+    var getThumbPosition = function(obj){
+      return Math.round((obj.offsetWidth / 100) * obj.value); // Pixel
+    }
+
+    // Retun range slider percentage to thumb position
+    // obj : target object
+    var getThumbPercentage = function(obj){
+      return Math.round(100 * obj.value/obj.getAttribute("max")); // Percentage
+    }
+    
+    // Updated range slider tooltip
+    // obj : target object
+    // text : tooltip label
+    // position : absolute position
+    // percentage : percentage of current value
+    var updateTooltip = function(obj, text, position, percentage){
+      obj.innerHTML = text; // Tooltip text
+      obj.style.left = position + 'px'; // Tooltip position
+
+      // Tooltip Position
+      var tooltipStartPos = 26;
+      var tooltipPosFix = percentage / 1.8;
+      if(percentage > 50){
+        tooltipPosFix = percentage / 2.2;
+      }
+      obj.style.transform = 'translate(-'+ (tooltipStartPos + tooltipPosFix) +'%, 0)';
+    }
+    
+    // Updated background progress bar of range slider
+    // obj : target object
+    // progressBgColor : background color
+    // progressFillColor : fill color
+    // percentage : percentage of current value
+    var updateProgress = function(obj, progressBgColor, progressFillColor, percentage){
+      var rangeBg = 'linear-gradient(to right,  '+ progressFillColor +' 0%, '+ progressFillColor +' '+ percentage +'%, '+ progressBgColor +' '+ percentage +'%, '+ progressBgColor +' 100%)';
+      var cssRule = '#'+ obj.id +'::-webkit-slider-runnable-track { background : '+ rangeBg +' } ';
+      cssRule += '#'+ obj.id +'::-moz-range-track { background : '+ rangeBg +' } ';
+      cssRule += '#'+ obj.id +'::-ms-track { background : '+ rangeBg +' } ';
+      var applyStyle = function(styleName, cssText) {
+          var styleElement = dom.getElementById(styleName);
+          if (styleElement) dom.getElementsByTagName('head')[0].removeChild(styleElement);
+          
+          styleElement = dom.createElement('style');
+          styleElement.type = 'text/css';
+          styleElement.id = styleName;
+          styleElement.innerHTML = cssText;
+          dom.getElementsByTagName('head')[0].appendChild(styleElement);
+      }
+      applyStyle('range_'+ obj.id, cssRule);
+    }
+    
+  // Refresh on resize
+  var fireOnceOnResize;
+  win.addEventListener('resize', function () {
+    fireOnceOnResize = setTimeout(update, 100);
+  });
+  
+  // Init Component
+  init();
+  
+}(window, document));
+	</script>
+
+</body>
+</html>
