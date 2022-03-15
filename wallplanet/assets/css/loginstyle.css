@@ -490,7 +490,7 @@ main#main {
 @media only screen and (max-width: 991px) {
   .container.active .card.alt { width: 92%; min-width: initial; top: auto; bottom: 15px;}
   /*.toggle { position: relative;}*/
-  .card.alt { position: relative;}
+  .card.alt { position: relative; height: 0;}
 }
 
 @media only screen and (max-width: 575px) {
