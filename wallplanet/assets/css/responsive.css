@@ -535,6 +535,7 @@
 	.customer-links {top: 11.0rem;}
 	.header-wrap.stickyNav .customer-links {top: 8.0rem;}
 	.navmainsmall {padding-bottom:.5rem; justify-content: start;}
+	#header-cart { right: -44px;}
 	
 	.home5-cosmetic .slideshow .slideshow__title { font-size:24px; }
 	
@@ -642,6 +643,7 @@
 	.top-header p, .top-header a, .top-header select, .top-header .fa, .top-header span.selected-currency, .language-dd { font-size:12px; }
 	.slideshow .slideshow__title {font-size: 14px;}
 	.header-wrap.stickyNav .customer-links { top: 7.8rem; right: 15px;}
-	.navmainsmall { padding-bottom: 0.7rem;}
+	.navmainsmall { padding-bottom: 0.7rem; justify-content: end;}
+	#header-cart { right: -133px;}
 }
 
