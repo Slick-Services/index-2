@@ -1,0 +1,12 @@
+favourite - <i class="fa-regular fa-heart"></i>
+Cart - <i class="fa-regular fa-cart-circle-check"></i>
+filter - <i class="fa-regular fa-sliders"></i>
+call - <i class="fa-regular fa-phone"></i>
+msg - <i class="fa-regular fa-envelope"></i>
+facebook - <i class="fa-brands fa-facebook-f"></i>
+instagram - <i class="fa-brands fa-instagram"></i>
+twiiter - <i class="fa-brands fa-twitter"></i>
+linkedin - <i class="fa-brands fa-linkedin-in"></i>
+order list - <i class="fa-regular fa-square-list"></i>
+profile - <i class="fa-regular fa-square-user"></i>
+logout - <i class="fa-regular fa-right-from-bracket"></i>
