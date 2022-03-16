@@ -9,7 +9,7 @@
     <title>Account &ndash; Belle Multipurpose Bootstrap 4 Template</title>
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <!-- Favicon -->
+    <!-- Favicon -->
     <!-- <link rel="shortcut icon" href="assets/img/favicon.png" /> -->
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/css/plugins.css">
@@ -26,7 +26,7 @@
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-	<link rel="stylesheet" href="assets/css/loginstyle.css">
+    <link rel="stylesheet" href="assets/css/stylelogin.css">
     <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
     <!-- <link rel="stylesheet" href="assets/css/all.min.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/productstyle.css"> -->
@@ -37,7 +37,7 @@
  <div class="loginmainbg">
     <div class="pageWrapper">
 
-        <!--Top Header-->
+          <!--Top Header-->
         <div class="top-header">
             <div class="container-fluid">
                 <div class="row">
@@ -114,7 +114,7 @@
                                 <!-- <div class="col-4 col-sm-4 col-md-3 col-lg-1 p-sm-0 pe-2"></div> -->
                                 <div class="col-10 col-sm-4 col-md-2 col-lg-4 col-xl-4 col-xxl-3">
                                     <div class="maincartbtn">
-                                        <div class=" mainserchicon me-sm-4 me-2">
+                                        <div class=" mainserchicon me-sm-2 me-2">
                                             <div class="d-block d-lg-none">
                                                 <button type="button" class="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open">
                                       <i class="icon anm anm-times-l"></i>
@@ -135,7 +135,7 @@
                                                 </div>
                                             </div>
                                             <!--End Search Form Drawer-->
-                                            <div class="site-cart me-sm-4 me-2 me-xxl-5 d-flex">
+                                            <div class="site-cart me-sm-4 me-2 me-xxl-4 d-flex">
                                                 <a href="#" class="me-2 me-sm-3 me-xl-4 mt-1">
                                                     <i class="anm anm-heart-l" aria-hidden="true"></i>
                                                     <!-- <span class="d-block me-3 mt-1"></span> -->
@@ -253,109 +253,122 @@
         <!---------Start main contant part------->
         <main id="main" >
             <!--Body Content-->
-            <div id="page-content" class=" h-100">
-                <!--Page Title-->
-               <!-- <div class="page section-header text-center">
-                    <div class="page-title">
-                        <div class="wrapper">
-                            <h1 class="page-width">Login</h1>
-                        </div>
-                    </div>
-                </div>-->
-                <!--End Page Title-->
+          <div id="page-content" class=" h-100">                
 
-                <div class="container">
-				  <div class="mb-4 card rounded ronageshedow p-4">	
-                    <div class="row flex-lg-row align-items-center flex-column">
-                            <div class="col-12 col-lg-6 main-col">
-                                <div class="mainloginvc">
-                                    <img src="assets/img/loginvc.png" class="img-fluid" />
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6 main-col reg">
-                                
-			<!-- Mixins-->
-			<!-- Pen Title-->
-			<!--<div class="pen-title">
-			  <h1>Material Login Form</h1><span>Pen <i class='fa fa-code'></i> by <a href='http://andytran.me'>Andy Tran</a></span>
-			</div>-->
-				<!--<div class="rerun"><a href="">Rerun Pen</a></div>
-				  <div class="card"></div>-->
-			  <div class="card loginmain">
-				  <div class="row d-flex">
-				<div class="col-6 col-sm-6"><h1 class="title">Login</h1></div>
-				 <div class="col-6 col-sm-6"><div class="toggle">Register</div>
-				</div> 
-					  </div>
-				<form class="mt-4">
-				  <div class="input-container">
-					<input type="#{type}" id="#{label}" required="required"/>
-					<label for="#{label}">Username</label>
-					<div class="bar"></div>
-				  </div>
-				  <div class="input-container">
-					<!--<input type="#{type}" id="#{label}" required="required"/>-->
-				    <input type="password" class="form-control" name="password" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required="">	  
-					<label for="#{label}">Password</label>
-					<div class="bar"></div>
-				  </div>
-				  <div class="footer">
-					<div class="d-flex p-1 p-sm-3">
-						<div class="col-6 col-sm-6 ps-sm-4 pe-sm-3 ps-0 pe-0">
-							<div class="cutsom-checkbox-row">
-						<input id="checkbox1" type="checkbox">
-						<label for="checkbox1">Remember</label>
-					</div></div>
-						<div class="col-6 col-sm-6"><a href="#">Forgot your password?</a></div>
-						</div>	
-						
-					</div>
-				  <div class="button-container">
-					<button><span>Submit</span></button>
-				  </div>
-				  
-				</form>
-			  </div>
-			  <div class="card alt">
-				<!--<div class="toggle">Register</div>
-				<h1 class="title">Register
-				  <div class="close"></div>
-				</h1>-->
-				  <h1 class="title">Register
-				  <div class="close"></div>
-				</h1>
-				<form class="mt-4">
-				  <div class="input-container">
-					<input type="#{type}" id="#{label}" required="required"/>
-					<label for="#{label}">First Name</label>
-					<div class="bar"></div>
-				  </div>
-				  <div class="input-container">
-					<input type="#{type}" id="#{label}" required="required"/>
-					<label for="#{label}">Lat Name</label>
-					<div class="bar"></div>
-				  </div>
-				  <div class="input-container">
-					<input type="#{type}" id="#{label}" required="required"/>
-					<label for="#{label}">Email</label>
-					<div class="bar"></div>
-				  </div>
-				  <div class="input-container">
-<!--					<input type="#{type}" id="#{label}" required="required"/>-->
-				    <input type="password" class="form-control" name="password" id="password" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required="">	  
-					<label for="#{label}">Password</label>
-					<div class="bar"></div>
-				  </div>	
-				  <div class="button-container">
-					<button><span>Next</span></button>
-				  </div>
-				</form>
-			  </div>
+            <div class="container">
+				<div class="mb-4 mb-sm-5 mt-5 card rounded ronageshedow p-sm-1 pe-sm-1 ps-sm-1 p-5 pe-3 ps-3">					
+              <div class="row flex-lg-row align-items-center flex-column justify-content-center">
+            
+         <div class="col-12 col-lg-6 main-col reg">
+   				 <ul id="tabs" class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a id="tab-A" href="#pane-A" class="nav-link active underline-right" data-bs-toggle="tab" role="tab">Sign In</a>
+        </li>
+        <li class="nav-item">
+            <a id="tab-B" href="#pane-B" class="nav-link underline-right" data-bs-toggle="tab" role="tab">	Sign Up</a>
+        </li>
+        <!--<li class="nav-item">
+            <a id="tab-C" href="#pane-C" class="nav-link" data-bs-toggle="tab" role="tab">–C–</a>
+        </li>-->
+    </ul>
 
-                            </div>
-                        </div>
-                    </div>
+   				 <div id="content" class="tab-content mb-md-5" role="tablist">
+		
+        <div id="pane-A" class="card tab-pane fade show active mb-4 mb-sm-2" role="tabpanel" aria-labelledby="tab-A">
+			<a data-bs-toggle="collapse" href="#collapse-A" aria-expanded="true" aria-controls="collapse-A">
+            <div class="card-header" role="tab" id="heading-A">
+                <h5 class="mb-0">Sign In</h5>
+            </div>
+			</a>
+
+            <!-- Note: New place of `data-parent` -->
+            <div id="collapse-A" class="collapse show" data-parent="#content" role="tabpanel" aria-labelledby="heading-A" aria-expanded="false">
+				<!--<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">-->
+                <div class="card-body small">
+                    <form action="registerapp:user_login" method="get" class="login-form">
+                 <div class="form-group">
+                   <input type="text" class="form-control rounded-left" placeholder="Username" name="email" required>
+                 </div>
+                 <div class="form-group d-flex">
+                  <input type="password" class="form-control rounded-left" placeholder="Password" name="password" required>
+                 </div>
+                 <div class="form-group mainchcklogin">
+                  <div class="col-6 col-sm-6">
+                   <label class="checkbox-wrap checkbox-primary">Remember Me
+                   <input type="checkbox" checked="">
+                 <span class="checkmark"></span>
+                 </label>
+                  </div>
+                <div class="col-6 col-sm-6 text-end forgotpass">
+                 <a href="registerapp:resetpassword">Forgot Password</a>
                 </div>
+                </div>
+               <div class="form-group col-sm-5 m-auto">
+                <button type="submit" class="btn btn-primary rounded submit p-3 px-5">Submit</button>
+               </div>
+            </form>
+                </div>
+            </div>
+        </div>
+
+      	<div id="pane-B" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-B">
+			<a class="collapsed" data-bs-toggle="collapse" href="#collapse-B" aria-expanded="false" aria-controls="collapse-B">
+            <div class="card-header" role="tab" id="heading-B">
+                <h5 class="mb-0"> Sign Up </h5>
+            </div>
+				</a>
+            <div id="collapse-B" class="collapse" data-parent="#content" role="tabpanel" aria-labelledby="heading-B" aria-expanded="false">
+               <div class="card-body right-radius small">
+                <form class="mt-4 login-form pt-3" method="post">								
+				  <div class="form-group">
+					<input type="text" class="form-control rounded-left" placeholder="First Name" name="first name" required="">
+					<!--<label for="#{label}">First Name</label>
+					<div class="bar"></div>-->
+				  </div>
+				  <div class="form-group">
+					<input type="text" class="form-control rounded-left" placeholder="Last Name" name="last name" required="">
+					<!--<div class="bar"></div>-->
+				  </div>
+				  <div class="form-group">
+					  <input type="text" class="form-control rounded-left" placeholder="Email Id" name="email"  required="required">					
+				  </div>
+				  <div class="form-group">
+<!--					<input type="#{type}" id="#{label}" required="required"/>-->
+				    <input type="password" class="form-control" name="password" placeholder="Password" id="password" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required="">	  
+					<!--<label for="#{label}">Password</label>
+					<div class="bar"></div>-->
+				  </div>	
+				  <div class="form-group col-sm-5 m-auto">
+                <button type="submit" class="btn btn-primary rounded submit p-3 px-5">Submit</button>
+               </div>
+				</form>
+                </div>
+            </div>
+        </div>
+
+        <!--<div id="pane-C" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-C">
+            <div class="card-header" role="tab" id="heading-C">
+                <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" href="#collapse-C" aria-expanded="false" aria-controls="collapse-C">
+                        Collapsible Group Item C
+                    </a>
+                </h5>
+            </div>
+            <div id="collapse-C" class="collapse" role="tabpanel" data-parent="#content" aria-labelledby="heading-C">
+                <div class="card-body">
+                    [Tab content C]
+                </div>
+            </div>
+        </div>-->
+    </div>
+				<!-- /.tab Wrap -->
+
+                            </div>
+                        </div>
+                    </div>	
+					
+					
+</div>					
 
             </div>
             <!--End Body Content-->
@@ -426,6 +439,7 @@
         referrerpolicy="no-referrer">
     </script> -->
     <script src="assets/vendor/jquery-3.3.1.min.js"></script>
+		
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/jquery.cookie.js"></script>
     <script src="assets/vendor/wow.min.js"></script>
@@ -435,7 +449,6 @@
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/vendor/fontawesome/js/all.min.js"></script>
     <script src="assets/js/main.js"></script>
-		
 		<script>
 			  $('.toggle').on('click', function() {
     $('.container').stop().addClass('active');
@@ -448,6 +461,18 @@
         <!--For Newsletter Popup-->
     </div>
 </div>	 
+	
+<script>
+	$('.tabAnchor').on('click', function() { // changes container bg to tab color stored in data attr
+  var destBg = $(this).data('color');
+  $('.tab-content').css('background', destBg);
+});
+
+$('.shifter').on('click', function(e) { // shifts tabs
+  e.preventDefault();
+  $('.tabToggle').toggleClass('hidden');
+});
+	</script>	
 </body>
 
 <!-- belle/login.html   11 Nov 2019 12:22:27 GMT -->
